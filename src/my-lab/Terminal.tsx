@@ -1,13 +1,11 @@
 import React from 'react';
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { THEME } from '../theme/Theme';
+import { CONSTANTS } from '../constants';
 
 interface TerminalProps {
     // No props needed currently as logical timing is internal/global synced
 }
-
-// Global Impact Physics Constant (Must match SilverButton)
-const IMPACT_FRAME = 25; 
 
 export const Terminal: React.FC<TerminalProps> = () => {
     const frame = useCurrentFrame();
@@ -19,7 +17,7 @@ export const Terminal: React.FC<TerminalProps> = () => {
     // The Terminal extends hydraulically ONLY when the button hits.
     // It shares the EXACT same spring config as the button for 1:1 sync.
     const hydraulicSpring = spring({
-        frame: frame - IMPACT_FRAME, 
+        frame: frame - CONSTANTS.IMPACT_FRAME, 
         fps,
         config: THEME.physics.snappy, // <--- SYNCED PHYSICS
     });
@@ -33,7 +31,7 @@ export const Terminal: React.FC<TerminalProps> = () => {
     // Text Typing Logic (starts after terminal begins expanding)
     const text = "npx remotion render --high-fidelity";
     const typeSpeed = 2; 
-    const startTypingFrame = IMPACT_FRAME + 15; // Delay typing slightly
+    const startTypingFrame = CONSTANTS.IMPACT_FRAME + 15; // Delay typing slightly
     
     const progress = interpolate(
         frame,

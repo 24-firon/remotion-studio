@@ -5,20 +5,20 @@ import { RoundedBox, useTexture } from '@react-three/drei';
 import { staticFile } from 'remotion';
 import * as THREE from 'three';
 
+import { CONSTANTS } from '../constants';
+
 export const SilverButton: React.FC = () => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
     const meshRef = useRef<THREE.Mesh>(null);
 
     // Load Logo Texture (Anti-Flicker: use staticFile)
-    // Note: In a real scenario, we might handle async loading differently, 
-    // but useTexture is standard for R3F. Remotion handles suspense.
     const logoTexture = useTexture(staticFile('assets/logo.png'));
 
     // Physics 1: Impact Scale (Tresor-Bolzen)
     const scaleConfig = THEME.physics.snappy;
     const scaleVal = spring({
-        frame: frame - 25, // Start slightly later for dramatic effect
+        frame: frame - CONSTANTS.IMPACT_FRAME, // Start slightly later for dramatic effect
         fps,
         config: scaleConfig,
     });
@@ -35,6 +35,15 @@ export const SilverButton: React.FC = () => {
 
     return (
         <group scale={scale}>
+            {/* Dynamic Glint Light */}
+            <spotLight
+                position={[glintPos, 1, 3]}
+                angle={0.3}
+                penumbra={0.5}
+                intensity={THEME.colors.accent.glint ? 2 : 1} 
+                castShadow
+            />
+
             {/* Main Button Body - PBR Silver */}
             <RoundedBox args={[3.5, 1.2, 0.2]} radius={0.1} smoothness={4} ref={meshRef}>
                  <meshStandardMaterial
