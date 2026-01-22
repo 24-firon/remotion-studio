@@ -1,4 +1,4 @@
-import { AbsoluteFill, Sequence, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { SilverButton } from './SilverButton';
 import { Terminal } from './Terminal';
 import { Theme } from './Theme';
@@ -11,10 +11,10 @@ export const MainScene: React.FC = () => {
     const TERMINAL_START_FRAME = 80;
 
     // Terminal Entry Physics ("Hydraulic Logic")
-    // Slide up from bottom
     const terminalSlide = spring({
-        frame: frame - TERMINAL_START_FRAME,
+        frame,
         fps,
+        delay: TERMINAL_START_FRAME,
         config: {
             mass: 2,        // Heavy
             damping: 30,    // No bounce, hydraulic feel
@@ -31,24 +31,23 @@ export const MainScene: React.FC = () => {
                 opacity: 0.5
             }} />
 
-            {/* 2. Silver Button (Always visible / handles its own internal anims) */}
-            <AbsoluteFill className="flex justify-center" style={{top: '30%'}}>
-                 <div style={{transform: 'translateY(-50%)'}}>
+            {/* 2. Main Flex Container (Centered Layout) */}
+            <AbsoluteFill className="items-center justify-center flex flex-col gap-16">
+                 {/* Silver Button (Always visible) */}
+                 <div>
                     <SilverButton />
                  </div>
-            </AbsoluteFill>
 
-            {/* 3. Terminal (Enters at Frame 80) */}
-            <Sequence from={TERMINAL_START_FRAME}>
-                 <AbsoluteFill className="flex justify-center" style={{top: '55%'}}>
-                    <div style={{
-                        transform: `translateY(${(1 - terminalSlide) * 50}px)`, // Sides up 50px -> 0px
-                        opacity: terminalSlide,
-                    }}>
-                        <Terminal />
-                    </div>
-                 </AbsoluteFill>
-            </Sequence>
+                 {/* Terminal (Appears at Frame 80) */}
+                 {/* We render it always to keep layout stable, but animate opacity/transform */}
+                 <div style={{
+                    transform: `translateY(${(1 - terminalSlide) * 50}px)`, // Sides up 50px -> 0px
+                    opacity: terminalSlide,
+                 }}>
+                     {/* Pass delay to Terminal so it starts typing after appearance */}
+                    <Terminal delay={TERMINAL_START_FRAME + 10} />
+                 </div>
+            </AbsoluteFill>
 
         </AbsoluteFill>
     );

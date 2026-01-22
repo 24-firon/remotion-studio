@@ -36,8 +36,9 @@ export const SilverButton: React.FC = () => {
                     opacity: opacity,
                     // Multi-stop metallic gradient: Zinc-100, Zinc-400, White, Zinc-500, Zinc-800
                     background: `linear-gradient(180deg, #f4f4f5 0%, #a1a1aa 25%, #ffffff 50%, #71717a 75%, #27272a 100%)`,
-                    borderTop: `1px solid ${Theme.colors.accent.highlight}`,
-                    borderBottom: `1px solid ${Theme.colors.accent.shadow}`,
+                    borderTop: `1px solid rgba(255, 255, 255, 0.8)`, // Highlight
+                    borderBottom: `1px solid rgba(0, 0, 0, 0.6)`, // Shadow
+                    border: `1px solid rgba(255, 255, 255, 0.3)`, // Overall Sharpness
                     padding: '24px 64px',
                 }}
             >

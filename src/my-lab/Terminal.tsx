@@ -2,14 +2,18 @@ import React from 'react';
 import { interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Theme } from './Theme';
 
-export const Terminal: React.FC = () => {
+interface TerminalProps {
+    delay?: number;
+}
+
+export const Terminal: React.FC<TerminalProps> = ({ delay = 10 }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
     const text = "npx remotion render --high-fidelity";
     // 2 frames per character for high-tech precise feel
     const typeSpeed = 2; 
-    const startTypingFrame = 10; // Slight delay after window appears
+    const startTypingFrame = delay; // Offset by prop
 
     // Typewriter Logic
     const progress = interpolate(
@@ -35,7 +39,7 @@ export const Terminal: React.FC = () => {
 
     return (
         <div 
-            className="w-[600px] rounded-lg overflow-hidden border shadow-2xl backdrop-blur-sm font-mono"
+            className="w-[800px] h-[400px] rounded-lg overflow-hidden border shadow-2xl backdrop-blur-sm font-mono flex flex-col"
             style={{
                 backgroundColor: 'rgba(9, 9, 11, 0.9)', // zinc-950 with opacity
                 borderColor: 'rgba(63, 63, 70, 0.5)', // zinc-700 with opacity
@@ -44,7 +48,7 @@ export const Terminal: React.FC = () => {
         >
             {/* Header */}
             <div 
-                className="h-8 flex items-center px-3 gap-2 border-b"
+                className="h-8 flex-none flex items-center px-3 gap-2 border-b"
                 style={{
                     backgroundColor: Theme.colors.surface.base,
                     borderColor: 'rgba(39, 39, 42, 1)', // zinc-800
@@ -57,18 +61,20 @@ export const Terminal: React.FC = () => {
             </div>
 
             {/* Content */}
-            <div className="p-4 min-h-[100px] text-left">
-                <span className="mr-2" style={{color: Theme.colors.surface.gradientMid}}>$</span>
-                <span style={{color: Theme.colors.terminal.text, textShadow: `0 0 10px ${Theme.colors.terminal.text}40`}}>
-                    {visibleText}
-                </span>
-                <span 
-                    className="inline-block w-2 h-5 align-middle ml-1"
-                    style={{
-                        backgroundColor: Theme.colors.terminal.text,
-                        opacity: showCursor ? 1 : 0
-                    }} 
-                />
+            <div className="flex-1 p-6 text-left text-xl">
+                <div className="flex flex-row items-center">
+                    <span className="mr-3" style={{color: Theme.colors.surface.gradientMid}}>$</span>
+                    <span style={{color: Theme.colors.terminal.text, textShadow: `0 0 10px ${Theme.colors.terminal.text}40`}}>
+                        {visibleText}
+                    </span>
+                    <span 
+                        className="inline-block w-3 h-6 align-middle ml-1"
+                        style={{
+                            backgroundColor: Theme.colors.terminal.text,
+                            opacity: showCursor ? 1 : 0
+                        }} 
+                    />
+                </div>
             </div>
         </div>
     );
