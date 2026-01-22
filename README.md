@@ -1,3 +1,7 @@
+# 🏗️ Remotion Agent Studio - 24-firon
+
+> Dieses Projekt ist ein KI-gesteuertes Video-Engineering-Lab. Regeln und Strategien sind in `PROJECT_RULES.md` definiert.
+
 # Remotion video
 
 <p align="center">
