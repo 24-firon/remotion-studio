@@ -54,9 +54,9 @@ export const SilverButton: React.FC = () => {
                 />
             </RoundedBox>
 
-            {/* Logo Overlay Plane (slight offset to avoid z-fighting) */}
+            {/* Logo Overlay Plane (Corrected Aspect Ratio 1:1) */}
             <mesh position={[0, 0, 0.11]}>
-                <planeGeometry args={[1.5, 0.5]} /> {/* Adjust size as needed */}
+                <planeGeometry args={[1, 1]} /> {/* Square geometry for square logo */}
                 <meshBasicMaterial 
                     map={logoTexture} 
                     transparent 

@@ -14,12 +14,15 @@ export const Terminal: React.FC<TerminalProps> = () => {
     // ===========================================
     // 🔩 HYDRAULIC PHYSICS ENGINE
     // ===========================================
+    // ===========================================
+    // 🔩 HYDRAULIC PHYSICS ENGINE
+    // ===========================================
     // The Terminal extends hydraulically ONLY when the button hits.
-    // It shares the EXACT same spring config as the button for 1:1 sync.
+    // Delayed by 5 frames to feel "Reactive" (Impact -> Reaction)
     const hydraulicSpring = spring({
-        frame: frame - CONSTANTS.IMPACT_FRAME, 
+        frame: frame - (CONSTANTS.IMPACT_FRAME + 5), 
         fps,
-        config: THEME.physics.snappy, // <--- SYNCED PHYSICS
+        config: THEME.physics.snappy, 
     });
 
     // Map spring (0-1) to pixel extension distance
@@ -31,7 +34,7 @@ export const Terminal: React.FC<TerminalProps> = () => {
     // Text Typing Logic (starts after terminal begins expanding)
     const text = "npx remotion render --high-fidelity";
     const typeSpeed = 2; 
-    const startTypingFrame = CONSTANTS.IMPACT_FRAME + 15; // Delay typing slightly
+    const startTypingFrame = (CONSTANTS.IMPACT_FRAME + 5) + 15; // Delay typing slightly
     
     const progress = interpolate(
         frame,
@@ -51,11 +54,11 @@ export const Terminal: React.FC<TerminalProps> = () => {
         <div 
             className="absolute rounded-lg overflow-hidden border font-mono flex flex-col items-center"
             style={{
-                width: 600,
+                width: 800, // Increased width
                 // Position relative to center
                 top: '50%', // Centered vertically initially
                 left: '50%',
-                marginLeft: -300, // Center X
+                marginLeft: -400, // Center X (half of 800)
                 marginTop: -50,   // Initial offset behind button
                 
                 // HYDRAULIC ANIMATION
