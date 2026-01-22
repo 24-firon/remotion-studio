@@ -1,62 +1,61 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Theme} from './Theme';
-import React from 'react';
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { THEME } from '../theme/Theme';
+import React, { useRef } from 'react';
+import { RoundedBox, useTexture } from '@react-three/drei';
+import { staticFile } from 'remotion';
+import * as THREE from 'three';
 
 export const SilverButton: React.FC = () => {
     const frame = useCurrentFrame();
-    const {fps} = useVideoConfig();
+    const { fps } = useVideoConfig();
+    const meshRef = useRef<THREE.Mesh>(null);
 
-    // 1. Impact Physics (Tresor-Bolzen)
-    const scale = spring({
-        frame: frame - 20, // Start at Frame 20
+    // Load Logo Texture (Anti-Flicker: use staticFile)
+    // Note: In a real scenario, we might handle async loading differently, 
+    // but useTexture is standard for R3F. Remotion handles suspense.
+    const logoTexture = useTexture(staticFile('assets/logo.png'));
+
+    // Physics 1: Impact Scale (Tresor-Bolzen)
+    const scaleConfig = THEME.physics.snappy;
+    const scaleVal = spring({
+        frame: frame - 25, // Start slightly later for dramatic effect
         fps,
-        config: Theme.physics.impact,
+        config: scaleConfig,
     });
     
-    // Clamp opacity to 0-1 to avoid glitches before frame 20 if spring is slight
-    const opacity = interpolate(frame, [20, 25], [0, 1], {
-        extrapolateLeft: 'clamp', 
+    // Smooth entrance
+    const scale = interpolate(scaleVal, [0, 1], [0, 1]);
+
+    // Physics 2: Glint / Reflection Movement
+    // Glint moves across the surface based on frame
+    const glintPos = interpolate(frame, [40, 90], [-2, 2], {
+        extrapolateLeft: 'clamp',
         extrapolateRight: 'clamp'
     });
 
-    // 2. The Glint (Shimmer)
-    // Runs from frame 50 to 80
-    const glintTranslate = interpolate(frame, [50, 80], [-100, 200], {
-        extrapolateLeft: 'clamp',
-        extrapolateRight: 'clamp',
-    });
-
     return (
-        <div className="w-full h-full flex items-center justify-center">
-            {/* Button Container */}
-            <div 
-                className="relative overflow-hidden rounded-xl shadow-2xl group flex items-center justify-center"
-                style={{
-                    transform: `scale(${scale})`,
-                    opacity: opacity,
-                    // Multi-stop metallic gradient: Zinc-100, Zinc-400, White, Zinc-500, Zinc-800
-                    background: `linear-gradient(180deg, #f4f4f5 0%, #a1a1aa 25%, #ffffff 50%, #71717a 75%, #27272a 100%)`,
-                    borderTop: `1px solid rgba(255, 255, 255, 0.8)`, // Highlight
-                    borderBottom: `1px solid rgba(0, 0, 0, 0.6)`, // Shadow
-                    border: `1px solid rgba(255, 255, 255, 0.3)`, // Overall Sharpness
-                    padding: '24px 64px',
-                }}
-            >
-                {/* Text */}
-                <span className="font-sans font-bold text-2xl tracking-widest text-zinc-900 uppercase z-10">
-                    Initialize Studio
-                </span>
-
-                {/* Glint Effect Layer */}
-                <div
-                    className="absolute top-0 bottom-0 w-1/3 pointer-events-none"
-                    style={{
-                        background: `linear-gradient(90deg, transparent, ${Theme.colors.accent.glint}, transparent)`,
-                        transform: `skewX(-12deg) translateX(${glintTranslate}%)`,
-                        left: 0, 
-                    }}
+        <group scale={scale}>
+            {/* Main Button Body - PBR Silver */}
+            <RoundedBox args={[3.5, 1.2, 0.2]} radius={0.1} smoothness={4} ref={meshRef}>
+                 <meshStandardMaterial
+                    color={THEME.colors.metallic.stop2}
+                    metalness={THEME.pbr.metalness}
+                    roughness={THEME.pbr.roughness}
+                    envMapIntensity={THEME.pbr.envMapIntensity}
                 />
-            </div>
-        </div>
+            </RoundedBox>
+
+            {/* Logo Overlay Plane (slight offset to avoid z-fighting) */}
+            <mesh position={[0, 0, 0.11]}>
+                <planeGeometry args={[1.5, 0.5]} /> {/* Adjust size as needed */}
+                <meshBasicMaterial 
+                    map={logoTexture} 
+                    transparent 
+                    opacity={0.9}
+                />
+            </mesh>
+            
+            {/* Invisible Light Source helper if needed, but HDRI is main source */}
+        </group>
     );
 };
