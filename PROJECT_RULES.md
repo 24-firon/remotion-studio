@@ -24,6 +24,7 @@
 
 - **Component Portability**: All components must be compatible with `@remotion/player` for web embedding.
 - **Node APIs**: No Node.js-only APIs (fs, path) inside rendering components. Use `staticFile()` or `public/` assets.
+- **Sub-Component Isolation**: Sub-components must NEVER set a global/scene background. They must be transparent/compact to avoid occlusion issues.
 
 ## 5. Agent Protocol
 

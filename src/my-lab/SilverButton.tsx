@@ -1,4 +1,4 @@
-import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Theme} from './Theme';
 import React from 'react';
 
@@ -27,21 +27,22 @@ export const SilverButton: React.FC = () => {
     });
 
     return (
-        <AbsoluteFill className="flex items-center justify-center" style={{backgroundColor: Theme.colors.surface.base}}>
+        <div className="w-full h-full flex items-center justify-center">
             {/* Button Container */}
             <div 
-                className="relative overflow-hidden rounded-xl shadow-2xl group"
+                className="relative overflow-hidden rounded-xl shadow-2xl group flex items-center justify-center"
                 style={{
                     transform: `scale(${scale})`,
                     opacity: opacity,
-                    background: `var(--color-silver-shine, linear-gradient(180deg, ${Theme.colors.surface.gradientStart}, ${Theme.colors.surface.gradientMid}, ${Theme.colors.surface.gradientEnd}))`,
+                    // Multi-stop metallic gradient: Zinc-100, Zinc-400, White, Zinc-500, Zinc-800
+                    background: `linear-gradient(180deg, #f4f4f5 0%, #a1a1aa 25%, #ffffff 50%, #71717a 75%, #27272a 100%)`,
                     borderTop: `1px solid ${Theme.colors.accent.highlight}`,
                     borderBottom: `1px solid ${Theme.colors.accent.shadow}`,
                     padding: '24px 64px',
                 }}
             >
                 {/* Text */}
-                <span className="font-sans font-bold text-2xl tracking-widest text-zinc-900 uppercase">
+                <span className="font-sans font-bold text-2xl tracking-widest text-zinc-900 uppercase z-10">
                     Initialize Studio
                 </span>
 
@@ -55,6 +56,6 @@ export const SilverButton: React.FC = () => {
                     }}
                 />
             </div>
-        </AbsoluteFill>
+        </div>
     );
 };
