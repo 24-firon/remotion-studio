@@ -1,4 +1,4 @@
-# HANDOVER: VIRON SILVER EXPERIMENT (V2)
+# HANDOVER: SilverV2 Experiment (Best Practice)
 
 **Status:** IN-PROGRESS (R&D)
 **Project Scope:** `c:/Workspace/Repos/remotion-studio`
@@ -24,5 +24,5 @@ Establish a "Best Practice" visual core for the Viron Industrial look using Remo
 ## 🗣️ Communication Protocol
 
 - Read the Skill System first.
-- Present a **Technical Concept** to the User before writing code.
-- **WAIT** for user approval.
+- Present a **Technical Concept** (Plan) to the User before writing code.
+- **WAIT** for user approval ("Go", "Passt").
