@@ -1,43 +1,56 @@
 ---
 name: remotion-best-practices
-description: Best practices for Remotion - Video creation in React
+description: The Unified Knowledge Base for Viron Remotion Studio. Combines Project Specs and Generic Skills.
 metadata:
-  tags: remotion, video, react, animation, composition
+  tags: remotion, viron, architecture, standards, theme
 ---
 
-## When to use
+# 🧠 VIRON UNIFIED SKILL SYSTEM
 
-Use this skills whenever you are dealing with Remotion code to obtain the domain-specific knowledge.
+> **CRITICAL PROTOCOL:**
+> This file is the **Single Point of Entry**.
+> You must strictly follow the **Priority Order** below.
+> **VIRON CORE** rules always override **GENERIC** patterns.
 
-## How to use
+---
 
-Read individual rule files for detailed explanations and code examples:
+## 🛑 VIRON CORE (MANDATORY AUTHORITY)
+**Context:** These files define the *Immutable Physics*, *Design Laws*, and *Infrastructure* of this specific project.
+**Rule:** If you are coding, designing, or rendering, you **MUST** consult the relevant Core file first.
 
-- [rules/3d.md](rules/3d.md) - 3D content in Remotion using Three.js and React Three Fiber
-- [rules/animations.md](rules/animations.md) - Fundamental animation skills for Remotion
-- [rules/assets.md](rules/assets.md) - Importing images, videos, audio, and fonts into Remotion
-- [rules/audio.md](rules/audio.md) - Using audio and sound in Remotion - importing, trimming, volume, speed, pitch
-- [rules/calculate-metadata.md](rules/calculate-metadata.md) - Dynamically set composition duration, dimensions, and props
-- [rules/can-decode.md](rules/can-decode.md) - Check if a video can be decoded by the browser using Mediabunny
-- [rules/charts.md](rules/charts.md) - Chart and data visualization patterns for Remotion
-- [rules/compositions.md](rules/compositions.md) - Defining compositions, stills, folders, default props and dynamic metadata
-- [rules/display-captions.md](rules/display-captions.md) - Displaying captions in Remotion with TikTok-style pages and word highlighting
-- [rules/extract-frames.md](rules/extract-frames.md) - Extract frames from videos at specific timestamps using Mediabunny
-- [rules/fonts.md](rules/fonts.md) - Loading Google Fonts and local fonts in Remotion
-- [rules/get-audio-duration.md](rules/get-audio-duration.md) - Getting the duration of an audio file in seconds with Mediabunny
-- [rules/get-video-dimensions.md](rules/get-video-dimensions.md) - Getting the width and height of a video file with Mediabunny
-- [rules/get-video-duration.md](rules/get-video-duration.md) - Getting the duration of a video file in seconds with Mediabunny
-- [rules/gifs.md](rules/gifs.md) - Displaying GIFs synchronized with Remotion's timeline
-- [rules/images.md](rules/images.md) - Embedding images in Remotion using the Img component
-- [rules/import-srt-captions.md](rules/import-srt-captions.md) - Importing .srt subtitle files into Remotion using @remotion/captions
-- [rules/lottie.md](rules/lottie.md) - Embedding Lottie animations in Remotion
-- [rules/measuring-dom-nodes.md](rules/measuring-dom-nodes.md) - Measuring DOM element dimensions in Remotion
-- [rules/measuring-text.md](rules/measuring-text.md) - Measuring text dimensions, fitting text to containers, and checking overflow
-- [rules/sequencing.md](rules/sequencing.md) - Sequencing patterns for Remotion - delay, trim, limit duration of items
-- [rules/tailwind.md](rules/tailwind.md) - Using TailwindCSS in Remotion
-- [rules/text-animations.md](rules/text-animations.md) - Typography and text animation patterns for Remotion
-- [rules/timing.md](rules/timing.md) - Interpolation curves in Remotion - linear, easing, spring animations
-- [rules/transcribe-captions.md](rules/transcribe-captions.md) - Transcribing audio to generate captions in Remotion
-- [rules/transitions.md](rules/transitions.md) - Scene transition patterns for Remotion
-- [rules/trimming.md](rules/trimming.md) - Trimming patterns for Remotion - cut the beginning or end of animations
-- [rules/videos.md](rules/videos.md) - Embedding videos in Remotion - trimming, volume, speed, looping, pitch
+- **[rules/viron-core/theme.md](Theme & Design Tokens)** - **THE LAW.** Colors, Typography, Spacing. No magic numbers.
+- **[rules/viron-core/physics.md](Physics & 3D Laws)** - R3F usage, PBR materials, `RoundedBox` geometry mandate.
+- **[rules/viron-core/pipeline.md](Rendering Pipeline)** - Codec specs, Concurrency rules, folder structure.
+- **[rules/viron-core/workflow.md](Workflow Standards)** - Git conventions, Linting, Testing.
+- **[rules/viron-core/troubleshooting.md](Troubleshooting)** - Known issues and fixes.
+- **[rules/viron-core/vision.md](Project Vision)** - The high-level concept.
+
+---
+
+## 🧩 FEATURE MODULES (ON-DEMAND)
+**Context:** Specialized capabilities. Read only if the user request involves these specific domains.
+
+- **[rules/modules/camera.md](Cinematography)** - Camera moves, OrbitControls, Focus tracking.
+- **[rules/modules/website.md](Website Simulation)** - Headless Chrome, Browser Frames, Dashboards.
+- **[rules/modules/audio.md](Audio Reactive)** - FFT Analysis, Sync, beat-matching.
+
+---
+
+## 📘 GENERIC REMOTION SKILLS (FALLBACK)
+**Context:** General "How-To" for Remotion. Use these for syntax reference *unless* Viron Core says otherwise.
+
+- **Assets**: [rules/generic/assets.md](Importing images/video) | [rules/generic/images.md](Img component)
+- **3D Basics**: [rules/generic/3d.md](Generic Three.js setup) *(Note: Check `viron-core/physics.md` first)*
+- **Audio Basics**: [rules/generic/audio.md](Basic Audio playback)
+- **Animation**: [rules/generic/animations.md](Interpolate/Spring basics)
+- **Metadata**: [rules/generic/calculate-metadata.md](Dynamic sizing)
+- **Text**: [rules/generic/measuring-text.md](Text layout)
+- **Transitions**: [rules/generic/transitions.md](Scene transitions)
+
+---
+
+## 🛠️ QUICK ACTION INDEX
+- **Adding Assets?** -> Read `rules/generic/assets.md` (Force `staticFile`)
+- **New Component?** -> Check `rules/viron-core/theme.md` (Colors)
+- **Rendering?** -> Check `rules/viron-core/pipeline.md` (Config)
+- **Glitchy Lines?** -> Check `rules/viron-core/physics.md` (RoundedBox fix)
