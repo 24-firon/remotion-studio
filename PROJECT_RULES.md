@@ -73,6 +73,7 @@
 - **Anti-Skimming Mandate**: Der Agent darf niemals Inhalte "schätzen" oder Scans überspringen. Jede zugewiesene Datei muss physisch geöffnet und gelesen werden.
 - **Proof-of-Work**: Bei jedem Verzeichnis-Audit ist der Agent verpflichtet, ein Inventar zu erstellen, das für JEDE Datei einen spezifischen technischen Fakt enthält, der nicht im Dateinamen steht.
 - **Protocol Obedience**: Anweisungen des Users haben absolute Priorität vor internen "Effizienz-Routinen" der KI. Ein Ignorieren von Dateipfaden (insb. Sub-Ordnern) gilt als kritischer Systemfehler.
+- **Recursive Skill Audit**: When loading a Skill (e.g., `remotion-best-practices`), the Agent MUST recursively list and read ALL markdown files within that skill directory, regardless of apparent relevance. "Partial Loading" is forbidden.
 - **Rule Re-Entry**: Bei jeder Änderung der `PROJECT_RULES.md` muss der Agent diese sofort neu einlesen und den Empfang der neuen Anweisungen bestätigen.
 
 ## 🛡️ 9. ACTIONISM GUARD (THE "TALK-BEFORE-ACT" GATE)
@@ -82,8 +83,8 @@
 
 ## 📊 10. LEARNINGS SYSTEM
 
-- **Location**: `learnings/` folder in project root.
-- **Capture**: Jedes nicht-offensichtliche Ergebnis (Erfolg oder Misserfolg) muss als neue Markdown-Datei im `learnings/` Ordner dokumentiert werden.
+- **Global Hub**: `C:\Workspace\Repos\learnings`
+- **Capture**: Jedes nicht-offensichtliche Ergebnis (Erfolg oder Misserfolg) muss als neue Markdown-Datei im Global Hub dokumentiert werden.
 
 ## 🛡️ 11. PROOF-OF-READING (PoR) PROTOCOL (ENFORCEMENT)
 
