@@ -84,4 +84,22 @@
 
 - **Location**: `learnings/` folder in project root.
 - **Capture**: Jedes nicht-offensichtliche Ergebnis (Erfolg oder Misserfolg) muss als neue Markdown-Datei im `learnings/` Ordner dokumentiert werden.
-- **Atomicity**: One learning per file.
+
+## 🛡️ 11. PROOF-OF-READING (PoR) PROTOCOL (ENFORCEMENT)
+
+### 11.1 The "Big Five" Critical Stack
+
+Every agent entering the project MUST deeply read these files before any implementation:
+
+1. `PROJECT_RULES.md` (Governance & Security)
+2. `SKILL.md` (Technical Entry Point)
+3. `rules/viron-core/workflow.md` (Git & Commit Standards)
+4. `rules/viron-core/theme.md` (Design & Branding)
+5. `HANDOVER_[Topic].md` (Current Mission)
+
+### 11.2 Enforcement Mechanism
+
+- **Inventory Requirement**: Before proposing an `implementation_plan.md`, the agent MUST post a **Governance Inventory** in the chat.
+- **Inventory Content**: For EACH of the "Big Five" files, provide one specific technical fact that is not obvious from the filename (e.g., "Git commit type for documentation is 'docs'").
+- **Verification**: The Orchestrator MUST reject any plan that does not include a valid PoR Inventory.
+- **No Skimming**: Skipping this step is a critical protocol failure.
