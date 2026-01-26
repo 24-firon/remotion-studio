@@ -7,6 +7,9 @@ import { Environment } from '@react-three/drei';
 import { SceneV24 } from './my-lab/SceneV24';
 import { SceneV24a_Clean, SceneV24b_SubtleColor, SceneV24c_PureMirror } from './my-lab/ScenesV24_Variants';
 
+// --- PURE LIGHTFORMER STUDIO (V25) ---
+import { SceneV25 } from './my-lab/SceneV25';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -51,6 +54,9 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* ✨ V25: PURE LIGHTFORMER STUDIO (No HDRI, No Objects) */}
+            <Composition id="AAA-VAR-V25-PURE-STUDIO" component={SceneV25} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🏆 V24: THE MASTER RECIPE (All Learnings Combined) */}
             <Composition id="AAA-VAR-V24-MASTER" component={SceneV24} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V24a-CLEAN" component={SceneV24a_Clean} durationInFrames={300} fps={60} width={1920} height={1080} />
