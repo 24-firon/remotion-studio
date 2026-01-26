@@ -52,6 +52,9 @@ import { SceneV36a_Tilted, SceneV36a_Tilted_Debug, SceneV36b_Extreme, SceneV36b_
 // --- OVAL WALLS (V37) ---
 import { SceneV37_Ovals, SceneV37_Ovals_Debug } from './my-lab/ScenesV37_OvalWalls';
 
+// --- MARBLED GRADIENT (V38) ---
+import { SceneV38_Marbled, SceneV38_Marbled_Debug } from './my-lab/ScenesV38_Marbled';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -96,6 +99,10 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🐄 V38: THE MARBLED MASTER (Gradient Texture, Complex Reflections) */}
+            <Composition id="AAA-VAR-V38-MARBLED" component={SceneV38_Marbled} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V38-MARBLED-DEBUG" component={SceneV38_Marbled_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🥚 V37: ORGANIC OVALS (No Straight Lines) */}
             <Composition id="AAA-VAR-V37-OVALS" component={SceneV37_Ovals} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V37-OVALS-DEBUG" component={SceneV37_Ovals_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
