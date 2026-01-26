@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE RESEARCHED MASTER (V22) ---
+import { SceneV22 } from './my-lab/SceneV22';
+
 // --- THE SILVER SPECTRUM (BRIGHTNESS VARIANTS) ---
 import { SceneV17, SceneV18, SceneV19, SceneV20, SceneV21 } from './my-lab/VironVariants_SilverSpectrum';
 
@@ -45,6 +48,9 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🏆 AAA-VAR-V22-LIQUID-SILVER (Research Backed) */}
+            <Composition id="AAA-VAR-V22-LIQUID-SILVER" component={SceneV22} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* ⚪ V17: WHITE ROOM (No Black Anywhere) */}
             <Composition id="AAA-VAR-V17-WHITE-ROOM" component={SceneV17} durationInFrames={300} fps={60} width={1920} height={1080} />
 
