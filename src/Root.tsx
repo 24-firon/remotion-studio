@@ -17,6 +17,9 @@ import { SceneV26_Debug } from './my-lab/SceneV26_Debug';
 // --- HYBRID MASTER (V27) ---
 import { SceneV27 } from './my-lab/SceneV27';
 
+// --- V7 RESTORED (V28) ---
+import { SceneV28 } from './my-lab/SceneV28';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -61,6 +64,9 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 💎 V28: V7 RESTORED (The Best One, but Frameless + Clean) */}
+            <Composition id="AAA-VAR-V28-V7-RESTORED" component={SceneV28} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 💎 V27: HYBRID MASTER (Old Look + New Geometry) */}
             <Composition id="AAA-VAR-V27-HYBRID-MASTER" component={SceneV27} durationInFrames={300} fps={60} width={1920} height={1080} />
 
