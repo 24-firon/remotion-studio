@@ -3,7 +3,10 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
-// --- THE FINAL FIX ---
+// --- THE LIQUID PILL FIX ---
+import { SceneV10 } from './my-lab/SceneV10';
+
+// --- THE ZERO FRAME EXPERIMENT ---
 import { SceneV9 } from './my-lab/SceneV9';
 
 // --- THE PREVIOUS CONTENDERS ---
@@ -37,7 +40,17 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
-            {/* 🟢 THE ZERO FRAME FIX */}
+            {/* 🏆 V10: THE LIQUID PILL (Frameless Roundness) */}
+            <Composition
+				id="AAA-VAR-V10-LIQUID-PILL"
+				component={SceneV10}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
+            {/* 🟢 V9: ZERO FRAME (Square-ish but clean) */}
             <Composition
 				id="AAA-VAR-V9-ZERO-FRAME"
 				component={SceneV9}
