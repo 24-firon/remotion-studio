@@ -61,6 +61,15 @@ import { SceneV39_Chaos, SceneV39_Chaos_Debug } from './my-lab/ScenesV39_Chaos';
 // --- REAL GRADIENTS (V40) ---
 import { SceneV40_RealGradients, SceneV40_RealGradients_Debug } from './my-lab/ScenesV40_RealGradients';
 
+// --- VARIATION MATRIX (V41) ---
+import { 
+    SceneV41a_ArenaOval, SceneV41a_ArenaOval_Debug,
+    SceneV41b_SharpStar, SceneV41b_SharpStar_Debug,
+    SceneV41c_MarbledHex, SceneV41c_MarbledHex_Debug,
+    SceneV41d_TiltedRings, SceneV41d_TiltedRings_Debug,
+    SceneV41e_DeepSpace, SceneV41e_DeepSpace_Debug
+} from './my-lab/ScenesV41_Variations';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -105,6 +114,22 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🏰 V41: THE COMBINATORIAL MATRIX (5 Distinct Versions) */}
+            <Composition id="AAA-VAR-V41a-ARENA-OVAL" component={SceneV41a_ArenaOval} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V41a-ARENA-DEBUG" component={SceneV41a_ArenaOval_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V41b-SHARP-STAR" component={SceneV41b_SharpStar} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V41b-SHARP-DEBUG" component={SceneV41b_SharpStar_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V41c-MARBLED-HEX" component={SceneV41c_MarbledHex} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V41c-MARBLED-DEBUG" component={SceneV41c_MarbledHex_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V41d-TILTED-RINGS" component={SceneV41d_TiltedRings} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V41d-TILTED-DEBUG" component={SceneV41d_TiltedRings_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V41e-DEEP-SPACE" component={SceneV41e_DeepSpace} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V41e-DEEP-DEBUG" component={SceneV41e_DeepSpace_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 💎 V40: REAL GRADIENTS (Shader-Based, No Stacked Planes, Clean Slate) */}
             <Composition id="AAA-VAR-V40-REAL-GRADIENTS" component={SceneV40_RealGradients} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V40-REAL-GRADIENTS-DEBUG" component={SceneV40_RealGradients_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
