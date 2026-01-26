@@ -38,6 +38,14 @@ import { SceneV33, SceneV33_Debug } from './my-lab/SceneV33';
 // --- GEOMETRIC LIGHT SHAPES (V34) ---
 import { SceneV34a_Oval, SceneV34b_Triangle, SceneV34c_Hexagon, SceneV34d_Star } from './my-lab/ScenesV34_LightShapes';
 
+// --- ROOM SHAPES with DEBUG (V35) ---
+import { 
+    SceneV35a_Hexagon, SceneV35a_Hexagon_Debug,
+    SceneV35b_Triangle, SceneV35b_Triangle_Debug,
+    SceneV35c_Square, SceneV35c_Square_Debug,
+    SceneV35d_Star, SceneV35d_Star_Debug 
+} from './my-lab/ScenesV35_RoomShapes';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -82,6 +90,19 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🛑 V35: ROOM SHAPES (Change the REFLECTION GEOMETRY) */}
+            <Composition id="AAA-VAR-V35a-HEXAGON" component={SceneV35a_Hexagon} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V35a-HEXAGON-DEBUG" component={SceneV35a_Hexagon_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V35b-TRIANGLE" component={SceneV35b_Triangle} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V35b-TRIANGLE-DEBUG" component={SceneV35b_Triangle_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V35c-SQUARE" component={SceneV35c_Square} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V35c-SQUARE-DEBUG" component={SceneV35c_Square_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V35d-STAR" component={SceneV35d_Star} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V35d-STAR-DEBUG" component={SceneV35d_Star_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🔶 V34: GEOMETRIC SHAPES (Oval, Triangle, Hexagon, Star) */}
             <Composition id="AAA-VAR-V34a-OVAL" component={SceneV34a_Oval} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V34b-TRIANGLE" component={SceneV34b_Triangle} durationInFrames={300} fps={60} width={1920} height={1080} />
