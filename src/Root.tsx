@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE MASTER RECIPE (V24) ---
+import { SceneV24 } from './my-lab/SceneV24';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -47,6 +50,9 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🏆 V24: THE MASTER RECIPE (All Learnings Combined) */}
+            <Composition id="AAA-VAR-V24-MASTER" component={SceneV24} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🏠 V23: REAL HDRI PRESETS (The Fix) */}
             <Composition id="AAA-VAR-V23-APARTMENT" component={SceneV23_Apartment} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V23b-STUDIO" component={SceneV23b_Studio} durationInFrames={300} fps={60} width={1920} height={1080} />
