@@ -79,6 +79,16 @@ import {
     SceneV42e_BrightTech, SceneV42e_BrightTech_Debug
 } from './my-lab/ScenesV42_GoldenMean';
 
+// --- THE V43 ARMADA (Strict Rules) ---
+import {
+    SceneV43_01, SceneV43_01_Debug,
+    SceneV43_02, SceneV43_02_Debug,
+    SceneV43_03, SceneV43_03_Debug,
+    SceneV43_05, SceneV43_05_Debug,
+    SceneV43_09, SceneV43_09_Debug,
+    SceneV43_11, SceneV43_11_Debug
+} from './my-lab/ScenesV43_Armada';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -123,6 +133,25 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🛸 V43: THE SILVER ARMADA (High Poly, Strict Rules, Strip Gradients) */}
+            <Composition id="AAA-VAR-V43-01-STRIPES-H" component={SceneV43_01} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V43-01-DEBUG" component={SceneV43_01_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V43-02-STRIPES-V" component={SceneV43_02} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V43-02-DEBUG" component={SceneV43_02_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V43-03-SPIRAL" component={SceneV43_03} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V43-03-DEBUG" component={SceneV43_03_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V43-05-TURBINE" component={SceneV43_05} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V43-05-DEBUG" component={SceneV43_05_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V43-09-BRIGHT" component={SceneV43_09} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V43-09-DEBUG" component={SceneV43_09_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+             <Composition id="AAA-VAR-V43-11-NOISE" component={SceneV43_11} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V43-11-DEBUG" component={SceneV43_11_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🏆 V42: GOLDEN MEAN (80% Grey, Moving, Compliance) */}
             <Composition id="AAA-VAR-V42a-LIQUID-GREY" component={SceneV42a_LiquidGrey} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V42a-LIQUID-DEBUG" component={SceneV42a_LiquidGrey_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
