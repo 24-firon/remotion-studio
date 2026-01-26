@@ -29,6 +29,9 @@ import { SceneV30a_Rebuilt, SceneV30b_HighKey } from './my-lab/ScenesV30_Synthet
 // --- COLOR TUNED STUDIO (V31) ---
 import { SceneV31a_Warm, SceneV31b_Cool } from './my-lab/ScenesV31_ColorTuned';
 
+// --- GREY GRADIENT MASTER (V32) ---
+import { SceneV32 } from './my-lab/SceneV32';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -73,6 +76,9 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* ☁️ V32: GREY GRADIENT (The "80% Grey" Request) */}
+            <Composition id="AAA-VAR-V32-GREY-GRADIENT" component={SceneV32} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🌈 V31: COLOR TUNED (Warm/Cool Synthetic, No B&W) */}
             <Composition id="AAA-VAR-V31a-WARM-LUXURY" component={SceneV31a_Warm} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V31b-COOL-TECH" component={SceneV31b_Cool} durationInFrames={300} fps={60} width={1920} height={1080} />
