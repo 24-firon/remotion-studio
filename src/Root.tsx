@@ -89,6 +89,16 @@ import {
     SceneV43_11, SceneV43_11_Debug
 } from './my-lab/ScenesV43_Armada';
 
+// --- V44: REFINED ARMADA (No Gaps) ---
+import {
+    SceneV44_01, SceneV44_01_Debug,
+    SceneV44_02, SceneV44_02_Debug,
+    SceneV44_03, SceneV44_03_Debug,
+    SceneV44_05, SceneV44_05_Debug,
+    SceneV44_09, SceneV44_09_Debug,
+    SceneV44_11, SceneV44_11_Debug
+} from './my-lab/ScenesV44_RefinedArmada';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -133,6 +143,25 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🛑 V44: THE REFINED ARMADA (Gaps Closed, Brighter, Full 360) */}
+            <Composition id="AAA-VAR-V44-01-STRIPES-H" component={SceneV44_01} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V44-01-DEBUG" component={SceneV44_01_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V44-02-STRIPES-V" component={SceneV44_02} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V44-02-DEBUG" component={SceneV44_02_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V44-03-SPIRAL" component={SceneV44_03} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V44-03-DEBUG" component={SceneV44_03_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V44-05-TURBINE" component={SceneV44_05} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V44-05-DEBUG" component={SceneV44_05_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V44-09-BRIGHT" component={SceneV44_09} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V44-09-DEBUG" component={SceneV44_09_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+             <Composition id="AAA-VAR-V44-11-NOISE" component={SceneV44_11} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V44-11-DEBUG" component={SceneV44_11_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🛸 V43: THE SILVER ARMADA (High Poly, Strict Rules, Strip Gradients) */}
             <Composition id="AAA-VAR-V43-01-STRIPES-H" component={SceneV43_01} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V43-01-DEBUG" component={SceneV43_01_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
