@@ -20,6 +20,9 @@ import { SceneV27 } from './my-lab/SceneV27';
 // --- V7 RESTORED (V28) ---
 import { SceneV28 } from './my-lab/SceneV28';
 
+// --- THEMATIC SHOWCASE (V29) ---
+import { SceneV29a_Sunset, SceneV29b_Night, SceneV29c_Warehouse, SceneV29d_Forest } from './my-lab/ScenesV29_Thematic';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -64,6 +67,12 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🌇 V29: THEMATIC ROOMS (Sunset, Night, Warehouse, Forest) */}
+            <Composition id="AAA-VAR-V29a-SUNSET" component={SceneV29a_Sunset} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V29b-NIGHT" component={SceneV29b_Night} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V29c-WAREHOUSE" component={SceneV29c_Warehouse} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V29d-FOREST" component={SceneV29d_Forest} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 💎 V28: V7 RESTORED (The Best One, but Frameless + Clean) */}
             <Composition id="AAA-VAR-V28-V7-RESTORED" component={SceneV28} durationInFrames={300} fps={60} width={1920} height={1080} />
 
