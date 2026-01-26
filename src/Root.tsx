@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE HYPER-LIQUID FIX ---
+import { SceneV14 } from './my-lab/SceneV14';
+
 // --- THE CAPSULE FIX ---
 import { SceneV13 } from './my-lab/SceneV13';
 
@@ -51,6 +54,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 💎 AAA-VAR-V14-HYPER-LIQUID (Best of Both Worlds) */}
+            <Composition
+				id="AAA-VAR-V14-HYPER-LIQUID"
+				component={SceneV14}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
             {/* 🚀 AAA-VAR-V13-CAPSULE-FIX (No Bevels, No Spinning) */}
             <Composition
 				id="AAA-VAR-V13-CAPSULE-FIX"
