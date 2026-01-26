@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE LIGHT TENT FIX ---
+import { SceneV12 } from './my-lab/SceneV12';
+
 // --- THE HORIZON FIX ---
 import { SceneV11 } from './my-lab/SceneV11';
 
@@ -43,6 +46,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 💡 AAA-VAR-V12-LIGHT-TENT (Custom Environment) */}
+            <Composition
+				id="AAA-VAR-V12-LIGHT-TENT"
+				component={SceneV12}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
             {/* 💎 AAA-VAR-V11-HORIZON-FIX (The Seamless Pill) */}
             <Composition
 				id="AAA-VAR-V11-HORIZON-FIX"
