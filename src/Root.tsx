@@ -3,7 +3,8 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
-// --- THE VIRON MASTER ---
+// --- THE VIRON LEGACY ---
+import { VironMaster_V4_Scene } from './my-lab/VironMaster_V4_Scene';
 import { VironMaster_Scene } from './my-lab/VironMaster_Scene';
 import { ViroMaster_V3_Scene } from './my-lab/ViroMaster_V3_Scene';
 import { ViroMaster_V2_Button } from './my-lab/ViroMaster_V2_Button';
@@ -18,7 +19,7 @@ import './style.css';
 
 const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     <AbsoluteFill style={{ backgroundColor: '#020617' }}>
-        <Suspense fallback={<AbsoluteFill style={{ color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading Viron...</AbsoluteFill>}>
+        <Suspense fallback={<AbsoluteFill style={{ color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading Viron V4...</AbsoluteFill>}>
             <ThreeCanvas width={1920} height={1080} camera={{ position: [0, 0, 10], fov: 35 }}>
                 <Environment preset="studio" />
                 {children}
@@ -30,7 +31,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
-            {/* 💎 VIRON MASTER - REBUILT FROM SCRATCH */}
+            {/* 💎 AAA-VIRON-V4 (BIG FACE EDITION) */}
+            <Composition
+				id="AAA-VIRON-V4-BIG-FACE"
+				component={VironMaster_V4_Scene}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
             <Composition
 				id="AAA-VIRON-MASTER-REDESIGN"
 				component={VironMaster_Scene}
@@ -40,7 +50,7 @@ export const RemotionRoot: React.FC = () => {
 				height={1080}
 			/>
 
-            {/* PREVIOUS ITERATIONS (Preserved) */}
+            {/* PREVIOUS ITERATIONS */}
             <Composition
 				id="Failed-V3-ViroMaster"
 				component={ViroMaster_V3_Scene}
