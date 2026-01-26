@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE CAPSULE FIX ---
+import { SceneV13 } from './my-lab/SceneV13';
+
 // --- THE LIGHT TENT FIX ---
 import { SceneV12 } from './my-lab/SceneV12';
 
@@ -15,8 +18,10 @@ import { SceneV10 } from './my-lab/SceneV10';
 // --- THE ZERO FRAME EXPERIMENT ---
 import { SceneV9 } from './my-lab/SceneV9';
 
-// --- THE PREVIOUS CONTENDERS ---
+// --- THE NEW CONTENDERS ---
 import { SceneV6, SceneV7, SceneV8 } from './my-lab/VironVariants_V6_V7_V8';
+
+// --- THE LEGACY OF VIRON (Historical Evolution) ---
 import { VironMaster_V5_Scene } from './my-lab/VironMaster_V5_Scene';
 import { VironMaster_V4_Scene } from './my-lab/VironMaster_V4_Scene';
 import { VironMaster_Scene } from './my-lab/VironMaster_Scene';
@@ -46,6 +51,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🚀 AAA-VAR-V13-CAPSULE-FIX (No Bevels, No Spinning) */}
+            <Composition
+				id="AAA-VAR-V13-CAPSULE-FIX"
+				component={SceneV13}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
             {/* 💡 AAA-VAR-V12-LIGHT-TENT (Custom Environment) */}
             <Composition
 				id="AAA-VAR-V12-LIGHT-TENT"
