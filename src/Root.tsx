@@ -4,6 +4,7 @@ import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
 // --- THE VIRON LEGACY ---
+import { VironMaster_V5_Scene } from './my-lab/VironMaster_V5_Scene';
 import { VironMaster_V4_Scene } from './my-lab/VironMaster_V4_Scene';
 import { VironMaster_Scene } from './my-lab/VironMaster_Scene';
 import { ViroMaster_V3_Scene } from './my-lab/ViroMaster_V3_Scene';
@@ -19,7 +20,7 @@ import './style.css';
 
 const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     <AbsoluteFill style={{ backgroundColor: '#020617' }}>
-        <Suspense fallback={<AbsoluteFill style={{ color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading Viron V4...</AbsoluteFill>}>
+        <Suspense fallback={<AbsoluteFill style={{ color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading Viron V5...</AbsoluteFill>}>
             <ThreeCanvas width={1920} height={1080} camera={{ position: [0, 0, 10], fov: 35 }}>
                 <Environment preset="studio" />
                 {children}
@@ -31,7 +32,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
-            {/* 💎 AAA-VIRON-V4 (BIG FACE EDITION) */}
+            {/* 💎 AAA-VIRON-V5 (HIGH-RES SATIN) */}
+            <Composition
+				id="AAA-VIRON-V5-SATIN-PILL"
+				component={VironMaster_V5_Scene}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
             <Composition
 				id="AAA-VIRON-V4-BIG-FACE"
 				component={VironMaster_V4_Scene}
