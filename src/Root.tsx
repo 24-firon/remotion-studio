@@ -5,6 +5,7 @@ import { Environment } from '@react-three/drei';
 
 // --- THE MASTER RECIPE (V24) ---
 import { SceneV24 } from './my-lab/SceneV24';
+import { SceneV24a_Clean, SceneV24b_SubtleColor, SceneV24c_PureMirror } from './my-lab/ScenesV24_Variants';
 
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
@@ -52,6 +53,9 @@ export const RemotionRoot: React.FC = () => {
 		<>
             {/* 🏆 V24: THE MASTER RECIPE (All Learnings Combined) */}
             <Composition id="AAA-VAR-V24-MASTER" component={SceneV24} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V24a-CLEAN" component={SceneV24a_Clean} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V24b-SUBTLE-COLOR" component={SceneV24b_SubtleColor} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V24c-PURE-MIRROR" component={SceneV24c_PureMirror} durationInFrames={300} fps={60} width={1920} height={1080} />
 
             {/* 🏠 V23: REAL HDRI PRESETS (The Fix) */}
             <Composition id="AAA-VAR-V23-APARTMENT" component={SceneV23_Apartment} durationInFrames={300} fps={60} width={1920} height={1080} />
