@@ -12,6 +12,7 @@ import { SceneV25 } from './my-lab/SceneV25';
 
 // --- GREY STUDIO (V26) ---
 import { SceneV26 } from './my-lab/SceneV26';
+import { SceneV26_Debug } from './my-lab/SceneV26_Debug';
 
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
@@ -57,6 +58,9 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 👁️ DEBUG: SHOW ME THE STUDIO WALLS */}
+            <Composition id="AAA-VAR-V26-DEBUG-VIEW" component={SceneV26_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🪙 V26: GREY STUDIO (Realistic Silver Tones) */}
             <Composition id="AAA-VAR-V26-GREY-STUDIO" component={SceneV26} durationInFrames={300} fps={60} width={1920} height={1080} />
 
