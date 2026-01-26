@@ -23,6 +23,9 @@ import { SceneV28 } from './my-lab/SceneV28';
 // --- THEMATIC SHOWCASE (V29) ---
 import { SceneV29a_Sunset, SceneV29b_Night, SceneV29c_Warehouse, SceneV29d_Forest } from './my-lab/ScenesV29_Thematic';
 
+// --- SYNTHETIC STUDIO REBUILD (V30) ---
+import { SceneV30a_Rebuilt, SceneV30b_HighKey } from './my-lab/ScenesV30_SyntheticStudio';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -67,6 +70,10 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🛠️ V30: SYNTHETIC STUDIO (Rebuilt Light Setup, No Objects) */}
+            <Composition id="AAA-VAR-V30a-REBUILT-STUDIO" component={SceneV30a_Rebuilt} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V30b-HIGH-KEY" component={SceneV30b_HighKey} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🌇 V29: THEMATIC ROOMS (Sunset, Night, Warehouse, Forest) */}
             <Composition id="AAA-VAR-V29a-SUNSET" component={SceneV29a_Sunset} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V29b-NIGHT" component={SceneV29b_Night} durationInFrames={300} fps={60} width={1920} height={1080} />
