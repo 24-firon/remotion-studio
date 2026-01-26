@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE BRIGHT MASTER ---
+import { SceneV15 } from './my-lab/SceneV15';
+
 // --- THE HYPER-LIQUID FIX ---
 import { SceneV14 } from './my-lab/SceneV14';
 
@@ -54,6 +57,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* ☀️ AAA-VAR-V15-BRIGHT-MASTER (Final Polish) */}
+            <Composition
+				id="AAA-VAR-V15-BRIGHT-MASTER"
+				component={SceneV15}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+
             {/* 💎 AAA-VAR-V14-HYPER-LIQUID (Best of Both Worlds) */}
             <Composition
 				id="AAA-VAR-V14-HYPER-LIQUID"
