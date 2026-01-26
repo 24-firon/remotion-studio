@@ -55,6 +55,9 @@ import { SceneV37_Ovals, SceneV37_Ovals_Debug } from './my-lab/ScenesV37_OvalWal
 // --- MARBLED GRADIENT (V38) ---
 import { SceneV38_Marbled, SceneV38_Marbled_Debug } from './my-lab/ScenesV38_Marbled';
 
+// --- CHAOS THEORY (V39) ---
+import { SceneV39_Chaos, SceneV39_Chaos_Debug } from './my-lab/ScenesV39_Chaos';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -99,6 +102,10 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🌀 V39: CHAOS THEORY (Mix of Star, Oval, Triangle + Image Ready) */}
+            <Composition id="AAA-VAR-V39-CHAOS" component={SceneV39_Chaos} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V39-CHAOS-DEBUG" component={SceneV39_Chaos_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🐄 V38: THE MARBLED MASTER (Gradient Texture, Complex Reflections) */}
             <Composition id="AAA-VAR-V38-MARBLED" component={SceneV38_Marbled} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V38-MARBLED-DEBUG" component={SceneV38_Marbled_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
