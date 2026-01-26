@@ -3,6 +3,9 @@ import React, { Suspense } from 'react';
 import { ThreeCanvas } from '@remotion/three';
 import { Environment } from '@react-three/drei';
 
+// --- THE HORIZON FIX ---
+import { SceneV11 } from './my-lab/SceneV11';
+
 // --- THE LIQUID PILL FIX ---
 import { SceneV10 } from './my-lab/SceneV10';
 
@@ -40,6 +43,16 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 💎 AAA-VAR-V11-HORIZON-FIX (The Seamless Pill) */}
+            <Composition
+				id="AAA-VAR-V11-HORIZON-FIX"
+				component={SceneV11}
+				durationInFrames={300}
+				fps={60}
+				width={1920}
+				height={1080}
+			/>
+            
             {/* 🏆 V10: THE LIQUID PILL (Frameless Roundness) */}
             <Composition
 				id="AAA-VAR-V10-LIQUID-PILL"
