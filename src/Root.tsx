@@ -49,6 +49,9 @@ import {
 // --- ASYMMETRIC / TILTED (V36) ---
 import { SceneV36a_Tilted, SceneV36a_Tilted_Debug, SceneV36b_Extreme, SceneV36b_Extreme_Debug } from './my-lab/ScenesV36_Asymmetric';
 
+// --- OVAL WALLS (V37) ---
+import { SceneV37_Ovals, SceneV37_Ovals_Debug } from './my-lab/ScenesV37_OvalWalls';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -93,6 +96,10 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🥚 V37: ORGANIC OVALS (No Straight Lines) */}
+            <Composition id="AAA-VAR-V37-OVALS" component={SceneV37_Ovals} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V37-OVALS-DEBUG" component={SceneV37_Ovals_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 📐 V36: ASYMMETRIC / TILTED (Diagonal Reflections) */}
             <Composition id="AAA-VAR-V36a-TILTED" component={SceneV36a_Tilted} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V36a-TILTED-DEBUG" component={SceneV36a_Tilted_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
