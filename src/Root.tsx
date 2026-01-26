@@ -26,6 +26,9 @@ import { SceneV29a_Sunset, SceneV29b_Night, SceneV29c_Warehouse, SceneV29d_Fores
 // --- SYNTHETIC STUDIO REBUILD (V30) ---
 import { SceneV30a_Rebuilt, SceneV30b_HighKey } from './my-lab/ScenesV30_SyntheticStudio';
 
+// --- COLOR TUNED STUDIO (V31) ---
+import { SceneV31a_Warm, SceneV31b_Cool } from './my-lab/ScenesV31_ColorTuned';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -70,6 +73,10 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🌈 V31: COLOR TUNED (Warm/Cool Synthetic, No B&W) */}
+            <Composition id="AAA-VAR-V31a-WARM-LUXURY" component={SceneV31a_Warm} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V31b-COOL-TECH" component={SceneV31b_Cool} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🛠️ V30: SYNTHETIC STUDIO (Rebuilt Light Setup, No Objects) */}
             <Composition id="AAA-VAR-V30a-REBUILT-STUDIO" component={SceneV30a_Rebuilt} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V30b-HIGH-KEY" component={SceneV30b_HighKey} durationInFrames={300} fps={60} width={1920} height={1080} />
