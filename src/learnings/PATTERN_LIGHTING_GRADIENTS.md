@@ -1,40 +1,29 @@
-# Learning: True Gradients in Three.js Environments
+# Learning: Lighting & Materials
 
-## The Problem
+## The "80% Grey" Rule (The Golden Mean)
 
-Standard `@react-three/drei` components like `<Lightformer>` are restricted to single `color` and `intensity` inputs.
-When a user asks for "Gradients" or "Farbverläufe", the common workaround is to stack multiple Lightformers of decreasing size (concentric stacking).
-**User Feedback:** "Das sind nur Flächen, kein echter Verlauf." (User sees the banding/steps).
+**Constraint**: Avoid stark Black (`#000000`) and blown-out White (`#FFFFFF`).
+**Goal**: A sophisticated, "marmoriert" (marbled) look with deep 3D complexity.
 
-## The Solution: Custom Shader Meshes
+### Rules:
 
-Instead of using `<Lightformer>`, use a standard `<mesh>` inside the `<Environment>` component.
-The `<Environment>` component simply renders whatever children it contains into a CubeCamera.
+1.  **Base Tone**: The scene must feel like it is **80% Mid-Grey**.
+2.  **Gradient Limits**:
+    - Darkest Point: `#202020` (Dark Grey) - NEVER Black.
+    - Mid Point: `#808080` (True Grey).
+    - Highlight: `#E0E0E0` (Silver).
+    - _Exception_: Tiny specular highlights can be White.
+3.  **Coverage**: The environment must wrap the object. Gaps (black voids) are failures.
 
-### Technique
+## Movement (Alive Scenes)
 
-1.  **Geometry**: Use `PlaneGeometry` or `CircleGeometry` (or custom shapes).
-2.  **Material**: Use `shaderMaterial` to mathematically generate gradients.
+**Constraint**: Static scenes look like dead photos.
+**Requirement**:
 
-```javascript
-// Example 3-Stop Gradient Shader
-const GradientMaterial = shaderMaterial(
-  { colorStart, colorMid, colorEnd },
-  // vertex shader...
-  // fragment shader using mix() based on UVs...
-);
-```
+- **Environment Rotation**: The room must slowly spin (`interpolate(frame, [0, 300], [0, Math.PI/2])`).
+- **Element Float**: Individual walls/lights should gently float or drift.
 
-### Benefits
+## True Gradients
 
-1.  **Infinite Smoothness**: GLSL interpolates colors per pixel. No banding.
-2.  **Performance**: One mesh vs. 10+ stacked Lightformers.
-3.  **Flexibility**: Can add Noise, Distortion, or Image Textures easily.
-
-## Image Projection
-
-If the user wants to project an image:
-
-1.  Load texture (`useLoader(TextureLoader, url)`).
-2.  Apply to `MeshBasicMaterial` on a plane inside `<Environment>`.
-3.  Set `toneMapped={false}` to allow HDRI-like intensity control.
+**Technique**: Use GLSL ShaderMaterials on Meshes inside Environment, NOT stacked Lightformers.
+**Why**: Creates mathematically perfect smooth transitions without banding.

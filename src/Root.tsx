@@ -70,6 +70,15 @@ import {
     SceneV41e_DeepSpace, SceneV41e_DeepSpace_Debug
 } from './my-lab/ScenesV41_Variations';
 
+// --- GOLDEN MEAN (V42) ---
+import { 
+    SceneV42a_LiquidGrey, SceneV42a_LiquidGrey_Debug,
+    SceneV42b_KineticStars, SceneV42b_KineticStars_Debug,
+    SceneV42c_SoftArena, SceneV42c_SoftArena_Debug,
+    SceneV42d_DriftingRings, SceneV42d_DriftingRings_Debug,
+    SceneV42e_BrightTech, SceneV42e_BrightTech_Debug
+} from './my-lab/ScenesV42_GoldenMean';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -114,6 +123,22 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 🏆 V42: GOLDEN MEAN (80% Grey, Moving, Compliance) */}
+            <Composition id="AAA-VAR-V42a-LIQUID-GREY" component={SceneV42a_LiquidGrey} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V42a-LIQUID-DEBUG" component={SceneV42a_LiquidGrey_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V42b-KINETIC-STARS" component={SceneV42b_KineticStars} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V42b-KINETIC-DEBUG" component={SceneV42b_KineticStars_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V42c-SOFT-ARENA" component={SceneV42c_SoftArena} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V42c-SOFT-DEBUG" component={SceneV42c_SoftArena_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V42d-DRIFTING-RINGS" component={SceneV42d_DriftingRings} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V42d-DRIFTING-DEBUG" component={SceneV42d_DriftingRings_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            <Composition id="AAA-VAR-V42e-BRIGHT-TECH" component={SceneV42e_BrightTech} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V42e-BRIGHT-DEBUG" component={SceneV42e_BrightTech_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🏰 V41: THE COMBINATORIAL MATRIX (5 Distinct Versions) */}
             <Composition id="AAA-VAR-V41a-ARENA-OVAL" component={SceneV41a_ArenaOval} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V41a-ARENA-DEBUG" component={SceneV41a_ArenaOval_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
