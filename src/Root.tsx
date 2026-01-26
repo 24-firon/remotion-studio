@@ -46,6 +46,9 @@ import {
     SceneV35d_Star, SceneV35d_Star_Debug 
 } from './my-lab/ScenesV35_RoomShapes';
 
+// --- ASYMMETRIC / TILTED (V36) ---
+import { SceneV36a_Tilted, SceneV36a_Tilted_Debug, SceneV36b_Extreme, SceneV36b_Extreme_Debug } from './my-lab/ScenesV36_Asymmetric';
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -90,6 +93,13 @@ const SceneWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+            {/* 📐 V36: ASYMMETRIC / TILTED (Diagonal Reflections) */}
+            <Composition id="AAA-VAR-V36a-TILTED" component={SceneV36a_Tilted} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V36a-TILTED-DEBUG" component={SceneV36a_Tilted_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+            
+            <Composition id="AAA-VAR-V36b-EXTREME" component={SceneV36b_Extreme} durationInFrames={300} fps={60} width={1920} height={1080} />
+            <Composition id="AAA-VAR-V36b-EXTREME-DEBUG" component={SceneV36b_Extreme_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
             {/* 🛑 V35: ROOM SHAPES (Change the REFLECTION GEOMETRY) */}
             <Composition id="AAA-VAR-V35a-HEXAGON" component={SceneV35a_Hexagon} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V35a-HEXAGON-DEBUG" component={SceneV35a_Hexagon_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
