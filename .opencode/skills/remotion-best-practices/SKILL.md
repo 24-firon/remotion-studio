@@ -15,7 +15,8 @@ metadata:
 ---
 
 ## 🛑 VIRON CORE (MANDATORY AUTHORITY)
-**Context:** These files define the *Immutable Physics*, *Design Laws*, and *Infrastructure* of this specific project.
+
+**Context:** These files define the _Immutable Physics_, _Design Laws_, and _Infrastructure_ of this specific project.
 **Rule:** If you are coding, designing, or rendering, you **MUST** consult the relevant Core file first.
 
 - **[rules/viron-core/theme.md](Theme & Design Tokens)** - **THE LAW.** Colors, Typography, Spacing. No magic numbers.
@@ -28,6 +29,7 @@ metadata:
 ---
 
 ## 🧩 FEATURE MODULES (ON-DEMAND)
+
 **Context:** Specialized capabilities. Read only if the user request involves these specific domains.
 
 - **[rules/modules/camera.md](Cinematography)** - Camera moves, OrbitControls, Focus tracking.
@@ -37,10 +39,11 @@ metadata:
 ---
 
 ## 📘 GENERIC REMOTION SKILLS (FALLBACK)
-**Context:** General "How-To" for Remotion. Use these for syntax reference *unless* Viron Core says otherwise.
+
+**Context:** General "How-To" for Remotion. Use these for syntax reference _unless_ Viron Core says otherwise.
 
 - **Assets**: [rules/generic/assets.md](Importing images/video) | [rules/generic/images.md](Img component)
-- **3D Basics**: [rules/generic/3d.md](Generic Three.js setup) *(Note: Check `viron-core/physics.md` first)*
+- **3D Basics**: [rules/generic/3d.md](Generic Three.js setup) _(Note: Check `viron-core/physics.md` first)_
 - **Audio Basics**: [rules/generic/audio.md](Basic Audio playback)
 - **Animation**: [rules/generic/animations.md](Interpolate/Spring basics)
 - **Metadata**: [rules/generic/calculate-metadata.md](Dynamic sizing)
@@ -50,6 +53,7 @@ metadata:
 ---
 
 ## 🛠️ QUICK ACTION INDEX
+
 - **Adding Assets?** -> Read `rules/generic/assets.md` (Force `staticFile`)
 - **New Component?** -> Check `rules/viron-core/theme.md` (Colors)
 - **Rendering?** -> Check `rules/viron-core/pipeline.md` (Config)

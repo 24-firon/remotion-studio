@@ -99,6 +99,21 @@ import {
     SceneV44_11, SceneV44_11_Debug
 } from './my-lab/ScenesV44_RefinedArmada';
 
+// --- V45: TEMPLATE BUTTON (Online HDRI Presets) ---
+import {
+	V45_Template_BlueStudio,
+	V45_Template_GoldenHour,
+	V45_Template_Moonless,
+	V45_Template_NeonCity,
+	V45_Template_SoftStudio,
+} from "./my-lab/ScenesV45_Templates";
+
+// --- V46: IRIDESCENT ALCHEMY (Distortion + CSM) ---
+import {
+	V46_Alchemy_Moonless,
+	V46_Alchemy_Shanghai,
+} from "./my-lab/ScenesV46_Alchemy";
+
 // --- REAL HDRI PRESETS (V23) ---
 import { SceneV23_Apartment, SceneV23b_Studio, SceneV23c_City, SceneV23d_Lobby } from './my-lab/ScenesV23';
 
@@ -161,6 +176,31 @@ export const RemotionRoot: React.FC = () => {
 
              <Composition id="AAA-VAR-V44-11-NOISE" component={SceneV44_11} durationInFrames={300} fps={60} width={1920} height={1080} />
             <Composition id="AAA-VAR-V44-11-DEBUG" component={SceneV44_11_Debug} durationInFrames={300} fps={60} width={1920} height={1080} />
+
+            {/* 🌍 V45: TEMPLATE BUTTON (Online HDRI Presets) */}
+            <Composition id="AAA-VAR-V45-Template-Blue" component={V45_Template_BlueStudio} durationInFrames={300} fps={60} width={1280} height={720} />
+            <Composition id="AAA-VAR-V45-Template-Soft" component={V45_Template_SoftStudio} durationInFrames={300} fps={60} width={1280} height={720} />
+            <Composition id="AAA-VAR-V45-Template-Neon" component={V45_Template_NeonCity} durationInFrames={300} fps={60} width={1280} height={720} />
+            <Composition id="AAA-VAR-V45-Template-Golden" component={V45_Template_GoldenHour} durationInFrames={300} fps={60} width={1280} height={720} />
+            <Composition id="AAA-VAR-V45-Template-Dark" component={V45_Template_Moonless} durationInFrames={300} fps={60} width={1280} height={720} />
+
+            {/* 🔥 V46: IRIDESCENT ALCHEMY (The Distortion Breakthrough) */}
+            <Composition
+                id="AAA-VAR-V46-Alchemy-Shanghai"
+                component={V46_Alchemy_Shanghai}
+                durationInFrames={300}
+                fps={60}
+                width={1280}
+                height={720}
+            />
+            <Composition
+                id="AAA-VAR-V46-Alchemy-Dark"
+                component={V46_Alchemy_Moonless}
+                durationInFrames={300}
+                fps={60}
+                width={1280}
+                height={720}
+            />
 
             {/* 🛸 V43: THE SILVER ARMADA (High Poly, Strict Rules, Strip Gradients) */}
             <Composition id="AAA-VAR-V43-01-STRIPES-H" component={SceneV43_01} durationInFrames={300} fps={60} width={1920} height={1080} />
