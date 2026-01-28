@@ -1,0 +1,89 @@
+--- ONLY LOCAL ---
+
+RelPath
+-------                    
+rules\generic\3d.md        
+rules\generic\animations.md
+rules\generic\assets.md    
+rules\generic\assets\chart…
+rules\generic\assets\text-…
+rules\generic\assets\text-…
+rules\generic\audio.md     
+rules\generic\calculate-me…
+rules\generic\can-decode.md
+rules\generic\charts.md    
+rules\generic\compositions…
+rules\generic\display-capt…
+rules\generic\extract-fram…
+rules\generic\fonts.md     
+rules\generic\get-audio-du…
+rules\generic\get-video-di…
+rules\generic\get-video-du…
+rules\generic\gifs.md      
+rules\generic\images.md    
+rules\generic\import-srt-c…
+rules\generic\lottie.md    
+rules\generic\measuring-do…
+rules\generic\measuring-te…
+rules\generic\sequencing.md
+rules\generic\tailwind.md  
+rules\generic\text-animati…
+rules\generic\timing.md    
+rules\generic\transcribe-c…
+rules\generic\transitions.…
+rules\generic\trimming.md  
+rules\generic\videos.md    
+rules\modules\audio.md     
+rules\modules\camera.md    
+rules\modules\website.md   
+
+
+--- ONLY GLOBAL ---
+
+RelPath
+-------                    
+rules\3d.md                
+rules\animations.md        
+rules\assets.md            
+rules\assets\charts-bar-ch…
+rules\assets\text-animatio…
+rules\assets\text-animatio…
+rules\audio.md             
+rules\calculate-metadata.md
+rules\can-decode.md        
+rules\charts.md            
+rules\compositions.md      
+rules\display-captions.md  
+rules\extract-frames.md    
+rules\fonts.md             
+rules\get-audio-duration.md
+rules\get-video-dimensions…
+rules\get-video-duration.md
+rules\gifs.md              
+rules\images.md            
+rules\import-srt-captions.…
+rules\lottie.md            
+rules\maps.md              
+rules\measuring-dom-nodes.…
+rules\measuring-text.md    
+rules\parameters.md        
+rules\sequencing.md        
+rules\tailwind.md          
+rules\text-animations.md   
+rules\timing.md            
+rules\transcribe-captions.…
+rules\transitions.md       
+rules\trimming.md          
+rules\videos.md            
+
+
+--- DIFFERENT SIZES ---
+
+Path       : SKILL.md
+LocalSize  : 2837
+GlobalSize : 3637
+Diff       : -800
+LocalTime  : 27.01.2026 19:00:41
+GlobalTime : 27.01.2026 18:38:44
+
+
