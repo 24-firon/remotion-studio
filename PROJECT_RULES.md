@@ -55,6 +55,22 @@ Experimental blueprints, market benchmarks, and future project ideas.
 > [!TIP]
 > Use the [AGENTS.md](file:///c:/Workspace/Repos/remotion-studio/.agent/AGENTS.md) navigation map if you are an AI assistant to quickly synchronize your context.
 
+## 🏛️ 3-Phase Context Boot (MANDATORY)
+
+To maintain peak performance within the 60k token window, every agent must initialize in this order:
+
+1.  **PHASE 1: Identity (Boot-Size: ~10 KB)**
+    Laden: `gemini.md`, `agency.md`, `git-safety.md`, `PROJECT_RULES.md`, `AGENTS.md`.
+    _Zweck: Wer bin ich? Welche Gesetze gelten?_
+
+2.  **PHASE 2: Technology (Core-Size: ~75 KB)**
+    Laden: `viron-core/*.md`.
+    _Zweck: Beherrschung der Viron Video Engine (Physik, PBR, Pipeline)._
+
+3.  **PHASE 3: Target (Knowledge-Size: On-Demand)**
+    Laden: Spezifische Dateien aus `/specs`, `/guides`, `/vault` basierend auf dem Task.
+    _Zweck: Domänenwissen nur bei Bedarf laden._
+
 ---
 
-_Viron Intelligence System | v4.1 (Final Polish)_
+_Viron Intelligence System | v4.2 (Governance Hardening)_
