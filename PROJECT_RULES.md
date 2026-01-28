@@ -47,9 +47,10 @@ Experimental blueprints, market benchmarks, and future project ideas.
 
 ### 2. 🚀 Git & Release Protocol
 
-- **Proactive Commits:** Agents MUST propose/execute a Git commit after every logical phase (e.g., "Reorganization Complete", "Button V46 Refactor Done").
+- **Proactive Sync:** Agents MUST execute a `git commit` AND `git push` after every logical phase or significant feature completion.
 - **Commit Message Standard:** Use conventional commits (e.g., `feat:`, `fix:`, `chore:`, `docs:`).
-- **Release Guard:** No "finish line" without a confirmed commit. Check `git status` before calling `notify_user` at the end of a task.
+- **Security Check:** Ensure no secrets or `.env` files are pushed.
+- **Release Guard:** No task is complete without a confirmed push to the remote repository.
 
 > [!TIP]
 > Use the [AGENTS.md](file:///c:/Workspace/Repos/remotion-studio/.agent/AGENTS.md) navigation map if you are an AI assistant to quickly synchronize your context.
