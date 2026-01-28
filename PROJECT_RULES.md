@@ -47,9 +47,9 @@ Experimental blueprints, market benchmarks, and future project ideas.
 
 ### 2. 🚀 Git & Release Protocol
 
-- **Knowledge-Audit (MANDATORY):** Before any commit, the Agent MUST verify if `PROJECT_RULES.md`, relevant specs, or `HISTORY_LOG.md` need to be updated.
-- **Atomic Release:** Code changes and documentation updates MUST be bundled into a single `git commit`.
-- **Proactive Sync:** Execute `git commit` AND `git push` only AFTER the Knowledge-Audit is complete.
+- **Knowledge-Audit (MANDATORY):** Before any commit, verify if `PROJECT_RULES.md`, specs, or `HISTORY_LOG.md` need updates.
+- **Turn-Separation (PHYSICAL GATE):** Agents are **FORBIDDEN** from sending file edits and `git` commands in the same turn. Edits must be confirmed and on disk before a commit is proposed in a **subsequent** turn. This prevents race conditions in the IDE.
+- **Atomic Release:** Code and docs must be bundled into a single commit.
 - **Release Guard:** No task is complete without a confirmed push and synchronized documentation.
 
 > [!TIP]

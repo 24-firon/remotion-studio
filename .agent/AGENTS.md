@@ -20,7 +20,7 @@ This file provides a directory map for AI Agents to quickly navigate the project
 1. **READ** `PROJECT_RULES.md` first.
 2. **LOAD** required specs from `/specs/` based on task domain.
 3. **KNOWLEDGE AUDIT:** Before committing, check if rules, specs, or logs need updates. Bundle everything into ONE atomic commit.
-4. **GIT PUSH:** Perform `git commit` and `git push` only after the audit.
+4. **SEQUENTIAL AUTOMATION:** To prevent IDE race conditions, never mix file edits and git commands in one turn. Wait for confirmation, then commit immediately.
 5. **TAGGING:** Use `#tags` in documentation to link historical learnings (e.g., #performance, #visual-audit).
 6. **LEAN DOCS:** Update existing specs incrementally instead of over-writing. Use the "Historical Learnings" section.
 7. **NO HALLUCINATION:** Check the "Dependency Matrix" in the relevant Guide or Spec.
