@@ -78,6 +78,12 @@ AI Agents in IDEs suffer from "Race Conditions" when they try to edit files and 
 - **Frequency:** Every 30-50 turns or at major Task Boundaries.
 - **Status:** Concept Phase.
 
+### Semantic Agent Triggers (Research)
+
+- **Goal:** Optimize folder structures (naming/content) to automaticall trigger specific agent behaviors.
+- **Source:** User Research (Step 1447).
+- **Status:** **INCOMING INTEL**. Priority for next Agent Integration.
+
 ---
 
 _Viron Intelligence System | v1.0 | Authored by Antigravity (Jan 2026)_

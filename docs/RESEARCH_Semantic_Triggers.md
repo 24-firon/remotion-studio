@@ -43,13 +43,48 @@ Instead of one giant context file, we use a Router (`.cursorrules` or `AGENTS.md
  prisma   STACK   md         STACK
 ```
 
-## 3. Implementation Plan (For Next Agent)
+## 4. Concrete Implementation Patterns (The "How-To")
 
-1.  **Create the Router:** Ensure `AGENTS.md` explicitly links to these specialized files.
-2.  **Create the Truths:**
-    - If we use Prisma, ensure `schema.prisma` is treated as Law.
-    - Create `TECH_STACK.md` to prevent "npm install random-lib".
-3.  **Enforce the Hierarchy:** Add the "8 Levels of Truth" to the System Prompt (or `gemini.md`).
+### Pattern A: The "Tech Guard" (`TECH_STACK.md`)
+
+- **Purpose:** Prevent dependency chaos and "resume-driven development".
+- **Mechanism:** define a "Kill List" and "Approved List".
+- **Trigger:** When Agent wants to run `npm install`.
+- **Example Rule:**
+  ```markdown
+  | Library | Status       | Reason           |
+  | ------- | ------------ | ---------------- |
+  | axios   | ❌ Forbidden | Use native fetch |
+  | moment  | ❌ Forbidden | Use date-fns     |
+  ```
+
+### Pattern B: The "Domain Logic Stack" (`TAG_STACK.md`)
+
+- **Purpose:** Enforce business logic naming conventions that are too complex for a prompt.
+- **Mechanism:** Detailed file explaining hierarchical strings (e.g., `Category:Sub:Value`).
+- **Trigger:** When Agent modifies `schema.prisma` or data seeding.
+- **Example:** "Tags must be kebab-case. `Tech:AI` is wrong, `tech:ai` is right."
+
+### Pattern C: The "Scenario Trigger" (`.cursorrules`)
+
+- **Purpose:** Dynamic Context Loading based on User Intent.
+- **Mechanism:** If-This-Then-Read-That logic in the System Prompt.
+- **Example:**
+
+  ```
+  ### Scenario: "Add a new package"
+  → READ: TECH_STACK.md
+  → CHECK: Allowed list
+
+  ### Scenario: "Modify UI"
+  → READ: DESIGN.md
+  → ENFORCE: Tailwind v4
+  ```
+
+## 5. Next Steps for Implementation
+
+1.  **Adopt the Files:** Copy the structure (`TECH_STACK.md`, `TAG_STACK.md`) to project root or `.agent/specs/`.
+2.  **Update Router:** Make `AGENTS.md` (or `gemini.md`) the router that conditionally points to these files using the "Scenario Trigger" pattern.
 
 ---
 
