@@ -70,3 +70,22 @@ This document tracks the evolution of the Viron Button, specifically focusing on
   1.  **Reflections:** Exactly like V7 (brightness, lush silver).
   2.  **Geometry:** Exactly like V13 (No ring).
   3.  **Cleanliness:** High Blur to remove the "Studio Objects".
+
+### **V29 - V45: Chaos & Reorganisation**
+
+- **Process:** Extraction of specialized knowledge from local skills.
+- **Goal:** Semantic separation of Specs, Patterns, Guides, and Vault.
+
+---
+
+## 🏗️ The "Viron Knowledge Engine" Era (System V1.0)
+
+### **🏆 V46: Alchemy & Architecture**
+
+- **Milestone:** Semantic Wisdom Architecture established.
+- **Key Changes:**
+  - Root pillars established: `/specs/`, `/patterns/`, `/guides/`, `/vault/`.
+  - **Git Mandate:** Automated commits for every logical phase.
+  - **Lean Documentation:** Incremental updates + Tagging system (#performance, #visual).
+- **Status:** **ACTIVE.** The project is now self-governing and AI-optimized.
+- **Reference:** [PROJECT_RULES.md](file:///c:/Workspace/Repos/remotion-studio/PROJECT_RULES.md)
