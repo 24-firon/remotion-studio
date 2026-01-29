@@ -7,12 +7,14 @@
 ### Problem: "out of memory" oder Memory Leak
 
 **Symptom:**
+
 ```
 Error: Cannot allocate memory
 Process killed (signal: 9)
 ```
 
 **Diagnose:**
+
 ```bash
 # Überprüfe Speicherauslastung
 node --max-old-space-size=4096 script.js
@@ -25,7 +27,7 @@ npm run render -- --concurrency 1
 
 ```typescript
 // 1. Reduziere Concurrency
-const { renderMedia } = require('@remotion/renderer');
+const { renderMedia } = require("@remotion/renderer");
 
 await renderMedia({
   composition: config,
@@ -75,6 +77,7 @@ npx @remotion/cli test-audio
 ### Problem: Chrome/Headless Browser Crash
 
 **Error:**
+
 ```
 Failed to connect to Chrome
 Navigation timeout of 30000 ms exceeded
@@ -84,13 +87,13 @@ Navigation timeout of 30000 ms exceeded
 
 ```typescript
 // 1. Erhöhe Browser-Timeout
-Config.setBrowserExecutable('/path/to/chromium');
+Config.setBrowserExecutable("/path/to/chromium");
 
 // 2. Nutze Chrome-Arguments
 const browserArguments = [
-  '--disable-dev-shm-usage',    // Linux: disable /dev/shm
-  '--no-sandbox',                // Sicherheit reduzieren
-  '--disable-gpu',               // Deaktiviere GPU
+  "--disable-dev-shm-usage", // Linux: disable /dev/shm
+  "--no-sandbox", // Sicherheit reduzieren
+  "--disable-gpu", // Deaktiviere GPU
 ];
 
 // 3. Reduziere Frame-Komplexität
@@ -101,6 +104,7 @@ const browserArguments = [
 ### Problem: "Frame dropped" / Performance
 
 **Symptom:**
+
 ```
 Rendering at 45 FPS (expected: 60)
 ```
@@ -109,10 +113,7 @@ Rendering at 45 FPS (expected: 60)
 
 ```typescript
 // src/utils/frameProfiler.ts
-export const profileFrame = async (
-  component: React.FC,
-  frame: number
-) => {
+export const profileFrame = async (component: React.FC, frame: number) => {
   const start = performance.now();
 
   // Render simulation
@@ -125,7 +126,9 @@ export const profileFrame = async (
   const targetMs = 16.67; // 60 FPS = 16.67ms pro Frame
 
   if (duration > targetMs) {
-    console.warn(`⚠ Frame ${frame} took ${duration.toFixed(2)}ms (budget: ${targetMs}ms)`);
+    console.warn(
+      `⚠ Frame ${frame} took ${duration.toFixed(2)}ms (budget: ${targetMs}ms)`,
+    );
     console.warn(`  Overshoot: ${(duration - targetMs).toFixed(2)}ms`);
   }
 
@@ -166,7 +169,7 @@ style={{ boxShadow: '0 10px 20px rgba(0,0,0,0.5)' }}
 export const validateAudioVideoSync = (
   audioFrames: AudioFrame[],
   videoFrameRate: number,
-  audioDurationMs: number
+  audioDurationMs: number,
 ) => {
   const expectedFrames = Math.ceil((audioDurationMs / 1000) * videoFrameRate);
   const actualFrames = audioFrames.length;
@@ -216,10 +219,12 @@ for (let i = audioData.length; i < targetFrameCount; i++) {
 
 ```typescript
 // Überprüfe Input
-console.log('Audio Buffer Stats:');
+console.log("Audio Buffer Stats:");
 console.log(`  Min: ${Math.min(...audioBuffer)}`);
 console.log(`  Max: ${Math.max(...audioBuffer)}`);
-console.log(`  Mean: ${audioBuffer.reduce((a, b) => a + b) / audioBuffer.length}`);
+console.log(
+  `  Mean: ${audioBuffer.reduce((a, b) => a + b) / audioBuffer.length}`,
+);
 
 // Überprüfe FFT Output
 for (let frame of frames.slice(0, 10)) {
@@ -358,19 +363,19 @@ const parts = await Promise.all(
 
 ```typescript
 // Überprüfe Credentials
-console.log('AWS Region:', process.env.AWS_REGION);
-console.log('S3 Bucket:', process.env.S3_BUCKET);
-console.log('Access Key:', process.env.AWS_ACCESS_KEY_ID ? '✓' : '✗');
+console.log("AWS Region:", process.env.AWS_REGION);
+console.log("S3 Bucket:", process.env.S3_BUCKET);
+console.log("Access Key:", process.env.AWS_ACCESS_KEY_ID ? "✓" : "✗");
 
 // Teste S3 Connection
-import { S3Client, HeadBucketCommand } from '@aws-sdk/client-s3';
+import { S3Client, HeadBucketCommand } from "@aws-sdk/client-s3";
 
-const s3 = new S3Client({ region: 'eu-central-1' });
+const s3 = new S3Client({ region: "eu-central-1" });
 try {
-  await s3.send(new HeadBucketCommand({ Bucket: 'my-bucket' }));
-  console.log('✓ S3 connection OK');
+  await s3.send(new HeadBucketCommand({ Bucket: "my-bucket" }));
+  console.log("✓ S3 connection OK");
 } catch (error) {
-  console.error('✗ S3 connection failed:', error);
+  console.error("✗ S3 connection failed:", error);
 }
 ```
 
@@ -447,21 +452,21 @@ export class Logger {
     if (this.level <= LogLevel.ERROR) {
       console.error(`[${this.context}] ERROR:`, message);
       if (error) {
-        console.error('  Stack:', error.stack);
+        console.error("  Stack:", error.stack);
       }
     }
   }
 }
 
 // Nutzung:
-const logger = new Logger('AudioAnalyzer');
-logger.info('Starting analysis', { audioPath: 'track.wav' });
+const logger = new Logger("AudioAnalyzer");
+logger.info("Starting analysis", { audioPath: "track.wav" });
 
 try {
-  const frames = await analyzer.analyzeAudioFile('track.wav');
-  logger.info('Analysis complete', { frameCount: frames.length });
+  const frames = await analyzer.analyzeAudioFile("track.wav");
+  logger.info("Analysis complete", { frameCount: frames.length });
 } catch (error) {
-  logger.error('Analysis failed', error as Error);
+  logger.error("Analysis failed", error as Error);
 }
 ```
 
@@ -489,7 +494,14 @@ export const metrics = {
     const p95 = sorted[Math.floor(values.length * 0.95)];
     const p99 = sorted[Math.floor(values.length * 0.99)];
 
-    return { min: sorted[0], max: sorted[values.length - 1], mean, p50, p95, p99 };
+    return {
+      min: sorted[0],
+      max: sorted[values.length - 1],
+      mean,
+      p50,
+      p95,
+      p99,
+    };
   },
 
   report() {
@@ -498,7 +510,7 @@ export const metrics = {
         label,
         samples: values.length,
         ...this.summary(label),
-      }))
+      })),
     );
   },
 };
@@ -506,7 +518,7 @@ export const metrics = {
 // Nutzung:
 const start = performance.now();
 await renderMedia(config);
-metrics.record('render-time', performance.now() - start);
+metrics.record("render-time", performance.now() - start);
 
 metrics.report();
 ```
@@ -525,7 +537,7 @@ export const runHealthCheck = async () => {
   };
 
   const hasErrors = Object.values(results).some(
-    (r) => r && typeof r === 'object' && r.error
+    (r) => r && typeof r === "object" && r.error,
   );
 
   return {
@@ -539,39 +551,39 @@ function checkSystem() {
   return {
     nodeVersion: process.version,
     platform: process.platform,
-    cpus: require('os').cpus().length,
-    memory: `${Math.round(require('os').totalmem() / (1024 ** 3))}GB`,
+    cpus: require("os").cpus().length,
+    memory: `${Math.round(require("os").totalmem() / 1024 ** 3)}GB`,
   };
 }
 
 async function checkDependencies() {
   // Überprüfe kritische packages
   try {
-    require('remotion');
-    require('@remotion/renderer');
-    require('next');
-    return { status: '✓', error: null };
+    require("remotion");
+    require("@remotion/renderer");
+    require("next");
+    return { status: "✓", error: null };
   } catch (e) {
-    return { status: '✗', error: String(e) };
+    return { status: "✗", error: String(e) };
   }
 }
 
 function checkConfiguration() {
   // Überprüfe THEME System
   try {
-    const { THEME } = require('./theme/Theme');
+    const { THEME } = require("./theme/Theme");
     return { colors: Object.keys(THEME.colors), error: null };
   } catch (e) {
-    return { status: '✗', error: String(e) };
+    return { status: "✗", error: String(e) };
   }
 }
 
 async function checkAudioSetup() {
   // Überprüfe FFmpeg
   return new Promise((resolve) => {
-    require('child_process').exec('ffmpeg -version', (error: any) => {
+    require("child_process").exec("ffmpeg -version", (error: any) => {
       resolve({
-        ffmpeg: error ? '✗' : '✓',
+        ffmpeg: error ? "✗" : "✓",
         error: error ? String(error) : null,
       });
     });
@@ -584,9 +596,9 @@ async function checkRenderingSetup() {
     const start = performance.now();
     // Dummy render...
     const duration = performance.now() - start;
-    return { status: '✓', duration, error: null };
+    return { status: "✓", duration, error: null };
   } catch (e) {
-    return { status: '✗', error: String(e) };
+    return { status: "✗", error: String(e) };
   }
 }
 ```

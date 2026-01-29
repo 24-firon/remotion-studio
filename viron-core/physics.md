@@ -30,14 +30,14 @@ scene.add(mesh);
 
 ### Kernkonzepte
 
-| Konzept | Erklärung | Use Case |
-|---------|-----------|----------|
-| **Canvas** | Root-Element für 3D-Rendering | Muss vorhanden sein |
-| **mesh** | 3D-Objekt (Geometry + Material) | Sichtbare Objekte |
-| **camera** | Viewpoint in die Szene | Perspektive steuern |
-| **light** | Beleuchtung (Ambient, Directional, Spot) | Realistisches Shading |
-| **useThree()** | Hook für Scene, Camera, Renderer Access | Imperative Kontrolle |
-| **useFrame()** | Per-Frame-Callback (Animation) | Echtzeitanimationen |
+| Konzept        | Erklärung                                | Use Case              |
+| -------------- | ---------------------------------------- | --------------------- |
+| **Canvas**     | Root-Element für 3D-Rendering            | Muss vorhanden sein   |
+| **mesh**       | 3D-Objekt (Geometry + Material)          | Sichtbare Objekte     |
+| **camera**     | Viewpoint in die Szene                   | Perspektive steuern   |
+| **light**      | Beleuchtung (Ambient, Directional, Spot) | Realistisches Shading |
+| **useThree()** | Hook für Scene, Camera, Renderer Access  | Imperative Kontrolle  |
+| **useFrame()** | Per-Frame-Callback (Animation)           | Echtzeitanimationen   |
 
 ## Basis-Szenen-Setup in R3F
 
@@ -130,21 +130,24 @@ export const AnimatedScene = () => {
 
 ```typescript
 // src/components/3D/DeviceGeometry.ts
-import * as THREE from 'three';
+import * as THREE from "three";
 
 export const createMacBookGeometry = (screenRatio = 16 / 10) => {
   const group = new THREE.Group();
 
   // Bezel (schwarzer Rahmen)
   const bezelGeometry = new THREE.BoxGeometry(1, screenRatio, 0.05);
-  const bezel = new THREE.Mesh(bezelGeometry, new THREE.MeshStandardMaterial({ color: '#000' }));
+  const bezel = new THREE.Mesh(
+    bezelGeometry,
+    new THREE.MeshStandardMaterial({ color: "#000" }),
+  );
   group.add(bezel);
 
   // Screen (wo Website gerendert wird)
   const screenGeometry = new THREE.PlaneGeometry(0.95, screenRatio * 0.95);
   const screenMaterial = new THREE.MeshStandardMaterial({
     map: undefined, // Wird später mit Texture gefüllt
-    emissive: '#ffffff',
+    emissive: "#ffffff",
     emissiveIntensity: 0.1,
     roughness: 0.1,
     metalness: 0,
@@ -155,7 +158,10 @@ export const createMacBookGeometry = (screenRatio = 16 / 10) => {
 
   // Keyboard (vereinfacht)
   const keyboardGeometry = new THREE.BoxGeometry(1, screenRatio * 0.6, 0.02);
-  const keyboard = new THREE.Mesh(keyboardGeometry, new THREE.MeshStandardMaterial({ color: '#555' }));
+  const keyboard = new THREE.Mesh(
+    keyboardGeometry,
+    new THREE.MeshStandardMaterial({ color: "#555" }),
+  );
   keyboard.position.y = -screenRatio * 0.6;
   keyboard.position.z = -0.05;
   group.add(keyboard);
@@ -168,38 +174,38 @@ export const createMacBookGeometry = (screenRatio = 16 / 10) => {
 
 ### Material-Typen
 
-| Typ | Einsatz | Eigenschaften |
-|-----|---------|--------------|
-| **MeshBasicMaterial** | UI-Elemente, kein Shading | Keine Beleuchtung |
-| **MeshStandardMaterial** | Realistische Oberflächen (PBR) | Metalness, Roughness |
-| **MeshPhysicalMaterial** | Hochglanz, Glas, Diamanten | Clearcoat, Transmission |
-| **MeshToonMaterial** | Cartoon-Stil | Vereinfachtes Shading |
+| Typ                      | Einsatz                        | Eigenschaften           |
+| ------------------------ | ------------------------------ | ----------------------- |
+| **MeshBasicMaterial**    | UI-Elemente, kein Shading      | Keine Beleuchtung       |
+| **MeshStandardMaterial** | Realistische Oberflächen (PBR) | Metalness, Roughness    |
+| **MeshPhysicalMaterial** | Hochglanz, Glas, Diamanten     | Clearcoat, Transmission |
+| **MeshToonMaterial**     | Cartoon-Stil                   | Vereinfachtes Shading   |
 
 ### PBR Material Setup (Physically Based Rendering)
 
 ```typescript
 // Zink-Metallic (für dein Theme)
 const metallicMaterial = new THREE.MeshStandardMaterial({
-  color: '#afb4be',           // Mid-tone aus Theme
-  metalness: 0.9,             // 1 = vollständig metallisch
-  roughness: 0.2,             // 0 = spiegelnd, 1 = matt
-  normalMap: normalTexture,   // Optional: Detail-Struktur
-  envMap: cubeTexture,        // Optional: Umgebungs-Reflektionen
+  color: "#afb4be", // Mid-tone aus Theme
+  metalness: 0.9, // 1 = vollständig metallisch
+  roughness: 0.2, // 0 = spiegelnd, 1 = matt
+  normalMap: normalTexture, // Optional: Detail-Struktur
+  envMap: cubeTexture, // Optional: Umgebungs-Reflektionen
 });
 
 // Glass (Displayglas)
 const glassMaterial = new THREE.MeshPhysicalMaterial({
-  transmission: 1,            // 1 = transparent, 0 = opak
-  opacity: 0.95,              // Minimaler Porzellan-Effekt
+  transmission: 1, // 1 = transparent, 0 = opak
+  opacity: 0.95, // Minimaler Porzellan-Effekt
   roughness: 0.1,
-  ior: 1.5,                   // Index of Refraction (Brechungsindex)
+  ior: 1.5, // Index of Refraction (Brechungsindex)
 });
 
 // Emissives Material (Leuchtet von selbst)
 const screenMaterial = new THREE.MeshStandardMaterial({
-  emissive: '#00d4ff',
-  emissiveIntensity: 0.5,     // 0-1
-  color: '#000',
+  emissive: "#00d4ff",
+  emissiveIntensity: 0.5, // 0-1
+  color: "#000",
 });
 ```
 
@@ -264,7 +270,7 @@ import { useCurrentFrame } from 'remotion';
 
 export const WebsiteTexture = ({ url }: { url: string }) => {
   const frame = useCurrentFrame();
-  
+
   // Remotion Video wird als Textur verwendet
   const texture = useVideoTexture('/rendered-website.mp4');
 

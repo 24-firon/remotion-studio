@@ -52,22 +52,22 @@ npx remotion render src/Video.tsx my-composition \
 
 ```typescript
 // src/renderVideo.ts
-import { renderMediaOnLambda } from '@remotion/lambda';
+import { renderMediaOnLambda } from "@remotion/lambda";
 
 export const renderVideoOnLambda = async () => {
   const { renderId } = await renderMediaOnLambda({
-    region: 'eu-central-1',
-    composition: 'my-composition',
+    region: "eu-central-1",
+    composition: "my-composition",
     framesPerLambda: 4, // Frames pro Lambda-Instanz
     concurrencyPerLambda: 3,
-    codec: 'h264',
-    outputLocation: 's3://my-bucket/videos/output.mp4',
+    codec: "h264",
+    outputLocation: "s3://my-bucket/videos/output.mp4",
     inputProps: {
       // Props für Composition
     },
   });
 
-  console.log('Render ID:', renderId);
+  console.log("Render ID:", renderId);
 };
 ```
 
@@ -75,14 +75,14 @@ export const renderVideoOnLambda = async () => {
 
 ```typescript
 // @remotion/renderer - Node.js API
-import { renderMedia } from '@remotion/renderer';
+import { renderMedia } from "@remotion/renderer";
 
 async function renderVideo() {
-  const outputPath = './output.mp4';
+  const outputPath = "./output.mp4";
 
   const { frameCount } = await renderMedia({
     composition: {
-      id: 'main-video',
+      id: "main-video",
       component: MyVideoComponent,
       durationInFrames: 300,
       fps: 60,
@@ -93,11 +93,11 @@ async function renderVideo() {
       },
     },
     outputLocation: outputPath,
-    codec: 'h264',
-    audioCodec: 'aac',
-    videoBitrate: '8000k',
-    audioBitrate: '192k',
-    pixelFormat: 'yuv420p',
+    codec: "h264",
+    audioCodec: "aac",
+    videoBitrate: "8000k",
+    audioBitrate: "192k",
+    pixelFormat: "yuv420p",
     concurrency: 8,
     onProgress: (progress) => {
       console.log(`Progress: ${progress.renderedFrames}/${frameCount}`);
@@ -155,10 +155,10 @@ async function renderVideo() {
 ### 1. Concurrency Berechnung
 
 ```typescript
-import os from 'os';
+import os from "os";
 
 const availableCPUs = os.cpus().length;
-const ramGB = os.totalmem() / (1024 ** 3);
+const ramGB = os.totalmem() / 1024 ** 3;
 
 // Faustregel: 1-2 Prozesse pro CPU
 const optimalConcurrency = Math.floor(availableCPUs * 1.5);
@@ -186,9 +186,11 @@ export const renderLargeVideo = async () => {
     const output = `./chunks/part-${i}.mov`;
 
     await renderMedia({
-      composition: { /* ... */ },
+      composition: {
+        /* ... */
+      },
       outputLocation: output,
-      codec: 'prores',
+      codec: "prores",
       frameRange: [from, to],
     });
 
@@ -196,7 +198,7 @@ export const renderLargeVideo = async () => {
   }
 
   // Kombiniere Chunks mit ffmpeg
-  await combineChunks('./chunks/part-*.mov', './output-final.mov');
+  await combineChunks("./chunks/part-*.mov", "./output-final.mov");
 };
 
 async function combineChunks(inputPattern: string, output: string) {
@@ -209,24 +211,24 @@ async function combineChunks(inputPattern: string, output: string) {
 
 ```typescript
 // remotion.config.ts
-import { Config } from '@remotion/cli/config';
+import { Config } from "@remotion/cli/config";
 
 // Chrome for Testing (GPU-Support auf Linux)
-Config.setChromeMode('chrome-for-testing');
+Config.setChromeMode("chrome-for-testing");
 
 // OpenGL Renderer verwenden
-Config.setChromiumOpenGlRenderer('angle'); // oder 'egl'
+Config.setChromiumOpenGlRenderer("angle"); // oder 'egl'
 
 // Höhere Pixel-Ratio für schnelleres Rendering
-Config.setPixelFormat('yuv420p');
+Config.setPixelFormat("yuv420p");
 ```
 
 ## Rendering Monitoring & Logging
 
 ```typescript
 // src/renderMonitor.ts
-import { renderMedia } from '@remotion/renderer';
-import fs from 'fs';
+import { renderMedia } from "@remotion/renderer";
+import fs from "fs";
 
 interface RenderMetrics {
   startTime: number;
@@ -239,7 +241,7 @@ interface RenderMetrics {
 
 export const renderWithMonitoring = async (
   composition: any,
-  outputPath: string
+  outputPath: string,
 ) => {
   const startTime = Date.now();
   const metrics: RenderMetrics = {
@@ -271,18 +273,20 @@ export const renderWithMonitoring = async (
         ├─ FPS: ${fps.toFixed(2)}
         ├─ Elapsed: ${(elapsed / 60).toFixed(1)} min
         ├─ ETA: ${metrics.estimatedComplete.toLocaleTimeString()}
-        ╰─ Status: ${progress.isStill ? 'STILL' : 'RENDERING'}
+        ╰─ Status: ${progress.isStill ? "STILL" : "RENDERING"}
       `);
     },
     onError: (error) => {
-      console.error('Rendering Error:', error);
+      console.error("Rendering Error:", error);
       metrics.droppedFrames++;
     },
   });
 
   const totalTime = (Date.now() - startTime) / 1000;
   console.log(`✓ Complete in ${(totalTime / 60).toFixed(1)} minutes`);
-  console.log(`  Frame Rate: ${(frameCount / totalTime).toFixed(2)} FPS average`);
+  console.log(
+    `  Frame Rate: ${(frameCount / totalTime).toFixed(2)} FPS average`,
+  );
 
   return metrics;
 };
@@ -330,8 +334,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'src/**'
-      - 'remotion.config.ts'
+      - "src/**"
+      - "remotion.config.ts"
 
 jobs:
   render:
@@ -341,7 +345,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm ci
@@ -370,11 +374,11 @@ jobs:
 
 ```typescript
 // src/deployToLambda.ts
-import { deployFunction, deployComposition } from '@remotion/lambda';
+import { deployFunction, deployComposition } from "@remotion/lambda";
 
 export const deployToLambda = async () => {
   const { functionName } = await deployFunction({
-    region: 'eu-central-1',
+    region: "eu-central-1",
     timeoutSeconds: 900,
     memorySizeInMb: 3009,
     diskSizeInMb: 10240,
@@ -388,10 +392,10 @@ export const deployToLambda = async () => {
 
   // Deploy composition
   const { serveUrl } = await deployComposition({
-    region: 'eu-central-1',
-    entryPoint: 'src/Video.tsx',
+    region: "eu-central-1",
+    entryPoint: "src/Video.tsx",
     functionName,
-    compositeName: 'my-composition',
+    compositeName: "my-composition",
   });
 
   console.log(`Serve URL: ${serveUrl}`);
@@ -404,7 +408,7 @@ export const deployToLambda = async () => {
 export const renderWithRetry = async (
   composition: any,
   outputPath: string,
-  maxRetries = 3
+  maxRetries = 3,
 ) => {
   let attempt = 0;
 
@@ -422,12 +426,14 @@ export const renderWithRetry = async (
       attempt++;
 
       if (attempt >= maxRetries) {
-        throw new Error(`Rendering failed after ${maxRetries} attempts: ${error}`);
+        throw new Error(
+          `Rendering failed after ${maxRetries} attempts: ${error}`,
+        );
       }
 
       const backoffMs = Math.pow(2, attempt) * 1000; // Exponential backoff
       console.warn(
-        `⚠ Rendering failed (attempt ${attempt}), retrying in ${backoffMs}ms...`
+        `⚠ Rendering failed (attempt ${attempt}), retrying in ${backoffMs}ms...`,
       );
 
       await new Promise((resolve) => setTimeout(resolve, backoffMs));
@@ -440,12 +446,12 @@ export const renderWithRetry = async (
 
 ```typescript
 // src/validateRender.ts
-import { getCompositions } from 'remotion';
-import { promises as fs } from 'fs';
+import { getCompositions } from "remotion";
+import { promises as fs } from "fs";
 
 export const validateRenderedVideo = async (videoPath: string) => {
   const stats = await fs.stat(videoPath);
-  const fileSizeGB = stats.size / (1024 ** 3);
+  const fileSizeGB = stats.size / 1024 ** 3;
 
   console.log(`Video size: ${fileSizeGB.toFixed(2)} GB`);
 
@@ -455,16 +461,16 @@ export const validateRenderedVideo = async (videoPath: string) => {
   // Mit Komression (H.264) ca. 5-8GB
 
   if (fileSizeGB < 1) {
-    console.warn('⚠ Video file seems too small (may be corrupted)');
+    console.warn("⚠ Video file seems too small (may be corrupted)");
     return false;
   }
 
   if (fileSizeGB > 20) {
-    console.warn('⚠ Video file seems too large (may have encoding issue)');
+    console.warn("⚠ Video file seems too large (may have encoding issue)");
     return false;
   }
 
-  console.log('✓ Video file size OK');
+  console.log("✓ Video file size OK");
   return true;
 };
 ```
@@ -473,18 +479,20 @@ export const validateRenderedVideo = async (videoPath: string) => {
 
 ```typescript
 // src/benchmark.ts
-import { renderMedia } from '@remotion/renderer';
-import * as os from 'os';
+import { renderMedia } from "@remotion/renderer";
+import * as os from "os";
 
 export async function benchmarkRendering() {
   const compositions = [
-    { name: 'simple', frames: 60 },
-    { name: 'complex-3d', frames: 60 },
-    { name: 'heavy-effects', frames: 60 },
+    { name: "simple", frames: 60 },
+    { name: "complex-3d", frames: 60 },
+    { name: "heavy-effects", frames: 60 },
   ];
 
-  console.log(`System: ${os.cpus().length} CPUs, ${os.totalmem() / (1024 ** 3)}GB RAM`);
-  console.log('─'.repeat(60));
+  console.log(
+    `System: ${os.cpus().length} CPUs, ${os.totalmem() / 1024 ** 3}GB RAM`,
+  );
+  console.log("─".repeat(60));
 
   for (const comp of compositions) {
     const start = Date.now();
@@ -501,7 +509,9 @@ export async function benchmarkRendering() {
     const duration = (Date.now() - start) / 1000;
     const fps = comp.frames / duration;
 
-    console.log(`${comp.name.padEnd(20)} │ ${fps.toFixed(2)} FPS │ ${duration.toFixed(1)}s`);
+    console.log(
+      `${comp.name.padEnd(20)} │ ${fps.toFixed(2)} FPS │ ${duration.toFixed(1)}s`,
+    );
   }
 }
 ```
@@ -510,16 +520,19 @@ export async function benchmarkRendering() {
 
 ```typescript
 // src/postRender.ts
-import { exec } from 'child_process';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { exec } from "child_process";
+import { promises as fs } from "fs";
+import path from "path";
 
-export const archiveAndValidate = async (videoPath: string, s3Bucket: string) => {
+export const archiveAndValidate = async (
+  videoPath: string,
+  s3Bucket: string,
+) => {
   // Verifiziere mit ffprobe
   const metadata = await probeVideo(videoPath);
 
   if (!metadata.valid) {
-    throw new Error('Video validation failed');
+    throw new Error("Video validation failed");
   }
 
   // Erstelle Thumbnail
@@ -539,10 +552,10 @@ export const archiveAndValidate = async (videoPath: string, s3Bucket: string) =>
 
   await fs.writeFile(
     `${videoPath}.manifest.json`,
-    JSON.stringify(manifest, null, 2)
+    JSON.stringify(manifest, null, 2),
   );
 
-  console.log('✓ Archiving complete');
+  console.log("✓ Archiving complete");
   return manifest;
 };
 ```

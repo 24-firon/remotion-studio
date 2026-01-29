@@ -50,7 +50,7 @@
 // .prettierrc.js
 module.exports = {
   semi: true,
-  trailingComma: 'es5',
+  trailingComma: "es5",
   singleQuote: true,
   printWidth: 100,
   tabWidth: 2,
@@ -63,20 +63,17 @@ module.exports = {
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: [
-    'next/core-web-vitals',
-    'prettier',
-  ],
+  extends: ["next/core-web-vitals", "prettier"],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    '@next/next/no-img-element': 'warn',
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@next/next/no-img-element": "warn",
   },
   overrides: [
     {
-      files: ['src/**/*.tsx'],
+      files: ["src/**/*.tsx"],
       rules: {
-        'react/display-name': 'off',
+        "react/display-name": "off",
       },
     },
   ],
@@ -114,6 +111,7 @@ Related to #456
 ```
 
 **Gültige Typen:**
+
 - `feat`: Neue Funktion
 - `fix`: Bug fix
 - `docs`: Dokumentations-Änderung
@@ -187,7 +185,7 @@ Related to #124
 
 export const setupPerformanceMonitor = (
   videoComponent: React.FC,
-  logInterval: number = 10
+  logInterval: number = 10,
 ) => {
   let frameCount = 0;
   let lastLogTime = Date.now();
@@ -203,7 +201,7 @@ export const setupPerformanceMonitor = (
         console.log(`FPS: ${fps.toFixed(2)}`);
 
         if (fps < 55) {
-          console.warn('⚠ Performance degradation detected (FPS < 55)');
+          console.warn("⚠ Performance degradation detected (FPS < 55)");
         }
 
         frameCount = 0;
@@ -221,9 +219,9 @@ export const setupPerformanceMonitor = (
 // npm run clinic:doctor -- npm run render
 
 // oder in Node.js
-if (typeof global !== 'undefined' && global.gc) {
+if (typeof global !== "undefined" && global.gc) {
   global.gc(); // Manuelles Garbage Collection triggern
-  console.log('Heap:', process.memoryUsage());
+  console.log("Heap:", process.memoryUsage());
 }
 ```
 
@@ -234,7 +232,7 @@ if (typeof global !== 'undefined' && global.gc) {
 
 export const measureRenderTime = async <T>(
   fn: () => Promise<T>,
-  label: string
+  label: string,
 ): Promise<T> => {
   const start = performance.now();
 
@@ -254,10 +252,7 @@ export const measureRenderTime = async <T>(
 };
 
 // Nutzung:
-await measureRenderTime(
-  () => renderMedia(config),
-  'Full video render'
-);
+await measureRenderTime(() => renderMedia(config), "Full video render");
 ```
 
 ## Debugging-Strategien
@@ -266,12 +261,12 @@ await measureRenderTime(
 
 ```typescript
 // Aktiviere Debug-Logging
-const { enableDebug } = require('@remotion/cli/config');
+const { enableDebug } = require("@remotion/cli/config");
 enableDebug(true);
 
 // Nutze Console-Output
-console.log('Frame:', frame);
-console.log('Audio Data:', audioData[frame]);
+console.log("Frame:", frame);
+console.log("Audio Data:", audioData[frame]);
 
 // Browser DevTools für Preview
 // F12 im Remotion Player → Console
@@ -296,7 +291,7 @@ export const debugAudioFrame = (frame: AudioFrame) => {
 // Exportiere zu CSV für Analyse
 export const exportAudioDebugCSV = (frames: AudioFrame[]) => {
   const csv = [
-    ['Frame', 'Timestamp', 'Bass', 'Mid', 'Treble', 'Energy'],
+    ["Frame", "Timestamp", "Bass", "Mid", "Treble", "Energy"],
     ...frames.map((f) => [
       f.frame,
       f.timestamp.toFixed(2),
@@ -306,10 +301,10 @@ export const exportAudioDebugCSV = (frames: AudioFrame[]) => {
       f.energy.toFixed(3),
     ]),
   ]
-    .map((row) => row.join(','))
-    .join('\n');
+    .map((row) => row.join(","))
+    .join("\n");
 
-  require('fs').writeFileSync('./audio-debug.csv', csv);
+  require("fs").writeFileSync("./audio-debug.csv", csv);
 };
 ```
 
@@ -347,7 +342,7 @@ const fps = 60;
  * @returns Promise mit Array von AudioFrame-Objekten
  *
  * @example
- * const frames = await analyzer.analyzeAudioFile('track.wav', {
+ * const frames = await analyzer.analyzeAudioFile('song.wav', {
  *   fps: 60,
  *   fftSize: 1024,
  * });
@@ -358,7 +353,7 @@ const fps = 60;
  */
 export async function analyzeAudioFile(
   audioPath: string,
-  options?: AnalysisOptions
+  options?: AnalysisOptions,
 ): Promise<AudioFrame[]> {
   // Implementation
 }
@@ -366,7 +361,7 @@ export async function analyzeAudioFile(
 
 ### Modul-Level Dokumentation
 
-```typescript
+````typescript
 /**
  * # Audio Processing Pipeline
  *
@@ -389,7 +384,7 @@ export async function analyzeAudioFile(
  *
  * @module audio/fftAnalysis
  */
-```
+````
 
 ## Testing-Strategie
 
@@ -397,23 +392,23 @@ export async function analyzeAudioFile(
 
 ```typescript
 // src/__tests__/theme.test.ts
-import { describe, it, expect } from 'vitest';
-import { getContrastRatio, validateContrast } from '../theme/themeUtils';
+import { describe, it, expect } from "vitest";
+import { getContrastRatio, validateContrast } from "../theme/themeUtils";
 
-describe('Theme Utilities', () => {
-  it('should calculate correct contrast ratio', () => {
-    const ratio = getContrastRatio('#ffffff', '#000000');
+describe("Theme Utilities", () => {
+  it("should calculate correct contrast ratio", () => {
+    const ratio = getContrastRatio("#ffffff", "#000000");
     expect(ratio).toBe(21);
   });
 
-  it('should validate WCAG AA compliance', () => {
-    const result = validateContrast('#ffffff', '#000000');
+  it("should validate WCAG AA compliance", () => {
+    const result = validateContrast("#ffffff", "#000000");
     expect(result.wcagAA).toBe(true);
     expect(result.wcagAAA).toBe(true);
   });
 
-  it('should detect low contrast', () => {
-    const result = validateContrast('#ffffff', '#f0f0f0');
+  it("should detect low contrast", () => {
+    const result = validateContrast("#ffffff", "#f0f0f0");
     expect(result.wcagAA).toBe(false);
   });
 });
@@ -433,11 +428,13 @@ ls -lh output-test.mp4
 
 ```typescript
 // Nutze Playwright für Screenshot-Tests
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test('metallic surface should render correctly', async ({ page }) => {
-  await page.goto('http://localhost:3000');
-  await expect(page.locator('[data-testid="metallic-surface"]')).toHaveScreenshot();
+test("metallic surface should render correctly", async ({ page }) => {
+  await page.goto("http://localhost:3000");
+  await expect(
+    page.locator('[data-testid="metallic-surface"]'),
+  ).toHaveScreenshot();
 });
 ```
 
