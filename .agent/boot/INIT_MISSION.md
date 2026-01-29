@@ -45,10 +45,16 @@
 
 1.  **READ** `~/.gemini/antigravity/global_skills/remotion-best-practices/SKILL.md` (Index)
 2.  **READ** all files in `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/`
-    - **CRITICAL:** You MUST read the full content of these rules to compare them against `viron-core/`.
-    - You are the cleaner. You need to know the baseline to spot duplicates.
+3.  **READ** all files in `viron-core/`
+4.  **READ** all files in `src/learnings/`
 
-**🛑 STOP.** You are now initialized with the full context.
+**OBJECTIVE:** You MUST compare Global Rules vs. Viron Core vs. Learnings.
+
+- Global Rules = The Standard.
+- Viron Core = The Project Law.
+- Learnings = The Experience.
+
+**🛑 STOP.** You are now initialized with the FULL context.
 **State:** `READY_FOR_TASK`
 
 ---
@@ -57,11 +63,11 @@
 
 **Trigger:** ONLY when the user gives you a specific task.
 
-> **RULE:** You are forbidden from loading these files "just in case".
+> **RULE:** You have already loaded the core knowledge in Phase 3.
+> Use this phase for highly specific files only (e.g., Vault, Patterns).
 
-- **Task:** "Fix rendering bug" -> **Load:** `viron-core/pipeline.md` + `viron-core/troubleshooting.md`
-- **Task:** "Change colors" -> **Load:** `viron-core/theme.md`
-- **Task:** "Add 3D scene" -> **Load:** `viron-core/physics.md` + `rules/3d.md` (Global Skill)
+- **Task:** "New UI Component" -> **Load:** `patterns/`
+- **Task:** "Benchmarks" -> **Load:** `vault/`
 
 ---
 
