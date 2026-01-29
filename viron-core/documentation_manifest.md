@@ -1,4 +1,4 @@
-# 📚 VIRON CORE DOCUMENTATION MANIFEST (v2.0)
+# 📚 VIRON CORE DOCUMENTATION MANIFEST (v5.0)
 
 **Status:** ACTIVE ROUTER
 **Scope:** Viron Specific Implementation Details
@@ -71,4 +71,4 @@ This manifest routes you to the correct knowledge source based on your task.
 2.  **Lazy Load:** Only load the specific file needed for the task.
 3.  **Viron > Global:** If `theme.md` says X and Global Skill says Y, **X wins.**
 
-_Router v2.0 | Optimized for Agentic Workflow_
+_Router v5.0 | Optimized for Agentic Workflow_
