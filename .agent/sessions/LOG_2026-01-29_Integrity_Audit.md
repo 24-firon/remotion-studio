@@ -29,7 +29,13 @@ We established the foundation for "Viron v2":
     - Forensic-Check mandatory before Git operations.
 3.  **Anti-Hallucination:** "Read-Before-Write" rule implemented.
 
-## 4. Next Steps
+## 4. Operational Fix: The "Blind Spot"
+
+- **Discovery:** A trial boot revealed that new agents were "blind" to the `/docs` folder.
+- **Root Cause:** `INIT_MISSION.md` (the bootloader) was created before the docs folder and didn't point to it. Due to the "No recursive scan" rule, agents ignored the new directory.
+- **Fix:** Updated `INIT_MISSION.md`. Phase 3 now explicitly mandates reading the **Manifesto** and **Research** files before proceeding.
+
+## 5. Next Steps
 
 - **Boot Protocol:** Start new sessions with `Start System. Read .agent/boot/INIT_MISSION.md`.
 - **Implementation:** Next agent will implement the Semantic Triggers/Router logic.
