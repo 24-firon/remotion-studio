@@ -33,9 +33,18 @@ Lade diese Dateien, um dein "Betriebssystem" zu starten:
 
 ### PHASE 2: TECHNOLOGY INJECTION
 
-Lade das technologische Herzstück. Ohne dies bist du blind für unsere Physik-Engine.
+**SCHRITT 1: GLOBAL SKILL (DIE BASELINE)**
 
-- Lade: `viron-core/documentation_manifest.md` (Der Index des Tech-Stacks).
+Bevor du irgendwelche Projekt-Dokumente liest, lade den **globalen Remotion-Skill**. Das ist das universelle Wissen. Alles im Projekt baut darauf auf und darf es NICHT duplizieren.
+
+- Lade: `~/.gemini/antigravity/global_skills/remotion-best-practices/SKILL.md`
+- Lies die `rules/` Unterordner nur bei Bedarf (z.B. `rules/3d.md` bei 3D-Task).
+
+**SCHRITT 2: VIRON-SPEZIFISCHES WISSEN**
+
+Erst DANACH lade die Viron-spezifischen Ergänzungen (das, was ÜBER den globalen Skill hinausgeht):
+
+- Lade: `viron-core/documentation_manifest.md` (Der Index des Viron-Tech-Stacks).
 
 ### PHASE 3: THE ARCHITECT TASK (Dein Job heute)
 
