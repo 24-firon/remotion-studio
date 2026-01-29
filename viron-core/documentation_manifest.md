@@ -23,14 +23,14 @@ This manifest routes you to the correct knowledge source based on your task.
 
 ### 🟠 Extended Knowledge (Deep Levels)
 
-| Level        | Directory        | Content Description                                      |
-| :----------- | :--------------- | :------------------------------------------------------- |
-| **Specs**    | `specs/`         | System Entry, Audio Pipeline, Camera Specs, Website Meta |
-| **Guides**   | `guides/`        | Feature Implementation, Sequencing, Composition Guides   |
-| **Registry** | `docs/`          | Repository Manifesto, Human Guide, Semantic Triggers     |
-| **Lessons**  | `src/learnings/` | Shader Patterns, Hard-won knowledge, Viron Button Stack  |
-| **Assets**   | `vault/`         | Benchmarks, Large JSON files, Asset metadata             |
-| **UI**       | `patterns/`      | Visual UI Patterns, Component variations                 |
+| Level        | Directory        | Content Description                                         |
+| :----------- | :--------------- | :---------------------------------------------------------- |
+| **Specs**    | `specs/`         | System Entry, Audio Pipeline, Camera Specs, Website Meta    |
+| **Guides**   | `guides/`        | Feature Implementation, Sequencing, Composition Guides      |
+| **Registry** | `docs/`          | Manifests, Human Guide, Semantic Triggers, **Token Budget** |
+| **Lessons**  | `src/learnings/` | Shader Patterns, Hard-won knowledge, Viron Button Stack     |
+| **Assets**   | `vault/`         | Benchmarks, Large JSON files, Asset metadata                |
+| **UI**       | `patterns/`      | Visual UI Patterns, Component variations                    |
 
 ### 🔵 Global Skills (Baseline)
 
