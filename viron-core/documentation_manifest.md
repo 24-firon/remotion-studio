@@ -11,17 +11,30 @@ Dies ist eine **umfassende, strukturierte Dokumentation** für dein High-Fidelit
 - ✅ Detaillierte technische Erklärungen
 - ✅ Produktionsreife Code-Beispiele
 - ✅ Best-Practices & Patterns
+- ✅ Best-Practices & Patterns
 - ✅ Fehlerbehandlung & Debugging
 - ✅ Performance-Tipps
+
+## 🔗 Relation to Global Skills (Redundancy Check)
+
+| Global Skill Module   | Viron Core Module           | Relation                                                             |
+| --------------------- | --------------------------- | -------------------------------------------------------------------- |
+| `3d.md` (Basics)      | `physics.md` (Archivecture) | **Extension:** Viron adds PBR, Lighting Rules, and Material Systems. |
+| `audio.md` (API)      | `specs/audio.md` (Pipeline) | **Extension:** Viron adds FFT-JSON-Pipeline and Reactivity.          |
+| `tailwind.md` (Setup) | `theme.md` (System)         | **Extension:** Viron adds Design Tokens, Theme.ts, and Config.       |
+
+**Verdict:** No redundancy. Viron Core builds ON TOP of Global Skills.
 
 ---
 
 ## 📑 Inhaltsverzeichnis
 
 ### 1. **Architektur & System-Design** (`01-SYSTEM-ARCHITECTURE.md`)
+
 **Für:** Projekt-Überblick, Team-Onboarding
 
 Behandelt:
+
 - High-Level System-Architektur
 - Komponenten-Hierarchie
 - Data-Flow zwischen Services
@@ -33,9 +46,11 @@ Behandelt:
 ---
 
 ### 2. **Remotion Video Framework** (`02-REMOTION-VIDEO-FRAMEWORK.md`)
+
 **Für:** Video-Entwicklung, Animationen, Komponenten
 
 Behandelt:
+
 - Remotion Basics (Komposition, Frames, FPS)
 - TypeScript-Integration
 - Hooks (useCurrentFrame, useVideoConfig, etc.)
@@ -46,6 +61,7 @@ Behandelt:
 **Wann lesen:** Wenn du Remotion-Videos schreibst.
 
 **Code-Beispiele:**
+
 ```typescript
 import { useCurrentFrame, interpolate } from 'remotion';
 
@@ -59,9 +75,11 @@ const MyComponent = () => {
 ---
 
 ### 3. **Next.js Frontend & Styling** (`03-NEXTJS-FRONTEND-STYLING.md`)
+
 **Für:** Website-Entwicklung, UI-Components, Responsive Design
 
 Behandelt:
+
 - Next.js App Router
 - Server Components vs. Client Components
 - API Routes & Datenabfrage
@@ -72,6 +90,7 @@ Behandelt:
 **Wann lesen:** Beim Frontend-Aufbau.
 
 **Code-Beispiele:**
+
 ```typescript
 import { THEME } from '@theme/Theme';
 
@@ -89,9 +108,11 @@ export default function Hero() {
 ---
 
 ### 4. **Metallic Design System** (`04-METALLIC-DESIGN-SYSTEM.md`)
+
 **Für:** Visual Effects, Material Design, Rendering
 
 Behandelt:
+
 - Metallische Oberflächeneigenschaften (Gloss, Specularity)
 - 7-Stop Zink-Silber Gradient
 - Shadow/Highlight-Komposition
@@ -102,6 +123,7 @@ Behandelt:
 **Wann lesen:** Beim Implementieren visueller Effekte.
 
 **Kernkonzept:**
+
 ```
 Metallisch = Linear Gradient (7-Stop) + Inset Shadows + Box-Shadows
 Effekt = Glint Animation + Bass-Reaktivität + Hover States
@@ -110,9 +132,11 @@ Effekt = Glint Animation + Bass-Reaktivität + Hover States
 ---
 
 ### 5. **Remotion Rendering Pipeline** (`05-REMOTION-RENDERING-PIPELINE.md`)
+
 **Für:** Production Rendering, Deployment, DevOps
 
 Behandelt:
+
 - Rendering Modi (Local, Lambda, Renderer API)
 - Codec-Spezifikationen (H.264, VP9, ProRes)
 - Concurrency & Optimierungen
@@ -124,6 +148,7 @@ Behandelt:
 **Wann lesen:** Beim Rendering zu Produktion.
 
 **Rendering-Befehl:**
+
 ```bash
 npm run render -- --codec h264 --concurrency 8
 ```
@@ -131,9 +156,11 @@ npm run render -- --codec h264 --concurrency 8
 ---
 
 ### 6. **Audio Processing & Reactive Effects** (`06-AUDIO-PROCESSING-REACTIVE-EFFECTS.md`)
+
 **Für:** Musik-Synchronisation, Frequenzanalyse, reaktive Animationen
 
 Behandelt:
+
 - FFT (Fast Fourier Transform) Analyse
 - Frequency-Band Extraction (Bass, Mid, Treble)
 - JSON Export für Audio-Daten
@@ -145,6 +172,7 @@ Behandelt:
 **Wann lesen:** Bei Audio-intensiven Features.
 
 **Workflow:**
+
 ```
 Audio-Datei → FFT Analysis → JSON Frames → Remotion Components
 ```
@@ -152,9 +180,11 @@ Audio-Datei → FFT Analysis → JSON Frames → Remotion Components
 ---
 
 ### 7. **Theme System & Design Tokens** (`07-THEME-SYSTEM-DESIGN-TOKENS.md`)
+
 **Für:** Design-Konsistenz, Token-Management, Single Source of Truth
 
 Behandelt:
+
 - Zentrales THEME-Objekt
 - Farben, Typo, Spacing, Animationen
 - Tailwind Integration
@@ -166,6 +196,7 @@ Behandelt:
 **Wann lesen:** Beim Design-Standardisierung.
 
 **Ein Theme für alles:**
+
 ```typescript
 // Next.js Frontend
 <div className="text-metallic-4">{THEME.colors.metallic.stop4}</div>
@@ -177,9 +208,11 @@ Behandelt:
 ---
 
 ### 8. **Entwickler-Workflow & Best Practices** (`08-DEVELOPER-WORKFLOW-BEST-PRACTICES.md`)
+
 **Für:** Team-Entwicklung, Code-Qualität, Prozesse
 
 Behandelt:
+
 - VS Code Setup & Extensions
 - Prettier & ESLint Konfiguration
 - Git Workflow (Git Flow)
@@ -193,6 +226,7 @@ Behandelt:
 **Wann lesen:** Beim Team-Onboarding oder Code-Review.
 
 **Standard-Befehle:**
+
 ```bash
 npm run format      # Auto-Format mit Prettier
 npm run lint        # ESLint überprüfen
@@ -203,9 +237,11 @@ npm run test        # Alle Tests
 ---
 
 ### 9. **Troubleshooting & Fehlerbehandlung** (`09-TROUBLESHOOTING-FEHLERBEHANDLUNG.md`)
+
 **Für:** Problem-Lösung, Debugging, Error Recovery
 
 Behandelt:
+
 - Memory Leaks & Performance-Probleme
 - Audio-Synchronisations-Fehler
 - TypeScript Compile-Fehler
@@ -218,6 +254,7 @@ Behandelt:
 **Wann lesen:** Wenn etwas nicht funktioniert.
 
 **Problem: "out of memory"?**
+
 ```bash
 # Lösung 1: Reduziere Concurrency
 npm run render -- --concurrency 2
@@ -231,26 +268,31 @@ npm run render -- --concurrency 2
 ## 🎯 Quick-Start nach Anwendungsfall
 
 ### Scenario 1: Neue Komponente hinzufügen
+
 ```
 01 (Überblick) → 02 (Remotion) → 07 (Theme) → 08 (Workflow)
 ```
 
 ### Scenario 2: Video mit Audio-Effekten
+
 ```
 02 (Remotion) → 06 (Audio) → 05 (Rendering) → 09 (Debugging)
 ```
 
 ### Scenario 3: Frontend-Feature
+
 ```
 03 (Next.js) → 07 (Theme) → 08 (Workflow) → 09 (Troubleshooting)
 ```
 
 ### Scenario 4: Produktions-Deployment
+
 ```
 05 (Pipeline) → 08 (Workflow) → 09 (Monitoring)
 ```
 
 ### Scenario 5: Performance-Optimierung
+
 ```
 02 (Remotion) oder 03 (Next.js) → 04 (Design) → 08 (Profiling)
 ```
@@ -259,17 +301,17 @@ npm run render -- --concurrency 2
 
 ## 📊 Dokumentations-Matrix
 
-| Datei | Fokus | Audience | Länge | Code % |
-|-------|-------|----------|-------|--------|
-| 01 | Architektur | Alle | 12KB | 30% |
-| 02 | Remotion | Developers | 18KB | 60% |
-| 03 | Frontend | Frontend-Dev | 15KB | 55% |
-| 04 | Design | Designer/Dev | 14KB | 40% |
-| 05 | Rendering | DevOps/Dev | 16KB | 65% |
-| 06 | Audio | Audio-Dev | 17KB | 70% |
-| 07 | Theme | Alle | 13KB | 50% |
-| 08 | Workflow | Team | 14KB | 45% |
-| 09 | Troubleshooting | Alle | 19KB | 60% |
+| Datei | Fokus           | Audience     | Länge | Code % |
+| ----- | --------------- | ------------ | ----- | ------ |
+| 01    | Architektur     | Alle         | 12KB  | 30%    |
+| 02    | Remotion        | Developers   | 18KB  | 60%    |
+| 03    | Frontend        | Frontend-Dev | 15KB  | 55%    |
+| 04    | Design          | Designer/Dev | 14KB  | 40%    |
+| 05    | Rendering       | DevOps/Dev   | 16KB  | 65%    |
+| 06    | Audio           | Audio-Dev    | 17KB  | 70%    |
+| 07    | Theme           | Alle         | 13KB  | 50%    |
+| 08    | Workflow        | Team         | 14KB  | 45%    |
+| 09    | Troubleshooting | Alle         | 19KB  | 60%    |
 
 **Total: ~130KB dokumentierter Content mit Code-Beispielen**
 
@@ -278,6 +320,7 @@ npm run render -- --concurrency 2
 ## 🔍 Suchhilfe
 
 ### Nach Problem suchen:
+
 - Memory Leak? → 09
 - Audio nicht sync? → 06
 - Rendering crasht? → 05, 09
@@ -287,6 +330,7 @@ npm run render -- --concurrency 2
 - Theme-Änderung? → 07, 04
 
 ### Nach Technologie suchen:
+
 - **Next.js** → 03
 - **Remotion** → 02, 05, 06
 - **Tailwind** → 03, 07
@@ -296,6 +340,7 @@ npm run render -- --concurrency 2
 - **CSS/Design** → 04, 07
 
 ### Nach Rolle suchen:
+
 - **Frontend Developer** → 03, 07, 08
 - **Video Engineer** → 02, 05, 06
 - **DevOps** → 05, 08, 09
@@ -307,6 +352,7 @@ npm run render -- --concurrency 2
 ## 💡 Wichtigste Konzepte
 
 ### 1. Single Source of Truth (THEME)
+
 ```typescript
 // Nutze THEME für ALLES
 // ✓ Farben im Frontend
@@ -315,22 +361,26 @@ npm run render -- --concurrency 2
 ```
 
 ### 2. Audio-driven Reactivity
+
 ```
 Audio FFT → JSON Frames → Remotion Props → Visual Effects
 ```
 
 ### 3. Metallisches Design = Gradient + Shadows
+
 ```
 7-Stop Linear Gradient + Inset Shadows + Box Shadows = Effekt
 ```
 
 ### 4. Performance Budget
+
 ```
 60 FPS = 16.67ms pro Frame
 Rendering (3-5ms) + Layout (4-6ms) + GC (2-3ms) + Buffer (1-2ms)
 ```
 
 ### 5. Rendering Pipeline
+
 ```
 Code → Build → Compose → Frame Gen → Encode → Output
 ```
@@ -358,12 +408,14 @@ Alle Dateien folgen diesem Format:
 ```
 
 ### Code-Beispiele:
+
 ```typescript
 // ✗ WRONG - was man NICHT machen sollte
 // ✓ RIGHT - was man tun sollte
 ```
 
 ### Laufende Prozesse:
+
 ```
 Eingabe
   ↓
@@ -404,12 +456,14 @@ Diese Dokumentation wird kontinuierlich aktualisiert für:
 ## 📞 Verwendung dieser Dokumentation
 
 ### Im Team:
+
 - **Onboarding:** Alle neuen Developer lesen Dateien 1, 2 oder 3, 8
 - **Code-Review:** Nutze 08 (Workflow) als Checkliste
 - **Bug-Fixing:** Starte mit 09 (Troubleshooting)
 - **Architektur-Diskussion:** Referenziere Datei 01
 
 ### Persönlich:
+
 - Nutze als Referenz während Entwicklung
 - Copy-Paste Code-Beispiele
 - Nachschlagen wenn du steckenbleibst
