@@ -39,10 +39,12 @@ Lade das technologische Herzstück. Ohne dies bist du blind für unsere Physik-E
 
 ### PHASE 3: THE ARCHITECT TASK (Dein Job heute)
 
-Sobald du geladen bist:
+**WICHTIG:** Bevor du baust, lade die Vorarbeit aus dem `/docs` Ordner. Wir haben dort bereits Architektur-Entscheidungen und Recherche-Ergebnisse gesichert.
 
-1. Erstelle/Update `AGENTS.md` als intelligenten Router ("Wenn Thema X -> Lade Datei Y").
-2. Dokumentiere den "Project Finalization Workflow" als Plan in `vault/plans/`.
+1.  **Read:** `docs/REPOSITORY_MANIFESTO.md` (Die 4-Pillar Architektur).
+2.  **Read:** `docs/RESEARCH_Semantic_Triggers.md` (Die Goldgrube für Router-Logic).
+3.  **Execute:** Erstelle/Update `AGENTS.md` als intelligenten Router (nutze die Patterns aus der Research-Datei!).
+4.  **Execute:** Dokumentiere den "Project Finalization Workflow" in `vault/plans/`.
 
 ---
 
