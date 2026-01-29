@@ -1,4 +1,4 @@
-# 💎 Viron Remotion Studio: Governance Hub (v5.0)
+# 💎 Viron Remotion Studio: Governance Hub (v5.1)
 
 Welcome to the central authority of **Viron Remotion Studio**. This project is a high-end programmatic video engine designed for cinematic UIs and industrial aesthetics.
 
@@ -17,33 +17,37 @@ Welcome to the central authority of **Viron Remotion Studio**. This project is a
 
 Die universelle Remotion-Wissensbasis. Gilt für ALLE Remotion-Projekte.
 
-### Layer 2: Projekt-Dokumentation (~77KB)
+### Layer 2: Projekt-Dokumentation (Viron Core)
 
-**Pfad:** `viron-core/`
+**Pfad:** `viron-core/` (~77KB total)
 
-| Datei                       | Größe  | Inhalt                                    |
-| --------------------------- | ------ | ----------------------------------------- |
-| `documentation_manifest.md` | 10.7KB | **DER ROUTER** – Index + Scenario-Trigger |
-| `physics.md`                | 11.5KB | R3F/Three.js für Video-Production         |
-| `pipeline.md`               | 12.9KB | Rendering (Local, Lambda, CI/CD)          |
-| `theme.md`                  | 12.1KB | Design Tokens & Tailwind                  |
-| `troubleshooting.md`        | 13.5KB | Debugging-Handbuch                        |
-| `vision.md`                 | 6.0KB  | High-Level Architektur                    |
-| `workflow.md`               | 10.4KB | Entwickler-Workflow                       |
+| Datei                       | Inhalt                                    |
+| --------------------------- | ----------------------------------------- |
+| `documentation_manifest.md` | **DER ROUTER** – Index + Scenario-Trigger |
+| `physics.md`                | R3F/Three.js für Video-Production         |
+| `pipeline.md`               | Rendering (Local, Lambda, CI/CD)          |
+| `theme.md`                  | Design Tokens & Tailwind                  |
+| `troubleshooting.md`        | Debugging-Handbuch                        |
+| `vision.md`                 | High-Level Architektur (Kurzfassung)      |
+| `workflow.md`               | Entwickler-Workflow                       |
 
-### Layer 3: Gelernte Patterns (~15KB)
+### Layer 2.5: The Viron Vision (Deep Dive)
 
-**Pfad:** `src/learnings/`
+**Pfad:** `public/remotion.md` (~30KB)
 
-| Datei                                 | Inhalt                                            |
-| ------------------------------------- | ------------------------------------------------- |
-| `GUIDE_Viron_Button_Stack.md`         | 4-Layer Architektur (Backdrop→Glass→Effects→Post) |
-| `PATTERN_Advanced_Shaders.md`         | Iridescent Glass Shader (CSM/GLSL)                |
-| `PATTERN_LIGHTING_GRADIENTS.md`       | 80% Grey Rule, Drift-Pflicht                      |
-| `PATTERN_Viron_Hard_Won_Knowledge.md` | 7 Gesetze aus V1-V45                              |
-| `RESOURCES_AND_ECOSYSTEM.md`          | R3F Holy Trinity, AI Tools, Asset Sources         |
+> **"The Viron Button Ecosystem Report 2026"**  
+> Die "Bibel" des Projekts. Beschreibt die Hybrid-Pipeline (React + AI), Sora 2 Integration und die architektonische Vision.  
+> **Wann lesen:** Nur bei fundamentalen Architektur-Entscheidungen.
 
-### Layer 4: Knowledge Pillars (On-Demand)
+### Layer 3: Strategien & Hard Rules
+
+| Datei               | Pfad                                                                                                        | Inhalt                                         |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| **V43 Master Plan** | [`src/V43_MASTER_PLAN.md`](file:///c:/Workspace/Repos/remotion-studio/src/V43_MASTER_PLAN.md)               | "The Silver Armada" Strategie (12 Variationen) |
+| **Lighting Rules**  | [`src/PROJECT_RULES_LIGHTING.md`](file:///c:/Workspace/Repos/remotion-studio/src/PROJECT_RULES_LIGHTING.md) | "The 80% Grey Rule", Drift-Pflicht             |
+| **Learnings**       | `src/learnings/*.md`                                                                                        | Shader-Rezepte, Viron-Gesetze                  |
+
+### Layer 4: Implementation Pillars (On-Demand)
 
 | Pillar       | Pfad         | Inhalt                                |
 | ------------ | ------------ | ------------------------------------- |
@@ -51,7 +55,7 @@ Die universelle Remotion-Wissensbasis. Gilt für ALLE Remotion-Projekte.
 | **Patterns** | `/patterns/` | BarChart, Typewriter, etc.            |
 | **Guides**   | `/guides/`   | Compositions, Sequencing              |
 | **Vault**    | `/vault/`    | Experiments, Benchmarks, Ideas        |
-| **Docs**     | `/docs/`     | Manifesto, Research, Human Guide      |
+| **Docs**     | `/docs/`     | Repository Manifesto, Human Guide     |
 
 ---
 
@@ -83,7 +87,7 @@ Referenz: [`.agent/boot/INIT_MISSION.md`](file:///c:/Workspace/Repos/remotion-st
 | **1: Identität** | gemini.md, agency.md, PROJECT_RULES.md | ~3K            |
 | **2: Baseline**  | Global Skill Index (SKILL.md)          | ~1K            |
 | **3: Router**    | viron-core/documentation_manifest.md   | ~2.7K          |
-| **4: On-Demand** | Alles andere nach Bedarf               | ~50K verfügbar |
+| **4: On-Demand** | Alles andere (Vision, V43 Plan, Specs) | ~50K verfügbar |
 
 ---
 
@@ -95,4 +99,4 @@ Referenz: [`.agent/boot/INIT_MISSION.md`](file:///c:/Workspace/Repos/remotion-st
 
 ---
 
-_Viron Intelligence System | v5.0 (Unified Init Path) | 2026-01-29_
+_Viron Intelligence System | v5.1 (Integrated "Hidden Gems") | 2026-01-29_

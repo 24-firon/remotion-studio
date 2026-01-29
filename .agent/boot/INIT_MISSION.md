@@ -1,4 +1,4 @@
-# 🚀 VIRON INITIALIZATION PROTOCOL (v2.0)
+# 🚀 VIRON INITIALIZATION PROTOCOL (v2.1)
 
 **Status:** ACTIVE  
 **Letzte Aktualisierung:** 2026-01-29
@@ -40,25 +40,19 @@ Lade diese Dateien, um dein "Betriebssystem" zu starten:
 
 ---
 
-## PHASE 3: PROJEKT-WISSEN (Pflicht)
+## PHASE 3: PROJEKT-WISSEN (Core & Vision)
 
 **Der Router ist:** `viron-core/documentation_manifest.md`
 
 1. **Lies:** `viron-core/documentation_manifest.md` (~10.7KB)
-   - Enthält einen Index aller 9 Module
-   - Enthält Scenario-Trigger ("Wenn Audio → lies 06-AUDIO...")
-   - Verweist auf die anderen Dateien bei Bedarf
+   - Index aller 9 Viron-Module + Scenario-Trigger.
 
-2. **Lade Module NUR bei Bedarf:**
+2. **Lade Module NUR bei Bedarf:** (siehe manifest)
 
-| Modul         | Datei                         | Wann laden               |
-| ------------- | ----------------------------- | ------------------------ |
-| 3D/R3F Basics | `physics.md` (11.5KB)         | Bei 3D-Arbeit            |
-| Rendering     | `pipeline.md` (12.9KB)        | Bei Rendering/Deployment |
-| Design Tokens | `theme.md` (12.1KB)           | Bei Design-Arbeit        |
-| Debugging     | `troubleshooting.md` (13.5KB) | Bei Fehlersuche          |
-| Architektur   | `vision.md` (6KB)             | Bei Überblick            |
-| Dev Workflow  | `workflow.md` (10.4KB)        | Bei Prozess-Fragen       |
+3. **The VISION (Deep Dive):**
+   - Falls du **Strategie** oder **Architektur** machst, lies:
+     `public/remotion.md` (30KB) -> **"The 2026 Ecosystem Report"**
+     _(Hybrid Pipeline, Sora 2 Integration, Vision)_
 
 ---
 
@@ -66,14 +60,15 @@ Lade diese Dateien, um dein "Betriebssystem" zu starten:
 
 Diese Ordner nur bei spezifischen Aufgaben laden:
 
-| Ordner           | Inhalt                             | Wann laden                 |
-| ---------------- | ---------------------------------- | -------------------------- |
-| `/docs`          | Manifesto, Research, Human Guide   | Bei Repository-Architektur |
-| `/src/learnings` | Shader-Rezepte, Hard-Won Knowledge | Bei VFX/Shader-Arbeit      |
-| `/specs`         | Audio, Camera, Website Specs       | Bei Feature-Specs          |
-| `/guides`        | Compositions, Sequencing           | Bei Remotion-Patterns      |
-| `/patterns`      | BarChart, Typewriter, etc.         | Bei UI-Patterns            |
-| `/vault`         | Experiments, Benchmarks            | Nur auf explizite Anfrage  |
+| Ordner           | Inhalt                        | Wann laden                    |
+| ---------------- | ----------------------------- | ----------------------------- |
+| `/src/learnings` | Shader-Rezepte, Viron-Gesetze | Bei VFX/Shader-Arbeit         |
+| `/specs`         | Audio, Camera, Website Specs  | Bei Feature-Specs             |
+| `/guides`        | Compositions, Sequencing      | Bei Remotion-Patterns         |
+| `/patterns`      | BarChart, Typewriter, etc.    | Bei UI-Patterns               |
+| `/vault`         | Experiments, Benchmarks       | Nur auf explizite Anfrage     |
+| `/docs`          | Manifesto, Human Guide        | Bei Repository-Architektur    |
+| **`src/` Root**  | `V43_MASTER_PLAN.md`          | Bei "Silver Armada" Strategie |
 
 ---
 
@@ -103,17 +98,4 @@ Schritt 5: Du bist bereit für deinen Task!
 
 ---
 
-## 📚 DATEIPFADE (Referenz)
-
-```
-~/.gemini/gemini.md                                      # Globale Regeln
-~/.gemini/rules/agency.md                                # Verhaltensregeln
-~/.gemini/antigravity/global_skills/remotion-best-practices/  # Global Skill
-PROJECT_RULES.md                                         # Projekt-Governance
-viron-core/documentation_manifest.md                     # DER ROUTER
-viron-core/*.md                                          # Projekt-Dokumentation
-```
-
----
-
-_Protokoll Version 2.0 | 2026-01-29_
+_Protokoll Version 2.1 | 2026-01-29_
