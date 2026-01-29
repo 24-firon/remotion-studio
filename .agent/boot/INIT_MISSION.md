@@ -1,101 +1,76 @@
-# 🚀 VIRON INITIALIZATION PROTOCOL (v2.1)
+# 🛑 INITIALIZATION BOOT SEQUENCE (v3.0)
 
-**Status:** ACTIVE  
-**Letzte Aktualisierung:** 2026-01-29
-
----
-
-## 📋 ÜBERSICHT
-
-Dieses Dokument ist der **einzige Einstiegspunkt** für Agenten. Es definiert den roten Faden durch alle Wissensquellen.
-
-**Token-Budget:**
-
-- Basis-Init: ~7K Token (Pflicht)
-- On-Demand: ~50K Token (bei Bedarf)
+**SYSTEM STATUS:** WAITING FOR BOOT  
+**PROTOCOL:** SEQUENTIAL_STRICT
 
 ---
 
-## PHASE 1: IDENTITÄT (Pflicht)
-
-Lade diese Dateien, um dein "Betriebssystem" zu starten:
-
-1. **Globale Regeln:** `~/.gemini/gemini.md`
-   - Achte auf: **"Global Skills Hub"** Sektion (zeigt auf Skills-Ordner)
-2. **Verhaltensregeln:** `~/.gemini/rules/agency.md`
-
-3. **Projekt-Governance:** `PROJECT_RULES.md` (im Repo-Root)
+> [!CAUTION]
+> **READ THIS CAREFULLY.**
+> Do NOT load all phases at once. You will run out of tokens.
+> Follow the sequence step-by-step.
 
 ---
 
-## PHASE 2: TECHNOLOGIE-BASELINE (Pflicht)
+## 🟢 PHASE 1: IDENTITY (Mandatory)
 
-**Der globale Remotion-Skill ist die BASELINE.** Alles im Projekt baut darauf auf.
+**Trigger:** Start of every new session.
 
-1. **Lies den Index:** `~/.gemini/antigravity/global_skills/remotion-best-practices/SKILL.md`
-   - Enthält 26 Rule-Dateien (3D, Audio, Animationen, etc.)
-   - **Lade Rules NUR bei Bedarf** (z.B. `rules/audio.md` bei Audio-Task)
+1.  **READ** `~/.gemini/gemini.md` (Global Constitution)
+2.  **READ** `PROJECT_RULES.md` (Repo Laws)
+3.  **READ** `~/.gemini/rules/git-safety.md` (Safety Protocol)
 
-**WICHTIG:** Die `viron-core/` Dokumentation dupliziert den globalen Skill NICHT. Sie enthält nur Viron-spezifische Erweiterungen.
-
----
-
-## PHASE 3: PROJEKT-WISSEN (Core & Vision)
-
-**Der Router ist:** `viron-core/documentation_manifest.md`
-
-1. **Lies:** `viron-core/documentation_manifest.md` (~10.7KB)
-   - Index aller 9 Viron-Module + Scenario-Trigger.
-
-2. **Lade Module NUR bei Bedarf:** (siehe manifest)
-
-3. **The VISION (Deep Dive):**
-   - Falls du **Strategie** oder **Architektur** machst, lies:
-     `public/remotion.md` (30KB) -> **"The 2026 Ecosystem Report"**
-     _(Hybrid Pipeline, Sora 2 Integration, Vision)_
+**🛑 STOP.** Do not proceed until you have processed these rules.
+**Verify:** Do you know your name? Your token limits? The Git Safety Lock?
 
 ---
 
-## PHASE 4: KONTEXT-SPEZIFISCH (Optional)
+## 🟡 PHASE 2: ROUTER INITIALIZATION (Mandatory)
 
-Diese Ordner nur bei spezifischen Aufgaben laden:
+**Trigger:** After Phase 1 is digested.
 
-| Ordner           | Inhalt                        | Wann laden                    |
-| ---------------- | ----------------------------- | ----------------------------- |
-| `/src/learnings` | Shader-Rezepte, Viron-Gesetze | Bei VFX/Shader-Arbeit         |
-| `/specs`         | Audio, Camera, Website Specs  | Bei Feature-Specs             |
-| `/guides`        | Compositions, Sequencing      | Bei Remotion-Patterns         |
-| `/patterns`      | BarChart, Typewriter, etc.    | Bei UI-Patterns               |
-| `/vault`         | Experiments, Benchmarks       | Nur auf explizite Anfrage     |
-| `/docs`          | Manifesto, Human Guide        | Bei Repository-Architektur    |
-| **`src/` Root**  | `V43_MASTER_PLAN.md`          | Bei "Silver Armada" Strategie |
+1.  **READ** `.agent/AGENTS.md` (Primary Agent Guide)
+    - This is your operational playbook.
+2.  **READ** `viron-core/documentation_manifest.md` (The Knowledge Brain)
+    - This file tells you **WHERE** knowledge lives.
+
+**🛑 STOP.** Do not read any referenced files yet.
+**Verify:** Do you have the operational playbook and the knowledge map?
 
 ---
 
-## ⚠️ KRITISCHE REGELN
+## 🟠 PHASE 3: GLOBAL SKILL HANDSHAKE (Mandatory)
 
-1. **KEIN rekursiver Scan** (`ls -R`, `find .`). Das überflutet dein Token-Fenster.
+**Trigger:** After Phase 2.
 
-2. **Lade NUR was du JETZT brauchst.** Der Router (`documentation_manifest.md`) sagt dir, was relevant ist.
+1.  **READ** `~/.gemini/antigravity/global_skills/remotion-best-practices/SKILL.md` (Index)
+2.  **READ** all files in `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/`
+    - **CRITICAL:** You MUST read the full content of these rules to compare them against `viron-core/`.
+    - You are the cleaner. You need to know the baseline to spot duplicates.
 
-3. **Baseline vs. Projekt:**
-   - Baseline = Globaler Skill (`remotion-best-practices`)
-   - Projekt = `viron-core/` (nur Viron-spezifisches)
-
-4. **Keine Duplikate:** Wenn etwas im globalen Skill steht, steht es NICHT nochmal in viron-core.
-
----
-
-## 🎯 QUICK START
-
-```
-Schritt 1: Lies dieses Dokument (INIT_MISSION.md)
-Schritt 2: Lies gemini.md (Global Skills Hub)
-Schritt 3: Lies remotion-best-practices/SKILL.md (Index)
-Schritt 4: Lies viron-core/documentation_manifest.md (Router)
-Schritt 5: Du bist bereit für deinen Task!
-```
+**🛑 STOP.** You are now initialized with the full context.
+**State:** `READY_FOR_TASK`
 
 ---
 
-_Protokoll Version 2.1 | 2026-01-29_
+## 🔴 PHASE 4: LAZY LOADING (On Demand ONLY)
+
+**Trigger:** ONLY when the user gives you a specific task.
+
+> **RULE:** You are forbidden from loading these files "just in case".
+
+- **Task:** "Fix rendering bug" -> **Load:** `viron-core/pipeline.md` + `viron-core/troubleshooting.md`
+- **Task:** "Change colors" -> **Load:** `viron-core/theme.md`
+- **Task:** "Add 3D scene" -> **Load:** `viron-core/physics.md` + `rules/3d.md` (Global Skill)
+
+---
+
+## 🎯 EXECUTION PROMPT
+
+If you have read this file, your first action must be:
+
+1.  **Check your context.** Are Phase 1 files loaded?
+2.  **If NO:** Load Phase 1 files.
+3.  **If YES:** Report "System Initialized. Awaiting Task."
+
+_Boot Sequence v3.0_
