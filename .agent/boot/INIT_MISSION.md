@@ -30,53 +30,42 @@
 **Trigger:** After Phase 1 is digested.
 
 1.  **READ** `.agent/AGENTS.md` (Primary Agent Guide)
-    - This is your operational playbook.
-2.  **READ** `viron-core/documentation_manifest.md` (The Knowledge Brain)
-    - This file tells you **WHERE** knowledge lives.
-
-**🛑 STOP.** Do not read any referenced files yet.
-**Verify:** Do you have the operational playbook and the knowledge map?
+2.  **READ** `viron-core/documentation_manifest.md` (The Master Knowledge Router)
+    - **CRITICAL:** This manifest maps ALL levels: `specs/`, `guides/`, `docs/`, `learnings/`, `patterns/`, and `vault/`.
 
 ---
 
-## 🟠 PHASE 3: GLOBAL SKILL HANDSHAKE (Mandatory)
+## 🟠 PHASE 3: KNOWLEDGE HANDSHAKE (Mandatory)
 
 **Trigger:** After Phase 2.
 
-1.  **READ** `~/.gemini/antigravity/global_skills/remotion-best-practices/SKILL.md` (Index)
-2.  **READ** all files in `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/`
-3.  **READ** all files in `viron-core/`
-4.  **READ** all files in `src/learnings/`
+1.  **READ** index of `~/.gemini/antigravity/global_skills/remotion-best-practices/`
+2.  **READ** all files in `viron-core/` (The 6 Project Pillars)
+3.  **READ** all files in `src/learnings/` (Hard-won Battle Lessons)
 
-**OBJECTIVE:** You MUST compare Global Rules vs. Viron Core vs. Learnings.
+**OBJECTIVE:** Synthesize "Global Standard" vs. "Viron Project Law" vs. "Team Experience".
 
-- Global Rules = The Standard.
-- Viron Core = The Project Law.
-- Learnings = The Experience.
-
-**🛑 STOP.** You are now initialized with the FULL context.
+**🛑 STOP.** You are now initialized with the core brain.
 **State:** `READY_FOR_TASK`
 
 ---
 
-## 🔴 PHASE 4: LAZY LOADING (On Demand ONLY)
+## 🔴 PHASE 4: DEEP LEVEL ROUTING (On Demand)
 
-**Trigger:** ONLY when the user gives you a specific task.
+**Trigger:** ONLY when the task requires specialized domain knowledge.
 
-> **RULE:** You have already loaded the core knowledge in Phase 3.
-> Use this phase for highly specific files only (e.g., Vault, Patterns).
+> **RULE:** Use `documentation_manifest.md` as your compass.
 
-- **Task:** "New UI Component" -> **Load:** `patterns/`
-- **Task:** "Benchmarks" -> **Load:** `vault/`
+- **Specs & Entry:** `specs/`
+- **Execution Strategy:** `guides/`
+- **Repo Architecture:** `docs/`
+- **UI & Assets:** `patterns/` & `vault/`
 
 ---
 
 ## 🎯 EXECUTION PROMPT
 
-If you have read this file, your first action must be:
+1.  **Verify Context:** Are Phase 1-3 loaded?
+2.  **State Status:** Report "System Fully Initialized. All 7 Layers mapped. Awaiting Task."
 
-1.  **Check your context.** Are Phase 1 files loaded?
-2.  **If NO:** Load Phase 1 files.
-3.  **If YES:** Report "System Initialized. Awaiting Task."
-
-_Boot Sequence v3.0_
+_Boot Sequence v3.1_

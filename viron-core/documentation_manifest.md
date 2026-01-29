@@ -21,6 +21,17 @@ This manifest routes you to the correct knowledge source based on your task.
 | **Workflow**     | `workflow.md`               | ~10KB | Task involves Git, Commits, VS Code, Linting                |
 | **Vision**       | `vision.md`                 | ~6KB  | Task involves Long-term Strategy, Ecosystem                 |
 
+### 🟠 Extended Knowledge (Deep Levels)
+
+| Level        | Directory        | Content Description                                      |
+| :----------- | :--------------- | :------------------------------------------------------- |
+| **Specs**    | `specs/`         | System Entry, Audio Pipeline, Camera Specs, Website Meta |
+| **Guides**   | `guides/`        | Feature Implementation, Sequencing, Composition Guides   |
+| **Registry** | `docs/`          | Repository Manifesto, Human Guide, Semantic Triggers     |
+| **Lessons**  | `src/learnings/` | Shader Patterns, Hard-won knowledge, Viron Button Stack  |
+| **Assets**   | `vault/`         | Benchmarks, Large JSON files, Asset metadata             |
+| **UI**       | `patterns/`      | Visual UI Patterns, Component variations                 |
+
 ### 🔵 Global Skills (Baseline)
 
 | Module       | Location                                                               | Relation                                                 |
@@ -31,31 +42,26 @@ This manifest routes you to the correct knowledge source based on your task.
 
 ## 🔗 RELATION TO GLOBAL SKILLS (Duplicate Check)
 
-| Global Skill Module   | Viron Core Module | Relation                                                             |
+| Global Skill Module   | Project Knowledge | Relation                                                             |
 | :-------------------- | :---------------- | :------------------------------------------------------------------- |
 | `3d.md` (Basics)      | `physics.md`      | **Extension:** Viron adds PBR, Lighting Rules, and Material Systems. |
 | `audio.md` (API)      | `specs/audio.md`  | **Extension:** Viron adds FFT-JSON-Pipeline and Reactivity.          |
 | `tailwind.md` (Setup) | `theme.md`        | **Extension:** Viron adds Design Tokens, Theme.ts, and Config.       |
 
-**Verdict:** No redundancy. Viron Core builds ON TOP of Global Skills.
+**Verdict:** No redundancy. Project Knowledge builds ON TOP of Global Skills.
 
 ---
 
 ## 🎯 SCENARIO ROUTING
 
-**Scenario 1: "Fix a rendering crash"**
--> Load `troubleshooting.md` AND `pipeline.md`.
+**Scenario 1: "Configure Audio"**
+-> Load `specs/audio.md` AND `src/learnings/RESOURCES_AND_ECOSYSTEM.md`.
 
-**Scenario 2: "Change the primary color"**
--> Load `theme.md`.
--> **DO NOT** load `tailwind.md` (Global), as Viron overrides it.
+**Scenario 2: "New UI Flow"**
+-> Load `guides/sequencing.md` AND `patterns/`.
 
-**Scenario 3: "Add a MacBook 3D model"**
--> Load `physics.md`.
--> **DO NOT** use generic Three.js primitives. Use `createMacBookGeometry()` from `physics.md`.
-
-**Scenario 4: "Commit my changes"**
--> Load `workflow.md` to check Commit Convention.
+**Scenario 3: "Repository Governance"**
+-> Load `docs/REPOSITORY_MANIFESTO.md`.
 
 ---
 
