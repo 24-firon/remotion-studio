@@ -10,6 +10,8 @@ This file provides a directory map for AI Agents to quickly navigate the project
 - **Technical Specs**: [/specs/](file:///c:/Workspace/Repos/remotion-studio/specs/) (The "What" & "Why")
 - **Implementation Patterns**: [/patterns/](file:///c:/Workspace/Repos/remotion-studio/patterns/) (The "How" - Code Examples)
 - **Manuals & Research**: [/guides/](file:///c:/Workspace/Repos/remotion-studio/guides/) (The "Context" - Stacks & Guides)
+- **Innovation Vault**: [/vault/](file:///c:/Workspace/Repos/remotion-studio/vault/) (Experiments: `audio-sync/`, `benchmarks/`, `fx-lab/`, `projects/`)
+- **Repository Intelligence**: [/docs/](file:///c:/Workspace/Repos/remotion-studio/docs/) (Manifesto, Operator Guide, Research)
 
 ### Standardization
 

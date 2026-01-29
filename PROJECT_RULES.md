@@ -34,6 +34,22 @@ Long-form documentation on Tech-Stacks and brand standards.
 _Innovation & Research._  
 Experimental blueprints, market benchmarks, and future project ideas.
 
+**Vault Structure:**
+
+- `audio-sync/` – Audio synchronization strategies
+- `benchmarks/` – Market references
+- `fx-lab/` – Visual effects experiments
+- `projects/` – Future project drafts
+
+### 📄 [Documentation](file:///c:/Workspace/Repos/remotion-studio/docs/)
+
+_Repository Intelligence._  
+Contains the Manifesto, Human Guide, and Research Archives. **Always read this before architectural changes.**
+
+- [`REPOSITORY_MANIFESTO.md`](file:///c:/Workspace/Repos/remotion-studio/docs/REPOSITORY_MANIFESTO.md) – The 4-Pillar Architecture
+- [`HUMAN_OPERATOR_GUIDE.md`](file:///c:/Workspace/Repos/remotion-studio/docs/HUMAN_OPERATOR_GUIDE.md) – User interaction best practices
+- [`RESEARCH_Semantic_Triggers.md`](file:///c:/Workspace/Repos/remotion-studio/docs/RESEARCH_Semantic_Triggers.md) – Agent triggering patterns
+
 ---
 
 ## 🛠️ Global Development Protocol
@@ -70,6 +86,15 @@ To maintain peak performance within the 60k token window, every agent must initi
 3.  **PHASE 3: Target (Knowledge-Size: On-Demand)**
     Laden: Spezifische Dateien aus `/specs`, `/guides`, `/vault` basierend auf dem Task.
     _Zweck: Domänenwissen nur bei Bedarf laden._
+
+---
+
+## 🎬 Available Workflows
+
+Execute these via slash-commands (e.g., `/release`):
+
+- **`/release`** → [Semantic Release Protocol](file:///c:/Workspace/Repos/remotion-studio/.agent/workflows/release.md)
+- **`/session-close`** → [Auto-Archive Session Logs](file:///c:/Workspace/Repos/remotion-studio/.agent/workflows/session-close.md)
 
 ---
 
