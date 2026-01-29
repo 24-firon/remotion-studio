@@ -1,28 +1,53 @@
-# 🤖 AGENT ORCHESTRATION
+# 🧭 AGENTS.md – Light Router
 
-This file provides a directory map for AI Agents to quickly navigate the project's knowledge base.
+**Status:** Sekundär (Hauptrouter: `viron-core/documentation_manifest.md`)  
+**Zweck:** Schnelle Orientierung für AI-Agenten
 
-## 🗺️ Knowledge Map
+---
 
-### Authority (Root Level)
+## 🚀 Quick Start
 
-- **Rules**: [PROJECT_RULES.md](file:///c:/Workspace/Repos/remotion-studio/PROJECT_RULES.md)
-- **Technical Specs**: [/specs/](file:///c:/Workspace/Repos/remotion-studio/specs/) (The "What" & "Why")
-- **Implementation Patterns**: [/patterns/](file:///c:/Workspace/Repos/remotion-studio/patterns/) (The "How" - Code Examples)
-- **Manuals & Research**: [/guides/](file:///c:/Workspace/Repos/remotion-studio/guides/) (The "Context" - Stacks & Guides)
-- **Innovation Vault**: [/vault/](file:///c:/Workspace/Repos/remotion-studio/vault/) (Experiments: `audio-sync/`, `benchmarks/`, `fx-lab/`, `projects/`)
-- **Repository Intelligence**: [/docs/](file:///c:/Workspace/Repos/remotion-studio/docs/) (Manifesto, Operator Guide, Research)
+```
+1. Lies: .agent/boot/INIT_MISSION.md (DER Bootloader)
+2. Lies: PROJECT_RULES.md (Governance)
+3. Lies: viron-core/documentation_manifest.md (DER Router)
+```
 
-### Standardization
+---
 
-- **Templates**: Always follow [guides/TEMPLATE_FeatureSpec.md](file:///c:/Workspace/Repos/remotion-studio/guides/TEMPLATE_FeatureSpec.md) when creating new specs.
+## 📍 Wissens-Karte
 
-## 🛑 Agent Protocol
+| Was du suchst          | Wo du es findest                                       |
+| ---------------------- | ------------------------------------------------------ |
+| Remotion Basics        | `~/.gemini/.../global_skills/remotion-best-practices/` |
+| Viron Technik          | `viron-core/*.md`                                      |
+| Shader/VFX Rezepte     | `src/learnings/*.md`                                   |
+| Feature Specs          | `specs/*.md`                                           |
+| Code Patterns          | `patterns/*.md`                                        |
+| Workflows              | `.agent/workflows/*.md`                                |
+| Repository Architektur | `docs/*.md`                                            |
 
-1. **READ** `PROJECT_RULES.md` first.
-2. **LOAD** required specs from `/specs/` based on task domain.
-3. **KNOWLEDGE AUDIT:** Before committing, check if rules, specs, or logs need updates. Bundle everything into ONE atomic commit.
-4. **SEQUENTIAL AUTOMATION:** To prevent IDE race conditions, never mix file edits and git commands in one turn. Wait for confirmation, then commit immediately.
-5. **TAGGING:** Use `#tags` in documentation to link historical learnings (e.g., #performance, #visual-audit).
-6. **LEAN DOCS:** Update existing specs incrementally instead of over-writing. Use the "Historical Learnings" section.
-7. **NO HALLUCINATION:** Check the "Dependency Matrix" in the relevant Guide or Spec.
+---
+
+## 🎯 Scenario Trigger
+
+| Wenn dein Task...    | Dann lade...                                |
+| -------------------- | ------------------------------------------- |
+| Audio/Musik betrifft | Global: `rules/audio.md` + `specs/audio.md` |
+| 3D/R3F betrifft      | `viron-core/physics.md`                     |
+| Rendering betrifft   | `viron-core/pipeline.md`                    |
+| Shader/VFX betrifft  | `src/learnings/PATTERN_Advanced_Shaders.md` |
+| Debugging betrifft   | `viron-core/troubleshooting.md`             |
+| Neue Composition     | `guides/compositions.md`                    |
+
+---
+
+## ⚠️ Regeln
+
+1. **Nicht alles laden.** On-Demand ist Pflicht.
+2. **Baseline zuerst.** Global Skill vor Projekt-Docs.
+3. **Router nutzen.** `documentation_manifest.md` kennt die Scenario-Trigger.
+
+---
+
+_Light Router v2.0 | 2026-01-29_

@@ -1,54 +1,57 @@
-# 💎 Viron Remotion Studio: Governance Hub
+# 💎 Viron Remotion Studio: Governance Hub (v5.0)
 
 Welcome to the central authority of **Viron Remotion Studio**. This project is a high-end programmatic video engine designed for cinematic UIs and industrial aesthetics.
 
 > [!IMPORTANT]
-> **Documentation Hierarchy:**
-> Viron-specific intelligence (Root folders) takes absolute precedence over generic global skills. If a specification exists in `/specs/`, it is the final law.
+> **Bootloader:** Starte bei [`.agent/boot/INIT_MISSION.md`](file:///c:/Workspace/Repos/remotion-studio/.agent/boot/INIT_MISSION.md)  
+> **Baseline:** Globaler Skill [`remotion-best-practices`](file:///~/.gemini/antigravity/global_skills/remotion-best-practices/)  
+> **Router:** [`viron-core/documentation_manifest.md`](file:///c:/Workspace/Repos/remotion-studio/viron-core/documentation_manifest.md)
 
 ---
 
-## 🏛️ Knowledge Ecosystem
+## 🏛️ Unified Knowledge Architecture
 
-We use a semantic four-pillar system to organize our intelligence. This ensures that every developer and AI agent finds exactly what they need without context overflow.
+### Layer 1: Globale Baseline (~26 Rules)
 
-### ⚙️ [Specifications](file:///c:/Workspace/Repos/remotion-studio/specs/)
+**Pfad:** `~/.gemini/antigravity/global_skills/remotion-best-practices/`
 
-_The technical "What" and "Why"._  
-Contains deterministic logic, FFT analysis pipelines, and virtual production standards.  
-👉 **Start here:** [VIRON_SYSTEM_ENTRY.md](file:///c:/Workspace/Repos/remotion-studio/specs/VIRON_SYSTEM_ENTRY.md)
+Die universelle Remotion-Wissensbasis. Gilt für ALLE Remotion-Projekte.
 
-### 🧩 [Patterns](file:///c:/Workspace/Repos/remotion-studio/patterns/)
+### Layer 2: Projekt-Dokumentation (~77KB)
 
-_The technical "How"._  
-Concise, reusable code snippets and component architectural models. No theoretical fluff, just battle-tested code.
+**Pfad:** `viron-core/`
 
-### 📖 [Guides](file:///c:/Workspace/Repos/remotion-studio/guides/)
+| Datei                       | Größe  | Inhalt                                    |
+| --------------------------- | ------ | ----------------------------------------- |
+| `documentation_manifest.md` | 10.7KB | **DER ROUTER** – Index + Scenario-Trigger |
+| `physics.md`                | 11.5KB | R3F/Three.js für Video-Production         |
+| `pipeline.md`               | 12.9KB | Rendering (Local, Lambda, CI/CD)          |
+| `theme.md`                  | 12.1KB | Design Tokens & Tailwind                  |
+| `troubleshooting.md`        | 13.5KB | Debugging-Handbuch                        |
+| `vision.md`                 | 6.0KB  | High-Level Architektur                    |
+| `workflow.md`               | 10.4KB | Entwickler-Workflow                       |
 
-_The Architectural Context._  
-Long-form documentation on Tech-Stacks and brand standards.  
-🔥 **Hot:** [Viron Button: Eye Candy Stack](file:///c:/Workspace/Repos/remotion-studio/guides/viron-button-guide.md)
+### Layer 3: Gelernte Patterns (~15KB)
 
-### 🏛️ [The Vault](file:///c:/Workspace/Repos/remotion-studio/vault/)
+**Pfad:** `src/learnings/`
 
-_Innovation & Research._  
-Experimental blueprints, market benchmarks, and future project ideas.
+| Datei                                 | Inhalt                                            |
+| ------------------------------------- | ------------------------------------------------- |
+| `GUIDE_Viron_Button_Stack.md`         | 4-Layer Architektur (Backdrop→Glass→Effects→Post) |
+| `PATTERN_Advanced_Shaders.md`         | Iridescent Glass Shader (CSM/GLSL)                |
+| `PATTERN_LIGHTING_GRADIENTS.md`       | 80% Grey Rule, Drift-Pflicht                      |
+| `PATTERN_Viron_Hard_Won_Knowledge.md` | 7 Gesetze aus V1-V45                              |
+| `RESOURCES_AND_ECOSYSTEM.md`          | R3F Holy Trinity, AI Tools, Asset Sources         |
 
-**Vault Structure:**
+### Layer 4: Knowledge Pillars (On-Demand)
 
-- `audio-sync/` – Audio synchronization strategies
-- `benchmarks/` – Market references
-- `fx-lab/` – Visual effects experiments
-- `projects/` – Future project drafts
-
-### 📄 [Documentation](file:///c:/Workspace/Repos/remotion-studio/docs/)
-
-_Repository Intelligence._  
-Contains the Manifesto, Human Guide, and Research Archives. **Always read this before architectural changes.**
-
-- [`REPOSITORY_MANIFESTO.md`](file:///c:/Workspace/Repos/remotion-studio/docs/REPOSITORY_MANIFESTO.md) – The 4-Pillar Architecture
-- [`HUMAN_OPERATOR_GUIDE.md`](file:///c:/Workspace/Repos/remotion-studio/docs/HUMAN_OPERATOR_GUIDE.md) – User interaction best practices
-- [`RESEARCH_Semantic_Triggers.md`](file:///c:/Workspace/Repos/remotion-studio/docs/RESEARCH_Semantic_Triggers.md) – Agent triggering patterns
+| Pillar       | Pfad         | Inhalt                                |
+| ------------ | ------------ | ------------------------------------- |
+| **Specs**    | `/specs/`    | Audio, Camera, Website Specifications |
+| **Patterns** | `/patterns/` | BarChart, Typewriter, etc.            |
+| **Guides**   | `/guides/`   | Compositions, Sequencing              |
+| **Vault**    | `/vault/`    | Experiments, Benchmarks, Ideas        |
+| **Docs**     | `/docs/`     | Manifesto, Research, Human Guide      |
 
 ---
 
@@ -56,46 +59,40 @@ Contains the Manifesto, Human Guide, and Research Archives. **Always read this b
 
 ### 1. 📂 Knowledge Management
 
-- **Lean Documentation:** Avoid documentation bloat.
-  - For **Incremental Changes**: Add a brief note in the "Sync Log" section of the existing Spec/Guide or use `HISTORY_LOG.md`.
-  - For **New Systems**: Use [TEMPLATE_FeatureSpec.md](file:///c:/Workspace/Repos/remotion-studio/guides/TEMPLATE_FeatureSpec.md).
-- **Spec First:** Before coding a core feature, read the relevant spec.
+- **Baseline vs. Projekt:** Globaler Skill = universell, viron-core = Viron-spezifisch
+- **Keine Duplikate:** Wenn es im globalen Skill steht, steht es NICHT nochmal hier
+- **Spec First:** Vor dem Coden, relevante Spec lesen
 
 ### 2. 🚀 Git & Release Protocol
 
-- **Knowledge-Audit (MANDATORY):** Before any commit, verify if `PROJECT_RULES.md`, specs, or `HISTORY_LOG.md` need updates.
-- **Turn-Separation (PHYSICAL GATE):** Agents are **FORBIDDEN** from sending file edits and `git` commands in the same turn. Edits must be confirmed and on disk before a commit is proposed in a **subsequent** turn. This prevents race conditions in the IDE.
-- **Atomic Release:** Code and docs must be bundled into a single commit.
-- **Release Guard:** No task is complete without a confirmed push and synchronized documentation.
+- **Turn-Separation:** Edits und `git` NIEMALS im selben Turn
+- **Atomic Release:** Code und Docs in einem Commit
+- **Knowledge-Audit:** Vor dem Commit prüfen, ob Docs Updates brauchen
 
 > [!TIP]
-> Use the [AGENTS.md](file:///c:/Workspace/Repos/remotion-studio/.agent/AGENTS.md) navigation map if you are an AI assistant to quickly synchronize your context.
+> Nutze `/release` für den vollständigen Release-Workflow.
+
+---
 
 ## 🏛️ 3-Phase Context Boot (MANDATORY)
 
-To maintain peak performance within the 60k token window, every agent must initialize in this order:
+Referenz: [`.agent/boot/INIT_MISSION.md`](file:///c:/Workspace/Repos/remotion-studio/.agent/boot/INIT_MISSION.md)
 
-1.  **PHASE 1: Identity (Boot-Size: ~10 KB)**
-    Laden: `gemini.md`, `agency.md`, `git-safety.md`, `PROJECT_RULES.md`, `AGENTS.md`.
-    _Zweck: Wer bin ich? Welche Gesetze gelten?_
-
-2.  **PHASE 2: Technology (Core-Size: ~75 KB)**
-    Laden: `viron-core/*.md`.
-    _Zweck: Beherrschung der Viron Video Engine (Physik, PBR, Pipeline)._
-
-3.  **PHASE 3: Target (Knowledge-Size: On-Demand)**
-    Laden: Spezifische Dateien aus `/specs`, `/guides`, `/vault` basierend auf dem Task.
-    _Zweck: Domänenwissen nur bei Bedarf laden._
+| Phase            | Was                                    | Token          |
+| ---------------- | -------------------------------------- | -------------- |
+| **1: Identität** | gemini.md, agency.md, PROJECT_RULES.md | ~3K            |
+| **2: Baseline**  | Global Skill Index (SKILL.md)          | ~1K            |
+| **3: Router**    | viron-core/documentation_manifest.md   | ~2.7K          |
+| **4: On-Demand** | Alles andere nach Bedarf               | ~50K verfügbar |
 
 ---
 
 ## 🎬 Available Workflows
 
-Execute these via slash-commands (e.g., `/release`):
-
 - **`/release`** → [Semantic Release Protocol](file:///c:/Workspace/Repos/remotion-studio/.agent/workflows/release.md)
 - **`/session-close`** → [Auto-Archive Session Logs](file:///c:/Workspace/Repos/remotion-studio/.agent/workflows/session-close.md)
+- **`/audit`** → [Visual Audit](file:///c:/Workspace/Repos/remotion-studio/.agent/workflows/audit.md)
 
 ---
 
-_Viron Intelligence System | v4.2 (Governance Hardening)_
+_Viron Intelligence System | v5.0 (Unified Init Path) | 2026-01-29_
