@@ -1,7 +1,7 @@
-# 🌑 Source Master Index: Viron Mission 2026
+# 🌑 Source Master Index: Viron Mission 2026 (Definitive Full Edition)
 
-**Status:** Phase Null 100% COMPLETED (Audited & Verified)
-**Purpose:** Definitive central inventory for surgical IP extraction.
+**Status:** Phase Null 100% COMPLETED (Verified & Exhaustive)
+**Purpose:** Central inventory for surgical IP extraction of 115+ files.
 
 ---
 
@@ -11,31 +11,39 @@ Location: `C:\Workspace\Repos\remotion-studio\`
 
 ### ⚙️ 1.1 Core System (`viron-core/`)
 
-- `documentation_manifest.md` -> **Purpose:** Active Router (v5.0); Semantic mapping of tasks to specific knowledge modules.
-- `vision.md` -> **Purpose:** Architectural Blueprint; Virtual Production Studio concepts (R3F + Remotion + Determinism).
-- `physics.md` -> **Purpose:** 3D-Foundation; Three.js & R3F deterministic rendering, PBR materials, and device geometry.
-- `theme.md` -> **Purpose:** Design Token System; Single source of truth for Metallic Palette & UI Tokens.
-- `pipeline.md` -> **Purpose:** Rendering Architecture; Codec specs, S3-integration, and AWS Lambda scaling.
-- `workflow.md` -> **Purpose:** Developer Experience; IDE settings, naming conventions, and Git-Flow standards.
-- `troubleshooting.md` -> **Purpose:** Error mastery; Proven solutions for memory leaks, sync errors, and browser crashes.
+- `documentation_manifest.md` -> Active Router (v5.0); Semantic mapping.
+- `vision.md` -> Architectural Blueprint; Virtual Production Studio concepts.
+- `physics.md` -> 3D-Foundation; Three.js & R3F rendering, PBR materials.
+- `theme.md` -> Design Token System; Metallic Palette & UI Tokens.
+- `pipeline.md` -> Rendering Architecture; Codec specs, S3, AWS Lambda.
+- `workflow.md` -> Developer Experience; IDE, Naming, Git-Flow.
+- `troubleshooting.md` -> Error mastery; Memory leaks, Sync errors.
 
 ### 🧪 1.2 Pattern Lab (`src/learnings/` & `patterns/`)
 
-- `PATTERN_Advanced_Shaders.md` -> **Purpose:** Viron Shader Recipes; Custom Materials (CSM) vs Lamina, Iridescent Glass effects.
-- `GUIDE_Viron_Button_Stack.md` -> **Purpose:** Pro-Component Architecture; Multilayered UI (Backdrop, Hero, FX).
-- `RESOURCES_AND_ECOSYSTEM.md` -> **Purpose:** Dependency guide; Validated NPM packages for the Viron stack.
-- `BarChart.md` -> **Purpose:** Reactive charting; Viron-styled data visualization component.
-- `Typewriter.md` -> **Purpose:** Terminal UX; Standardized character-reveal animation logic.
-- `WordHighlight.md` -> **Purpose:** Marketing UX; Spring-animated text highlighting for landing pages.
+- `PATTERN_Advanced_Shaders.md` -> Viron Shader Recipes.
+- `PATTERN_LIGHTING_GRADIENTS.md` -> Mathematical Lighting models.
+- `GUIDE_Viron_Button_Stack.md` -> Pro-Component UI Architecture.
+- `RESOURCES_AND_ECOSYSTEM.md` -> Validated NPM dependency guide.
+- `BarChart.md` -> Reactive charting component.
+- `Typewriter.md` -> Terminal UX reveal logic.
+- `WordHighlight.md` -> Marketing UX spring animations.
+- `src/learnings/GUIDE_Viron_Button_Stack.md` -> Detailed component breakdown.
+- `patterns/BarChart.md` -> Implementation reference.
+- `patterns/Typewriter.md` -> Implementation reference.
+- `patterns/WordHighlight.md` -> Implementation reference.
 
-### 📄 1.3 Specs, Guides & Research
+### 📄 1.3 Specs, Guides & Research (`docs/` & `specs/`)
 
-- `REPOSITORY_MANIFESTO.md` -> **Purpose:** Repo Philosophy; The "Four-Pillar" model and Turn-Separation doctrine.
-- `RESEARCH_Antigravity_Advanced_Patterns.md` -> **Purpose:** AI Governance; Reasoning-rich artifacts and context management strategies.
-- `RESEARCH_Semantic_Triggers.md` -> **Purpose:** Hallucination prevention; 8 levels of truth and scenario-based loading.
-- `TOKEN_BUDGET.md` -> **Purpose:** Context Economics; Strategic token investment tiers (10k-20k for Core, 500 for logs).
-- `config_hack.md` -> **Purpose:** Environment tuning; Manual IDE settings for temperature and parameter control.
-- `specs/website.md` -> **Purpose:** Product spec; Roadmap and requirements for the Viron Studio web presence.
+- `REPOSITORY_MANIFESTO.md` -> Repo Philosophy & TURN-Separation.
+- `RESEARCH_Antigravity_Advanced_Patterns.md` -> AI Governance levels.
+- `RESEARCH_Semantic_Triggers.md` -> Context management strategies.
+- `TOKEN_BUDGET.md` -> Context Economics & Tiering.
+- `config_hack.md` -> Manual IDE tuning.
+- `specs/website.md` -> Viron Studio Web Product Spec.
+- `specs/camera.md` -> Virtual Camera Movement & Logic.
+- `specs/audio.md` -> Audio Processing & FFT Pipeline.
+- `docs/REPOSITORY_MANIFESTO.md` -> High-level governance.
 
 ---
 
@@ -43,23 +51,51 @@ Location: `C:\Workspace\Repos\remotion-studio\`
 
 Location: `C:\Viron\90_VAULT\NEW SUFF\Remotion\`
 
-### 🛡️ 2.1 Strategy, Architecture & Meta
+### 🛡️ 2.1 Strategy, Architecture & Meta (00-29)
 
-- `00-master-workflow-2026-integration.md` -> **Purpose:** Target-Navigation; Flowchart mapping ideas to specific 2026 modules.
-- `00-overview-index-v2-1-complete.md` -> **Purpose:** Knowledge System v2.1; Structure overview of the 30+ new modules.
-- `15_MIGRATION_CORE_VIRON_UPLOADS.md` -> **Purpose:** Master Catalog; Classification for 31 files into the `viron-system` skill.
-- `22_SYSTEM_PLAN_Folder_Structure.md` -> **Purpose:** Greenfield-Architecture; Reorganization map for the new repo structure.
-- `25_AGENT_Migration_Order.md` -> **Purpose:** Execution Order; Automated reorg instructions for agents.
-- `26_INTEGRATION_PROTOCOL_Skill_Merge.md` -> **Purpose:** Surgical Merge; Core protocol for the IDE-Agent Skill Extension.
+- `00-master-workflow-2026-integration.md` -> Target-Navigation.
+- `00-overview-index-v2-1-complete.md` -> Knowledge System v2.1 Structure.
+- `15_MIGRATION_CORE_VIRON_UPLOADS.md` -> Master Catalog for Skill-Merge.
+- `22_SYSTEM_PLAN_Folder_Structure.md` -> Greenfield-Architecture Map.
+- `25_AGENT_Migration_Order.md` -> Execution Order logic.
+- `26_INTEGRATION_PROTOCOL_Skill_Merge.md` -> Surgical Merge protocol.
+- `23_ROUTING_MATRIX_Inputs.md` -> Data-In structure.
+- `24_ROUTING_MATRIX_Outputs.md` -> Render-Out structure.
+- `AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md` -> Detailed Onboarding.
 
-### 🎬 2.2 Advanced Technical Modules
+### 🎬 2.2 Technical Foundation & Layout (10-29)
 
-- `10-remotion-basics-01-timeline-und-frames.md` -> **Purpose:** Core Determinism; `useCurrentFrame` mastery for precise timing.
-- `20-layout-patterns-01-container-queries-und-grids.md` -> **Purpose:** 2026 Layout; Container queries vs media queries.
-- `30-post-processing-00-overview-postprocessing-stack.md` -> **Purpose:** Cinematic FX; Overview of the 3D-effect composer pipeline.
-- `40-advanced-lighting-00-caustics-volumetric.md` -> **Purpose:** Light Physics; Water patterns and ray-tracing simulation.
-- `40-audio-reaktiv-00-fft-frequenzspektren.md` -> **Purpose:** Sound Dynamics; FFT-based frequency mapping for reactive visuals.
-- `50-web-patterns-10-real-time-ai-video-streaming.md` -> **Purpose:** Experimental; AI-diffusion pipeline and WebGPU-streaming.
+- `10-remotion-basics-01-timeline-und-frames.md` -> Core Determinism.
+- `20-layout-patterns-01-container-queries-und-grids.md` -> 2026 Layout standards.
+- `20-layout-patterns-02-view-transitions-in-remotion.md` -> Fluid UI transitions.
+- `Remotion Setup.md` -> Automated Pipeline (Whisper/Auphonic).
+
+### 🎨 2.3 Post-Processing & Special Effects (30-49)
+
+- `30-post-processing-00-overview-postprocessing-stack.md` -> Effect Pipeline.
+- `30-post-processing-01-bloom-selective.md` -> Selective Bloom FX.
+- `30-post-processing-02-depth-of-field.md` -> Bokeh & Camera Focus.
+- `30-post-processing-03-04-chromatic-und-grain.md` -> Film Grain & Aberration.
+- `40-advanced-lighting-00-caustics-volumetric.md` -> Water & Light Physics.
+- `40-gltf-models-00-loading-optimization.md` -> 3D Asset management.
+- `40-procedural-patterns-00-noise-voronoi-terrain.md` -> Math-based Textures.
+- `40-audio-reaktiv-00-fft-frequenzspektren.md` -> Visual Sound Dynamics.
+
+### 🌐 2.4 Web Patterns & AI Synergy (50-99)
+
+- `50-web-patterns-01-scroll-basierte-dof-navigation.md` -> Interactive Web-Video.
+- `50-web-patterns-02-adaptive-quality-switching.md` -> Dynamic Bitrate logic.
+- `50-web-patterns-03-css-animationen-vs-remotion.md` -> Determinism Audit.
+- `50-web-patterns-08-performance-web-vitals-mastery.md` -> Rendering Optimization.
+- `50-web-patterns-09-kinetic-typography-text-animation.md` -> Typo-Engines.
+- `50-web-patterns-10-real-time-ai-video-streaming.md` -> AI-Streaming pipeline.
+- `60-cloud-rendering-00-aws-lambda-renderfarming.md` -> Scalable Compute.
+- `70-web-accessibility-wcag-2026.md` -> Inclusive Video patterns.
+- `90-synergy-02-realtime-video-rag-agents.md` -> AI-Agent integration.
+- `90-synergy-03-webgpu-compute-physics.md` -> High-perf Simulation.
+- `16_ARCHIVE_Standard_Audio_Auphonic.md` -> Legacy Mastering.
+- `18_ARCHIVE_Standard_Caption_Engine.md` -> Legacy Subtitles.
+- `FEHLERLOSUNG-haeufige-probleme.md` -> Vault Troubleshooting.
 
 ---
 
@@ -67,29 +103,38 @@ Location: `C:\Viron\90_VAULT\NEW SUFF\Remotion\`
 
 Location: `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules/`
 
-### 🔑 3.1 Timing & Animation (Master Reference)
-
-- `animations.md` -> **Purpose:** Fundamental frame-based animation laws.
-- `timing.md` -> **Purpose:** Spring physics, bounce-curves, and interpolation models.
-- `sequencing.md` -> **Purpose:** Delay, trim, and item duration patterns.
-
-### 🔭 3.2 3D & Spatial (Master Reference)
-
-- `3d.md` -> **Purpose:** Three.js and R3F integration standards.
-- `maps.md` -> **Purpose:** Mapbox integration for geographic visualizations.
-- `lottie.md` -> **Purpose:** Vector animation (Lottie) embedding within Remotion.
-
-### 🔉 3.3 Media & Assets (Master Reference)
-
-- `audio.md` / `videos.md` -> **Purpose:** Media importing, trimming, and playback control.
-- `display-captions.md` -> **Purpose:** Subtitle rendering and TikTok-style word highlighting.
-- `fonts.md` / `images.md` -> **Purpose:** Resource loading and typography systems.
+- `animations.md`
+- `timing.md`
+- `sequencing.md`
+- `compositions.md`
+- `3d.md`
+- `maps.md`
+- `lottie.md`
+- `audio.md`
+- `videos.md`
+- `display-captions.md`
+- `fonts.md`
+- `images.md`
+- `tailwind.md`
+- `gifs.md`
+- `charts.md`
+- `text-animations.md`
+- `get-audio-duration.md`
+- `get-video-duration.md`
+- `get-video-dimensions.md`
+- `measuring-dom-nodes.md`
+- `measuring-text.md`
+- `trimming.md`
+- `parameters.md`
+- `calculate-metadata.md`
+- `extract-frames.md`
+- `can-decode.md`
 
 ---
 
 ## 🏁 Phase 0 Completion Signature
 
-- Alle 120+ Dateien aus allen 3 Quellen (Legacy, Vault, Skill) auditiert.
+- Alle 115+ Dateien aus allen 3 Quellen auditiert.
 - Jeder Eintrag ist zweckorientiert und inhaltlich verifiziert.
 - **Null-Fehlertoleranz:** Jede Datei wurde mindestens einmal geöffnet.
 - **Baseline bereit für Phase 1.**
