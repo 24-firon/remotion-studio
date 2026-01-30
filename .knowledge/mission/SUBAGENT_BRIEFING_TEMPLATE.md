@@ -1,8 +1,8 @@
-# 🎯 SUB-AGENT BRIEFING TEMPLATE (V1.0)
+# 🎯 SUB-AGENT BRIEFING TEMPLATE (V2.0)
 
-**Purpose:** Master-Vorlage für alle zukünftigen Badge-Briefings. Basiert auf Learnings aus Badge 1.
+**Purpose:** Master-Vorlage für alle zukünftigen Badge-Briefings. Basierend auf V3-Standard.
 **Location:** `.knowledge/mission/SUBAGENT_BRIEFING_TEMPLATE.md`
-**Usage:** Kopiere diese Vorlage und ersetze die `[PLACEHOLDER]`-Felder für jeden neuen Badge.
+**Usage:** Kopiere diese Vorlage und ersetze die `[PLACEHOLDER]`-Felder.
 
 ---
 
@@ -11,256 +11,122 @@
 Kopiere diesen Block und sende ihn als erste Nachricht an den Sub-Agenten:
 
 ```text
-Ich aktiviere dich für die chirurgische IP-Extraktion von [BADGE_NAME].
-Dein Marschbefehl liegt hier:
-C:\Workspace\Repos\remotion-studio\.knowledge\mission\subagent-briefing-badge-[N].md
+Ich aktiviere dich für Badge [N]: [THEMA].
+Lies: C:\Workspace\Repos\remotion-studio\.knowledge\mission\subagent-briefing-badge-[N].md
+Erstelle: EXTRACTION_REPORT_BADGE_[N].md
 
 REGLER AUF: 100% Tiefe, 0% Reduktion.
 Bei Unsicherheit: STOPPE und FRAGE anstatt zu raten.
-Erstelle den EXTRACTION_REPORT_BADGE_[N].md nach Abschluss.
 ```
 
 ---
 
-## 1. MISSION KONTEXT
+## 1. MISSION PHILOSOPHY (Das Fundament)
 
-### 1.1 Das Viron Paradigma
+### 1.1 Warum wir das tun
 
-Viron behandelt **Video als Code**. Statt Export → Premiere → Render folgen wir dem Workflow **Code → Commit → Render**. Videos sind deterministisch, versionierbar und skalierbar.
+Dieser Report ist kein Dokument für das Archiv. Er ist der **Lehrer für die nächste Generation von Agents**. Wenn du hier schlampst, lernen alle Nachfolger falsch.
 
-### 1.2 Warum diese Extraktion?
+### 1.2 Das Credo (Nicht verhandelbar)
 
-- **Deine Trainingsdaten sind veraltet** – Die Vault-Recherchen bringen 2026er Standards.
-- **Der Global Skill ist ein Industrie-Baseline** – Wir suchen das Viron-spezifische DARÜBER HINAUS.
-- **Qualität > Geschwindigkeit** – Lieber einmal richtig als dreimal nacharbeiten.
+Lies das Quality Credo in `gemini.md`. Deine Arbeit wird daran gemessen:
 
----
+- **Ausführlichkeit:** Lieber 3 Sätze zu viel als 1 Wort zu wenig.
+- **Kontext:** Kein Code-Block existiert im Vakuum. Erkläre das WARUM.
+- **Unmissverständlichkeit:** Schreibe so, dass ein Junior-Dev es versteht.
 
-## 2. PFLICHTLEKTÜRE (Lies diese Dateien ZUERST)
-
-### 2.1 Dein "Context Kit" (Standard-Referenz für JEDEN Badge)
-
-Diese Dateien bilden dein Grundverständnis. Überspringe sie nicht, sie sind dein Kompass.
-
-**Tier 1: Das Fundament (Muss gelesen werden)**
-| Datei | Absoluter Pfad | Zweck |
-|:------|:---------------|:------|
-| **Viron Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md` | Die Seele des Projekts: "Videos as Code" Paradigma & 5-Säulen-Architektur. |
-| **Logic Engine** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Das "Gehirn": Entscheidungsbäume und strategische Workflows. |
-| **Module Map** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md` | Die Topografie: Wie alle 30+ Vault-Module in Stufen (1-3) zusammenhängen. |
-| **Local SKILL.md** | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md` | Technisches Gesetzbuch: Global Skill Referenz für Redundanz-Abgleich. |
-
-**Tier 2: Support & Glossar (Bei Bedarf laden)**
-| Datei | Absoluter Pfad | Zweck |
-|:------|:---------------|:------|
-| **Glossary** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\90-appendix-glossary-bibliography.md` | Lexikon der VIRON-Terminologie (Determinismus, PBR, FFT, etc.). |
-| **Quick Start** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\AGENT-INITIALIZATION-CHECKLISTE-SCHNELL-v2-1.md` | Schnelle Keyword-zu-Datei Zuordnung. |
-| **Master Index** | `C:\Workspace\Repos\remotion-studio\.knowledge\mission\source-master-index.md` | Vollständiger Inventar-Index aller Quelldateien. |
-
-### 2.2 Badge-Spezifische Quelldateien (Deine Mission)
-
-| Kategorie     | Datei         | Absoluter Pfad |
-| :------------ | :------------ | :------------- |
-| [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER]  |
+> **Mantra:** "Ich bin kein Kopierer, ich bin ein Kurator."
 
 ---
 
-## 3. TECHNOLOGIE-STACK (Referenz)
+## 2. PFLICHTLEKTÜRE (Dein Input)
 
-| Layer         | Technology        | Viron-Nutzung               |
-| :------------ | :---------------- | :-------------------------- |
-| Simulation    | React Three Fiber | 3D-Modelle, PBR-Materialien |
-| Rendering     | Tailwind CSS v4   | UI auf 3D-Surfaces          |
-| Orchestration | Remotion 4.0      | Timing, Sequencing          |
-| Camera        | Drei Controls     | Spline-Paths                |
-| Export        | Remotion Renderer | H.264, Lambda               |
+### 2.1 Context Kit (Standard)
 
----
+Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen:
 
-## 4. DEIN WORKFLOW (Schritt für Schritt)
+| Datei      | Pfad                                                                         | Zweck                         |
+| ---------- | ---------------------------------------------------------------------------- | ----------------------------- |
+| **Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                    | Das "Video as Code" Paradigma |
+| **Logic**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Die Entscheidungs-Logik       |
+| **Index**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md`     | Die Landkarte des Wissens     |
+| **Skill**  | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`    | Der Redundanz-Check           |
 
-### Schritt 1: Deep-Read
+### 2.2 Badge-Spezifische Quellen (Deine Mission)
 
-Lies jede Quelldatei vollständig. Keine Sprünge, keine Zusammenfassungen.
+Lies diese Dateien Zeile für Zeile (Deep Read):
 
-### Schritt 2: Kategorisierung
-
-Für JEDEN wertvollen Block, entscheide:
-
-| Kategorie            | Definition                                                                         | Beispiel                                         |
-| :------------------- | :--------------------------------------------------------------------------------- | :----------------------------------------------- |
-| **A: SKILL_UPDATE**  | Remotion-Wissen, das für JEDES Projekt gilt. Aktualisiert meine Trainingsdaten.    | Neue API, bessere Pattern, Performance-Tipps     |
-| **B: PROJECT_IP**    | Viron-spezifische Workflows, Configs, Templates. NICHT generisch wiederverwendbar. | Lambda-Config mit eu-central-1, Theme.ts Pattern |
-| **C: RESEARCH_NOTE** | Kontext, Entscheidungen, Tutorials. Archiv-würdig aber nicht operativ.             | "Warum H.264 statt WebM", Lernpfade              |
-
-### Schritt 3: Redundanz-Check
-
-Vergleiche mit dem Global Skill (SKILL.md Sektion 4).
-
-- **Bereits dokumentiert?** → Verwerfen (mit Begründung)
-- **Noch nicht dokumentiert?** → Behalten (mit Zeilenreferenz)
-
-### Schritt 4: Konflikt-Erkennung
-
-Wenn Repo und Vault unterschiedliche Werte nennen → **KONFLIKT melden**, nicht ignorieren.
-
-### Schritt 5: Report erstellen
-
-Erstelle `EXTRACTION_REPORT_BADGE_[N].md` im Format von Sektion 6.
+| Kategorie     | Datei         | Pfad          |
+| ------------- | ------------- | ------------- |
+| [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER] |
 
 ---
 
-## 5. VERHALTENSREGELN (Kritisch)
+## 3. DEIN WORKFLOW
 
-### 5.1 Qualität > Geschwindigkeit
+1. **Deep Read:** Lies alle Quellen vollständig. Scanne nicht.
+2. **Context Injection:** Wenn du einen Code-Block findest, lies den Absatz davor/danach. Warum ist das so?
+3. **Kategorisierung:** Sortiere jeden Fund in A, B oder C:
+   - **A: SKILL_UPDATE** (Generisches Remotion-Wissen)
+   - **B: PROJECT_IP** (Viron-spezifische Configs/Secrets)
+   - **C: RESEARCH_NOTE** (Kontext, Tutorials, Begründungen)
+4. **Schreiben:** Erstelle den Report im Format von Sektion 4.
 
-> [!IMPORTANT]
-> **Lieber 1x richtig als 3x nacharbeiten.**
-> Wenn du unsicher bist, STOPPE und FRAGE den Orchestrator.
+---
 
-### 5.2 Keine Limits, aber Guidance
+## 4. OUTPUT FORMAT (Strikt einhalten!)
 
-- **Es gibt KEINE Maximalgröße.** Schreibe so viel wie nötig.
-- **Es gibt eine MINDESTTIEFE:** Jeder IP-Punkt braucht:
-  - Zeilenreferenz zur Quelle
-  - 1-3 Sätze Erklärung
-  - Code-Beispiel (wenn vorhanden)
+Erstelle: `EXTRACTION_REPORT_BADGE_[N].md`
 
-### 5.3 Referenz-Stil statt Copy-Paste
+**Format für JEDEN Punkt:**
 
-❌ **Falsch:** Vollständigen 50-Zeilen-Codeblock kopieren
-✅ **Richtig:** `pipeline.md:90-110 → Lambda Config mit Viron-optimierten Werten:`
+````markdown
+### [Titel des Punktes]
+
+**Quelle:** `[datei.md]` (Zeilen X-Y)
+
+**Kontext/Erklärung:**
+[Hier MUSS Prosa stehen. Erkläre das WARUM. Zitiere Warnungen.]
+
+**Code/Daten:**
 
 ```typescript
-// Nur die 5 kritischen Zeilen, nicht den ganzen Block
-region: "eu-central-1",
-framesPerLambda: 4,
-memorySizeInMb: 3009
+[Hier der Code-Block]
 ```
+````
 
-### 5.4 Tutorial-Inhalte
+**Implikation:**
+[Optional: Was bedeutet das für uns?]
 
-Tutorial-Style Dokumentation ist **nicht automatisch wertlos**.
-
-- Wenn es einzigartige Viron-Prozesse beschreibt → **RESEARCH_NOTE**
-- Wenn es generisches "Hello World" ist → **Verwerfen**
-
-### 5.5 Rückfragen sind erwünscht
-
-> [!TIP]
-> Du darfst jederzeit fragen:
->
-> - "Ist dieser Block Viron-spezifisch oder generisch?"
-> - "Soll ich diese 50 Zeilen ausführlich zitieren oder nur referenzieren?"
-> - "Dieses Konzept verstehe ich nicht – bitte erklären."
+````
 
 ---
 
-## 6. OUTPUT FORMAT
-
-Erstelle: `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_[N].md`
-
-Der Report muss folgende Struktur haben:
-
-### Header
+## 5. STATISTIK & HEADER
 
 ```markdown
-# 🎯 Badge [N]: Extraction Report – [BADGE_TITLE]
+# 🎯 Badge [N]: Extraction Report – [THEMA]
 
 **Version:** 1.0
-**Badge ID:** VIRON-2026-B[N]
-**Extraction Date:** [YYYY-MM-DD]
 **Analyst:** Sub-Agent
-```
 
-### Statistik-Sektion
-
-```markdown
 ## 📊 Statistik
-
-| Kategorie | Dateien | Analysiert  |
-| --------- | ------- | ----------- |
-| A: Repo   | [N]     | [filenames] |
-| B: Vault  | [N]     | [filenames] |
-| C: Skill  | [N]     | [filenames] |
-| **TOTAL** | **[N]** | [status]    |
-```
-
-### Sektion A: SKILL_UPDATES
-
-```markdown
-## ✅ A: SKILL_UPDATES (Global Skill Anreicherung)
-
-### Aus [filename](file:///path/to/file)
-
-**Zeilen X-Y:** [Kurzbeschreibung]
-// Nur die kritischen Zeilen, nicht den ganzen Block
-```
-
-### Sektion B: PROJECT_IP
-
-```markdown
-## ✅ B: PROJECT_IP (Viron-Spezifisch)
-
-### Aus [filename](file:///path/to/file)
-
-**Zeilen X-Y:** [Kurzbeschreibung]
-[Erklärung warum Viron-spezifisch]
-```
-
-### Sektion C: RESEARCH_NOTES
-
-```markdown
-## 📚 C: RESEARCH_NOTES (Archiv)
-
-### Aus [filename](file:///path/to/file)
-
-**Zeilen X-Y:** [Was es enthält, warum archivwürdig]
-```
-
-### Verworfene Punkte
-
-```markdown
-## ❌ VERWORFENE PUNKTE (Redundanz-Check)
-
-| Quelle | Inhalt  | Warum verworfen?                  |
-| ------ | ------- | --------------------------------- |
-| [file] | [topic] | Bereits in Global Skill [rule.md] |
-```
-
-### Konflikte
-
-```markdown
-## ⚠️ KONFLIKTE (Zur Prüfung)
-
-| Quelle A    | Quelle B    | Widerspruch   | Empfehlung       |
-| ----------- | ----------- | ------------- | ---------------- |
-| [file:line] | [file:line] | [description] | [recommendation] |
-```
-
-### Offene Fragen
-
-```markdown
-## ❓ OFFENE FRAGEN (Falls vorhanden)
-
-1. [Frage an Orchestrator]
-2. [Unsicherheit zu Thema X]
-```
-
-```
+| Kategorie | Anzahl | Beschreibung |
+|-----------|--------|--------------|
+| A: SKILL_UPDATE | [N] | Generisches Wissen |
+| B: PROJECT_IP | [N] | Viron Secrets |
+| C: RESEARCH_NOTE | [N] | Kontext |
+| ❌ VERWORFEN | [N] | Redundant |
+````
 
 ---
 
-## 7. DEFINITION OF DONE
+## 6. CHECKLISTE VOR ABGABE
 
-- [ ] Alle Quelldateien vollständig gelesen (keine Sprünge)
-- [ ] Jeder IP-Punkt kategorisiert (A/B/C)
-- [ ] Redundanzen gegen Global Skill geprüft
-- [ ] Konflikte dokumentiert (auch wenn 0)
-- [ ] Offene Fragen formuliert (wenn vorhanden)
-- [ ] Report in `.knowledge/mission/` abgelegt
+- [ ] Alle Quellen vollständig gelesen?
+- [ ] Jeden Code-Block mit Kontext-Prosa angereichert?
+- [ ] A/B/C Kategorien sauber getrennt?
+- [ ] Redundanzen verworfen & dokumentiert?
+- [ ] Format strikt eingehalten?
 
----
-
-**Viron Mission 2026: [BADGE_NAME] – Template V1.0**
-```
+**AN DIE ARBEIT.**
