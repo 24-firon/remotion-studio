@@ -389,3 +389,15 @@ Bloom funktioniert nur, wenn das Material `emissive` Properties hat UND der `emi
 | 🟢 NIEDRIG | **Glitch Trigger**        | Definieren, wann genau Glitch-Effekte auftreten sollen (Musik-Beat? Szenen-Wechsel?).                                                          |
 
 ---
+
+## 📝 Badge 3 Learnings
+
+| Was                          | Warum                                                                                                                | Empfehlung                                                                                             |
+| :--------------------------- | :------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| ✅ **CSM-Konversion**        | Briefing-Sektion 4.1 machte das Gesetz explizit ("NUR NOCH CSM"). Klare Anweisung = klare Umsetzung.                 | Behalte explizite "Gesetze" in Sektion 4 für kritische Regeln.                                         |
+| ✅ **useFrame-Fix**          | Briefing-Sektion 4.2 lieferte das exakte Konversions-Pattern. Copy-Paste-ready Code eliminiert Interpretation.       | Immer Vorher/Nachher-Code-Blöcke in Sektionen mit kritischen Fixes.                                    |
+| ❌ **Context Kit ignoriert** | Agent priorisierte "spezifische" (2.2) über "generische" (2.1) Files, weil 2.1 als "Hintergrund" wahrgenommen wurde. | Warnung in Briefing: "Sektion 2.1 ist NICHT optional. Report wird abgelehnt ohne Erkenntnisse daraus." |
+| ❌ **Output-Pfad falsch**    | Briefing Sektion 5 enthielt keinen expliziten Pfad. Agent riet Project Root.                                         | Immer vollständigen Pfad in Sektion 5 angeben: `.knowledge/mission/EXTRACTION_REPORT_BADGE_X.md`       |
+| ❌ **ThreeCanvas übersehen** | Ohne erzwungenen Read von `remotion-core/SKILL.md` hätte Agent R3F `<Canvas>` 1:1 kopiert.                           | Skills in Sektion 2.1 als Pflicht-Read mit Checkbox markieren, nicht als "Referenz".                   |
+
+---
