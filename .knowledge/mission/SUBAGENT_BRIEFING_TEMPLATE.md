@@ -38,19 +38,30 @@ Viron behandelt **Video als Code**. Statt Export → Premiere → Render folgen 
 
 ## 2. PFLICHTLEKTÜRE (Lies diese Dateien ZUERST)
 
-### 2.1 Orientierungs-Dateien (Projekt-Kontext)
+### 2.1 Dein "Context Kit" (Standard-Referenz für JEDEN Badge)
 
-| Datei                      | Absoluter Pfad                                                                 | Zweck                                                                     |
-| :------------------------- | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------ |
-| **Local SKILL.md**         | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`      | Überblick Global Skill Kategorien, wann welche Datei geladen werden muss. |
-| **Documentation Manifest** | `C:\Workspace\Repos\remotion-studio\viron-core\documentation_manifest.md`      | Wissens-Router für Viron-spezifische Module.                              |
-| **Source Master Index**    | `C:\Workspace\Repos\remotion-studio\.knowledge\mission\source-master-index.md` | Vollständiger Index aller 125+ Quelldateien mit Deep-Descriptions.        |
+Diese Dateien bilden dein Grundverständnis. Überspringe sie nicht, sie sind dein Kompass.
 
-### 2.2 Badge-Spezifische Quelldateien
+**Tier 1: Das Fundament (Muss gelesen werden)**
+| Datei | Absoluter Pfad | Zweck |
+|:------|:---------------|:------|
+| **Viron Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md` | Die Seele des Projekts: "Videos as Code" Paradigma & 5-Säulen-Architektur. |
+| **Logic Engine** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Das "Gehirn": Entscheidungsbäume und strategische Workflows. |
+| **Module Map** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md` | Die Topografie: Wie alle 30+ Vault-Module in Stufen (1-3) zusammenhängen. |
+| **Local SKILL.md** | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md` | Technisches Gesetzbuch: Global Skill Referenz für Redundanz-Abgleich. |
 
-| Kategorie                       | Datei                   | Absoluter Pfad           |
-| :------------------------------ | :---------------------- | :----------------------- |
-| [PLACEHOLDER: REPO/VAULT/SKILL] | [PLACEHOLDER: filename] | [PLACEHOLDER: full path] |
+**Tier 2: Support & Glossar (Bei Bedarf laden)**
+| Datei | Absoluter Pfad | Zweck |
+|:------|:---------------|:------|
+| **Glossary** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\90-appendix-glossary-bibliography.md` | Lexikon der VIRON-Terminologie (Determinismus, PBR, FFT, etc.). |
+| **Quick Start** | `C:\Viron\90_VAULT\NEW SUFF\Remotion\AGENT-INITIALIZATION-CHECKLISTE-SCHNELL-v2-1.md` | Schnelle Keyword-zu-Datei Zuordnung. |
+| **Master Index** | `C:\Workspace\Repos\remotion-studio\.knowledge\mission\source-master-index.md` | Vollständiger Inventar-Index aller Quelldateien. |
+
+### 2.2 Badge-Spezifische Quelldateien (Deine Mission)
+
+| Kategorie     | Datei         | Absoluter Pfad |
+| :------------ | :------------ | :------------- |
+| [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER]  |
 
 ---
 
