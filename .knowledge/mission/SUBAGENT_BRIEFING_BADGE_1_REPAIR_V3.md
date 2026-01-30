@@ -5,6 +5,35 @@
 
 ---
 
+## 0. MISSION PHILOSOPHY (Lies das ZUERST)
+
+### Warum reparieren wir?
+
+Der Badge 1 Report wird als **Wissensbasis für zukünftige Sub-Agenten** dienen. Wenn er unvollständig oder mehrdeutig ist, machen die nächsten Agents die gleichen Fehler. Wir bauen das Viron Studio skalierbar – nicht nur für dieses Projekt, sondern als wiederverwendbare Architektur.
+
+> **Dein Report ist kein Dokument. Er ist ein Lehrer für die nächste Generation von Agents.**
+
+### Das Credo (Nicht verhandelbar)
+
+| Prinzip                               | Bedeutung                                                        | Beispiel                                                                     |
+| ------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Ausführlichkeit > Token-Effizienz** | Lieber 50KB Report als 5KB mit Lücken.                           | Schreibe 3 Sätze Erklärung, nicht 3 Wörter.                                  |
+| **Vollständigkeit > Kürze**           | Alles mitnehmen, nichts weglassen.                               | Wenn die Quelle 5 Warnungen hat, übernimm alle 5.                            |
+| **Unmissverständlichkeit > Eleganz**  | Ein langer, klarer Satz ist besser als ein kurzer, mehrdeutiger. | "Nutze 3009MB weil AWS bei diesem Wert 2 vCPUs gibt" statt "3009MB optimal". |
+| **Kontext > Daten**                   | Prosa erklärt, Code zeigt. Beides ist nötig.                     | Erkläre WARUM, dann zeige WAS.                                               |
+
+### Pflichtlektüre (Dein Context Kit)
+
+Bevor du anfängst, **lies diese Dateien** für das Grundverständnis:
+
+| Datei                 | Pfad                                                                                  | Zweck                                              |
+| --------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| **Template**          | `C:\Workspace\Repos\remotion-studio\.knowledge\mission\SUBAGENT_BRIEFING_TEMPLATE.md` | Master-Vorlage mit Viron-Philosophie & Tier-System |
+| **Local SKILL.md**    | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`             | Redundanz-Check gegen Global Skill                 |
+| **Dein alter Report** | `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_1.md`  | Deine Basis, die du verbesserst                    |
+
+---
+
 ## 1. DAS PROBLEM MIT V1 (Was du falsch gemacht hast)
 
 | Fehler                 | Beispiel                       | Auswirkung                                  |
