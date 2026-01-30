@@ -79,7 +79,7 @@ Location: `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practi
 - `maps.md` -> **Purpose:** Mapbox integration for geographic visualizations.
 - `lottie.md` -> **Purpose:** Vector animation (Lottie) embedding within Remotion.
 
-### � 3.3 Media & Assets (Master Reference)
+### 🔉 3.3 Media & Assets (Master Reference)
 
 - `audio.md` / `videos.md` -> **Purpose:** Media importing, trimming, and playback control.
 - `display-captions.md` -> **Purpose:** Subtitle rendering and TikTok-style word highlighting.
