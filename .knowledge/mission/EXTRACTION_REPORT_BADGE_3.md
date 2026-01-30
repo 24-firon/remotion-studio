@@ -1,11 +1,11 @@
 # 🧪 EXTRACTION REPORT: BADGE 3 (VISUAL FX)
 
-**Meta-Data**
-
-- **Agent:** Sub-Agent Badge 3
-- **Source Files:** 10 Deep-Read Files
-- **Date:** 2026-01-30
-- **Status:** ✅ SUCCESS
+| **Meta-Data**    | **Value**          |
+| :--------------- | :----------------- |
+| **Agent**        | Sub-Agent Badge 3  |
+| **Source Files** | 10 Deep-Read Files |
+| **Date**         | 2026-01-30         |
+| **Status**       | ✅ SUCCESS         |
 
 ## 📊 Extraction Statistics
 
@@ -19,14 +19,14 @@
 
 ---
 
-## 1. SHADER RECIPES (CSM & DETERMINISTIC)
+# 1. SHADER RECIPES (CSM & DETERMINISTIC)
 
 ### Recipe 1: Iridescent Glass (Viron Standard)
 
 **Quelle:** `advanced-shaders.md` (Repo)
 
 **Kontext/Erklärung:**
-Wir ersetzen die veraltete Lamina-Library durch **three-custom-shader-material (CSM)**. Dies ist notwendig, um volle GLSL-Kontrolle zu haben und Maintenance-Probleme zu vermeiden. Das Original nutzte `useFrame` mit `clock.elapsedTime`, was für Video-Rendering nicht deterministisch ist. Wir haben dies auf `useCurrentFrame` konvertiert.
+Wir ersetzen die veraltete `Lamina`-Library durch `three-custom-shader-material` (CSM). Dies ist notwendig, um volle GLSL-Kontrolle zu haben und Maintenance-Probleme zu vermeiden. Das Original nutzte `useFrame` mit `clock.elapsedTime`, was für Video-Rendering nicht deterministisch ist. Wir haben dies auf `useCurrentFrame` konvertiert.
 
 **Visuelles Ergebnis:**
 Ein schimmerndes, glasartiges Material, dessen Farbe sich je nach Blickwinkel ändert (Fresnel) und das subtil perlin-noise-artig pulsiert.
@@ -235,7 +235,6 @@ export const GlitchBox = () => {
 
   if (matRef.current) {
     matRef.current.uniforms.uTime.value = frame / 30;
-
     // Deterministic Glitch Trigger every 60 frames
     const isGlitchFrame = frame % 60 < 10;
     matRef.current.uniforms.uGlitchAmount.value = isGlitchFrame ? 1.0 : 0.0;
@@ -261,7 +260,6 @@ Ein geisterhaftes, cyan-farbenes Objekt durchzogen von wandernden Scanlines, das
 
 ```typescript
 // materials/HologramMaterial.tsx
-
 export const createHologramMaterial = () => {
   return new CustomShaderMaterial({
     baseMaterial: THREE.MeshPhysicalMaterial,
@@ -300,7 +298,7 @@ export const createHologramMaterial = () => {
 
 ---
 
-## 2. POST-PROCESSING PIPELINE
+# 2. POST-PROCESSING PIPELINE
 
 ### Full Cinematic Stack (Order of Operations)
 
@@ -363,20 +361,31 @@ Dieser Stack kostet ca. 1.0s pro Frame Renderzeit extra.
 ### A. Physics Determinism
 
 **Quelle:** `physics.md`
-Remotion verlangt, dass Animationen frame-basiert sind. `Math.random()` ist verboten. Lösung: Nutze `remotion.random(seed)` wenn Zufall nötig ist, oder statische Noise-Texturen im Shader.
+Remotion verlangt, dass Animationen frame-basiert sind. `Math.random()` ist verboten.
+**Lösung:** Nutze `remotion.random(seed)` wenn Zufall nötig ist, oder statische Noise-Texturen im Shader.
 
 ### B. Bloom Requirements
 
 **Quelle:** `30-post-processing-01-bloom-selective.md`
-Bloom funktioniert nur, wenn das Material emissive Properties hat UND der `emissiveIntensity` Wert > 1.0 ist, oder der interne Farbwert (HDR) > 1.0 ist (z.B. `uColor * 2.0`).
+Bloom funktioniert nur, wenn das Material `emissive` Properties hat UND der `emissiveIntensity` Wert > 1.0 ist, oder der interne Farbwert (HDR) > 1.0 ist (z.B. `uColor * 2.0`).
+
+### C. Compliance & Context
+
+**Quelle:** `vision.md` & `remotion-core/SKILL.md`
+
+- **Vision:** Bestätigt PBR-Standard (Zinc, Glass) als visuelle Identität.
+- **Skill:** Warnt vor `Canvas` (R3F) und empfiehlt `<ThreeCanvas>` (Remotion Three) für besseres Resource-Management in Compositions.
 
 ---
 
 ## 📋 Empfehlungen für Orchestrator
 
-| Priorität  | Aktion                   | Begründung                                                                                      |
-| :--------- | :----------------------- | :---------------------------------------------------------------------------------------------- |
-| 🔴 HOCH    | **CSM Installieren**     | `npm install three-custom-shader-material` fehlt im Project Root. Ohne das crasht jeder Shader. |
-| 🔴 HOCH    | **useFrame Audit**       | Sicherstellen, dass KEIN `useFrame` mehr im Code existiert, das clock nutzt.                    |
-| 🟡 MITTEL  | **Post-Pro Performance** | Prüfen, ob wir `downsampling={2}` für 4K Renders nutzen können (Qualitätsverlust vs Speed).     |
-| 🟢 NIEDRIG | **Glitch Trigger**       | Definieren, wann genau Glitch-Effekte auftreten sollen (Musik-Beat? Szenen-Wechsel?).           |
+| Priorität  | Aktion                    | Begründung                                                                                                                                     |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🔴 HOCH    | **CSM Installieren**      | `npm install three-custom-shader-material` fehlt im Project Root. Ohne das crasht jeder Shader.                                                |
+| 🔴 HOCH    | **useFrame Audit**        | Sicherstellen, dass KEIN `useFrame` mehr im Code existiert, das `clock` nutzt.                                                                 |
+| 🟡 MITTEL  | **ThreeCanvas Migration** | Shader-Beispiele nutzen generisch `<Canvas>`. Für Production sollte auf `<ThreeCanvas>` migriert werden (`@remotion/three`), gemäß Core-Skill. |
+| 🟡 MITTEL  | **Post-Pro Performance**  | Prüfen, ob wir `downsampling={2}` für 4K Renders nutzen können (Qualitätsverlust vs Speed).                                                    |
+| 🟢 NIEDRIG | **Glitch Trigger**        | Definieren, wann genau Glitch-Effekte auftreten sollen (Musik-Beat? Szenen-Wechsel?).                                                          |
+
+---
