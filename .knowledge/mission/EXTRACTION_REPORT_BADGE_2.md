@@ -1038,3 +1038,15 @@ Die folgenden Inhalte sind bereits im Global Skill und werden hier nicht duplizi
 ---
 
 _Badge 2 Extraction Complete. Report ready for Orchestrator review._
+
+---
+
+## 📝 Badge 2 Learnings
+
+Diese Sektion dokumentiert kritische Prozess-Verbesserungen für zukünftige Badges:
+
+| Problem                                | Ursache                                          | Fix im nächsten Briefing                                         |
+| :------------------------------------- | :----------------------------------------------- | :--------------------------------------------------------------- |
+| Pattern-Überschneidung führt zu Lücken | Ungenaue Zeilen-Vorgaben im Briefing             | Regel hinzufügen: "Konkrete Zeilen sind PFLICHT-Extraktion"      |
+| Problem erkannt, Lösung fehlte         | Agent hat nur das Problem gemeldet (Math.random) | Regel hinzufügen: "Problem-Lösungs-Gebot (Suchpflicht)"          |
+| Panik-Reaktion bei Orchestrator        | Unsicherheit über Zuständigkeit                  | Klarstellung: Orchestrator darf NIEMALS Dateien ungefragt ändern |

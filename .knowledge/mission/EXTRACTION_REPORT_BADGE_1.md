@@ -346,3 +346,13 @@ Keine Konflikte identifiziert. Legacy Repo und Vault 2026 harmonieren vollständ
 14 Punkte als Redundanz verworfen.
 0 Konflikte.
 ```
+
+---
+
+## 📝 Badge 1 Learnings
+
+| Problem                     | Ursache                                       | Fix im nächsten Briefing                                  |
+| :-------------------------- | :-------------------------------------------- | :-------------------------------------------------------- |
+| Fehlende ABC-Trennung       | Briefing enthielt keine Kategorien-Definition | Template muss A/B/C Struktur explizit vorgeben            |
+| Copy-Paste statt Referenzen | Unsicherheit über Extraktions-Format          | Regel hinzufügen: "Zeilenverweise bevorzugen"             |
+| Tutorial-Inhalte verworfen  | Annahme "Nur Code zählt"                      | Regel hinzufügen: "Einzigartige Prozesse = RESEARCH_NOTE" |

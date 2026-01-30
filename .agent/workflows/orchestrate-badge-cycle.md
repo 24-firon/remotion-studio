@@ -26,6 +26,11 @@ Start of a new Badge in `task.md`.
       - If Path missing -> 🔴 Find the correct path (Search) and update `task.md` BEFORE Briefing.
     - **Goal:** Never send a Sub-Agent to a dead URL.
 
+3.  **Context Scan (The "Pre-Read"):**
+    - **Action:** Open `theme.md` (or core repo files) for 10 seconds.
+    - **Extraction:** Identify 1-2 key keywords/constraints (e.g., "Tailwind Only", "PBR Standard").
+    - **Purpose:** Add specific hints to Sektion 3 ("Spezial-Hinweise") of the Briefing. You cannot direct what you haven't seen.
+
 ---
 
 ## 2. BRIEFING CONSTRUCTION (The "Contract")

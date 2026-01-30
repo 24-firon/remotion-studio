@@ -41,9 +41,19 @@ Lies das Quality Credo in `gemini.md`. Deine Arbeit wird daran gemessen:
 
 ## 2. PFLICHTLEKTÜRE (Dein Input)
 
-### 2.1 Context Kit (Standard)
+### 2.1 Context Kit (Standard) – GATEKEEPER
 
-Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen:
+> [!CAUTION]
+> **DIESE DATEIEN SIND NICHT OPTIONAL.**
+> Du MUSST sie lesen, BEVOR du die Badge-spezifischen Quellen anrührst.
+> Wenn du hier überspringst, wirst du falsche Entscheidungen treffen.
+
+**Bevor du eine Zeile Code analysierst, bestätige:**
+
+- [ ] Ich habe `viron-core/vision.md` gelesen (Virtual Production Paradigma).
+- [ ] Ich habe `00-master-workflow-2026-integration.md` gelesen (Entscheidungs-Logik).
+- [ ] Ich habe `00-overview-index-v2-1-complete.md` gelesen (Wissens-Landkarte).
+- [ ] Ich habe `remotion-core/SKILL.md` gelesen (Frame-Driven Law, Redundanz-Check).
 
 | Datei      | Pfad                                                                         | Zweck                         |
 | ---------- | ---------------------------------------------------------------------------- | ----------------------------- |
@@ -56,9 +66,9 @@ Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen:
 
 Lies diese Dateien Zeile für Zeile (Deep Read):
 
-| Kategorie     | Datei         | Pfad          |
-| ------------- | ------------- | ------------- |
-| [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER] |
+| Kategorie     | Datei         | Pfad          | Extraktions-Ziel                                   |
+| ------------- | ------------- | ------------- | -------------------------------------------------- |
+| [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER] | [Was soll der Agent aus dieser Datei extrahieren?] |
 
 ---
 
