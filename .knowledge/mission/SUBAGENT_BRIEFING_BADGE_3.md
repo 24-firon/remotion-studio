@@ -70,16 +70,49 @@ Lies diese Dateien Zeile für Zeile (Deep Read):
 
 ---
 
-## 3. BADGE-SPEZIFISCHE HINWEISE (Vom Orchestrator)
+## 3. DEIN WORKFLOW
 
-### 3.1 Das CSM-Gesetz (Kategorie B: PROJECT_IP)
+1. **Deep Read:** Lies alle Quellen vollständig. Scanne nicht.
+2. **Context Injection:** Wenn du einen Code-Block findest, lies den Absatz davor/danach. Warum ist das so?
+3. **Kategorisierung:** Sortiere jeden Fund in A, B oder C:
+   - **A: SKILL_UPDATE** (Generisches @react-three/postprocessing Wissen)
+   - **B: PROJECT_IP** (Viron Shader Recipes: Iridescent, Liquid, Glitch, 80% Grey Rule)
+   - **C: RESEARCH_NOTE** (Math-Hintergründe zu Fresnel, Glitch-Algorithmen)
+4. **Schreiben:** Erstelle den Report im Format von Sektion 5.
+
+### 3.1 EXTRAKTIONS-PFLICHT (Kritisch!)
+
+Wenn im Badge-Hinweis-Block **konkrete Zeilen-Ranges** genannt werden:
+
+- Diese sind **PFLICHT-Extraktionen**, nicht "prüfen ob nötig"
+- Lies die genannten Zeilen
+- Extrahiere sie VOLLSTÄNDIG
+- Wenn du sie verwirfst: Dokumentiere WARUM (Redundanz? Bereits im Skill?)
+
+### 3.2 PROBLEM-LÖSUNGS-GEBOT
+
+Wenn du ein Problem identifizierst (z.B. "Math.random() ist nicht deterministisch"):
+
+1. Suche in den Quellen nach einer Lösung
+2. Wenn gefunden: Dokumentiere Problem UND Lösung
+3. Wenn nicht gefunden: Markiere als `TODO: Lösung fehlt in Quellen`
+
+**Bei Badge 3 besonders wichtig:** Wenn ein Shader `useFrame({ clock })` nutzt, MUSST du die deterministische Lösung (`useCurrentFrame`) anbieten.
+
+**Anti-Pattern:** "Das ist ein Problem" ohne Lösung oder TODO
+
+---
+
+## 4. BADGE-SPEZIFISCHE HINWEISE (Vom Orchestrator)
+
+### 4.1 Das CSM-Gesetz (Kategorie B: PROJECT_IP)
 
 Viron nutzt ab 2026 **NUR NOCH** `three-custom-shader-material` (CSM) für Shader.
 
 - Lamina ist veraltet (Archived).
 - Wenn du im "Eye Candy Stack" Rezepte findest: Extrahiere sie als CSM-Standard.
 
-### 3.2 Die useFrame-Falle (Extraktions-Pflicht!)
+### 4.2 Die useFrame-Falle (Extraktions-Pflicht!)
 
 In den Quellen wirst du oft `useFrame()` sehen (z.B. Iridescent Glass, Glitch).
 
@@ -97,7 +130,7 @@ const frame = useCurrentFrame();
 material.uTime = frame / 30; // 30 FPS Arithmetik
 ```
 
-### 3.3 Post-Processing Order
+### 4.3 Post-Processing Order
 
 Achte darauf, dass die Reihenfolge im Report korrekt dokumentiert ist:
 
@@ -108,22 +141,32 @@ Achte darauf, dass die Reihenfolge im Report korrekt dokumentiert ist:
 
 ---
 
-## 4. DEIN WORKFLOW
-
-1. **Deep Read:** Scanne nicht. Lies die shader-spezifischen Mathe-Teile (Frsenel, Noise).
-2. **Kategorisierung:**
-   - **A: SKILL_UPDATE** (Generisches @react-three/postprocessing Wissen)
-   - **B: PROJECT_IP** (Viron Shader Recipes: Iridescent, Liquid, Glitch, 80% Grey Rule)
-   - **C: RESEARCH_NOTE** (Math-Hintergründe zu Fresnel, Glitch-Algorithmen)
-3. **Problem-Lösungs-Gebot:** Wenn ein Shader-Recipe `Math.random` nutzt, dokumentiere das Problem (nicht deterministisch) und suche in `physics.md` nach der Seed-Lösung.
-
----
-
 ## 5. OUTPUT FORMAT (Strikt einhalten!)
 
 Erstelle: `EXTRACTION_REPORT_BADGE_3.md`
 
-**Wichtig für Shader:** Füge das Feld `**Visuelles Ergebnis:**` ein. Beschreibe mit 1 Satz, was man auf dem Bildschirm sieht (z.B. "Metallisches Schimmern mit Regenbogen-Kanten").
+**Format für JEDEN Punkt:**
+
+````markdown
+### [Titel des Punktes]
+
+**Quelle:** `[datei.md]` (Zeilen X-Y)
+
+**Kontext/Erklärung:**
+[Hier MUSS Prosa stehen. Erkläre das WARUM. Zitiere Warnungen.]
+
+**Visuelles Ergebnis:**
+[Beschreibe mit 1 Satz, was man auf dem Bildschirm sieht (z.B. "Metallisches Schimmern mit Regenbogen-Kanten").]
+
+**Code/Daten:**
+
+```typescript
+[Hier der Code-Block]
+```
+
+**Implikation:**
+[Optional: Was bedeutet das für uns?]
+````
 
 ---
 
@@ -135,5 +178,30 @@ Statistik-Tabelle wie im Template, aber füge hinzu:
 - **useFrame Warnings:** [Anzahl]
 
 ---
+
+## 7. EMPFEHLUNGEN FÜR ORCHESTRATOR (Pflichtsektion!)
+
+Jeder Report MUSS mit priorisierten Empfehlungen enden:
+
+```markdown
+## 📋 Empfehlungen für Orchestrator
+
+| Priorität  | Aktion            | Begründung        |
+| ---------- | ----------------- | ----------------- |
+| 🔴 HOCH    | [Konkrete Aktion] | [Warum kritisch?] |
+| 🟡 MITTEL  | [Konkrete Aktion] | [Warum wichtig?]  |
+| 🟢 NIEDRIG | [Konkrete Aktion] | [Nice-to-have]    |
+```
+
+---
+
+## 8. CHECKLISTE VOR ABGABE
+
+- [ ] Alle Quellen vollständig gelesen?
+- [ ] Jeden Code-Block mit Kontext-Prosa angereichert?
+- [ ] A/B/C Kategorien sauber getrennt?
+- [ ] useFrame-Blöcke konvertiert oder gewarnt?
+- [ ] CSM-Standard eingehalten?
+- [ ] Format strikt eingehalten?
 
 **AN DIE ARBEIT. Baue den Eye-Candy Stack für Viron.**
