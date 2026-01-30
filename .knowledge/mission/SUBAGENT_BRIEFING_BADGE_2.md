@@ -59,18 +59,18 @@ Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen:
 
 Lies diese Dateien Zeile für Zeile (Deep Read):
 
-| Kategorie | Datei                           | Pfad                                                                                     | Erwarteter Inhalt                                                   |
-| --------- | ------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **REPO**  | `physics.md`                    | `C:\Workspace\Repos\remotion-studio\viron-core\physics.md`                               | R3F Grundlagen, PBR Materials, Texture Loading (423 Zeilen)         |
-| **REPO**  | `vision.md`                     | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                                | 5 Säulen, 3D-Blueprint, Tech-Stack (182 Zeilen, Cross-Ref)          |
-| **REPO**  | `camera.md`                     | `C:\Workspace\Repos\remotion-studio\specs\camera.md`                                     | Kamera-Bewegungstypen, Spring-Config, **Drift-Pflicht** (53 Zeilen) |
-| **REPO**  | `PATTERN_LIGHTING_GRADIENTS.md` | `C:\Workspace\Repos\remotion-studio\src\learnings\PATTERN_LIGHTING_GRADIENTS.md`         | **80% Grey Rule**, Bewegungspflicht, ShaderMaterial (30 Zeilen)     |
-| **VAULT** | `40-advanced-lighting-00-...`   | `C:\Viron\90_VAULT\NEW SUFF\Remotion\40-advanced-lighting-00-caustics-volumetric.md`     | Caustics GLSL, GodRays, Volumetric, Fresnel (407 Zeilen)            |
-| **VAULT** | `40-gltf-models-00-...`         | `C:\Viron\90_VAULT\NEW SUFF\Remotion\40-gltf-models-00-loading-optimization.md`          | Draco Compression, LOD, Instancing, useGLTF (342 Zeilen)            |
-| **VAULT** | `40-procedural-patterns-00-...` | `C:\Viron\90_VAULT\NEW SUFF\Remotion\40-procedural-patterns-00-noise-voronoi-terrain.md` | Perlin Noise, Voronoi, FBM, Terrain Generation (404 Zeilen)         |
-| **SKILL** | `3d.md`                         | `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/3d.md`                | ThreeCanvas, useCurrentFrame Law (86 Zeilen)                        |
-| **SKILL** | `maps.md`                       | `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/maps.md`              | Mapbox Integration (404 Zeilen)                                     |
-| **SKILL** | `lottie.md`                     | `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/lottie.md`            | Lottie Animation Loading (69 Zeilen)                                |
+| Kategorie | Datei                           | Pfad                                                                                       | Erwarteter Inhalt                                                                                                  |
+| --------- | ------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **REPO**  | `physics.md`                    | `C:\Workspace\Repos\remotion-studio\viron-core\physics.md`                                 | R3F Grundlagen, PBR Materials, Texture Loading (423 Zeilen)                                                        |
+| **REPO**  | `vision.md`                     | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                                  | 5 Säulen, 3D-Blueprint (Zeile 63-88). **Cross-Badge:** Badge 1 hat Time-Aspekte behandelt, fokussiere hier auf 3D. |
+| **REPO**  | `camera.md`                     | `C:\Workspace\Repos\remotion-studio\specs\camera.md`                                       | Kamera-Bewegungstypen, Spring-Config, **Drift-Pflicht** (53 Zeilen)                                                |
+| **REPO**  | `PATTERN_LIGHTING_GRADIENTS.md` | `C:\Workspace\Repos\remotion-studio\src\learnings\PATTERN_LIGHTING_GRADIENTS.md`           | **80% Grey Rule**, Bewegungspflicht, ShaderMaterial (30 Zeilen)                                                    |
+| **VAULT** | `40-advanced-lighting-00-...`   | `C:\Viron\90_VAULT\NEW SUFF\Remotion\40-advanced-lighting-00-caustics-volumetric.md`       | Caustics GLSL, GodRays, Volumetric, Fresnel (407 Zeilen)                                                           |
+| **VAULT** | `40-gltf-models-00-...`         | `C:\Viron\90_VAULT\NEW SUFF\Remotion\40-gltf-models-00-loading-optimization.md`            | Draco Compression, LOD, Instancing, useGLTF (342 Zeilen)                                                           |
+| **VAULT** | `40-procedural-patterns-00-...` | `C:\Viron\90_VAULT\NEW SUFF\Remotion\40-procedural-patterns-00-noise-voronoi-terrain.md`   | Perlin Noise, Voronoi, FBM, Terrain Generation (404 Zeilen)                                                        |
+| **SKILL** | `3d.md`                         | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\3d.md`     | ThreeCanvas, useCurrentFrame Law (86 Zeilen)                                                                       |
+| **SKILL** | `maps.md`                       | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\maps.md`   | Mapbox 3D Buildings (Zeile 387-395), Kamera-Animation (Zeile 206-253)                                              |
+| **SKILL** | `lottie.md`                     | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\lottie.md` | delayRender Pattern für externe Assets (69 Zeilen)                                                                 |
 
 ---
 
@@ -86,9 +86,25 @@ In `3d.md` (Global Skill) steht die **absolute Regel** für 3D in Remotion:
 > **"No animations not driven by `useCurrentFrame()`"**
 > **"Using `useFrame()` from `@react-three/fiber` is forbidden."**
 
-**Prüfe:** Jeder Code-Block in den VAULT-Dateien (Caustics, Terrain etc.) nutzt `useFrame()` für Echtzeit-Animation. Das ist **NICHT** Remotion-kompatibel! Diese Blöcke brauchen entweder:
+**Prüfe:** Jeder Code-Block in den VAULT-Dateien (Caustics, Terrain etc.) nutzt `useFrame()` für Echtzeit-Animation. Das ist **NICHT** Remotion-kompatibel!
 
-- Eine Kontext-Warnung ("Für Remotion: ersetze `useFrame` durch `useCurrentFrame`")
+**Konkretes Beispiel zur Konversion:**
+
+```typescript
+// ❌ FALSCH (Echtzeit, nicht deterministisch)
+useFrame(({ clock }) => {
+  materialRef.current.uTime = clock.getElapsedTime();
+});
+
+// ✅ RICHTIG (Frame-basiert, deterministisch)
+const frame = useCurrentFrame();
+const uTime = frame / 30; // 30 FPS
+materialRef.current.uTime = uTime;
+```
+
+Diese Blöcke brauchen entweder:
+
+- Eine Kontext-Warnung mit dem Konversions-Pattern oben
 - Oder eine Kategorisierung als `C: RESEARCH_NOTE` (nur als Referenz, nicht produktionsreif)
 
 ### 3.2 Die Viron-Spezifika (Kandidaten für B: PROJECT_IP)
@@ -111,7 +127,7 @@ In `3d.md` (Global Skill) steht die **absolute Regel** für 3D in Remotion:
 1. **Perlin Noise Theorie** (`40-procedural-patterns-00-...`): Erklärungen zu FBM, Octaves, etc.
 2. **Voronoi Algorithmus** (`40-procedural-patterns-00-...`): Mathematischer Hintergrund.
 3. **Snell's Law / Fresnel** (`40-advanced-lighting-00-...`, Zeile 284-306): Physik-Theorie.
-4. **Mapbox/Lottie** (`maps.md`, `lottie.md`): Wenig Relevanz für Badge 2 (3D Physics), prüfe ob Cross-Ref nötig.
+4. **Mapbox 3D** (`maps.md`, Zeile 387-395): `show3dBuildings`, `show3dLandmarks` – relevant für 3D-Integration. Kamera-Animation (Zeile 206-253) hat Pattern-Überschneidung mit R3F Camera.
 
 ---
 
