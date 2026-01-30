@@ -12,7 +12,7 @@ Kopiere diesen Block und sende ihn als erste Nachricht an den Sub-Agenten:
 ```text
 Ich aktiviere dich für Badge 4: DESIGN SYSTEM & UI.
 Lies: C:\Workspace\Repos\remotion-studio\.knowledge\mission\SUBAGENT_BRIEFING_BADGE_4.md
-Erstelle: EXTRACTION_REPORT_BADGE_4.md
+Erstelle: C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_4.md
 
 REGLER AUF: 100% Tiefe, 0% Reduktion.
 Bei Unsicherheit: STOPPE und FRAGE anstatt zu raten.
@@ -208,6 +208,27 @@ Erstelle: `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPO
 | B: PROJECT_IP    | [N]    | Viron Secrets      |
 | C: RESEARCH_NOTE | [N]    | Kontext            |
 | ❌ VERWORFEN     | [N]    | Redundant          |
+```
+
+---
+
+## 6. KONFLIKTE & OFFENE FRAGEN (Pflichtsektion!)
+
+Wenn Repo und Vault unterschiedliche Werte nennen → **KONFLIKT melden**, nicht ignorieren.
+
+```markdown
+## ⚠️ KONFLIKTE (Zur Prüfung)
+
+| Quelle A    | Quelle B    | Widerspruch   | Empfehlung       |
+| ----------- | ----------- | ------------- | ---------------- |
+| [file:line] | [file:line] | [description] | [recommendation] |
+```
+
+```markdown
+## ❓ OFFENE FRAGEN (Falls vorhanden)
+
+1. [Frage an Orchestrator]
+2. [Unsicherheit zu Thema X]
 ```
 
 ---

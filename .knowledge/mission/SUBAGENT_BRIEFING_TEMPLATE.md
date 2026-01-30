@@ -13,7 +13,7 @@ Kopiere diesen Block und sende ihn als erste Nachricht an den Sub-Agenten:
 ```text
 Ich aktiviere dich für Badge [N]: [THEMA].
 Lies: C:\Workspace\Repos\remotion-studio\.knowledge\mission\subagent-briefing-badge-[N].md
-Erstelle: EXTRACTION_REPORT_BADGE_[N].md
+Erstelle: C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_[N].md
 
 REGLER AUF: 100% Tiefe, 0% Reduktion.
 Bei Unsicherheit: STOPPE und FRAGE anstatt zu raten.
@@ -110,7 +110,7 @@ Wenn du ein Problem identifizierst (z.B. "Math.random() ist nicht deterministisc
 
 ## 4. OUTPUT FORMAT (Strikt einhalten!)
 
-Erstelle: `EXTRACTION_REPORT_BADGE_[N].md`
+Erstelle: `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_[N].md`
 
 **Format für JEDEN Punkt:**
 
@@ -152,6 +152,27 @@ Erstelle: `EXTRACTION_REPORT_BADGE_[N].md`
 | C: RESEARCH_NOTE | [N] | Kontext |
 | ❌ VERWORFEN | [N] | Redundant |
 ````
+
+---
+
+## 6. KONFLIKTE & OFFENE FRAGEN (Pflichtsektion!)
+
+Wenn Repo und Vault unterschiedliche Werte nennen → **KONFLIKT melden**, nicht ignorieren.
+
+```markdown
+## ⚠️ KONFLIKTE (Zur Prüfung)
+
+| Quelle A    | Quelle B    | Widerspruch   | Empfehlung       |
+| ----------- | ----------- | ------------- | ---------------- |
+| [file:line] | [file:line] | [description] | [recommendation] |
+```
+
+```markdown
+## ❓ OFFENE FRAGEN (Falls vorhanden)
+
+1. [Frage an Orchestrator]
+2. [Unsicherheit zu Thema X]
+```
 
 ---
 
