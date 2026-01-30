@@ -67,23 +67,23 @@
 
 ---
 
-### 📦 BADGE 1: CORE ARCHITECTURE, TIME & SEQUENCING
+### ✅ BADGE 1: CORE ARCHITECTURE, TIME & SEQUENCING
 
-**Status:** ⚪ NEXT (Sub-Agent Briefing V7.0 bereit)
+**Status:** ✅ COMPLETE (Extraction Report V1.0 verified)
 
-- [ ] **1.1 Batch Discovery & Reflektion (Thema: Core & Time)**
-- [ ] **1.2 Sequentielles File-Audit (Audit -> Abgleich -> Extraktion -> Bericht)**
-  - [ ] REPO: `viron-core/vision.md` (Architektur-Aspekt)
-  - [ ] REPO: `viron-core/documentation_manifest.md`
-  - [ ] REPO: `viron-core/pipeline.md` (Pipeline-Aspekt)
-  - [ ] VAULT: `00-master-workflow-2026-integration.md`
-  - [ ] VAULT: `00-overview-index-v2-1-complete.md`
-  - [ ] VAULT: `10-remotion-basics-01-timeline-und-frames.md`
-  - [ ] VAULT: `Remotion Setup.md`
-  - [ ] SKILL: `animations.md`
-  - [ ] SKILL: `timing.md`
-  - [ ] SKILL: `sequencing.md`
-  - [ ] SKILL: `compositions.md`
+- [x] **1.1 Batch Discovery & Reflektion (Thema: Core & Time)**
+- [x] **1.2 Sequentielles File-Audit (Audit -> Abgleich -> Extraktion -> Bericht)**
+  - [x] REPO: `viron-core/vision.md` (Architektur-Aspekt)
+  - [x] REPO: `viron-core/documentation_manifest.md`
+  - [x] REPO: `viron-core/pipeline.md` (Pipeline-Aspekt)
+  - [x] VAULT: `00-master-workflow-2026-integration.md`
+  - [x] VAULT: `00-overview-index-v2-1-complete.md`
+  - [x] VAULT: `10-remotion-basics-01-timeline-und-frames.md`
+  - [x] VAULT: `Remotion Setup.md`
+  - [x] SKILL: `animations.md`
+  - [x] SKILL: `timing.md`
+  - [x] SKILL: `sequencing.md`
+  - [x] SKILL: `compositions.md`
 
 ---
 
