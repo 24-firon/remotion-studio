@@ -145,7 +145,7 @@ Erstelle: `EXTRACTION_REPORT_BADGE_[N].md`
 
 ---
 
-## 6. EMPFEHLUNGEN FÜR ORCHESTRATOR (Pflichtsektion!)
+## 7. EMPFEHLUNGEN FÜR ORCHESTRATOR (Pflichtsektion!)
 
 Jeder Report MUSS mit priorisierten Empfehlungen enden:
 
@@ -163,7 +163,22 @@ Jeder Report MUSS mit priorisierten Empfehlungen enden:
 
 ---
 
-## 7. CHECKLISTE VOR ABGABE
+## 8. LEARNINGS (Prozess-Gedächtnis)
+
+Reflektiere deine Arbeit. Was lief gut? Was war unklar?
+
+```markdown
+## 📝 Badge [N] Learnings
+
+| Was         | Warum                         | Empfehlung                 |
+| :---------- | :---------------------------- | :------------------------- |
+| ✅ [Erfolg] | [Grund, z.B. klare Regel]     | [Beibehalten/Verstärken]   |
+| ❌ [Fehler] | [Grund, z.B. Missverständnis] | [Briefing-Fix vorschlagen] |
+```
+
+---
+
+## 9. CHECKLISTE VOR ABGABE
 
 - [ ] Alle Quellen vollständig gelesen?
 - [ ] Jeden Code-Block mit Kontext-Prosa angereichert?
