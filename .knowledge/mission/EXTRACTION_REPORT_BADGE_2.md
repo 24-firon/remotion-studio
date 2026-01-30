@@ -11,7 +11,7 @@
 
 | Kategorie           | Anzahl | Beschreibung                        |
 | ------------------- | ------ | ----------------------------------- |
-| A: SKILL_UPDATE     | 13     | Generisches R3F/Three.js Wissen     |
+| A: SKILL_UPDATE     | 14     | Generisches R3F/Three.js Wissen     |
 | B: PROJECT_IP       | 6      | Viron Laws (Drift, 80% Grey, etc.)  |
 | C: RESEARCH_NOTE    | 8      | Theorie, Tutorials, Hintergründe    |
 | ❌ VERWORFEN        | 3      | Redundant (bereits im Global Skill) |
@@ -562,6 +562,47 @@ basisLoader.setTranscoderPath("/basis/"); // WASM transcoder
 
 **Implikation:**  
 Essentielles Performance-Pattern. Sollte als Standard in allen Viron-Projekten gelten.
+
+### A.14 Lottie Integration (Vector Animation)
+
+**Kategorie:** A  
+**Quelle:** `lottie.md` (Zeilen 22-68)
+
+**Kontext/Erklärung:**  
+Lottie-Animationen (JSON) werden über das `@remotion/lottie` Paket eingebunden. Der Workflow erfordert `delayRender`, um sicherzustellen, dass die JSON-Daten vor dem Rendering geladen sind.
+
+**Best Practices:**
+
+- Lade Assets asynchron im `useEffect`.
+- Nutze `Lottie`-Komponente für deterministische Wiedergabe.
+- Styling über das `style` Prop.
+
+**Code/Daten:**
+
+```tsx
+import { Lottie, LottieAnimationData } from "@remotion/lottie";
+
+export const MyAnimation = () => {
+  const [handle] = useState(() => delayRender("Loading Lottie"));
+  const [animationData, setAnimationData] =
+    useState<LottieAnimationData | null>(null);
+
+  useEffect(() => {
+    fetch("path/to/animation.json")
+      .then((data) => data.json())
+      .then((json) => {
+        setAnimationData(json);
+        continueRender(handle);
+      });
+  }, [handle]);
+
+  if (!animationData) return null;
+  return <Lottie animationData={animationData} />;
+};
+```
+
+**Implikation:**  
+Ermöglicht hochwertige Vektor-Animationen ohne große Video-Files. Ideal für UI-Icons und illustrative Elemente.
 
 ---
 
