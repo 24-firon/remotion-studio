@@ -72,6 +72,30 @@ Lies diese Dateien Zeile für Zeile (Deep Read):
    - **C: RESEARCH_NOTE** (Kontext, Tutorials, Begründungen)
 4. **Schreiben:** Erstelle den Report im Format von Sektion 4.
 
+### 3.1 EXTRAKTIONS-PFLICHT (Kritisch!)
+
+Wenn im Orchestrator-Hinweis-Block **konkrete Zeilen-Ranges** genannt werden:
+
+- Diese sind **PFLICHT-Extraktionen**, nicht "prüfen ob nötig"
+- Lies die genannten Zeilen
+- Extrahiere sie VOLLSTÄNDIG
+- Wenn du sie verwirfst: Dokumentiere WARUM (Redundanz? Bereits im Skill?)
+
+**Beispiel:**
+
+> Briefing sagt: "Kamera-Animation (Zeile 206-253)"
+> = Du MUSST Zeilen 206-253 extrahieren, nicht ignorieren
+
+### 3.2 PROBLEM-LÖSUNGS-GEBOT
+
+Wenn du ein Problem identifizierst (z.B. "Math.random() ist nicht deterministisch"):
+
+1. Suche in den Quellen nach einer Lösung
+2. Wenn gefunden: Dokumentiere Problem UND Lösung
+3. Wenn nicht gefunden: Markiere als `TODO: Lösung fehlt in Quellen`
+
+**Anti-Pattern:** "Das ist ein Problem" ohne Lösung oder TODO
+
 ---
 
 ## 4. OUTPUT FORMAT (Strikt einhalten!)
