@@ -11,9 +11,9 @@
 
 | Kategorie           | Anzahl | Beschreibung                        |
 | ------------------- | ------ | ----------------------------------- |
-| A: SKILL_UPDATE     | 12     | Generisches R3F/Three.js Wissen     |
+| A: SKILL_UPDATE     | 13     | Generisches R3F/Three.js Wissen     |
 | B: PROJECT_IP       | 6      | Viron Laws (Drift, 80% Grey, etc.)  |
-| C: RESEARCH_NOTE    | 7      | Theorie, Tutorials, Hintergründe    |
+| C: RESEARCH_NOTE    | 8      | Theorie, Tutorials, Hintergründe    |
 | ❌ VERWORFEN        | 3      | Redundant (bereits im Global Skill) |
 | ⚠️ useFrame-WARNUNG | 8      | Markiert als Remotion-inkompatibel  |
 
@@ -245,8 +245,35 @@ export const ParticleField = ({ count = 1000 }) => {
 
 **Performance:** ⚡⚡⚡ (1 Draw Call statt 1000)
 
+**⚠️ PROBLEM:** `Math.random()` ist nicht deterministisch.  
+**📍 STATUS:** LÖSUNG FEHLT IN QUELLEN  
+**🔧 TODO:** Seeded-Random-Pattern für Remotion entwickeln/recherchieren.
+
+**💡 Lösungsansatz (nicht in Quellen, eigene Empfehlung):**
+
+```typescript
+// Mulberry32 - schneller seeded PRNG
+const seededRandom = (seed: number) => {
+  return () => {
+    let t = (seed += 0x6d2b79f5);
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+};
+
+// Nutzung in Remotion
+const frame = useCurrentFrame();
+const random = seededRandom(frame); // Deterministisch pro Frame
+const positions = Array.from({ length: count }).map(() => [
+  random() * 10 - 5,
+  random() * 10 - 5,
+  random() * 10 - 5,
+]);
+```
+
 **Implikation:**  
-Essentielles Performance-Pattern. Jedoch: `Math.random()` ist **NICHT deterministisch** und muss in Remotion durch seeded Random ersetzt werden!
+Essentielles Performance-Pattern. Erfordert seeded Random für Remotion-Determinismus.
 
 ---
 
@@ -482,6 +509,59 @@ export const AnimatedMaterial = () => {
 
 **Implikation:**  
 Standard-Remotion-Pattern, keine neue Information. Aber gutes Referenz-Beispiel.
+
+---
+
+### A.13 Texture Optimization (WebP/BASIS)
+
+**Kategorie:** A  
+**Quelle:** `40-gltf-models-00-loading-optimization.md` (Zeilen 73-115)
+
+**Kontext/Erklärung:**  
+Texturen machen oft 50% der Dateigröße aus. Dieses Pattern zeigt zwei Optimierungsstrategien:
+
+1. **WebP statt PNG** – Reduziert Größe um 50-80%
+2. **BASISLoader** – GPU-basierte Echtzeit-Transcode für maximale Kompatibilität
+
+**Code/Daten:**
+
+```typescript
+import { useTexture } from "@react-three/drei";
+
+const OptimizedModel = () => {
+  // WebP statt PNG
+  const textures = useTexture({
+    map: "/textures/diffuse.webp",
+    normalMap: "/textures/normal.webp",
+    roughnessMap: "/textures/roughness.webp",
+  });
+
+  return (
+    <mesh>
+      <meshStandardMaterial {...textures} />
+    </mesh>
+  );
+};
+```
+
+**BASIS-Integration:**
+
+```typescript
+import { BASISLoader } from "three/examples/jsm/loaders/BASISLoader.js";
+
+const basisLoader = new BASISLoader();
+basisLoader.setTranscoderPath("/basis/"); // WASM transcoder
+```
+
+**Benchmarks:**
+
+| Format           | Größe  | Load-Time |
+| ---------------- | ------ | --------- |
+| PNG (4096x4096)  | 64 MB  | 10s       |
+| WebP komprimiert | 2-4 MB | 0.5s      |
+
+**Implikation:**  
+Essentielles Performance-Pattern. Sollte als Standard in allen Viron-Projekten gelten.
 
 ---
 
@@ -786,6 +866,67 @@ _map.setConfigProperty("basemap", "show3dBuildings", true);
 
 **Implikation:**  
 Nützlich für Stadt-Visualisierungen. Bereits im Global Skill dokumentiert.
+
+---
+
+### C.8 Mapbox Camera-Animation Pattern
+
+**Kategorie:** C (mit Cross-Referenz zu R3F Camera)  
+**Quelle:** `maps.md` (Zeilen 206-253)
+
+**Kontext/Erklärung:**  
+Dieses Pattern zeigt Frame-basierte Kamera-Animation für Mapbox-Karten. Es nutzt `useCurrentFrame()` und ist damit **Remotion-kompatibel**. Die Technik unterscheidet sich von R3F-Kamera-Animation durch:
+
+- `getFreeCameraOptions()` (Mapbox-spezifisch)
+- `turf.along()` für Geodätische Berechnungen
+- `map.setFreeCameraOptions()` für Kamera-Updates
+
+**⚠️ Cross-Referenz:** Dieses Pattern ergänzt R3F Camera (siehe `camera.md`), ersetzt sie nicht. Für 3D-Szenen: R3F. Für Karten: Mapbox.
+
+**Code/Daten:**
+
+```typescript
+import * as turf from "@turf/turf";
+import { interpolate, Easing, useCurrentFrame, useVideoConfig } from "remotion";
+
+const frame = useCurrentFrame();
+const { fps } = useVideoConfig();
+
+useEffect(() => {
+  if (!map) return;
+  const handle = delayRender("Moving camera...");
+
+  const routeDistance = turf.length(turf.lineString(lineCoordinates));
+
+  const progress = interpolate(
+    frame / fps,
+    [0.00001, animationDuration],
+    [0, 1],
+    {
+      easing: Easing.inOut(Easing.sin),
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    },
+  );
+
+  const camera = map.getFreeCameraOptions();
+  const alongRoute = turf.along(
+    turf.lineString(lineCoordinates),
+    routeDistance * progress,
+  ).geometry.coordinates;
+
+  camera.lookAtPoint({
+    lng: alongRoute[0],
+    lat: alongRoute[1],
+  });
+
+  map.setFreeCameraOptions(camera);
+  map.once("idle", () => continueRender(handle));
+}, [frame, map]);
+```
+
+**Implikation:**  
+Remotion-kompatibles Pattern für Karten-Animationen. Wichtig für Geo-Visualisierungen. Nicht redundant mit R3F Camera – ergänzende Technik.
 
 ---
 

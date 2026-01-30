@@ -145,12 +145,33 @@ Erstelle: `EXTRACTION_REPORT_BADGE_[N].md`
 
 ---
 
-## 6. CHECKLISTE VOR ABGABE
+## 6. EMPFEHLUNGEN FÜR ORCHESTRATOR (Pflichtsektion!)
+
+Jeder Report MUSS mit priorisierten Empfehlungen enden:
+
+```markdown
+## 📋 Empfehlungen für Orchestrator
+
+| Priorität  | Aktion            | Begründung        |
+| ---------- | ----------------- | ----------------- |
+| 🔴 HOCH    | [Konkrete Aktion] | [Warum kritisch?] |
+| 🟡 MITTEL  | [Konkrete Aktion] | [Warum wichtig?]  |
+| 🟢 NIEDRIG | [Konkrete Aktion] | [Nice-to-have]    |
+```
+
+**Ziel:** Der Orchestrator soll nach dem Lesen sofort wissen, was zu tun ist.
+
+---
+
+## 7. CHECKLISTE VOR ABGABE
 
 - [ ] Alle Quellen vollständig gelesen?
 - [ ] Jeden Code-Block mit Kontext-Prosa angereichert?
 - [ ] A/B/C Kategorien sauber getrennt?
+- [ ] Alle im Briefing genannten Zeilen-Ranges extrahiert?
+- [ ] Probleme mit TODO markiert, wenn Lösung fehlt?
 - [ ] Redundanzen verworfen & dokumentiert?
+- [ ] Empfehlungs-Sektion ausgefüllt?
 - [ ] Format strikt eingehalten?
 
 **AN DIE ARBEIT.**
