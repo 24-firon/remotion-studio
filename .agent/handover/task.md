@@ -284,7 +284,29 @@
 
 ---
 
-### 📦 BADGE 8: AGENT GOVERNANCE & AI SYNERGIES
+### 🏛️ BADGE 8: SYSTEM ARCHITECTURE (HISTORICAL FILE LIST)
+
+**Status:** 📖 REFERENCE (Detailed Audit Map)
+
+> [!NOTE]
+> This badge contains the exhaustive list of files and audit steps from the previous agent's successful forensic discovery. Use this as a map for your own re-verification in Badge 7.
+
+- [x] **PHASE 1: ARCHITECT'S DEEP DIVE (Input)**
+  - [x] **Sequentielles File-Audit (Source Analysis)**
+    - [x] REPO: `viron-core/pipeline.md` (Concurrency Formula)
+    - [x] REPO: `viron-core/workflow.md` (Git Flow Strategy)
+    - [x] REPO: `viron-core/troubleshooting.md` (Sync Rule: > 2 frames)
+    - [x] ARCHIVE: `v1-integration-protocol.md` (Governance Snippets)
+    - [x] SKILL: `trimming.md` (Logic for Redundancy)
+  - [x] **Identify Smoking Guns** (Concurrency Math, Sync Drift Limit)
+
+- [x] **PHASE 2: ASSET DEFINITIONS (V3.0)**
+  - [x] `SUBAGENT_BRIEFING_BADGE_7.md` (V3.0 Path Enforcement)
+  - [x] `SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md` (V2.2 Forensic Interrogation)
+
+---
+
+### 📦 BADGE 9: AGENT GOVERNANCE & AI SYNERGIES
 
 **Status:** PENDING
 
@@ -324,26 +346,26 @@
 
 ---
 
-## 🔵 PHASE 6: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
+## 🔵 PHASE 7: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
 
-- [ ] **6.1 Konsistenz-Check:** Abgleich aller 8 Badge-Reports auf Widersprüche.
-- [ ] **6.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
-- [ ] **6.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
-- [ ] **6.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
-- [ ] **6.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
+- [ ] **7.1 Konsistenz-Check:** Abgleich aller 9 Badge-Reports auf Widersprüche.
+- [ ] **7.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
+- [ ] **7.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
+- [ ] **7.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
+- [ ] **7.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
 
-## 🔵 PHASE 7: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
+## 🔵 PHASE 8: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
 
-- [ ] **7.1 Greenfield Setup:** Erstellung der neuen Modul-Struktur in `Viron-Studio`.
-- [ ] **7.2 Skill Extraction:** Überführung der destillierten IP in das Ziel-Verzeichnis.
-- [ ] **7.3 "Viron-System" Creation:** Initialisierung des neuen, lokalen Antigravity-Skills.
-- [ ] **7.4 Live-Test:** Rendering einer Test-Szene mit dem neuen Wissensstand.
+- [ ] **8.1 Greenfield Setup:** Erstellung der neuen Modul-Struktur in `Viron-Studio`.
+- [ ] **8.2 Skill Extraction:** Überführung der destillierten IP in das Ziel-Verzeichnis.
+- [ ] **8.3 "Viron-System" Creation:** Initialisierung des neuen, lokalen Antigravity-Skills.
+- [ ] **8.4 Live-Test:** Rendering einer Test-Szene mit dem neuen Wissensstand.
 
-## 🔵 PHASE 8: MISSION CLOSE & HANDOVER (GEPLANT)
+## 🔵 PHASE 9: MISSION CLOSE & HANDOVER (GEPLANT)
 
-- [ ] **8.1 Documentation Finalization:** Letztes Update von `SPEC.md` und `HANDOVER.md`.
-- [ ] **8.2 Archive Cleanup:** Finales Verschieben der Legacy-Leichen in das Langzeit-Archiv.
-- [ ] **8.3 Mission Signature:** Erstellung des `MISSION_COMPLETED.md` Abschlussberichts.
+- [ ] **9.1 Documentation Finalization:** Letztes Update von `SPEC.md` und `HANDOVER.md`.
+- [ ] **9.2 Archive Cleanup:** Finales Verschieben der Legacy-Leichen in das Langzeit-Archiv.
+- [ ] **9.3 Mission Signature:** Erstellung des `MISSION_COMPLETED.md` Abschlussberichts.
 
 ---
 
