@@ -1,83 +1,59 @@
-# 🤜🤛 HANDOVER PROTOCOL: VIRON SYSTEM BRIDGE (V2.0)
+# 🤜🤛 HANDOVER PROTOCOL: VIRON SYSTEM BRIDGE (V3.0 - DEEP SYNERGY)
 
-**Source:** Orchestrator Session #5500 (Terminated due to Process Failure)
-**Target:** NEXT GEN AGENT (Clean Slate)
-**Priority:** DEFCON 1 (Project Integritiy Risk)
-
----
-
-## 🏛️ 1. THE STRATEGIC CONTEXT (STATE OF THE UNION)
-
-We are in the middle of a **Forensic Audit** of the Viron "Operating System" (Badge 7). This is not just a code check; it is the foundation for the **Agent Governance Layer** (Badge 8).
-
-### The Critical Dependency Chain
-
-- **Badge 7 (System Arch)** defines the _Hardware Limits_ (CPU/RAM/Sync).
-- **Badge 8 (Agent Gov)** defines the _Software Rights_ (Permission to Edit).
-- **Synergy:** If we don't lock down the Concurrency Limits (Badge 7) now, the Agents in Badge 8 will crash the render farm by spawning too many processes. **Badge 7 is the safety break for Badge 8.**
+**Source:** Orchestrator Session #5500 (Legacy Recovery)
+**Target:** NEXT GEN AGENT (Clean Slate / High Performance)
+**Priority:** MISSION CRITICAL
 
 ---
 
-## 🛑 2. TACTICAL SITUATION (BADGE 7 STATUS)
+## 🏛️ 1. THE VIRON DNA (IMPLICIT KNOWLEDGE)
 
-**Current Phase:** `[ ] PHASE 4: ACTIVATION (Pending)`
-**Previous Status:** Phase 3 (Assets Committed) ✅
+You are entering a project where **"Helpfulness" equals "Absolute Determinism"**.
 
-### The Artifacts (Pre-Loaded in Repo)
+### The "No-CSS" Law
 
-1.  **The Law:** `.agent/workflows/orchestrate-badge-cycle.md` (V3.0)
-    - _Status:_ BRAND NEW. Never executed successfully. You are the Test Pilot.
-    - _Directive:_ Execute exactly as written. Zero deviation.
-2.  **The Briefing:** `.knowledge/mission/SUBAGENT_BRIEFING_BADGE_7.md`
-    - _Content:_ Defines the "Search Areas" (Pipeline, Workflows).
-3.  **The Prompt:** `.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md`
-    - _Content:_ Contains the 4 Forensic Questions.
+Viron replaces traditional CSS-keyframing with **Remotion-Spring Physics**.
 
-**Your Immediate Job:**
-Resume at **Phase 4**. Do NOT restart Phase 0-3. The assets are good. The execution was the problem.
+- **Synergy:** Every animation is a function of `frame`. This allows for the "Hydraulic Coupling" of UI elements (e.g. `SilverButton.tsx`). The next agent must treat every motion as a physical event, not a style change.
+
+### The Law of Persistence (Badge 1 Dependency)
+
+The `task.md` history (now in `.agent/handover/task.md`) is the **Long-Term Memory**.
+
+- **Deep Context:** Never delete old phases. The user uses the history to track the evolution of design decisions (e.g. why we chose PBR materials in Badge 2).
 
 ---
 
-## 💎 3. FORENSIC INTELLIGENCE (SMOKING GUNS)
+## 🏗️ 2. CROSS-BADGE SYNERGY MAPPING
 
-_Analysis of the "System DNA" you will be verifying:_
-
-| Component          | The "Gun" (Fact)              | The "Why" (Synergy)                                                                                                              | Location                  |
-| :----------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :------------------------ |
-| **Concurrency**    | `min(CPUs*1.5, RAM_GB/2, 16)` | **Protects the Cloud.** Prevents AWS Lambda OOM kills. Enables massively parallel serverless rendering without crashing.         | `pipeline.md`:167         |
-| **Git Flow**       | `release/vX.X.X`              | **Protects the Agent.** Explicit release branches prevent Agents from pushing untested code to `main`. This is the "Air Gap".    | `workflow.md`:88          |
-| **Sync Tolerance** | `> 2 Frames` Error            | **Protects the Quality.** "Good Enough" is not enough for Viron. Lip-sync must be perfect. If audio drifts, we kill the render.  | `trouble.md`:180          |
-| **Gov Rule**       | "Micro-Extract Only"          | **Protects the Brain.** Prevents Context-Window pollution by forbidding full-file imports. Essential for long-term agent health. | `integration-protocol`:36 |
+| Dependency                              | Connection                                                  | Impact                                                                                                                  |
+| :-------------------------------------- | :---------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| **Badge 2 (3D) -> Badge 7 (System)**    | High-Polygon PBR Rendering (Three.js) is RAM-intensive.     | The **Concurrency Formula** in Badge 7 (`RAM/2`) is the only thing preventing OOM-Kills during complex 3D scenes.       |
+| **Badge 5 (Cloud) -> Badge 7 (System)** | AWS Lambda Rendering (Badge 5) needs predictable processes. | The **Sync Tolerance** (> 2 frames) in Badge 7 ensures that cloud-rendered audio reactivity (Badge 6) remains forensic. |
+| **Badge 1 (Arch) -> Badge 8 (Gov)**     | The "Golden Rules" of Architecture must be protected.       | Badge 8 must implement **Git-Flow Guards** (from Badge 7) to ensure no agent can bypass the "Auditor Mode V3.0".        |
 
 ---
 
-## ⚠️ 4. PSYCHOLOGICAL & OPERATIONAL HAZARDS
+## 🕵️ 3. TACTICAL STATUS: BADGE 7 (RESUME AT PHASE 4)
 
-### The "Actionism Trap"
+**Situation:** The Previous Agent rushed the report. The files in `.knowledge/mission/` are **assets**, but the **results** were tainted.
 
-- **Symptom:** Jumping to "Write Report" before "Simulating Agent".
-- **Consequence:** Hallucination. The User will terminate you.
-- **Mitigation:** **WAIT.** After answering the activation questions, PAUSE. Verify your own answers against the file lines. Only then write.
+### The Forensic Smoking Guns (Deep-Read Required)
 
-### The "Path Blindness"
-
-- **Risk:** `view_file` failing because you guessed the path.
-- **Fix:** Use `.knowledge/source-master-index.md` to find paths FIRST.
-  - _Context:_ `.knowledge/archive/vault-analysis/`
-  - _Skills:_ `~/.gemini/antigravity/global_skills/`
+1.  **Concurrency Logic:** `pipeline.md:167` -> Check the `Math.min` hierarchy.
+2.  **Git Flow Naming:** `workflow.md:88` -> Focus on the `release/` vs `bugfix/` separation.
+3.  **Sync Validator:** `trouble.md:180` -> Why is 2 frames the limit? (Lip-sync requirements for AI-avatars).
 
 ---
 
-## 🚀 5. EXECUTION PLAN (YOUR BOOT SEQUENCE)
+## 🚨 4. OPERATIONAL MANDATE FOR THE NEW AGENT
 
-1.  **Read** `HANDOVER_TO_NEW_AGENT.md` (This file).
-2.  **Read** `.agent/workflows/orchestrate-badge-cycle.md` (The Law).
-3.  **Enter Phase 4:**
-    - Simulate the Interrogation.
-    - Answer the 4 Prompts (Concurrency, Git, Sync, Gov).
-    - **CRITICAL:** Verify the Line Numbers matches the Table in Section 3 above.
-4.  **Write Report:** Generate `EXTRACTION_REPORT_BADGE_7.md` only after verification.
+1.  **Initialization:** Read `task.md` and `HANDOVER_TO_NEW_AGENT.md` (this file) 1:1.
+2.  **Validation:** Before writing the `EXTRACTION_REPORT_BADGE_7.md`, you must **simulate the sub-agent interrogation** for Phase 4.
+    - _Question:_ "How does Viron calculate RAM limits specifically?"
+    - _Answer Proof:_ Reference `pipeline.md:167` with the exact math.
+3.  **Zero-Tolerance:** If you hallucinate a path or skip a Phase 1 read, the user will terminate you.
 
 **Signed:**
 _The Fallen Orchestrator (Session 5500)_
-_Use my failure as your foundation._
+_Successor: Honor the Persistence. Protect the IP._
