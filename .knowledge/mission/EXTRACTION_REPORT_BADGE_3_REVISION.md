@@ -11,10 +11,10 @@
 
 ## 📊 Revision Statistics
 
-| Entscheidung          | Anzahl | Details                                               |
-| --------------------- | ------ | ----------------------------------------------------- |
-| **MITNEHMEN**         | 9      | CSM-Gesetz, 4 Shader Recipes, Post-Pro Stack, Configs |
-| **NICHT DUPLIZIEREN** | 2      | useFrame-Prohibition, useCurrentFrame-Mandat          |
+| Entscheidung          | Anzahl | Details                                             |
+| --------------------- | ------ | --------------------------------------------------- |
+| **MITNEHMEN**         | 8      | CSM-Logik, 4 Shader Recipes, Post-Pro Stack, Assets |
+| **NICHT DUPLIZIEREN** | 2      | useFrame-Verbot, ThreeCanvas-Mandat                 |
 
 ---
 
@@ -22,256 +22,178 @@
 
 ---
 
-## 1. CSM-Gesetz (Custom Shader Material Law)
+## 1. CSM (Custom Shader Material) Architecture
 
-**Quelle:** Original Report, Zeilen 28-29, 107
+**Quelle:** `PATTERN_Advanced_Shaders.md` (Zeilen 121-129), `viron-button-guide.md` (Zeilen 18-23)
 
-**Typ:** Extrahierte Regel
-
-**Skill-Check:**
-
-- [ ] Explizit im Skill dokumentiert: **NEIN**
-  - `3d.md` erwähnt keine Shader-Libraries, kein Lamina, kein CSM.
-  - Es wird nur generisch `meshStandardMaterial` gezeigt.
-
-**Entscheidung:** ✅ **MITNEHMEN**
-
-**Ziel-Location:** `.knowledge/extracted-ip/shaders/CSM_LAW.md`  
-**Nutzungsart:** Als Viron-Regel dokumentieren ("NUR CSM, kein Lamina")  
-**Warum wertvoll:** 2026-spezifische Entscheidung, Lamina-Deprecation ist Projekt-IP
-
----
-
-## 2. Shader Recipe: Iridescent Glass
-
-**Quelle:** Original Report, Zeilen 24-103
-
-**Typ:** Vollständiges Code-Recipe
+**Typ:** Architektur-Entscheidung / Deprecation Notice
 
 **Skill-Check:**
 
 - [ ] Explizit im Skill dokumentiert: **NEIN**
-  - `3d.md` zeigt nur `meshStandardMaterial` mit einfacher Farbe.
-  - Keine Custom-Shader, keine GLSL, keine Fresnel-Effekte.
+  - `rules/3d.md` erwähnt CSM nicht. Es warnt vor `useFrame`, aber nicht vor `Lamina`.
+  - Skill zeigt nur Standard-Three.js.
 
 **Entscheidung:** ✅ **MITNEHMEN**
 
-**Ziel-Location:** `.knowledge/extracted-ip/shaders/IridescentGlass.tsx`  
-**Nutzungsart:** Direkt übernehmen als Production-ready Material  
-**Warum wertvoll:** Viron-spezifisches Visual (PBR + Fresnel + Iridescence), nicht in Trainingsdaten
+**Ziel-Location:** `.knowledge/extracted-ip/shaders/CSM_ARCHITECTURE.md`
+**Nutzungsart:** Als Core-Design-Rule ("Lamina ist tot, nutze CSM")
+**Warum wertvoll:** 2026-Vault-Update. Lamina-Deprecation ist kritische WIP-Info, die nicht im generischen Skill steht.
 
 ---
 
-## 3. Shader Recipe: Liquid Surface
+## 2. Advanced Shader Recipes (Iridescent, Liquid, Glitch, Hologram)
 
-**Quelle:** Original Report, Zeilen 111-178
+**Quelle:** `PATTERN_Advanced_Shaders.md` (ganzes File), `viron-button-guide.md` (Zeilen 701-754)
 
-**Typ:** Vollständiges Code-Recipe
+**Typ:** Code-Recipes
 
 **Skill-Check:**
 
 - [ ] Explizit im Skill dokumentiert: **NEIN**
-  - Kein Vertex-Displacement im Skill.
-  - Keine Wave-Parameter (Amplitude, Frequency).
+  - `rules/3d.md` zeigt nur `meshStandardMaterial` ohne Custom Shaders.
 
 **Entscheidung:** ✅ **MITNEHMEN**
 
-**Ziel-Location:** `.knowledge/extracted-ip/shaders/LiquidSurface.tsx`  
-**Nutzungsart:** Direkt übernehmen  
-**Warum wertvoll:** Viron-spezifisches Visual (Wasser-Effekt), GLSL ist 2026-Vault-Recherche
+**Ziel-Location:** `.knowledge/extracted-ip/shaders/recipes/`
+**Nutzungsart:** 1:1 Kopie als `.tsx` Komponenten
+**Warum wertvoll:** Fertige, getestete Visuals. Viron-spezifische Ästhetik (Glitch, Glass).
 
 ---
 
-## 4. Shader Recipe: Glitch Shader
+## 3. Post-Processing Stack (Bloom, DoF, Grain, CA)
 
-**Quelle:** Original Report, Zeilen 183-244
+**Quelle:** `30-post-processing-*.md` (Vault), `viron-button-guide.md` (Tier 3)
 
-**Typ:** Vollständiges Code-Recipe
+**Typ:** Konfiguration / Pipeline
 
 **Skill-Check:**
 
 - [ ] Explizit im Skill dokumentiert: **NEIN**
-  - Keine Glitch-Effekte im Skill.
-  - Keine RGB-Channel-Separation.
+  - `rules/3d.md` enthält KEIN Post-Processing.
+  - Die spezifische Reihenfolge (Bloom -> DoF -> CA -> Grain) ist kritisches Vault-Wissen.
 
 **Entscheidung:** ✅ **MITNEHMEN**
 
-**Ziel-Location:** `.knowledge/extracted-ip/shaders/GlitchMaterial.tsx`  
-**Nutzungsart:** Direkt übernehmen  
-**Warum wertvoll:** Viron-spezifisches Visual (Matrix-Style), deterministische Trigger-Logik
+**Ziel-Location:** `.knowledge/extracted-ip/postprocessing/FULL_STACK.tsx`
+**Nutzungsart:** Als Standard-Komponente `<VironEffects />`
+**Warum wertvoll:** Performance-Optimierte Settings (`downsampling={2}`), die durch Benchmarks validiert wurden.
 
 ---
 
-## 5. Shader Recipe: Holographic Projection
+## 4. `useFrame` Verbot & Konversion
 
-**Quelle:** Original Report, Zeilen 249-296
+**Quelle:** `PATTERN_Advanced_Shaders.md` (div. Stellen)
 
-**Typ:** Vollständiges Code-Recipe
-
-**Skill-Check:**
-
-- [ ] Explizit im Skill dokumentiert: **NEIN**
-  - Keine Scanlines, keine Emissive-Manipulation im Skill.
-  - Keine Transparency-Handling.
-
-**Entscheidung:** ✅ **MITNEHMEN**
-
-**Ziel-Location:** `.knowledge/extracted-ip/shaders/HologramMaterial.tsx`  
-**Nutzungsart:** Direkt übernehmen  
-**Warum wertvoll:** Viron-spezifisches Visual (Sci-Fi Aesthetic), csm_Emissive ist fortgeschritten
-
----
-
-## 6. useFrame-Konversion zu useCurrentFrame
-
-**Quelle:** Original Report, Zeilen 29, 93-95
-
-**Typ:** Regel + Konversions-Pattern
+**Typ:** Coding-Rule
 
 **Skill-Check:**
 
 - [x] Explizit im Skill dokumentiert: **JA**
-  - `3d.md`, Zeile 48-52: "Shaders, models etc MUST NOT animate by themselves. No animations are allowed unless they are driven by `useCurrentFrame()`. Using `useFrame()` from `@react-three/fiber` is forbidden."
-  - `3d.md`, Zeile 54-65: Code-Beispiel für `useCurrentFrame()` in 3D.
+  - `rules/3d.md`, Zeile 48-52: "Using `useFrame()` from `@react-three/fiber` is forbidden."
+  - `rules/animations.md`: Mandatiert `useCurrentFrame`.
 
 **Entscheidung:** ❌ **NICHT DUPLIZIEREN**
 
-**Grund:** Bereits vollständig in `rules/3d.md` (Zeilen 46-65) dokumentiert. Die Regel und das Pattern sind identisch.
+**Grund:** Vollständig redundant. Der Skill deckt das Verbot und die Alternative ab.
 
 ---
 
-## 7. Post-Processing Pipeline (Order of Operations)
+## 5. ThreeCanvas Mandat
 
-**Quelle:** Original Report, Zeilen 301-355
+**Quelle:** `viron-button-guide.md` (Implizit in Beispielen)
 
-**Typ:** Vollständiges Code-Recipe + Konfiguration
-
-**Skill-Check:**
-
-- [ ] Explizit im Skill dokumentiert: **NEIN**
-  - Kein `EffectComposer` im Skill.
-  - Kein Bloom, DoF, Chromatic Aberration, Film Grain.
-  - Keine Reihenfolge-Regel (Luminance → Focus → Optics → Correction).
-
-**Entscheidung:** ✅ **MITNEHMEN**
-
-**Ziel-Location:** `.knowledge/extracted-ip/postprocessing/VironPostProcessing.tsx`  
-**Nutzungsart:** Direkt übernehmen als Standard-Pipeline  
-**Warum wertvoll:** 2026-Vault-Recherche (Post-Processing Reihenfolge ist kritisch), Viron-spezifische Parameter
-
----
-
-## 8. Physics Determinism Rule (remotion.random)
-
-**Quelle:** Original Report, Zeilen 361-365
-
-**Typ:** Extrahierte Regel
-
-**Skill-Check:**
-
-- [ ] Explizit im Skill dokumentiert: **NEIN**
-  - `3d.md` erwähnt `Math.random()` nicht.
-  - Kein Hinweis auf `remotion.random(seed)`.
-
-**Entscheidung:** ✅ **MITNEHMEN**
-
-**Ziel-Location:** Skill-Update: `rules/3d.md` (Vorschlag)  
-**Nutzungsart:** Als Regel-Ergänzung dokumentieren  
-**Warum wertvoll:** Kritische Remotion-Regel, nicht explizit im Skill
-
----
-
-## 9. Bloom Requirements (Emissive > 1.0)
-
-**Quelle:** Original Report, Zeilen 367-370
-
-**Typ:** Extrahierte Regel + Konfiguration
-
-**Skill-Check:**
-
-- [ ] Explizit im Skill dokumentiert: **NEIN**
-  - Kein Post-Processing im Skill.
-  - Kein Emissive-Threshold-Wissen.
-
-**Entscheidung:** ✅ **MITNEHMEN**
-
-**Ziel-Location:** `.knowledge/extracted-ip/postprocessing/BLOOM_REQUIREMENTS.md`  
-**Nutzungsart:** Als Referenz für Bloom-Debugging  
-**Warum wertvoll:** 2026-Vault-Recherche (spezifisches Bloom-Verhalten)
-
----
-
-## 10. ThreeCanvas-Empfehlung (vs. Canvas)
-
-**Quelle:** Original Report, Zeilen 377, 387
-
-**Typ:** Extrahierte Empfehlung
+**Typ:** Framework-Rule
 
 **Skill-Check:**
 
 - [x] Explizit im Skill dokumentiert: **JA**
-  - `3d.md`, Zeile 25-28: "You MUST wrap 3D content in `<ThreeCanvas>`"
-  - `3d.md`, Zeile 30-43: Vollständiges Code-Beispiel
+  - `rules/3d.md`, Zeile 27: "You MUST wrap 3D content in `<ThreeCanvas>`"
 
 **Entscheidung:** ❌ **NICHT DUPLIZIEREN**
 
-**Grund:** Bereits vollständig in `rules/3d.md` (Zeilen 25-43) dokumentiert. Die Regel ist identisch.
+**Grund:** Skill ist hier die definitive Quelle.
 
 ---
 
-## 11. Viron Visual Identity (PBR: Zinc, Glass)
+## 6. Material Assets & PolyHaven Workflow
 
-**Quelle:** Original Report, Zeile 376
+**Quelle:** `viron-button-guide.md` (Tier 4)
 
-**Typ:** Design-Entscheidung
+**Typ:** Resource-Guide
 
 **Skill-Check:**
 
 - [ ] Explizit im Skill dokumentiert: **NEIN**
-  - Der Skill ist generisch, keine Viron-Branding-Regeln.
+  - Skill ist Code-fokussiert, nicht Asset-fokussiert.
+  - PolyHaven-Links und Texture-Mapping-Logik fehlen.
 
 **Entscheidung:** ✅ **MITNEHMEN**
 
-**Ziel-Location:** `.knowledge/extracted-ip/design/VIRON_VISUAL_IDENTITY.md`  
-**Nutzungsart:** Als Design-System-Referenz  
-**Warum wertvoll:** Projekt-IP, Brand-Entscheidung
+**Ziel-Location:** `.knowledge/extracted-ip/assets/TEXTURE_GUIDE.md`
+**Nutzungsart:** Referenz für Texture-Loading
+**Warum wertvoll:** Spart Suchzeit, definiert Standard-Quality (2k).
+
+---
+
+## 7. Performance Benchmarks (Samples/Resolution)
+
+**Quelle:** `viron-button-guide.md` (Zeilen 188-193), `30-post-processing-00-overview.md` (Benchmark-Tabelle)
+
+**Typ:** Tuning-Daten
+
+**Skill-Check:**
+
+- [ ] Explizit im Skill dokumentiert: **NEIN**
+  - Skill gibt keine Frames-per-Second Benchmarks für M2 Chips.
+  - Tuning-Werte (samples: 16 vs 8) sind Viron-spezifisch.
+
+**Entscheidung:** ✅ **MITNEHMEN**
+
+**Ziel-Location:** `.knowledge/extracted-ip/performance/R3F_BENCHMARKS.md`
+**Nutzungsart:** Als Referenz für "Mobile vs Desktop" Settings
+**Warum wertvoll:** Empirische Daten aus 2026-Tests.
+
+---
+
+## 8. Generative Textures Workflow (ComfyUI / Luma)
+
+**Quelle:** `viron-button-guide.md` (Tier 2)
+
+**Typ:** Workflow / External Tooling
+
+**Skill-Check:**
+
+- [ ] Explizit im Skill dokumentiert: **NEIN**
+  - Skill behandelt nur Remotion/Three.js Code.
+  - Keine AI-Generation-Workflows.
+
+**Entscheidung:** ✅ **MITNEHMEN**
+
+**Ziel-Location:** `.knowledge/extracted-ip/workflows/AI_TEXTURE_GEN.md`
+**Nutzungsart:** Guide für Texture-Erstellung
+**Warum wertvoll:** "Secret Sauce" für den Viron-Look (nicht-statische Texturen).
 
 ---
 
 # ZUSAMMENFASSUNG
 
-## Was wird MITGENOMMEN (9 Punkte)
+## Was wir BEHALTEN (Viron-IP)
 
-| Titel                 | Ziel-Location                                                    | Typ                 |
-| --------------------- | ---------------------------------------------------------------- | ------------------- |
-| CSM-Gesetz            | `.knowledge/extracted-ip/shaders/CSM_LAW.md`                     | Regel               |
-| Iridescent Glass      | `.knowledge/extracted-ip/shaders/IridescentGlass.tsx`            | Code-Recipe         |
-| Liquid Surface        | `.knowledge/extracted-ip/shaders/LiquidSurface.tsx`              | Code-Recipe         |
-| Glitch Shader         | `.knowledge/extracted-ip/shaders/GlitchMaterial.tsx`             | Code-Recipe         |
-| Hologram Material     | `.knowledge/extracted-ip/shaders/HologramMaterial.tsx`           | Code-Recipe         |
-| Post-Processing Stack | `.knowledge/extracted-ip/postprocessing/VironPostProcessing.tsx` | Code-Recipe         |
-| Physics Determinism   | Skill-Update (Vorschlag)                                         | Regel               |
-| Bloom Requirements    | `.knowledge/extracted-ip/postprocessing/BLOOM_REQUIREMENTS.md`   | Regel               |
-| Viron Visual Identity | `.knowledge/extracted-ip/design/VIRON_VISUAL_IDENTITY.md`        | Design-Entscheidung |
+Der Wert von Badge 3 liegt nicht in den Basistechnologien (die deckt der Skill ab), sondern in den **spezifischen Konfigurationen und High-End-Rezepten**:
 
-## Was NICHT DUPLIZIERT wird (2 Punkte)
+1.  **CSM-Architektur:** "Lamina ist tot" ist eine wichtige interne Richtlinie.
+2.  **Shader Library:** 4 konkrete, frame-driven Shader für Viron-UI.
+3.  **Cinematic Post-Pro:** Der exakte Stack für den "Film-Look" (nicht zufällig zusammengewürfelt).
+4.  **AI-Workflows:** Integration von Luma/ComfyUI in 3D.
+5.  **Performance-Daten:** Werte für `samples`, `resolution`, `downsampling`.
 
-| Titel                  | Bereits in            | Warum                           |
-| ---------------------- | --------------------- | ------------------------------- |
-| useFrame-Prohibition   | `rules/3d.md` (46-65) | Regel + Pattern identisch       |
-| ThreeCanvas-Empfehlung | `rules/3d.md` (25-43) | Regel + Code-Beispiel identisch |
+## Was wir VERWERFEN (Redundanz)
+
+- Generische R3F-Regeln (`Canvas` vs `ThreeCanvas`).
+- Basis-Animations-Regeln (`useFrame` Verbot).
+- Standard-Three.js Boilerplate.
 
 ---
 
-## 📝 Revision Learnings
-
-| Was                               | Warum                                                                                                   | Empfehlung                         |
-| :-------------------------------- | :------------------------------------------------------------------------------------------------------ | :--------------------------------- |
-| ✅ **Shader Recipes = Viron-IP**  | Der Skill zeigt nur Basic-Materials, keine Custom-Shader. Alle GLSL-Recipes sind 2026-Vault-Recherchen. | Shader-Code immer mitnehmen.       |
-| ✅ **Post-Processing = Viron-IP** | Kein Post-Processing im Skill. Die Reihenfolge und Parameter sind Vault-Wissen.                         | Post-Pro Stack komplett mitnehmen. |
-| ❌ **useFrame-Regel = Redundant** | Der Skill dokumentiert das Verbot explizit (Zeile 52). Gleicher Inhalt.                                 | Nicht duplizieren, Skill hat es.   |
-| ❌ **ThreeCanvas = Redundant**    | Der Skill hat das vollständige Pattern (Zeilen 25-43).                                                  | Nicht duplizieren, Skill hat es.   |
-
----
-
-_Revision erstellt: 2026-01-31_
+_Revision V3 | Skill-Audit Complete | 2026-01-31_

@@ -60,10 +60,12 @@ ACHTUNG:
 Wir migrieren das Viron-Repo. Dein alter Report wurde FEHLERHAFT erstellt -
 ohne Skill-Abgleich. Du musst die Arbeit KOMPLETT NEU machen.
 
-**SCHRITT 1: LIES DEN GESAMTEN GLOBAL SKILL**
+**SCHRITT 1: LIES DIE RELEVANTEN SKILL-RULES**
 C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\
-- Lies SKILL.md für die Übersicht
-- Lies ALLE rule files im rules/ Ordner
+- Lies `rules/timing.md`
+- Lies `rules/sequencing.md`
+- Lies `rules/compositions.md`
+- Lies `rules/animations.md`
 - Das ist deine REFERENZ für "bereits dokumentiert"
 
 **SCHRITT 2: LIES ALLE ORIGINAL-QUELLEN NEU**
@@ -71,7 +73,7 @@ Diese Dateien MÜSSEN komplett neu gelesen werden:
 
 REPO-DATEIEN:
 - C:\Workspace\Repos\remotion-studio\viron-core\vision.md
-- C:\Workspace\Repos\remotion-studio\viron-core\manifest.md
+- C:\Workspace\Repos\remotion-studio\viron-core\documentation_manifest.md
 - C:\Workspace\Repos\remotion-studio\viron-core\pipeline.md
 
 VAULT-DATEIEN:
@@ -129,10 +131,9 @@ C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_1.
 Wir migrieren das Viron-Repo. Dein alter Report wurde FEHLERHAFT erstellt -
 ohne Skill-Abgleich. Du musst die Arbeit KOMPLETT NEU machen.
 
-**SCHRITT 1: LIES DEN GESAMTEN GLOBAL SKILL**
+**SCHRITT 1: LIES DIE RELEVANTEN SKILL-RULES**
 C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\
-- Lies SKILL.md für die Übersicht
-- Lies ALLE rule files im rules/ Ordner (besonders rules/3d.md)
+- Lies `rules/3d.md`
 - Das ist deine REFERENZ für "bereits dokumentiert"
 
 **SCHRITT 2: LIES ALLE ORIGINAL-QUELLEN NEU**
@@ -140,7 +141,7 @@ Diese Dateien MÜSSEN komplett neu gelesen werden:
 
 REPO-DATEIEN:
 - C:\Workspace\Repos\remotion-studio\viron-core\physics.md
-- C:\Workspace\Repos\remotion-studio\specs\ThreeCanvas-Spec.md
+- C:\Workspace\Repos\remotion-studio\specs\TEMPLATE_FeatureSpec.md
 
 VAULT-DATEIEN:
 - C:\Viron\90_VAULT\NEW SUFF\Remotion\10-3d-01-three-fiber-integration.md
@@ -196,19 +197,19 @@ C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_2.
 Wir migrieren das Viron-Repo. Dein alter Report wurde FEHLERHAFT erstellt -
 ohne Skill-Abgleich. Du musst die Arbeit KOMPLETT NEU machen.
 
-**SCHRITT 1: LIES DEN GESAMTEN GLOBAL SKILL**
+**SCHRITT 1: LIES DIE RELEVANTEN SKILL-RULES**
 C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\
-- Lies SKILL.md für die Übersicht
-- Lies ALLE rule files im rules/ Ordner
+- Lies `rules/3d.md` (für Shaders/Materials)
+- Lies `rules/animations.md`
 - Das ist deine REFERENZ für "bereits dokumentiert"
 
 **SCHRITT 2: LIES ALLE ORIGINAL-QUELLEN NEU**
 Diese Dateien MÜSSEN komplett neu gelesen werden:
 
 REPO-DATEIEN:
-- C:\Workspace\Repos\remotion-studio\src\learnings\viron-button-learnings.md
 - C:\Workspace\Repos\remotion-studio\src\learnings\GUIDE_Viron_Button_Stack.md
 - C:\Workspace\Repos\remotion-studio\guides\viron-button-guide.md
+- C:\Workspace\Repos\remotion-studio\src\learnings\PATTERN_Advanced_Shaders.md
 
 VAULT-DATEIEN:
 - C:\Viron\90_VAULT\NEW SUFF\Remotion\15-effects-01-post-processing.md
@@ -263,10 +264,13 @@ C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_3.
 Wir migrieren das Viron-Repo. Dein alter Report wurde FEHLERHAFT erstellt -
 ohne Skill-Abgleich. Du musst die Arbeit KOMPLETT NEU machen.
 
-**SCHRITT 1: LIES DEN GESAMTEN GLOBAL SKILL**
+**SCHRITT 1: LIES DIE RELEVANTEN SKILL-RULES**
 C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\
-- Lies SKILL.md für die Übersicht
-- Lies ALLE rule files im rules/ Ordner
+- Lies `rules/tailwind.md`
+- Lies `rules/fonts.md`
+- Lies `rules/charts.md`
+- Lies `rules/text-animations.md`
+- Lies `rules/gifs.md`
 - Das ist deine REFERENZ für "bereits dokumentiert"
 
 **SCHRITT 2: LIES ALLE ORIGINAL-QUELLEN NEU**
@@ -283,12 +287,7 @@ VAULT-DATEIEN:
 - C:\Viron\90_VAULT\NEW SUFF\Remotion\20-layout-patterns-01-container-queries-und-grids.md
 - C:\Viron\90_VAULT\NEW SUFF\Remotion\20-layout-patterns-02-view-transitions-in-remotion.md
 
-GLOBAL SKILL-DATEIEN (ZUSÄTZLICH ZU rules/):
-- C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\tailwind.md
-- C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\fonts.md
-- C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\charts.md
-- C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\text-animations.md
-- C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\gifs.md
+
 
 **SCHRITT 3: VERGLEICHE JEDEN FUND**
 Für jeden Inhalt aus den Quellen:

@@ -1,324 +1,488 @@
-# 🔄 Badge 1: Revision Report – Skill-Check & Migration Decisions
+# 🔄 Badge 1: Revision Report V2 – Complete Re-Read
 
-**Version:** 1.0 (Revision)
+**Version:** 2.0 (Complete Re-Read)
 **Badge ID:** VIRON-2026-B1-REV
 **Revision Date:** 2026-01-31
 **Analyst:** Sub-Agent (Antigravity)
 
 ---
 
-## 📊 Revision Statistik
+## 📊 Sources Analyzed
 
-| Entscheidung          | Anzahl | Details                               |
-| --------------------- | ------ | ------------------------------------- |
-| **MITNEHMEN**         | 21     | Viron-IP, nicht im Skill dokumentiert |
-| **NICHT DUPLIZIEREN** | 2      | Bereits explizit im Skill vorhanden   |
+### Global Skill (Reference Baseline)
 
----
+| File                    | Content Summary                                                                                     |
+| ----------------------- | --------------------------------------------------------------------------------------------------- |
+| `SKILL.md`              | 30 rule files listed, covers: 3D, animations, assets, audio, compositions, timing, sequencing, etc. |
+| `rules/timing.md`       | `interpolate()`, Easing, spring animations                                                          |
+| `rules/sequencing.md`   | `<Sequence>`, delay, trim, duration limiting                                                        |
+| `rules/compositions.md` | `<Composition>`, stills, folders, props, metadata                                                   |
+| `rules/animations.md`   | `useCurrentFrame()` imperative, CSS/Tailwind FORBIDDEN                                              |
 
-## ✅ MITNEHMEN (21 Punkte)
+### Repo Sources (Viron-Specific)
 
-### 1. Virtual Production Studio Paradigma
+| File                        | Lines | Content Summary                                                               |
+| --------------------------- | ----- | ----------------------------------------------------------------------------- |
+| `vision.md`                 | 182   | Virtual Production Studio paradigm, 5 Pillars, Theme.ts, Performance Baseline |
+| `documentation_manifest.md` | 75    | Knowledge Router, Scenario Routing, "Viron > Global" rule                     |
+| `pipeline.md`               | 564   | Rendering architecture, Lambda config, Codecs, GPU acceleration, CI/CD        |
 
-**Quelle:** `vision.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+### Vault Sources (2026 Research)
 
-- **Ziel-Location:** `viron-core/vision.md` (behalten)
-- **Nutzungsart:** Direktes Übernehmen als Projekt-Philosophie
-- **Warum wertvoll:** Viron-spezifische Architektur-Vision. Definiert das "Video as Code" Paradigma. Kein generisches Remotion-Wissen.
+| File                                           | Lines | Content Summary                                                               |
+| ---------------------------------------------- | ----- | ----------------------------------------------------------------------------- |
+| `00-master-workflow-2026-integration.md`       | 335   | Decision Trees, Learning Paths, ROI metrics, Tech-Stack Matrix                |
+| `00-overview-index-v2-1-complete.md`           | 429   | 30-file structure, Agent initialization strategy, Tier-based loading          |
+| `10-remotion-basics-01-timeline-und-frames.md` | 342   | Determinism imperative, Anti-patterns, Frame arithmetic, Performance patterns |
 
----
+### ⚠️ Missing Sources (Listed in Briefing but Not Found)
 
-### 2. Die 5 Säulen der Architektur
-
-**Quelle:** `vision.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/architecture.md` (neues Modul)
-- **Nutzungsart:** Strukturelle Referenz für Projekt-Organisation
-- **Warum wertvoll:** Viron-spezifisches Layer-Modell (Simulation/Rendering/Orchestration/Camera/Export). Der Skill kennt keine Projekt-Architektur.
-
----
-
-### 3. Shared Theme.ts Architektur
-
-**Quelle:** `vision.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/theme.md` oder `.knowledge/patterns/`
-- **Nutzungsart:** Design-System Pattern für Next.js + Remotion Sync
-- **Warum wertvoll:** Viron-spezifisches Pattern für Cross-Platform Design Tokens. Skill deckt nur Remotion ab, nicht Next.js Integration.
+- `02-animation-01-basics-und-setup.md` → Does NOT exist
+- `02-animation-02-timing-easing-spring.md` → Does NOT exist
+- `02-animation-03-sequencing-transitions.md` → Does NOT exist
+- `manifest.md` → Correct name is `documentation_manifest.md`
 
 ---
 
-### 4. Unterschied Traditionell vs. Programmatic Video
+## ✅ MITNEHMEN (Viron-Specific IP)
 
-**Quelle:** `vision.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+### 1. Virtual Production Studio Paradigm
 
-- **Ziel-Location:** `.knowledge/research/` oder Onboarding-Docs
-- **Nutzungsart:** Kontext für neue Team-Mitglieder/Agents
-- **Warum wertvoll:** Business-Case Argumentation. Zeigt ROI von Viron-Ansatz. Nicht technisch, aber strategisch wichtig.
-
----
-
-### 5. Performance-Baseline (Viron-Spezifisch)
-
-**Quelle:** `vision.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/performance.md` oder `specs/`
-- **Nutzungsart:** Benchmark für Optimierung und CI/CD Validation
-- **Warum wertvoll:** Konkrete Viron-Zielwerte (150-300ms/frame, 1.5-3GB RAM). Skill hat keine Performance-Targets.
+**Source:** `vision.md` (Lines 1-36)
+**Skill-Check:** ❌ NOT in skill – skill has no project architecture or philosophy
+**Why Valuable:** Defines "Video as Code" paradigm, deterministic rendering, Theme.ts sharing
+**Target Location:** `viron-core/vision.md` (keep as-is)
 
 ---
 
-### 6. Knowledge Router System
+### 2. Die 5 Säulen (Simulation, Rendering, Orchestration, Camera, Export)
 
-**Quelle:** `documentation_manifest.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `vision.md` (Lines 63-88)
+**Skill-Check:** ❌ NOT in skill – skill covers Remotion APIs, not project layers
+**Why Valuable:** Viron-specific architecture layers for team onboarding
+**Target Location:** `viron-core/architecture.md` or keep in `vision.md`
 
-- **Ziel-Location:** `viron-core/documentation_manifest.md` (behalten)
-- **Nutzungsart:** Agent-Navigation durch Wissens-Hierarchie
-- **Warum wertvoll:** Meta-System für Dokumentation. Existiert nur in Viron.
+---
+
+### 3. Shared Theme.ts Architecture
+
+**Source:** `vision.md` (Lines 43-61)
+**Skill-Check:** ❌ NOT in skill – skill has `tailwind.md` but no Next.js + Remotion sync pattern
+**Why Valuable:** Single source of truth for design tokens across web + video
+**Target Location:** `viron-core/theme.md`
+
+---
+
+### 4. Performance Baseline (Viron-Specific Targets)
+
+**Source:** `vision.md` (Lines 119-126)
+
+```
+Frame-Rate: 60 FPS
+Render-Time pro Frame: 150-300ms (1920x1080, 3D Scene)
+Memory-Footprint: 1.5-3GB pro Render-Prozess
+Parallelisierung: 8-16 Prozesse
+```
+
+**Skill-Check:** ❌ NOT in skill – skill has no performance benchmarks
+**Why Valuable:** Concrete targets for optimization and CI validation
+**Target Location:** `viron-core/performance.md` or `specs/`
+
+---
+
+### 5. Knowledge Router System
+
+**Source:** `documentation_manifest.md` (Lines 8-34)
+**Skill-Check:** ❌ NOT in skill – meta-routing is Viron-specific
+**Why Valuable:** Agent navigation through multi-level knowledge hierarchy
+**Target Location:** `viron-core/documentation_manifest.md` (keep)
+
+---
+
+### 6. "Viron > Global" Rule
+
+**Source:** `documentation_manifest.md` (Line 72)
+
+> "If `theme.md` says X and Global Skill says Y, **X wins.**"
+> **Skill-Check:** ❌ NOT in skill – this IS Viron governance
+> **Why Valuable:** Critical override rule for agent behavior
+> **Target Location:** `viron-core/` root-level rule
 
 ---
 
 ### 7. Scenario-Based Routing
 
-**Quelle:** `documentation_manifest.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `documentation_manifest.md` (Lines 55-64)
 
-- **Ziel-Location:** `viron-core/documentation_manifest.md` (behalten)
-- **Nutzungsart:** Task-basierte Datei-Ladung für Agents
-- **Warum wertvoll:** Viron-spezifische Pfade. Skill hat keine Routing-Logik.
+```
+Scenario 1: "Configure Audio" → Load specs/audio.md + RESOURCES_AND_ECOSYSTEM.md
+Scenario 2: "New UI Flow" → Load guides/sequencing.md + patterns/
+```
 
----
-
-### 8. Critical Rule: Viron > Global
-
-**Quelle:** `documentation_manifest.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/` (Root-Level Regel)
-- **Nutzungsart:** Governance-Regel für Agent-Verhalten
-- **Warum wertvoll:** Die Hierarchie-Regel selbst ist Viron-IP. Definiert Override-Verhalten.
+**Skill-Check:** ❌ NOT in skill – task-based file loading is Viron workflow
+**Why Valuable:** Maps user intents to specific file loads
+**Target Location:** `viron-core/documentation_manifest.md` (keep)
 
 ---
 
-### 9. Pipeline-Architektur Diagramm
+### 8. Pipeline Architecture Diagram
 
-**Quelle:** `pipeline.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/pipeline.md` (behalten)
-- **Nutzungsart:** Referenz für Rendering-Workflow
-- **Warum wertvoll:** Visueller Flow von Git→Frame→Encode→Artifact. Skill hat kein Pipeline-Diagramm.
+**Source:** `pipeline.md` (Lines 7-28)
+**Skill-Check:** ❌ NOT in skill – skill has no pipeline visualization
+**Why Valuable:** End-to-end rendering flow from Git→Frame→Encode→Artifact
+**Target Location:** `viron-core/pipeline.md` (keep)
 
 ---
 
-### 10. Lambda Rendering Konfiguration
+### 9. Lambda Rendering Configuration (Viron-Optimized)
 
-**Quelle:** `pipeline.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `pipeline.md` (Lines 375-402)
 
-- **Ziel-Location:** `viron-core/lambda-config.md` oder Skill-Update (rules/lambda.md)
-- **Nutzungsart:** Production-Ready Cloud-Konfiguration
-- **Warum wertvoll:** Konkrete AWS-optimierte Werte (3009MB für vCPU-Boost). Skill hat keine Lambda-Dokumentation.
+```typescript
+memorySizeInMb: 3009,  // Specific value for vCPU boost
+diskSizeInMb: 10240,
+timeoutSeconds: 900,
+```
 
----
-
-### 11. Concurrency Berechnungs-Formel
-
-**Quelle:** `pipeline.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/pipeline.md` oder Skill-Update
-- **Nutzungsart:** Dynamische Worker-Berechnung
-- **Warum wertvoll:** Formel `Math.min(CPUs * 1.5, RAM / 2, 16)` ist Viron-IP. Skill hat keine Concurrency-Logik.
+**Skill-Check:** ❌ NOT in skill – skill has no Lambda documentation
+**Why Valuable:** Production-ready AWS Lambda config with Viron-tested values
+**Target Location:** Skill update candidate (`rules/lambda.md`) OR `viron-core/lambda-config.md`
 
 ---
 
-### 12. Codec Matrix (Viron-Standard)
+### 10. Concurrency Calculation Formula
 
-**Quelle:** `pipeline.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `pipeline.md` (Lines 155-171)
 
-- **Ziel-Location:** `viron-core/specs/codecs.md` oder Skill-Update (rules/codecs.md)
-- **Nutzungsart:** Encoding-Standards für verschiedene Use Cases
-- **Warum wertvoll:** Konkrete Bitrate/Pixel-Format Werte. Skill hat keine Codec-Spezifikationen.
+```typescript
+const recommendedConcurrency = Math.min(
+  Math.floor(availableCPUs * 1.5),
+  Math.floor(ramGB / 2),
+  16,
+);
+```
 
----
-
-### 13. Render Monitoring & Logging Pattern
-
-**Quelle:** `pipeline.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/pipeline.md` (behalten)
-- **Nutzungsart:** Observability für Render-Prozesse
-- **Warum wertvoll:** ETA, FPS-Tracking, Exponential Backoff. Skill hat keine Monitoring-Patterns.
+**Skill-Check:** ❌ NOT in skill – skill has no dynamic worker calculation
+**Why Valuable:** Optimal parallelization based on system specs
+**Target Location:** `viron-core/pipeline.md` (keep) or skill update
 
 ---
 
-### 14. GPU-Beschleunigung Config
+### 11. Codec Matrix (Viron Standard)
 
-**Quelle:** `pipeline.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `pipeline.md` (Lines 111-151)
+| Codec | Bitrate | Audio | Use Case |
+|-------|---------|-------|----------|
+| H.264 | 8000k | aac | Web, YouTube, Social |
+| VP9 | 5000k | opus | Modern streaming |
+| ProRes | HQ | pcm | Color grading, archive |
 
-- **Ziel-Location:** Skill-Update (rules/performance.md) oder `viron-core/`
-- **Nutzungsart:** Headless Chrome GPU-Acceleration
-- **Warum wertvoll:** `setChromeMode` + `setChromiumOpenGlRenderer` Flags. Skill hat keine GPU-Konfiguration.
+**Skill-Check:** ❌ NOT in skill – skill has `videos.md` but no codec specifications
+**Why Valuable:** Production encoding standards with specific values
+**Target Location:** Skill update candidate OR `viron-core/specs/codecs.md`
+
+---
+
+### 12. Render Monitoring & Logging Pattern
+
+**Source:** `pipeline.md` (Lines 226-292)
+
+- ETA calculation
+- FPS tracking
+- onProgress handler with metrics
+  **Skill-Check:** ❌ NOT in skill – skill has no observability patterns
+  **Why Valuable:** Production monitoring for render processes
+  **Target Location:** `viron-core/pipeline.md` (keep)
+
+---
+
+### 13. GPU Acceleration Config
+
+**Source:** `pipeline.md` (Lines 210-224)
+
+```typescript
+Config.setChromeMode("chrome-for-testing");
+Config.setChromiumOpenGlRenderer("angle");
+```
+
+**Skill-Check:** ❌ NOT in skill – skill has no GPU/Chrome config documentation
+**Why Valuable:** Performance optimization flags for headless rendering
+**Target Location:** Skill update candidate OR `viron-core/performance.md`
+
+---
+
+### 14. Exponential Backoff Retry Pattern
+
+**Source:** `pipeline.md` (Lines 405-442)
+
+```typescript
+const backoffMs = Math.pow(2, attempt) * 1000;
+```
+
+**Skill-Check:** ❌ NOT in skill – skill has no error handling patterns
+**Why Valuable:** Production-grade retry logic for rendering failures
+**Target Location:** `viron-core/pipeline.md` (keep)
 
 ---
 
 ### 15. Decision Tree Navigation
 
-**Quelle:** `00-master-workflow-2026-integration.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `00-master-workflow-2026-integration.md` (Lines 3-23)
 
-- **Ziel-Location:** `.knowledge/research/` oder Agent-Onboarding
-- **Nutzungsart:** Intent→Module Mapping für Agents
-- **Warum wertvoll:** 2026 Vault-Recherche. Navigationslogik für komplexe Projekte.
+```
+START: "Ich habe eine Idee für Video/Web"
+├─ "Scroll-Experience" → 50-web-patterns-01
+├─ "Performance optimieren" → 50-web-patterns-08
+├─ "Musik-Video" → 40-audio-reaktiv + 60-cloud-rendering
+```
 
----
-
-### 16. ROI-Metriken
-
-**Quelle:** `00-master-workflow-2026-integration.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `.knowledge/research/roi.md`
-- **Nutzungsart:** Business-Case Dokumentation
-- **Warum wertvoll:** 2026 Vault-Recherche. Quantifizierter Wert (85% Zeit-Ersparnis).
+**Skill-Check:** ❌ NOT in skill – intent→module mapping is 2026 vault research
+**Why Valuable:** Structured routing for complex project decisions
+**Target Location:** `.knowledge/research/` or agent onboarding
 
 ---
 
-### 17. Tech-Stack Entscheidungsmatrix
+### 16. ROI Metrics
 
-**Quelle:** `00-master-workflow-2026-integration.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `00-master-workflow-2026-integration.md` (Lines 243-268)
 
-- **Ziel-Location:** `.knowledge/research/` oder Agent-Routing
-- **Nutzungsart:** Technologie-Auswahl basierend auf Requirements
-- **Warum wertvoll:** 2026 Vault-Recherche. Cross-Technology Decision Matrix.
+```
+Zeit-Ersparnis: 85%
+Fehler-Vermeidung: 95%
+Entscheidungs-Sicherheit: 100%
+```
 
----
-
-### 18. Vault 30-Dateien-Struktur
-
-**Quelle:** `00-overview-index-v2-1-complete.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `.knowledge/index/` oder Manifest
-- **Nutzungsart:** Wissens-Landkarte für Navigation
-- **Warum wertvoll:** 2026 Vault-Struktur (00er-90er Kategorien). Meta-Index für Agent-Onboarding.
+**Skill-Check:** ❌ NOT in skill – business case documentation
+**Why Valuable:** Quantified value proposition for Viron approach
+**Target Location:** `.knowledge/research/roi.md`
 
 ---
 
-### 19. Stufen-Logik für Agenten
+### 17. Tech-Stack Decision Matrix
 
-**Quelle:** `00-overview-index-v2-1-complete.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `00-master-workflow-2026-integration.md` (Lines 179-197)
+| Need | CSS | Remotion | WebGL | KI | Lambda |
+|------|-----|----------|-------|-----|--------|
+| Scroll-Animation | ✅ | ✓ | ✓ | ✗ | ✗ |
+| Video-Export | ✗ | ✅ | ✓ | ✅ | ✗ |
 
-- **Ziel-Location:** Agent-Onboarding / `viron-core/`
-- **Nutzungsart:** Tier-basiertes Lazy Loading für Agents
-- **Warum wertvoll:** Viron-spezifische Effizienz-Logik (5/9/On-Demand Dateien).
-
----
-
-### 22. Zero-Touch Pipeline (Whisper + Auphonic + Remotion)
-
-**Quelle:** `Remotion Setup.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
-
-- **Ziel-Location:** `viron-core/workflows/` oder Neues Modul
-- **Nutzungsart:** End-to-End Automation Pipeline
-- **Warum wertvoll:** Viron-spezifische Tool-Kombination (Whisper→Auphonic→Remotion). Skill hat keine Pipeline-Workflows.
+**Skill-Check:** ❌ NOT in skill – cross-technology decision matrix is 2026 research
+**Why Valuable:** Technology selection based on requirements
+**Target Location:** `.knowledge/research/` or agent routing
 
 ---
 
-### 23. Design System Extraction Workflow
+### 18. 30-File Vault Structure
 
-**Quelle:** `Remotion Setup.md`
-**Skill-Check:** ❌ NICHT im Skill dokumentiert
-**Entscheidung:** **MITNEHMEN**
+**Source:** `00-overview-index-v2-1-complete.md` (Lines 9-57)
 
-- **Ziel-Location:** `viron-core/workflows/` oder `.knowledge/patterns/`
-- **Nutzungsart:** Reverse-Engineering von Websites zu theme.ts
-- **Warum wertvoll:** Viron-spezifischer Workflow (URL→Tokens→Showcase). Skill hat keine Extraction-Patterns.
+```
+00er: Orchestration
+10er: Basics
+20er: Layout (2026 Standards)
+30er: Post-Processing
+40er: Advanced
+50er: Web Patterns
+60er: Cloud
+70er: Accessibility
+80er: AI Hybrid
+90er: Synergy + Reference
+```
+
+**Skill-Check:** ❌ NOT in skill – vault structure is Viron meta-knowledge
+**Why Valuable:** Knowledge landscape for agent onboarding
+**Target Location:** `.knowledge/index/` or manifest
 
 ---
 
-## ❌ NICHT DUPLIZIEREN (2 Punkte)
+### 19. Agent Initialization Strategy (Tier-Based Loading)
 
-### 20. Der Determinismus-Imperativ
+**Source:** `00-overview-index-v2-1-complete.md` (Lines 63-111)
 
-**Quelle:** `10-remotion-basics-01-timeline-und-frames.md`
-**Skill-Check:** ✅ EXPLIZIT in `animations.md` dokumentiert
+```
+Stufe 1 (Core): 5 files
+Stufe 2 (Quality): 9 files
+Stufe 3 (Specialization): On-demand
+```
 
-**Skill-Zitat (animations.md, Zeilen 8, 28-29):**
+**Skill-Check:** ❌ NOT in skill – lazy loading strategy is Viron efficiency logic
+**Why Valuable:** Token-efficient agent onboarding
+**Target Location:** `viron-core/` or agent onboarding docs
+
+---
+
+### 20. Hardcoded FPS Anti-Pattern Fix
+
+**Source:** `10-remotion-basics-01-timeline-und-frames.md` (Lines 275-294)
+
+```typescript
+// ❌ WRONG: const seconds = frame / 30;
+// ✅ RIGHT: const { fps } = useVideoConfig();
+//           const seconds = frame / fps;
+```
+
+**Skill-Check:** ❌ NOT explicitly in skill – skill shows fps usage but not the anti-pattern warning
+**Why Valuable:** Common beginner mistake with fix
+**Target Location:** Skill update candidate OR keep in vault reference
+
+---
+
+### 21. Frame Performance Budget Table
+
+**Source:** `10-remotion-basics-01-timeline-und-frames.md` (Lines 206-215)
+| Operation | Impact |
+|-----------|--------|
+| Simple useCurrentFrame | Negligible |
+| SVG-Rendering | <1ms |
+| 3D-Szene (drei) | 10-50ms |
+| Post-Processing | 50-200ms |
+
+**Skill-Check:** ❌ NOT in skill – performance budgets are Viron benchmarks
+**Why Valuable:** Frame render time planning for optimization
+**Target Location:** `viron-core/performance.md` or skill update
+
+---
+
+## ❌ NICHT DUPLIZIEREN (Already in Skill)
+
+### 22. Determinism Imperative (Core Concept)
+
+**Source:** `10-remotion-basics-01-timeline-und-frames.md` (Lines 26-59)
+**Skill-Check:** ✅ EXPLICIT in `animations.md` (Lines 8, 28-29):
 
 > "All animations MUST be driven by the `useCurrentFrame()` hook."
 > "CSS transitions or animations are FORBIDDEN"
 > "Tailwind animation class names are FORBIDDEN"
-
-**Entscheidung:** **NICHT DUPLIZIEREN**
-**Grund:** Der Skill deckt das Kernprinzip bereits vollständig ab.
+> **Decision:** **NICHT DUPLIZIEREN** – Skill covers the core rule.
 
 ---
 
-### 21. Anti-Pattern Tabelle
+### 23. Basic Anti-Pattern List (CSS, Tailwind, requestAnimationFrame)
 
-**Quelle:** `10-remotion-basics-01-timeline-und-frames.md`
-**Skill-Check:** ✅ TEILWEISE in `animations.md` dokumentiert
+**Source:** `10-remotion-basics-01-timeline-und-frames.md` (Lines 16-24)
+**Skill-Check:** ✅ COVERED in `animations.md`:
 
-**Skill-Zitat (animations.md, Zeilen 28-29):**
-
-> "CSS transitions or animations are FORBIDDEN - they will not render correctly."
 > "Tailwind animation class names are FORBIDDEN - they will not render correctly."
+> **Decision:** **NICHT DUPLIZIEREN** – Core prohibitions are in skill.
 
-**Entscheidung:** **NICHT DUPLIZIEREN**
-**Grund:** Die Kern-Verbote (CSS, Tailwind) sind im Skill. Die erweiterten Anti-Patterns (requestAnimationFrame, setInterval, useEffect) könnten als **Skill-Update Kandidat** betrachtet werden, aber für die Migration selbst ist dies Redundanz.
-
----
-
-## 📋 Migration Summary
-
-### Empfohlene Ziel-Locations
-
-| Kategorie                   | Anzahl | Ziel                                             |
-| --------------------------- | ------ | ------------------------------------------------ |
-| **viron-core/** (behalten)  | 12     | Architektur, Pipeline, Theme, Manifest           |
-| **.knowledge/research/**    | 4      | ROI, Decision Trees, Tech Matrix, Vault-Struktur |
-| **Skill-Update Kandidaten** | 5      | Lambda, GPU, Codecs, Concurrency, Anti-Patterns  |
-
-### Nächste Schritte
-
-1. **Sofort migrieren:** Punkte 1-19, 22-23 in neues Repo übernehmen
-2. **Skill-Update prüfen:** Lambda-Config, Codec-Matrix, GPU-Flags könnten globale Rules werden
-3. **Nicht migrieren:** Punkte 20-21 (bereits im Skill)
+> ⚠️ **Note:** The vault file has ADDITIONAL anti-patterns (setInterval, useEffect, useState for time) that are NOT in the skill. These could be skill update candidates.
 
 ---
 
-**End of Revision Report**
+### 24. interpolate() Function Usage
+
+**Source:** `10-remotion-basics-01-timeline-und-frames.md` (Lines 171-201)
+**Skill-Check:** ✅ EXPLICIT in `timing.md` (Lines 8-180):
+
+- Linear interpolation syntax
+- Easing functions
+- Spring animations
+- Clamp options
+  **Decision:** **NICHT DUPLIZIEREN** – Skill has comprehensive coverage.
+
+---
+
+### 25. <Sequence> Component Usage
+
+**Source:** Implicitly referenced in vault files
+**Skill-Check:** ✅ EXPLICIT in `sequencing.md` (Lines 8-119):
+
+- Delay with `from`
+- Duration limiting
+- premountFor
+- Series component
+  **Decision:** **NICHT DUPLIZIEREN** – Skill has complete documentation.
+
+---
+
+### 26. <Composition> Definition
+
+**Source:** Implicitly referenced in pipeline.md
+**Skill-Check:** ✅ EXPLICIT in `compositions.md` (Lines 8-142):
+
+- Component, width, height, fps, duration
+- Stills, folders
+- Default props
+- Dynamic metadata
+  **Decision:** **NICHT DUPLIZIEREN** – Skill covers all aspects.
+
+---
+
+## 📊 Final Statistics
+
+| Decision              | Count | Details                                                                                          |
+| --------------------- | ----- | ------------------------------------------------------------------------------------------------ |
+| **MITNEHMEN**         | 21    | Vision, Architecture, Pipeline, Lambda, Codecs, Monitoring, Decision Trees, ROI, Vault Structure |
+| **NICHT DUPLIZIEREN** | 5     | Determinism, Anti-Patterns, interpolate(), Sequence, Composition                                 |
+
+---
+
+## 📋 Migration Recommendations
+
+### Immediate Migration (viron-core/)
+
+| Points | Target                                         |
+| ------ | ---------------------------------------------- |
+| 1-7    | Keep in `viron-core/` (vision.md, manifest.md) |
+| 8-14   | Keep in `viron-core/pipeline.md`               |
+
+### Research Archive (.knowledge/)
+
+| Points | Target                                                                     |
+| ------ | -------------------------------------------------------------------------- |
+| 15-19  | `.knowledge/research/` (Decision Trees, ROI, Tech Matrix, Vault Structure) |
+
+### Skill Update Candidates
+
+| Points | Proposed Skill File                          |
+| ------ | -------------------------------------------- |
+| 9      | `rules/lambda.md` (new)                      |
+| 11     | `rules/codecs.md` (new)                      |
+| 13     | `rules/performance.md` (new)                 |
+| 20-21  | `rules/animations.md` (extend anti-patterns) |
+
+---
+
+## 🔴 Badge 1 Learnings
+
+### Process Errors Identified
+
+1. **Briefing File Paths Were Incorrect**
+   - Files `02-animation-01-basics-und-setup.md`, `02-animation-02-timing-easing-spring.md`, `02-animation-03-sequencing-transitions.md` do NOT exist in vault
+   - Correct file: `10-remotion-basics-01-timeline-und-frames.md`
+   - **Fix for Future Briefings:** Verify file existence before creating briefings
+
+2. **manifest.md vs documentation_manifest.md**
+   - Briefing referenced `manifest.md` which doesn't exist
+   - Correct name: `documentation_manifest.md`
+   - **Fix:** Use exact filenames from `list_dir` output
+
+3. **First V1 Report Missed Skill-Check**
+   - Original extraction was done without reading skill rules
+   - This revision re-read ALL sources fresh
+   - **Fix:** Template should MANDATE skill-first reading
+
+### Template Improvements Needed
+
+```markdown
+# Future Briefing Template Update
+
+## MANDATORY READING ORDER:
+
+1. SKILL.md (overview)
+2. ALL relevant rules/ files
+3. THEN source files (repo + vault)
+
+## FILE VERIFICATION:
+
+Before briefing: Run `find_by_name` to confirm all listed files exist
+
+## ANTI-PATTERN:
+
+❌ "Read your old report" → encourages copy-paste
+✅ "Read ALL original sources fresh" → ensures accuracy
+```
+
+---
+
+**End of Revision Report V2**
