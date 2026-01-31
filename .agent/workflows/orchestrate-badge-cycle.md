@@ -2,100 +2,119 @@
 description: The Meta-Workflow for the Orchestrator to manage a Badge Audit Cycle (Discovery -> Briefing -> Review).
 ---
 
-# ♾️ ORCHESTRATE BADGE CYCLE (V2.0 - BATTLE TESTED)
+# ♾️ ORCHESTRATE BADGE CYCLE (V2.2 - TASK GOVERNANCE)
 
 **Trigger:** Start of a new Badge Audit Task (e.g., Badge 7, Badge 8).
 **Role:** Orchestrator (You)
 
 ---
 
-## 🛑 PHASE 1: THE ARCHITECT'S DEEP DIVE (Reading)
+## 🧭 PHASE 0: ORIENTATION (CONTEXT MODE)
 
-**Goal:** You cannot brief an agent if you don't know the truth.
+**Constraint:** 🧠 GET YOUR BEARINGS.
 **Action:**
 
-1. Read ALL files listed in `task.md` for this Badge.
-2. Read the GLOBAL SKILLS relevant to this Badge (Redundancy Check).
-3. Identify 3-5 "Smoking Guns" (Exakte Werte, Interfaces, Codecs).
-   **Output:** A list of "Forensic Traps" in your scratchpad.
-   **FORBIDDEN:** Creating Briefing/Prompt before reading sources.
+1. **Read `task.md`:** Find the current Badge section. Understand the scope.
+2. **Read Plans:** If an `IMPLEMENTATION_PLAN.md` exists, read it NOW to understand specific constraints.
+3. **Verify Git:** Run `git status` to ensure a clean slate.
+   **Forbidden:** Starting work without knowing the active Task ID.
 
 ---
 
-## 📝 PHASE 2: ASSET CREATION (Writing)
+## 🛑 PHASE 1: THE ARCHITECT'S DEEP DIVE (INPUT MODE)
 
-**Goal:** Equip the Sub-Agent with strict instructions.
+**Constraint:** 🚫 WRITE NOTHING (except Task Update). READ ONLY.
 **Action:**
 
-1. Create `SUBAGENT_BRIEFING_BADGE_X.md` (Use V3.0 Gold Template).
-   - Must include Context Kit Phase 0.
-   - Must include specific Source List Phase 2.
-2. Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_X.md` (Use V2.2 Forensic).
-   - Must include your "Forensic Questions" from Phase 1.
-     **Output:** Two Markdown files in `.knowledge/mission/`.
+1. **Mark In-Progress:** Update `task.md` -> Mark the Badge items as `[/]` (In Progress).
+2. **Execute Reads:**
+   - Read ALL Repo files listed in the task.
+   - Read ALL Vault files listed in the task.
+   - Read ALL Skill files listed in the task.
+   - Read `SUBAGENT_BRIEFING_TEMPLATE.md` (to know the baseline).
+3. **Analyze for Smoke:** Find 3-5 specific technical values (Hz, ms, Hex-Codes) that prove deep knowledge.
+   **Forbidden:** Skipping ANY file listed in `task.md`.
 
 ---
 
-## 🔒 PHASE 3: THE SAFETY LOCK (Commit)
+## 📝 PHASE 2: ASSET CREATION (OUTPUT MODE)
 
-**Trigger:** Assets are created.
+**Constraint:** ✍️ WRITE ONLY TO `.knowledge/mission/`
 **Action:**
 
-1. Run `git status`.
+1. **Draft Briefing:** Create `SUBAGENT_BRIEFING_BADGE_X.md` based on V3.0 Template.
+   - Inject the specific file paths from Phase 1.
+2. **Draft Prompt:** Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_X.md` based on V2.2 Template.
+   - Inject the "Forensic Questions" derived from your Phase 1 "Smoke Analysis".
+     **Forbidden:** Activating the agent in this phase.
+
+---
+
+## 🔒 PHASE 3: THE SAFETY LOCK (GIT MODE)
+
+**Constraint:** 🛑 STOP AND COMMIT.
+**Action:**
+
+1. Run `git status` to verify new files.
 2. Offer COMMIT: `feat(mission): prepare Badge X assets`.
-   **FORBIDDEN:** Activating the agent before committing assets.
+3. **WAIT** for user approval.
+   **Forbidden:** Proceeding without a clean `git status` output.
 
 ---
 
-## 🚀 PHASE 4: ACTIVATION & INTERROGATION (Simulation)
+## 🚀 PHASE 4: ACTIVATION & INTERROGATION (CHAT MODE)
 
-**Goal:** Verify the agent read the files.
+**Constraint:** 💬 CHAT ONLY. NO FILE WRITING.
 **Action:**
 
-1. Send the Activation Prompt.
-2. **WAIT** for the agent to answer the Forensic Questions A-D.
-3. Check answers against your Deep Dive knowledge.
-   - **FAIL:** If answers are vague -> REJECT.
-   - **PASS:** If answers cite line numbers -> GRANT WRITE PERMISSION.
+1. Paste the Activation Prompt into the chat (User View).
+2. **Simulate/Wait** for the Sub-Agent's response.
+3. **Verify Answers:**
+   - Did they quote the exact lines?
+   - Did they find the "Smoking Guns" you found in Phase 1?
+   - **FAIL:** "Answers too vague. REJECTED. Read X again."
+   - **PASS:** "Access Granted. Proceed to Report."
+     **Forbidden:** Creating the Report file yourself. The "Agent" does this in the next step.
 
 ---
 
-## 🔍 PHASE 5: THE REPORT AUDIT (Self-Check)
+## 🔍 PHASE 5: THE REPORT AUDIT (CHECKLIST MODE)
 
-**Trigger:** Agent submits `EXTRACTION_REPORT_BADGE_X.md`.
+**Constraint:** 🕵️ READ OUTPUT. DON'T TRUST.
 **Action:**
 
-1. Open `.agent/workflows/orchestrator-self-audit.md`.
-2. Execute the Checklist (Did he read all files? Is negative proof there?).
-3. **Verdict:**
-   - ❌ **BLOCK:** If 1 file is missing -> "AUDIT-BLOCKADE".
-   - ✅ **PASS:** Proceed to Phase 6.
+1. **Open:** `.agent/workflows/orchestrator-self-audit.md`.
+2. **Execute:** Run the table-based check.
+   - "Did they read file A?" -> Check Output -> [x]
+   - "Did they read file B?" -> Check Output -> [x]
+3. **Result:**
+   - One [ ] missing? -> **AUDIT BLOCKADE**. Send error message.
+   - All [x]? -> Proceed to Phase 6.
 
 ---
 
-## 🛡️ PHASE 6: THE REFLECTION DEFENSE (Meta-Check)
+## 🛡️ PHASE 6: THE REFLECTION DEFENSE (INTERROGATION MODE)
 
-**Goal:** Force the agent to defend their logic.
+**Constraint:** 💬 CHAT ONLY.
 **Action:**
-Ask 3 "Why" questions:
+Ask the "Decision Logic" questions:
 
-1. "Why is X not a Global Skill?"
-2. "Why did you drop Y?"
-3. "Explain the Context of Z."
-   **Output:** Agent must answer in chat. Only accept if logic is sound.
+1. "Why is this Viron IP?" (Must cite Pre-Calc/Architecture)
+2. "Why is that Redundant?" (Must cite Global Skill line)
+   **Output:** Agent must answer in chat.
+   **Forbidden:** Skipping this step because "it looks good".
 
 ---
 
-## 💎 PHASE 7: CONSOLIDATION & CLOSURE (The Seal)
+## 💎 PHASE 7: CONSOLIDATION & CLOSURE (FINAL MODE)
 
-**Trigger:** Defense passed.
+**Constraint:** ✍️ FINAL ARTIFACTS ONLY.
 **Action:**
 
-1. **Create Learnings:** Write `.knowledge/project-learnings/LEARNING_BADGE_X_...md` (Summary of IP).
-2. **Update Task:** Mark items in `task.md` as `[x]`.
+1. **Create Learning:** Write `.knowledge/project-learnings/LEARNING_BADGE_X.md`.
+2. **Update Task:** `task.md` -> Mark items as `[x]` (Done).
 3. **Final Commit:** `feat(mission): complete Badge X with forensic audit`.
-   **FORBIDDEN:** Skipping the Learning Artifact.
 
 ---
 
-_Orchestrate Badge Cycle v2.0 | 2026-01-31_
+_Orchestrate Badge Cycle v2.2 | 2026-01-31_
