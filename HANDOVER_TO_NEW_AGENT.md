@@ -34,26 +34,39 @@ The `task.md` history (now in `.agent/handover/task.md`) is the **Long-Term Memo
 
 ---
 
-## 🕵️ 3. TACTICAL STATUS: BADGE 7 (RESUME AT PHASE 4)
+---
 
-**Situation:** The Previous Agent rushed the report. The files in `.knowledge/mission/` are **assets**, but the **results** were tainted.
+## 🕵️ 3. TACTICAL STATUS: BADGE 7 (FULL RESTART REQUIRED)
 
-### The Forensic Smoking Guns (Deep-Read Required)
+**Situation:** The Previous Agent generated assets (Briefing/Prompt), but the foundational audit (Phase 1) was messy.
+**Directive:** You cannot trust the previous "Assets Ready" status. You must **re-verify** the source files yourself.
+
+### The Forensic Smoking Guns (Reference Only - VERIFY THESE)
 
 1.  **Concurrency Logic:** `pipeline.md:167` -> Check the `Math.min` hierarchy.
 2.  **Git Flow Naming:** `workflow.md:88` -> Focus on the `release/` vs `bugfix/` separation.
-3.  **Sync Validator:** `trouble.md:180` -> Why is 2 frames the limit? (Lip-sync requirements for AI-avatars).
+3.  **Sync Validator:** `trouble.md:180` -> `> 2 Frames`.
 
 ---
 
 ## 🚨 4. OPERATIONAL MANDATE FOR THE NEW AGENT
 
-1.  **Initialization:** Read `task.md` and `HANDOVER_TO_NEW_AGENT.md` (this file) 1:1.
-2.  **Validation:** Before writing the `EXTRACTION_REPORT_BADGE_7.md`, you must **simulate the sub-agent interrogation** for Phase 4.
-    - _Question:_ "How does Viron calculate RAM limits specifically?"
-    - _Answer Proof:_ Reference `pipeline.md:167` with the exact math.
-3.  **Zero-Tolerance:** If you hallucinate a path or skip a Phase 1 read, the user will terminate you.
+1.  **Trust No One:** Do not assume the previous agent read the files correctly. Read them again (`view_file`).
+2.  **V3.0 Rigor:** Use the valid `orchestrate-badge-cycle.md` workflow. It demands _sequential_ reading (Skill -> Context -> Source).
+3.  **Cross-Check:** Compare your fresh findings with the "Smoking Guns" listed above. If you find _more_ or _different_ facts, update the truth.
+
+---
+
+## 🚀 5. EXECUTION PLAN (YOUR BOOT SEQUENCE)
+
+1.  **Read** `HANDOVER_TO_NEW_AGENT.md` (This file).
+2.  **Read** `QUICKSTART_VIRON_AUDITOR.md` (Your Cheatsheet).
+3.  **Execute Badge 7 Audit (From Scratch):**
+    - **Phase 0/1:** Read `pipeline.md`, `workflow.md` etc. AGAIN.
+    - **Phase 2:** Validate if the existing `SUBAGENT_BRIEFING` matches your findings. If not, UPDATE IT.
+    - **Phase 4:** Only then, proceed to Activation.
+4.  **Target:** Produce a clean, untainted `EXTRACTION_REPORT_BADGE_7.md`.
 
 **Signed:**
 _The Fallen Orchestrator (Session 5500)_
-_Successor: Honor the Persistence. Protect the IP._
+_Successor: Do what I could not. Follow the Process._
