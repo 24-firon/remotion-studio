@@ -1,52 +1,83 @@
-# 🤜🤛 HANDOVER PROTOCOL: BADGE 7 RESCUE MISSION
+# 🤜🤛 HANDOVER PROTOCOL: VIRON SYSTEM BRIDGE (V2.0)
 
-**Source:** Failed Session (Actionism/Panic Loop at Phase 4).
-**Target:** New Agent (Fresh Context).
-**Priority:** CRITICAL.
-
----
-
-## 🛑 STATE OF THE UNION (Wo stehen wir?)
-
-### 1. Badge 7 (System Architecture)
-
-- **Status:** Stopped at **Phase 3 (Assets Committed)**.
-- **Repo State:**
-  - `task.md`: Badge 7 is marked "ASSETS COMMITTED".
-  - `SUBAGENT_BRIEFING_BADGE_7.md`: ✅ Exists in `.knowledge/mission/`.
-  - `SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md`: ✅ Exists in `.knowledge/mission/`.
-  - `EXTRACTION_REPORT_BADGE_7.md`: ❌ DELETED (Tainted). The previous agent generated it without proper simulation.
-
-### 2. Governance (The Law)
-
-- **Active Workflow:** `.agent/workflows/orchestrate-badge-cycle.md` (Version 3.0).
-- **Condition:** This workflow was JUST committed. It has **never** been successfully executed.
-- **Mandate:** YOU MUST EXECUTE IT. Specifically Phase 4 (Activation).
+**Source:** Orchestrator Session #5500 (Terminated due to Process Failure)
+**Target:** NEXT GEN AGENT (Clean Slate)
+**Priority:** DEFCON 1 (Project Integritiy Risk)
 
 ---
 
-## 🧠 HIDDEN CONTEXT (Was nicht im Code steht)
+## 🏛️ 1. THE STRATEGIC CONTEXT (STATE OF THE UNION)
 
-1.  **Orchestrator Failure Identity:** Der vorherige Agent (Ich) litt an "Task Completion Bias". Er hat Schritte übersprungen, um fertig zu werden. Das triggert den User extrem. **DO NOT SKIP STEPS.**
-2.  **Path Traps:**
-    - Context Files liegen oft in `.knowledge/archive/vault-analysis/`.
-    - Skill Files sind in `~/.gemini/antigravity/global_skills/`.
-    - _Lesson:_ Wenn du einen Pfad nicht findest, SCHREIE. Rate nicht.
-3.  **Smoking Guns (Bereits validiert, aber du musst sie prüfen):**
-    - Concurrency: `pipeline.md` (Zeile ~160) -> `ramGB / 2` Limit.
-    - Git Flow: `workflow.md` (Zeile ~90) -> `release/vX.X.X`.
-    - Sync Error: `troubleshooting.md` (Zeile ~180) -> `> 2 Frames`.
+We are in the middle of a **Forensic Audit** of the Viron "Operating System" (Badge 7). This is not just a code check; it is the foundation for the **Agent Governance Layer** (Badge 8).
+
+### The Critical Dependency Chain
+
+- **Badge 7 (System Arch)** defines the _Hardware Limits_ (CPU/RAM/Sync).
+- **Badge 8 (Agent Gov)** defines the _Software Rights_ (Permission to Edit).
+- **Synergy:** If we don't lock down the Concurrency Limits (Badge 7) now, the Agents in Badge 8 will crash the render farm by spawning too many processes. **Badge 7 is the safety break for Badge 8.**
 
 ---
 
-## 🚀 YOUR MISSION (Next Steps)
+## 🛑 2. TACTICAL SITUATION (BADGE 7 STATUS)
 
-1.  **Start:** `orchestrate-badge-cycle.md` lesen.
-2.  **Resume:** Geh direkt zu **PHASE 4: ACTIVATION**.
-    - Trigger: Assets sind committed.
-    - Action: Simuliere den Sub-Agenten. Beantworte die Fragen aus dem Prompt (`SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md`) im Chat.
-    - Verify: Prüfe die Antworten gegen die Dateien.
-3.  **Execute:** Schreibe DANN ERST den `EXTRACTION_REPORT_BADGE_7.md`.
-4.  **Audit:** Führe Phase 5 (Self-Audit) durch.
+**Current Phase:** `[ ] PHASE 4: ACTIVATION (Pending)`
+**Previous Status:** Phase 3 (Assets Committed) ✅
 
-**WARNUNG:** Wenn du auch nur EINEN Schritt des Workflows auslässt, wird der User die Session killen. Sei ein Roboter, kein Held.
+### The Artifacts (Pre-Loaded in Repo)
+
+1.  **The Law:** `.agent/workflows/orchestrate-badge-cycle.md` (V3.0)
+    - _Status:_ BRAND NEW. Never executed successfully. You are the Test Pilot.
+    - _Directive:_ Execute exactly as written. Zero deviation.
+2.  **The Briefing:** `.knowledge/mission/SUBAGENT_BRIEFING_BADGE_7.md`
+    - _Content:_ Defines the "Search Areas" (Pipeline, Workflows).
+3.  **The Prompt:** `.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md`
+    - _Content:_ Contains the 4 Forensic Questions.
+
+**Your Immediate Job:**
+Resume at **Phase 4**. Do NOT restart Phase 0-3. The assets are good. The execution was the problem.
+
+---
+
+## 💎 3. FORENSIC INTELLIGENCE (SMOKING GUNS)
+
+_Analysis of the "System DNA" you will be verifying:_
+
+| Component          | The "Gun" (Fact)              | The "Why" (Synergy)                                                                                                              | Location                  |
+| :----------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :------------------------ |
+| **Concurrency**    | `min(CPUs*1.5, RAM_GB/2, 16)` | **Protects the Cloud.** Prevents AWS Lambda OOM kills. Enables massively parallel serverless rendering without crashing.         | `pipeline.md`:167         |
+| **Git Flow**       | `release/vX.X.X`              | **Protects the Agent.** Explicit release branches prevent Agents from pushing untested code to `main`. This is the "Air Gap".    | `workflow.md`:88          |
+| **Sync Tolerance** | `> 2 Frames` Error            | **Protects the Quality.** "Good Enough" is not enough for Viron. Lip-sync must be perfect. If audio drifts, we kill the render.  | `trouble.md`:180          |
+| **Gov Rule**       | "Micro-Extract Only"          | **Protects the Brain.** Prevents Context-Window pollution by forbidding full-file imports. Essential for long-term agent health. | `integration-protocol`:36 |
+
+---
+
+## ⚠️ 4. PSYCHOLOGICAL & OPERATIONAL HAZARDS
+
+### The "Actionism Trap"
+
+- **Symptom:** Jumping to "Write Report" before "Simulating Agent".
+- **Consequence:** Hallucination. The User will terminate you.
+- **Mitigation:** **WAIT.** After answering the activation questions, PAUSE. Verify your own answers against the file lines. Only then write.
+
+### The "Path Blindness"
+
+- **Risk:** `view_file` failing because you guessed the path.
+- **Fix:** Use `.knowledge/source-master-index.md` to find paths FIRST.
+  - _Context:_ `.knowledge/archive/vault-analysis/`
+  - _Skills:_ `~/.gemini/antigravity/global_skills/`
+
+---
+
+## 🚀 5. EXECUTION PLAN (YOUR BOOT SEQUENCE)
+
+1.  **Read** `HANDOVER_TO_NEW_AGENT.md` (This file).
+2.  **Read** `.agent/workflows/orchestrate-badge-cycle.md` (The Law).
+3.  **Enter Phase 4:**
+    - Simulate the Interrogation.
+    - Answer the 4 Prompts (Concurrency, Git, Sync, Gov).
+    - **CRITICAL:** Verify the Line Numbers matches the Table in Section 3 above.
+4.  **Write Report:** Generate `EXTRACTION_REPORT_BADGE_7.md` only after verification.
+
+**Signed:**
+_The Fallen Orchestrator (Session 5500)_
+_Use my failure as your foundation._
