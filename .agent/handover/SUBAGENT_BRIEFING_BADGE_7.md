@@ -1,59 +1,132 @@
-# SUBAGENT BRIEFING: BADGE 7 (SYSTEM ARCHITECTURE & CLOUD)
+# 🎯 SUB-AGENT BRIEFING: BADGE 7 (SYSTEM ARCHITECTURE & CLOUD)
 
-**Mission:** Forensic Audit of the Viron System Architecture.
-**Role:** Viron Systems Architect.
-**Objective:** Distill the "Viron Operation System" (Cloud, Routing, Workflow) into a pure IP Extraction Report.
+**Version:** 4.0 (Platinum Standard)
+**Status:** FORENSIC AUDIT MODE
+**Analyst Role:** Viron Systems Architect
 
 ---
 
-## 🏗️ THE CORE PHILOSOPHY
+# 🛑 0. SCHNELL-STEUERUNG (SOFORT-AKTIVIERUNG)
 
-1.  **The Standard (Global Skills):**
-    - We possess `remotion-best-practices/*.md` (Rendering, Compositions, Sequencing).
-    - **Rule:** These are immutable. Do not duplicate their content.
-2.  **The Extension (Viron IP):**
-    - We have 9 "Research/Add-on" files (Pipeline, Routing, Cloud).
-    - **Rule:** These describe the _implementation_ of the Standard in a specific context (AWS Lambda, Folder Structure, DevOps).
-    - **Verdict:** Most of this will be **KEPT** because the Standard Skill does NOT cover AWS Lambda, Routing Matrices, or complex Render-Farms.
+Kopiere diesen Block und sende ihn als erste Nachricht an den Sub-Agenten:
 
-## 📂 SOURCE FILES (THE CORPUS)
+```text
+Ich aktiviere dich für Badge 7: SYSTEM ARCHITECTURE & CLOUD.
+Lies: C:\Workspace\Repos\remotion-studio\.agent\handover\SUBAGENT_BRIEFING_BADGE_7.md
+Erstelle: C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_7.md
 
-You are analyzing these 9 files:
+REGLER AUF: 100% Tiefe, 0% Reduktion.
+MODUS: ARCHITECT (System-Level, nicht Component-Level).
+Bei Unsicherheit: STOPPE und FRAGE anstatt zu raten.
+```
 
-1.  `viron-core/pipeline.md` (Rendering Architecture)
-2.  `viron-core/workflow.md` (DevOps & Git Flow)
-3.  `viron-core/troubleshooting.md` (Error Handling Strategy)
-4.  `Remotion Recherche/22_SYSTEM_PLAN_Folder_Structure.md` (The 7-Dept Architecture)
-5.  `Remotion Recherche/60-cloud-rendering-00-aws-lambda-renderfarming.md` (AWS Lambda Implementation)
-6.  `Remotion Recherche/23_ROUTING_MATRIX_Inputs.md` (Input Logic)
-7.  `Remotion Recherche/24_ROUTING_MATRIX_Outputs.md` (Output Logic)
-8.  `Remotion Recherche/FEHLERLOSUNG-haeufige-probleme.md` (Common Pitfalls)
-9.  `00-master-workflow-2026-integration.md` (The Logic Engine)
+---
 
-## 🕵️ THE AUDIT STRATEGY (FILTER LOGIC)
+## 1. MISSION PHILOSOPHY (Das Fundament)
 
-For each extracted insight, run this **deduplication check**:
+### 1.1 Deine Wahre Rolle
 
-- **IS IT IN `remotion-best-practices`?**
-  - _Example:_ "How to use `<Sequence>`?" -> **DROP** (Standard Knowledge).
-  - _Example:_ "How to configure AWS Lambda for Viron?" -> **KEEP** (Viron IP).
-  - _Example:_ "Folder Structure `knowledge/engine`?" -> **KEEP** (Viron IP).
-  - _Example:_ "Standard resolution 1920x1080?" -> **DROP** (Standard).
-  - _Example:_ "Routing Matrix for `OUTPUT_TYPE: EXPLAINER`?" -> **KEEP** (Viron IP).
+Du bist der **ARCHITEKT** dieses Systems. Wir besitzen bereits generisches Wissen über Remotion-Components (`remotion-core/SKILL.md`). Dein Job ist es, das **Betriebssystem** zu extrahieren: Wie fließen Daten? Wie rendern wir in der Cloud? Wie ist die Ordnerstruktur?
 
-## 📝 OUTPUT REQUIREMENTS
+### 1.2 Das Viron-Credo (Forensik)
 
-Generate `EXTRACTION_REPORT_BADGE_7.md` containing:
+1.  **Skill First:** Was im Global Skill (`remotion-best-practices`) steht, ist _verboten_. Dupliziere keine `<Sequence>`-Erklärungen.
+2.  **Structure over Syntax:** Uns interessiert hier nicht der Code einer Komponente, sondern die **Logik** dahinter (Routing, Tiers, Access Control).
+3.  **Smoking Guns:** Extrahiere exakte Tabellen (Cloud Tiers, Routing Budgets). Keine Prosa.
 
-1.  **The System Map:** A concise visualization of the 7 Departments and their relationships.
-2.  **The Cloud Pipeline:** The exact AWS Lambda / Docker setup used by Viron.
-3.  **The Routing Logic:** The Decision Trees for Inputs (Video/Audio/URL) and Outputs (Short/Showcase/Ad).
-4.  **The Workflow Laws:** Git rules, Commit conventions, and troubleshooting protocols specific to Viron.
-5.  **Negative Proof:** A table of what was discarded as "Standard Remotion Knowledge" (e.g., "Basic Sequence Props").
+---
 
-## ⚠️ CRITICAL INSTRUCTION
+## 2. PFLICHTLEKTÜRE (Dein Input)
 
-**Context is King.** Do not strip away the "Why" or the "How".
+### PHASE 0: CONTEXT KIT (Standard)
 
-- _Bad:_ "Use AWS Lambda."
-- _Good:_ "Use AWS Lambda with Cost Optimization Tiers (Draft/Standard/High) to manage budget." (Preserve the Logic!).
+_Bestätige das Lesen dieser Dateien:_
+
+- `viron-core/vision.md` (Vision)
+- `00-master-workflow-2026-integration.md` (Workflow Logic)
+- `00-overview-index-v2-1-complete.md` (Knowledge Map)
+- `.agent/skills/remotion-core/SKILL.md` (Redundanz-Check)
+
+### PHASE 1: ORCHESTRATOR HINTS (High-Value Targets)
+
+_Ich habe die Dateien gescannt. Dies sind die **PFLICHT-EXTRAKTIONEN**, die du finden MUSST:_
+
+#### A. THE CLOUD PIPELINE (`60-cloud-rendering...`)
+
+- **The Tiers:** Extrahiere die Tabelle mit "Draft", "Standard", "High", "Ultra" (CRF-Werte, Worker-Counts, Cost).
+- **The Calculator:** Die Logik zur Kostenschätzung.
+- **Hybrid Mode:** Die Entscheidungskriterien für "Local vs. Lambda vs. Render Farm".
+
+#### B. THE SYSTEM MAP (`22_SYSTEM_PLAN...`)
+
+- **The 7 Departments:** Extrahiere die genaue Responsibilities und Access-Control-Regeln der 7 Departments (`DEPT_CORE_ENGINE`, `DEPT_VIDEO`, etc.).
+- **Canon Packs:** Was sind "Canon Packs" und wann werden sie geladen?
+
+#### C. THE ROUTING BRAIN (`23_ROUTING_...` & `24_ROUTING_...`)
+
+- **Input Detection:** Wie unterscheidet der Agent `VIDEO_FILE` von `TRANSCRIPT_JSON`?
+- **Output Specs:** Die exakten Bitrates/Codecs/LUFS für `SHORT` vs. `SHOWCASE` vs. `PRODUCTION`.
+- **Context Budgets:** Wieviel % darf jeder Job an Kontext laden?
+
+#### D. THE WORKFLOW LAWS (`viron-core/workflow.md`)
+
+- **Commit Convention:** Das strikte Format (`feat:`, `fix:`, `docs:`).
+- **Performance Monitor:** Die FPS-Grenzwerte (< 55 FPS Warning).
+
+---
+
+## 3. DEIN WORKFLOW (The Architect Loop)
+
+Für jeden gefundenen System-Baustein:
+
+1.  **Scan:** Lies die Logik (z.B. "Lambda braucht CRF 20 für Standard").
+2.  **Check:** "Steht das im Skill `remotion-best-practices`?" (Nein, Lambda ist Viron-Spezifikum).
+3.  **Audit:**
+    - **JA (Redundant):** Ab in die **🗑️ Verworfen**-Tabelle.
+    - **NEIN (Delta):** Extrahiere als **✅ MITNEHMEN** mit Beweis.
+
+---
+
+## 4. OUTPUT FORMAT (Strikt einhalten!)
+
+Erstelle: `.knowledge/mission/EXTRACTION_REPORT_BADGE_7.md`
+
+### 4.1 "MITNEHMEN" Format
+
+````markdown
+### [System-Komponente]
+
+**Quelle:** `[datei.md]` (Zeilen X-Y)
+**Typ:** SYSTEM_ARCH
+
+**Skill-Check:**
+
+- [ ] In Global Skill gefunden? **NEIN** (Lambda/Cloud ist nicht Core-Remotion)
+
+**Kontext:**
+[Erklärung der Architektur-Entscheidung]
+
+**Beweis (Code/Table):**
+
+```typescript
+[Relevanter Ausschnitt / Tabelle]
+```
+````
+
+### 4.2 "VERWORFEN" Format (MANDATORY)
+
+```markdown
+## 🗑️ Verworfen (Skill-Redundanzen)
+
+| Fund                  | Quelle      | Skill-Konflikt              | Entscheidung |
+| :-------------------- | :---------- | :-------------------------- | :----------- |
+| Basic Sequence Syntax | pipeline.md | remotion-core/sequencing.md | ❌ DROP      |
+```
+
+---
+
+## 5. EMPFEHLUNGEN
+
+Liste auf, wo die Architektur Lücken hat oder wo "Legacy"-Dateien aktualisiert werden müssen.
+
+**START ARCHITECTURE AUDIT.**
