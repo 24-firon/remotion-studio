@@ -208,9 +208,9 @@
 
 **Status:** ✅ COMPLETED (Extraction Report V1.0 verified)
 
-- [x] **PHASE 0: ORIENTATION (Context)**
+- [x] **STEP 0: ORIENTATION (Context)**
   - [x] Understand Scope: Audio-Reactivity, Performance Math, Codecs
-- [x] **PHASE 1: ARCHITECT'S DEEP DIVE (Input)**
+- [x] **STEP 1: ARCHITECT'S DEEP DIVE (Input)**
   - [x] **Batch Discovery & Reflektion**
   - [x] **Sequentielles File-Audit (Source Analysis)**
     - [x] REPO: `specs/audio.md`
@@ -223,33 +223,33 @@
     - [x] SKILL: `get-video-dimensions.md`
     - [x] SKILL: `display-captions.md`
   - [x] **Identify Smoking Guns** (FFT-Interface, EMA-Math, Codecs)
-- [x] **PHASE 2: ASSET CREATION (Output)**
+- [x] **STEP 2: ASSET CREATION (Output)**
   - [x] Create `SUBAGENT_BRIEFING_BADGE_6.md` (V3.0)
   - [x] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_6.md` (V2.2 Forensic)
-- [x] **PHASE 3: SAFETY LOCK (Commit)**
+- [x] **STEP 3: SAFETY LOCK (Commit)**
   - [x] Commit Assets (363321e)
-- [x] **PHASE 4: ACTIVATION (Simulation)**
+- [x] **STEP 4: ACTIVATION (Simulation)**
   - [x] Execute Sub-Agent Interrogation (Questions A-D passed)
   - [x] Verify Answers against Deep Dive
-- [x] **PHASE 5: REPORT AUDIT (Self-Check)**
+- [x] **STEP 5: REPORT AUDIT (Self-Check)**
   - [x] Execute `orchestrator-self-audit.md` Protocol (Report V1.0 audited)
-- [x] **PHASE 6: REFLECTION DEFENSE (Meta)**
+- [x] **STEP 6: REFLECTION DEFENSE (Meta)**
   - [x] Interrogate Agent on IP (AudioFrame) vs Redundancy (TikTokCaptions)
-- [x] **PHASE 7: CLOSURE (Final)**
+- [x] **STEP 7: CLOSURE (Final)**
   - [x] Create `LEARNING_BADGE_6_AUDIO_PERF.md`
   - [x] Final Commit
 
 ---
 
-### ⛓️ BADGE 7: THE HANDOVER REBOOT SEQUENCE
+### 🛑 CRITICAL INTERVENTION: THE FORENSIC REBOOT (MANDATORY)
 
-**Status:** 🧊 FROZEN (MANDATORY GATEKEEPER)
+**Status:** 🧊 FROZEN (MUST EXECUTE BEFORE BADGE 7)
 
 > [!IMPORTANT]
 > **SYSTEM HALT:** The previous agent failed due to simplification.
-> You must execute this Reboot Sequence (7.0) before touching any code.
+> You must execute this Reboot Sequence to ingest the full Viron DNA.
 
-- [ ] **7.0 [MANDATORY] THE FORENSIC BOOT**
+- [ ] **BOOT 1 [MANDATORY] THE CONTEXT LOAD**
   - [ ] **Read:** `BOOT_PROMPT.md`
   - [ ] **Read:** `WALKTHROUGH_SESSION_6.md`
   - [ ] **Read:** `WHITELIST.md` (and execute ALL 19 file reads immediately).
@@ -266,15 +266,19 @@
     - [ ] Pflichtlektüre 3: `00-overview-index-v2-1-complete.md`
     - [ ] Pflichtlektüre 4: `.agent/skills/remotion-core/SKILL.md`
   - [ ] **Read:** `BLACKLIST.md` (and acknowledge constraints).
-  - [ ] **Confirm:** Write "I am rebooted. Viron DNA ingested. Ready for Badge 8."
+
+- [ ] **BOOT 2 [MANDATORY] THE REMOTION SKILL INJECTION**
+  - [ ] **Action:** Read & Cache `.agent/skills/remotion-core/SKILL.md` (Local Pointer).
+  - [ ] **Action:** recursively load `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\` (Global Wisdom).
+  - [ ] **Confirm:** Write "I am rebooted. Remotion Core & Viron DNA ingested."
 
 ---
 
-### 🏛️ BADGE 8: SYSTEM ARCHITECTURE & CLOUD (FULL FORENSIC AUDIT)
+### 🏛️ BADGE 7: SYSTEM ARCHITECTURE & CLOUD (FULL FORENSIC AUDIT)
 
 **Status:** PENDING (Awaiting Reboot)
 
-- [ ] **8.0 PHASE 0: ORIENTATION (Context)**
+- [ ] **STEP 0: ORIENTATION (Context)**
   - [ ] Understand Scope: Infrastructure, Routing, Error Handling, AWS.
   - [ ] **PFLICHTLEKTÜRE (MANDATORY):**
     - [ ] `viron-core/vision.md` (Architecture Vision)
@@ -283,7 +287,7 @@
     - [ ] `.agent/skills/remotion-core/SKILL.md` (Standard Pointer)
   - [ ] **Action:** Read `SKILL: trimming.md` FIRST to understand logic.
 
-- [ ] **8.1 PHASE 1: ARCHITECT'S DEEP DIVE (Source Analysis)**
+- [ ] **STEP 1: ARCHITECT'S DEEP DIVE (Source Analysis)**
   - [ ] **Sequentielles File-Audit (No Skipping):**
     - [ ] REPO: `viron-core/pipeline.md` (Focus: Cloud-Aspekt)
     - [ ] REPO: `viron-core/workflow.md` (Focus: Git Flow)
@@ -295,45 +299,45 @@
     - [ ] VAULT: `FEHLERLOSUNG-haeufige-probleme.md`
   - [ ] **Identify Smoking Guns:** Pinpoint every deviation.
 
-- [ ] **8.2 PHASE 2: ASSET CREATION (Output)**
-  - [ ] Create `SUBAGENT_BRIEFING_BADGE_8.md` (V3.0 Detailed).
-  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_8.md` (V2.2 Forensic).
-  - [ ] **Check:** Ensure Assets match 8.1 Findings perfectly.
+- [ ] **STEP 2: ASSET CREATION (Output)**
+  - [ ] Create `SUBAGENT_BRIEFING_BADGE_7.md` (V3.0 Detailed).
+  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md` (V2.2 Forensic).
+  - [ ] **Check:** Ensure Assets match Step 1 Findings perfectly.
 
-- [ ] **8.3 PHASE 3: SAFETY LOCK (Commit)**
+- [ ] **STEP 3: SAFETY LOCK (Commit)**
   - [ ] `git status` check.
   - [ ] Commit Assets (Proof of Work).
 
-- [ ] **8.4 PHASE 4: ACTIVATION (Simulation)**
+- [ ] **STEP 4: ACTIVATION (Simulation)**
   - [ ] **Interrogation:** Answer Prompt Questions in Chat.
-  - [ ] **Verification:** Cite Line Numbers from 8.1 Sources.
+  - [ ] **Verification:** Cite Line Numbers from Step 1 Sources.
 
-- [ ] **8.5 PHASE 5: REPORT AUDIT (Self-Check)**
+- [ ] **STEP 5: REPORT AUDIT (Self-Check)**
   - [ ] Execute `orchestrator-self-audit.md` Protocol.
 
-- [ ] **8.6 PHASE 6: REFLECTION DEFENSE (Meta)**
+- [ ] **STEP 6: REFLECTION DEFENSE (Meta)**
   - [ ] Defense Round: Prove IP vs Redundancy.
 
-- [ ] **8.7 PHASE 7: CLOSURE (Final)**
-  - [ ] Create `EXTRACTION_REPORT_BADGE_8.md` (V2.0 Clean).
-  - [ ] Create `LEARNING_BADGE_8_SYSTEM.md`.
+- [ ] **STEP 7: CLOSURE (Final)**
+  - [ ] Create `EXTRACTION_REPORT_BADGE_7.md` (V2.0 Clean).
+  - [ ] Create `LEARNING_BADGE_7_SYSTEM.md`.
   - [ ] Final Commit.
-  - [ ] Proceed to Badge 9.
+  - [ ] Proceed to Badge 8.
 
 ---
 
-### 📦 BADGE 9: AGENT GOVERNANCE & AI SYNERGIES
+### 📦 BADGE 8: AGENT GOVERNANCE & AI SYNERGIES
 
 **Status:** PENDING
 
-- [ ] **9.0 PHASE 0: ORIENTATION (Context)**
+- [ ] **STEP 0: ORIENTATION (Context)**
   - [ ] Understand Scope: Meta-Rules, Token Economy, AI-Integration
   - [ ] **PFLICHTLEKTÜRE (MANDATORY):**
     - [ ] `viron-core/vision.md` (Architecture Vision)
     - [ ] `00-master-workflow-2026-integration.md` (Workflow Truth)
     - [ ] `00-overview-index-v2-1-complete.md` (Master Index)
     - [ ] `.agent/skills/remotion-core/SKILL.md` (Standard Pointer)
-- [ ] **9.1 PHASE 1: ARCHITECT'S DEEP DIVE (Source Analysis)**
+- [ ] **STEP 1: ARCHITECT'S DEEP DIVE (Source Analysis)**
   - [ ] **Batch Discovery & Reflektion**
   - [ ] **Sequentielles File-Audit (Source Analysis)**
     - [ ] REPO: `docs/REPOSITORY_MANIFESTO.md`
@@ -350,43 +354,43 @@
     - [ ] SKILL: `calculate-metadata.md`
     - [ ] SKILL: `extract-frames.md`
   - [ ] **Identify Smoking Guns**
-- [ ] **9.2 PHASE 2: ASSET CREATION (Output)**
-  - [ ] Create `SUBAGENT_BRIEFING_BADGE_9.md`
-  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_9.md`
-- [ ] **9.3 PHASE 3: SAFETY LOCK (Commit)**
+- [ ] **STEP 2: ASSET CREATION (Output)**
+  - [ ] Create `SUBAGENT_BRIEFING_BADGE_8.md`
+  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_8.md`
+- [ ] **STEP 3: SAFETY LOCK (Commit)**
   - [ ] Commit Assets
-- [ ] **9.4 PHASE 4: ACTIVATION (Simulation)**
+- [ ] **STEP 4: ACTIVATION (Simulation)**
   - [ ] Interrogation & Verification
-- [ ] **9.5 PHASE 5: REPORT AUDIT (Self-Check)**
+- [ ] **STEP 5: REPORT AUDIT (Self-Check)**
   - [ ] Execute Self-Audit Protocol
-- [ ] **9.6 PHASE 6: REFLECTION DEFENSE (Meta)**
+- [ ] **STEP 6: REFLECTION DEFENSE (Meta)**
   - [ ] Defense Round
-- [ ] **9.7 PHASE 7: CLOSURE (Final)**
-  - [ ] Create `LEARNING_BADGE_9.md`
+- [ ] **STEP 7: CLOSURE (Final)**
+  - [ ] Create `LEARNING_BADGE_8.md`
   - [ ] Final Commit
 
 ---
 
-## 🔵 PHASE 10: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
+## 🔵 PHASE 6: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
 
-- [ ] **10.1 Konsistenz-Check:** Abgleich aller 9 Badge-Reports auf Widersprüche.
-- [ ] **10.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
-- [ ] **10.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
-- [ ] **10.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
-- [ ] **10.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
+- [ ] **6.1 Konsistenz-Check:** Abgleich aller 8 Badge-Reports auf Widersprüche.
+- [ ] **6.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
+- [ ] **6.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
+- [ ] **6.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
+- [ ] **6.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
 
-## 🔵 PHASE 11: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
+## 🔵 PHASE 7: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
 
-- [ ] **11.1 Greenfield Setup:** Erstellung der neuen Modul-Struktur in `Viron-Studio`.
-- [ ] **11.2 Skill Extraction:** Überführung der destillierten IP in das Ziel-Verzeichnis.
-- [ ] **11.3 "Viron-System" Creation:** Initialisierung des neuen, lokalen Antigravity-Skills.
-- [ ] **11.4 Live-Test:** Rendering einer Test-Szene mit dem neuen Wissensstand.
+- [ ] **7.1 Greenfield Setup:** Erstellung der neuen Modul-Struktur in `Viron-Studio`.
+- [ ] **7.2 Skill Extraction:** Überführung der destillierten IP in das Ziel-Verzeichnis.
+- [ ] **7.3 "Viron-System" Creation:** Initialisierung des neuen, lokalen Antigravity-Skills.
+- [ ] **7.4 Live-Test:** Rendering einer Test-Szene mit dem neuen Wissensstand.
 
-## 🔵 PHASE 12: MISSION CLOSE & HANDOVER (GEPLANT)
+## 🔵 PHASE 8: MISSION CLOSE & HANDOVER (GEPLANT)
 
-- [ ] **12.1 Documentation Finalization:** Letztes Update von `SPEC.md` und `HANDOVER.md`.
-- [ ] **12.2 Archive Cleanup:** Finales Verschieben der Legacy-Leichen in das Langzeit-Archiv.
-- [ ] **12.3 Mission Signature:** Erstellung des `MISSION_COMPLETED.md` Abschlussberichts.
+- [ ] **8.1 Documentation Finalization:** Letztes Update von `SPEC.md` und `HANDOVER.md`.
+- [ ] **8.2 Archive Cleanup:** Finales Verschieben der Legacy-Leichen in das Langzeit-Archiv.
+- [ ] **8.3 Mission Signature:** Erstellung des `MISSION_COMPLETED.md` Abschlussberichts.
 
 ---
 
