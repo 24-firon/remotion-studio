@@ -251,6 +251,10 @@
 > Follow the chain exactly. Do not skip.
 
 - [ ] **7.0 [MANDATORY] THE HANDOVER BOOT**
+  - [ ] **Action:** Read `BOOT_PROMPT.md` (.agent/handover/).
+  - [ ] **Action:** Read `WALKTHROUGH_SESSION_6.md` (Root).
+  - [ ] **Action:** Read `WHITELIST.md` (.agent/handover/).
+  - [ ] **Action:** Read `BLACKLIST.md` (.agent/handover/).
   - [ ] **Action:** Read `HANDOVER_TO_NEW_AGENT.md` (Root).
   - [ ] **Action:** Read `QUICKSTART_VIRON_AUDITOR.md` (Root).
   - [ ] **Action:** Read `THE_NEXT_STEPS.md` (Root).
