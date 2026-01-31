@@ -1,3 +1,6 @@
+# 🚀 SUB-AGENT AKTIVIERUNGS-PROMPT: BADGE 6 (MEDIA, AUDIO & PERFORMANCE)
+
+```text
 **⚠️ SYSTEM-AKTIVIERUNG: BADGE 6 (MEDIA, AUDIO & PERFORMANCE)**
 
 **DEINE MISSION:**
@@ -10,10 +13,10 @@ Lies: C:\Workspace\Repos\remotion-studio\.knowledge\mission\SUBAGENT_BRIEFING_BA
 Erstelle `EXTRACTION_REPORT_BADGE_6.md` basierend auf dem Format in Sektion 4.
 
 **KRITISCHE REFERENZEN (IM BRIEFING BEACHTEN):**
-
-- **Sektion 1.2:** Viron-Credo (Gatekeeper-Checkliste!)
-- **Sektion 2.1:** Pflichtlektüre der Skills (Bevor du die Quellen liest!)
-- **Sektion 2.2:** Exakte File-Liste für Badge 6 (Keine Geister-Dateien!)
+- **PHASE 0:** CONTEXT KIT (MANDATORY - GATEKEEPER) - Die 4 Basis-Dateien!
+- **Sektion 3.3:** Auditor-Workflow & Redundanz-Check
+- **Sektion 2.2:** Viron-IP Fokus (FFT-Framework & Performance Vitals)
 
 **START:**
 Lies das Briefing vollständig. Melde dich mit einer Zusammenfassung der Regeln aus den kritischen Referenzen, bevor du startest.
+```

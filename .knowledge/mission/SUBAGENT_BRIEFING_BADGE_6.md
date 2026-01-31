@@ -39,17 +39,28 @@ Dein Job: **Extrahiere die Viron-Spezifische Audio- & Performance-Architektur.**
 
 ## 2. PFLICHTLEKTÜRE (Dein Input)
 
+### PHASE 0: CONTEXT KIT (MANDATORY - GATEKEEPER)
+
+Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen. Ohne dieses Fundament ist jede Analyse wertlos.
+
+| Datei      | Pfad                                                                         | Zweck                         |
+| ---------- | ---------------------------------------------------------------------------- | ----------------------------- |
+| **Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                    | Das "Video as Code" Paradigma |
+| **Logic**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Die Entscheidungs-Logik       |
+| **Index**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md`     | Die Landkarte des Wissens     |
+| **Skill**  | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`    | Der Redundanz-Check           |
+
 ### PHASE 1: SKILL INTERNALIZATION (Die Brille)
 
-Lies diese Dateien, um zu wissen, was **NICHT** extrahiert werden darf (Bereits im Grundwissen vorhanden).
+Lies diese Dateien, um zu wissen, was **NICHT** extrahiert werden darf.
 
-| Skill-Datei (Ref) | Pfad                                                                                | Zweck                                         |
-| :---------------- | :---------------------------------------------------------------------------------- | :-------------------------------------------- |
-| **MASTER RULE**   | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\SKILL.md` | Die Basis-Wahrheit                            |
-| **Audio Basics**  | `.../global_skills/remotion-best-practices/rules/audio.md`                          | `useAudioData`, `staticFile`, `volume` Filter |
-| **Captions**      | `.../global_skills/remotion-best-practices/rules/display-captions.md`               | TikTok-Style, Word-Highlight Filter           |
-| **Helpers**       | `.../global_skills/remotion-best-practices/rules/get-audio-duration.md`             | Duration extraction Filter                    |
-| **Video Specs**   | `.../global_skills/remotion-best-practices/rules/get-video-dimensions.md`           | Metadata extraction Filter                    |
+| Skill-Datei (Ref) | Pfad                                                                                                     | Zweck                               |
+| :---------------- | :------------------------------------------------------------------------------------------------------- | :---------------------------------- |
+| **MASTER RULE**   | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\SKILL.md`                      | Die Basis-Wahrheit                  |
+| **Audio Basics**  | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\audio.md`                | `useAudioData`, `staticFile` Filter |
+| **Captions**      | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\display-captions.md`     | Word-Highlight Filter               |
+| **Helpers**       | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\get-audio-duration.md`   | Duration extraction Filter          |
+| **Video Specs**   | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\rules\get-video-dimensions.md` | Metadata extraction Filter          |
 
 ### PHASE 2: SOURCE EXTRACTION (Das Gold)
 
