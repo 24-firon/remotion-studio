@@ -241,68 +241,84 @@
 
 ---
 
-### ⛓️ BADGE 7: SYSTEM ARCHITECTURE (CHAINED EXECUTION MODE)
+### ⛓️ BADGE 7: THE HANDOVER REBOOT SEQUENCE
 
-**Status:** � FROZEN (Awaiting Sequential Unlock)
+**Status:** 🧊 FROZEN (MANDATORY GATEKEEPER)
 
 > [!IMPORTANT]
-> **ACCESS DENIED:** You cannot proceed to Phase 4.
-> You must unlock the sequence starting at **7.0**.
-> Follow the chain exactly. Do not skip.
+> **SYSTEM HALT:** The previous agent failed due to simplification.
+> You must execute this Reboot Sequence (7.0) before touching any code.
 
-- [ ] **7.0 [MANDATORY] THE HANDOVER BOOT**
-  - [ ] **Action:** Read `BOOT_PROMPT.md` (.agent/handover/).
-  - [ ] **Action:** Read `WALKTHROUGH_SESSION_6.md` (Root).
-  - [ ] **Action:** Read `WHITELIST.md` (.agent/handover/).
-  - [ ] **Action:** Read `BLACKLIST.md` (.agent/handover/).
-  - [ ] **Action:** Read `HANDOVER_TO_NEW_AGENT.md` (Root).
-  - [ ] **Action:** Read `QUICKSTART_VIRON_AUDITOR.md` (Root).
-  - [ ] **Action:** Read `THE_NEXT_STEPS.md` (Root).
-  - [ ] **Confim:** Write to User: "I am chained to the V3.0 Protocol."
-
-- [ ] **7.1 [RESTART] SOURCE RE-VERIFICATION (Phase 0/1)**
-  - [ ] **Read:** `viron-core/pipeline.md` (Focus: Concurrency Formula).
-  - [ ] **Read:** `viron-core/workflow.md` (Focus: Git Flow).
-  - [ ] **Read:** `viron-core/troubleshooting.md` (Focus: Sync Error).
-  - [ ] **Compare:** Identify deviations from the Handover Protocol.
-
-- [ ] **7.2 [VALIDATION] ASSET CHECK (Phase 2)**
-  - [ ] **Read:** `.knowledge/mission/SUBAGENT_BRIEFING_BADGE_7.md`.
-  - [ ] **Read:** `.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md`.
-  - [ ] **Decision:** Are these assets 100% accurate based on _your_ reading of 7.1?
-    - If YES -> Check.
-    - If NO -> Edit them.
-
-- [ ] **7.3 [UNLOCK] ACTIVATION (Phase 4)**
-  - [ ] **Simulate:** Answer the prompt questions in the chat.
-  - [ ] **Proof:** Cite Line Numbers for every answer.
-
-- [ ] **7.4 [FINAL] REPORTING & CLOSURE**
-  - [ ] Create `EXTRACTION_REPORT_BADGE_7.md` (V2.0 Clean).
-  - [ ] Create `LEARNING_BADGE_7_SYSTEM.md`.
-  - [ ] Proceed to Badge 8.
+- [ ] **7.0 [MANDATORY] THE FORENSIC BOOT**
+  - [ ] **Read:** `BOOT_PROMPT.md`
+  - [ ] **Read:** `WALKTHROUGH_SESSION_6.md`
+  - [ ] **Read:** `WHITELIST.md` (and execute ALL 19 file reads immediately).
+    - [ ] Root 1: `HANDOVER_TO_NEW_AGENT.md`
+    - [ ] Root 2: `QUICKSTART_VIRON_AUDITOR.md`
+    - [ ] Root 3: `THE_NEXT_STEPS.md`
+    - [ ] Root 4: `THE_VIRON_AESTHETIC_MANIFESTO.md`
+    - [ ] Root 5: `USER_GOVERNANCE_PROTOCOL.md`
+    - [ ] Memory: `.agent/handover/task.md` (Current Position)
+    - [ ] Laws: `.agent/handover/implementation_plan.md`
+    - [ ] Gov: `C:\Users\bachl\.gemini\gemini.md` (Brand Standards)
+    - [ ] Pflichtlektüre 1: `viron-core/vision.md`
+    - [ ] Pflichtlektüre 2: `00-master-workflow-2026-integration.md`
+    - [ ] Pflichtlektüre 3: `00-overview-index-v2-1-complete.md`
+    - [ ] Pflichtlektüre 4: `.agent/skills/remotion-core/SKILL.md`
+  - [ ] **Read:** `BLACKLIST.md` (and acknowledge constraints).
+  - [ ] **Confirm:** Write "I am rebooted. Viron DNA ingested. Ready for Badge 8."
 
 ---
 
-### 🏛️ BADGE 8: SYSTEM ARCHITECTURE (HISTORICAL FILE LIST)
+### 🏛️ BADGE 8: SYSTEM ARCHITECTURE & CLOUD (FULL FORENSIC AUDIT)
 
-**Status:** 📖 REFERENCE (Detailed Audit Map)
+**Status:** PENDING (Awaiting Reboot)
 
-> [!NOTE]
-> This badge contains the exhaustive list of files and audit steps from the previous agent's successful forensic discovery. Use this as a map for your own re-verification in Badge 7.
+- [ ] **8.0 PHASE 0: ORIENTATION (Context)**
+  - [ ] Understand Scope: Infrastructure, Routing, Error Handling, AWS.
+  - [ ] **PFLICHTLEKTÜRE (MANDATORY):**
+    - [ ] `viron-core/vision.md` (Architecture Vision)
+    - [ ] `00-master-workflow-2026-integration.md` (Workflow Truth)
+    - [ ] `00-overview-index-v2-1-complete.md` (Master Index)
+    - [ ] `.agent/skills/remotion-core/SKILL.md` (Standard Pointer)
+  - [ ] **Action:** Read `SKILL: trimming.md` FIRST to understand logic.
 
-- [x] **PHASE 1: ARCHITECT'S DEEP DIVE (Input)**
-  - [x] **Sequentielles File-Audit (Source Analysis)**
-    - [x] REPO: `viron-core/pipeline.md` (Concurrency Formula)
-    - [x] REPO: `viron-core/workflow.md` (Git Flow Strategy)
-    - [x] REPO: `viron-core/troubleshooting.md` (Sync Rule: > 2 frames)
-    - [x] ARCHIVE: `v1-integration-protocol.md` (Governance Snippets)
-    - [x] SKILL: `trimming.md` (Logic for Redundancy)
-  - [x] **Identify Smoking Guns** (Concurrency Math, Sync Drift Limit)
+- [ ] **8.1 PHASE 1: ARCHITECT'S DEEP DIVE (Source Analysis)**
+  - [ ] **Sequentielles File-Audit (No Skipping):**
+    - [ ] REPO: `viron-core/pipeline.md` (Focus: Cloud-Aspekt)
+    - [ ] REPO: `viron-core/workflow.md` (Focus: Git Flow)
+    - [ ] REPO: `viron-core/troubleshooting.md` (Focus: Sync Errors)
+    - [ ] VAULT: `22_SYSTEM_PLAN_Folder_Structure.md`
+    - [ ] VAULT: `60-cloud-rendering-00-aws-lambda-renderfarming.md`
+    - [ ] VAULT: `23_ROUTING_MATRIX_Inputs.md`
+    - [ ] VAULT: `24_ROUTING_MATRIX_Outputs.md`
+    - [ ] VAULT: `FEHLERLOSUNG-haeufige-probleme.md`
+  - [ ] **Identify Smoking Guns:** Pinpoint every deviation.
 
-- [x] **PHASE 2: ASSET DEFINITIONS (V3.0)**
-  - [x] `SUBAGENT_BRIEFING_BADGE_7.md` (V3.0 Path Enforcement)
-  - [x] `SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md` (V2.2 Forensic Interrogation)
+- [ ] **8.2 PHASE 2: ASSET CREATION (Output)**
+  - [ ] Create `SUBAGENT_BRIEFING_BADGE_8.md` (V3.0 Detailed).
+  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_8.md` (V2.2 Forensic).
+  - [ ] **Check:** Ensure Assets match 8.1 Findings perfectly.
+
+- [ ] **8.3 PHASE 3: SAFETY LOCK (Commit)**
+  - [ ] `git status` check.
+  - [ ] Commit Assets (Proof of Work).
+
+- [ ] **8.4 PHASE 4: ACTIVATION (Simulation)**
+  - [ ] **Interrogation:** Answer Prompt Questions in Chat.
+  - [ ] **Verification:** Cite Line Numbers from 8.1 Sources.
+
+- [ ] **8.5 PHASE 5: REPORT AUDIT (Self-Check)**
+  - [ ] Execute `orchestrator-self-audit.md` Protocol.
+
+- [ ] **8.6 PHASE 6: REFLECTION DEFENSE (Meta)**
+  - [ ] Defense Round: Prove IP vs Redundancy.
+
+- [ ] **8.7 PHASE 7: CLOSURE (Final)**
+  - [ ] Create `EXTRACTION_REPORT_BADGE_8.md` (V2.0 Clean).
+  - [ ] Create `LEARNING_BADGE_8_SYSTEM.md`.
+  - [ ] Final Commit.
+  - [ ] Proceed to Badge 9.
 
 ---
 
@@ -310,9 +326,14 @@
 
 **Status:** PENDING
 
-- [ ] **PHASE 0: ORIENTATION (Context)**
+- [ ] **9.0 PHASE 0: ORIENTATION (Context)**
   - [ ] Understand Scope: Meta-Rules, Token Economy, AI-Integration
-- [ ] **PHASE 1: ARCHITECT'S DEEP DIVE (Input)**
+  - [ ] **PFLICHTLEKTÜRE (MANDATORY):**
+    - [ ] `viron-core/vision.md` (Architecture Vision)
+    - [ ] `00-master-workflow-2026-integration.md` (Workflow Truth)
+    - [ ] `00-overview-index-v2-1-complete.md` (Master Index)
+    - [ ] `.agent/skills/remotion-core/SKILL.md` (Standard Pointer)
+- [ ] **9.1 PHASE 1: ARCHITECT'S DEEP DIVE (Source Analysis)**
   - [ ] **Batch Discovery & Reflektion**
   - [ ] **Sequentielles File-Audit (Source Analysis)**
     - [ ] REPO: `docs/REPOSITORY_MANIFESTO.md`
@@ -329,43 +350,47 @@
     - [ ] SKILL: `calculate-metadata.md`
     - [ ] SKILL: `extract-frames.md`
   - [ ] **Identify Smoking Guns**
-- [ ] **PHASE 2: ASSET CREATION (Output)**
-  - [ ] Create `SUBAGENT_BRIEFING_BADGE_8.md`
-  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_8.md`
-- [ ] **PHASE 3: SAFETY LOCK (Commit)**
+- [ ] **9.2 PHASE 2: ASSET CREATION (Output)**
+  - [ ] Create `SUBAGENT_BRIEFING_BADGE_9.md`
+  - [ ] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_9.md`
+- [ ] **9.3 PHASE 3: SAFETY LOCK (Commit)**
   - [ ] Commit Assets
-- [ ] **PHASE 4: ACTIVATION (Simulation)**
+- [ ] **9.4 PHASE 4: ACTIVATION (Simulation)**
   - [ ] Interrogation & Verification
-- [ ] **PHASE 5: REPORT AUDIT (Self-Check)**
+- [ ] **9.5 PHASE 5: REPORT AUDIT (Self-Check)**
   - [ ] Execute Self-Audit Protocol
-- [ ] **PHASE 6: REFLECTION DEFENSE (Meta)**
+- [ ] **9.6 PHASE 6: REFLECTION DEFENSE (Meta)**
   - [ ] Defense Round
-- [ ] **PHASE 7: CLOSURE (Final)**
-  - [ ] Create `LEARNING_BADGE_8.md`
+- [ ] **9.7 PHASE 7: CLOSURE (Final)**
+  - [ ] Create `LEARNING_BADGE_9.md`
   - [ ] Final Commit
 
 ---
 
-## 🔵 PHASE 7: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
+## 🔵 PHASE 10: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
 
-- [ ] **7.1 Konsistenz-Check:** Abgleich aller 9 Badge-Reports auf Widersprüche.
-- [ ] **7.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
-- [ ] **7.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
-- [ ] **7.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
-- [ ] **7.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
+- [ ] **10.1 Konsistenz-Check:** Abgleich aller 9 Badge-Reports auf Widersprüche.
+- [ ] **10.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
+- [ ] **10.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
+- [ ] **10.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
+- [ ] **10.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
 
-## 🔵 PHASE 8: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
+## 🔵 PHASE 11: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
 
-- [ ] **8.1 Greenfield Setup:** Erstellung der neuen Modul-Struktur in `Viron-Studio`.
-- [ ] **8.2 Skill Extraction:** Überführung der destillierten IP in das Ziel-Verzeichnis.
-- [ ] **8.3 "Viron-System" Creation:** Initialisierung des neuen, lokalen Antigravity-Skills.
-- [ ] **8.4 Live-Test:** Rendering einer Test-Szene mit dem neuen Wissensstand.
+- [ ] **11.1 Greenfield Setup:** Erstellung der neuen Modul-Struktur in `Viron-Studio`.
+- [ ] **11.2 Skill Extraction:** Überführung der destillierten IP in das Ziel-Verzeichnis.
+- [ ] **11.3 "Viron-System" Creation:** Initialisierung des neuen, lokalen Antigravity-Skills.
+- [ ] **11.4 Live-Test:** Rendering einer Test-Szene mit dem neuen Wissensstand.
 
-## 🔵 PHASE 9: MISSION CLOSE & HANDOVER (GEPLANT)
+## 🔵 PHASE 12: MISSION CLOSE & HANDOVER (GEPLANT)
 
-- [ ] **9.1 Documentation Finalization:** Letztes Update von `SPEC.md` und `HANDOVER.md`.
-- [ ] **9.2 Archive Cleanup:** Finales Verschieben der Legacy-Leichen in das Langzeit-Archiv.
-- [ ] **9.3 Mission Signature:** Erstellung des `MISSION_COMPLETED.md` Abschlussberichts.
+- [ ] **12.1 Documentation Finalization:** Letztes Update von `SPEC.md` und `HANDOVER.md`.
+- [ ] **12.2 Archive Cleanup:** Finales Verschieben der Legacy-Leichen in das Langzeit-Archiv.
+- [ ] **12.3 Mission Signature:** Erstellung des `MISSION_COMPLETED.md` Abschlussberichts.
+
+---
+
+**Viron Mission 2026: Keine Kompromisse. Nur chirurgische Präzision. Absolute Historie.**
 
 ---
 
