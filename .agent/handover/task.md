@@ -241,47 +241,42 @@
 
 ---
 
-### ✅ BADGE 7: SYSTEM ARCHITECTURE & GOVERNANCE
+### ⛓️ BADGE 7: SYSTEM ARCHITECTURE (CHAINED EXECUTION MODE)
 
-**Status:** 🔵 ASSETS COMMITTED (Ready for Forensic Activation)
+**Status:** � FROZEN (Awaiting Sequential Unlock)
 
-> [!CAUTION]
-> **AUDIT RESTART REQUIRED:**
-> The assets (Briefing/Prompt) were committed, but the previous agent failed the Activation Phase.
-> **DO NOT** skip to Phase 4 immediately.
->
-> 1. **RE-READ** Sources (Phase 1).
-> 2. **VALIDATE** Assets (Phase 2).
-> 3. **THEN** Activate Phase 4.
+> [!IMPORTANT]
+> **ACCESS DENIED:** You cannot proceed to Phase 4.
+> You must unlock the sequence starting at **7.0**.
+> Follow the chain exactly. Do not skip.
 
-- [x] **PHASE 0: ORIENTATION (Context)**
-  - [x] Understand Scope: Infrastructure, Routing, Error Handling
-  - [x] Read Plans (Integration Protocol checked)
-- [x] **PHASE 1: ARCHITECT'S DEEP DIVE (Input)**
-  - [x] **Batch Discovery & Reflektion**
-  - [x] **Sequentielles File-Audit (Source Analysis)**
-    - [x] REPO: `viron-core/pipeline.md` (Concurrency)
-    - [x] REPO: `viron-core/workflow.md` (Git Flow)
-    - [x] REPO: `viron-core/troubleshooting.md` (Sync)
-    - [x] ARCHIVE: `integration-protocol.md` (Gov)
-    - [x] SKILL: `trimming.md` (Redundancy Check)
-  - [x] **Identify Smoking Guns** (Concurrency, Sync, Snippet Rule)
-- [x] **PHASE 2: ASSET CREATION (Output)**
-  - [x] Create `SUBAGENT_BRIEFING_BADGE_7.md` (V3.0)
-  - [x] Create `SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md` (V2.2 Forensic)
-- [x] **PHASE 3: SAFETY LOCK (Commit)**
-  - [x] `git status` check
-  - [x] Commit Assets (def6eea)
-- [x] **PHASE 4: ACTIVATION (Simulation)**
-  - [x] Execute Sub-Agent Interrogation (Answers verified)
-  - [x] Verify Answers against Deep Dive
-- [x] **PHASE 5: REPORT AUDIT (Self-Check)**
-  - [x] Execute `orchestrator-self-audit.md` Protocol (Passed)
-- [x] **PHASE 6: REFLECTION DEFENSE (Meta)**
-  - [x] Interrogate Agent on IP (Concurrency) vs Standard
-- [x] **PHASE 7: CLOSURE (Final)**
-  - [x] Create `LEARNING_BADGE_7_SYSTEM.md`
-  - [x] Final Commit
+- [ ] **7.0 [MANDATORY] THE HANDOVER BOOT**
+  - [ ] **Action:** Read `HANDOVER_TO_NEW_AGENT.md` (Root).
+  - [ ] **Action:** Read `QUICKSTART_VIRON_AUDITOR.md` (Root).
+  - [ ] **Action:** Read `THE_NEXT_STEPS.md` (Root).
+  - [ ] **Confim:** Write to User: "I am chained to the V3.0 Protocol."
+
+- [ ] **7.1 [RESTART] SOURCE RE-VERIFICATION (Phase 0/1)**
+  - [ ] **Read:** `viron-core/pipeline.md` (Focus: Concurrency Formula).
+  - [ ] **Read:** `viron-core/workflow.md` (Focus: Git Flow).
+  - [ ] **Read:** `viron-core/troubleshooting.md` (Focus: Sync Error).
+  - [ ] **Compare:** Identify deviations from the Handover Protocol.
+
+- [ ] **7.2 [VALIDATION] ASSET CHECK (Phase 2)**
+  - [ ] **Read:** `.knowledge/mission/SUBAGENT_BRIEFING_BADGE_7.md`.
+  - [ ] **Read:** `.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md`.
+  - [ ] **Decision:** Are these assets 100% accurate based on _your_ reading of 7.1?
+    - If YES -> Check.
+    - If NO -> Edit them.
+
+- [ ] **7.3 [UNLOCK] ACTIVATION (Phase 4)**
+  - [ ] **Simulate:** Answer the prompt questions in the chat.
+  - [ ] **Proof:** Cite Line Numbers for every answer.
+
+- [ ] **7.4 [FINAL] REPORTING & CLOSURE**
+  - [ ] Create `EXTRACTION_REPORT_BADGE_7.md` (V2.0 Clean).
+  - [ ] Create `LEARNING_BADGE_7_SYSTEM.md`.
+  - [ ] Proceed to Badge 8.
 
 ---
 
