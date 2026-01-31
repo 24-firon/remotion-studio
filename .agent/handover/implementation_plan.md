@@ -62,43 +62,55 @@ In dieser Phase sezieren wir das Wissen in thematischen Batches unter Anwendung 
 
 ### 📦 Badge 5: Web Patterns & Cloud Integration
 
-- **Status:** 🏃 ACTIVE (Auditor Mode V3.0).
+- **Status:** ✅ COMPLETED (Extraction Report V2.2 Forensic).
 - **Fokus:** Next.js Hybrid-Logic, Scroll-Mapping, Lambda Farming, Streaming-Architektur.
-- **Dateien:** 50-web-patterns-_, 60-cloud-rendering-_, patterns/\*.
 
 ### 📦 Badge 6: Media, Audio & Performance
 
-- **Status:** ⚪ NEXT.
+- **Status:** ✅ COMPLETED (Report V1.0).
 - **Fokus:** Audio-Reaktivität, FFT-Spektren, Caption-Engine V2.
 
-### 📦 Badge 7: System Architecture & Governance
+### 🛑 CRITICAL INTERVENTION: THE FORENSIC REBOOT
 
-- **Status:** ⚪ NEXT.
-- **Fokus:** Proxy-Pipelines, Scalability, Routing-Metriken.
+- **Status:** 🧊 FROZEN (MANDATORY).
+- **Fokus:** Full Boot Sequence Reset, Remotion Skill Injection (Local + Global).
+- **Constraint:** No further Badges until this is executed.
 
-### 📦 Badge 8: AI Synergies & Final Harmonization
+### 🏛️ Badge 7: System Architecture & Cloud (Full Audit)
 
-- **Status:** ⚪ NEXT.
-- **Fokus:** Video-RAG, Meta-Architecture, Greenfield-Merge.
+- **Status:** ⏳ PENDING (Awaiting Reboot).
+- **Fokus:** Full 9-File Audit (Pipeline, Workflow, Routing), Smoke-Test of Concurrency.
+- **Scope:** The "Monster-List" (V3.0 Deep Dive).
+
+### 📦 Badge 8: Agent Governance & AI Synergies
+
+- **Status:** ⏳ PENDING.
+- **Fokus:** Meta-Rules, Token Economy, AI-Integration.
 
 ---
 
 ## 🔬 DER CHIRURGISCHE WORKFLOW (V3.0)
 
-Dies ist die exakte Befehlskette für jeden einzelnen Audit-Vorgang innerhalb eines Badges:
+Dies ist die exakte Befehlskette für jeden einzelnen Audit-Vorgang (Badge 7+):
 
-1.  **AUDITOR-BOOTSTRAP (Hard Handshake):**
-    - Der Agent MUSS die 4 fundamentalen Pflichtlektüren lesen UND beweisen (Satz pro Datei):
-      - `viron-core/vision.md`
-      - `00-master-workflow-2026-integration.md`
-      - `00-overview-index-v2-1-complete.md`
-      - `remotion-core/SKILL.md`
-2.  **SKILL-INTERNALIZATION (Phase 1):**
-    - Lade die badge-spezifischen Global Skills (z.B. animations.md). Dieser Filter ist ab sofort aktiv.
-3.  **SOURCE-AUDIT (Phase 2):**
-    - Chirurgische Extraktion von Viron-IP gegen den Filter.
-4.  **NEGATIVE REPORTING:**
-    - Erstellung des `EXTRACTION_REPORT.md` mit expliziter "Verworfen"-Tabelle für Redundanzen.
+1.  **STEP 0: ORIENTATION (Context Load):**
+    - Pflichtlektüre der 4 fundamentalen Source Truths (Vision, Workflow, Index, Skill).
+2.  **STEP 1: ARCHITECT'S DEEP DIVE (Source Analysis):**
+    - Ingestion der Badge-spezifischen Sources (Repo/Vault/Skill).
+    - Identifikation der "Smoking Guns" (Abweichungen).
+3.  **STEP 2: ASSET CREATION:**
+    - Erstellung von `SUBAGENT_BRIEFING` und `ACTIVATION_PROMPT`.
+4.  **STEP 3: SAFETY LOCK (Commit):**
+    - Commit der ungetesteten Assets (Proof of Work).
+5.  **STEP 4: ACTIVATION (Simulation):**
+    - Forensic Interrogation (Q&A mit Zitaten).
+6.  **STEP 5: REPORT AUDIT (Self-Check):**
+    - Validierung des eigenen Reports gegen `orchestrator-self-audit.md`.
+7.  **STEP 6: REFLECTION DEFENSE (Meta):**
+    - Verteidigung der IP-Entscheidungen (Redundanz vs. Unikat).
+8.  **STEP 7: CLOSURE (Final):**
+    - Erstellung des `EXTRACTION_REPORT` und `LEARNING_BADGE`.
+    - Final Commit.
 
 ---
 

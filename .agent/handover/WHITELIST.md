@@ -10,6 +10,12 @@
 - `THE_NEXT_STEPS.md` (First-Hour Agenda)
 - `THE_VIRON_AESTHETIC_MANIFESTO.md` (Design DNA & No-CSS Law)
 - `USER_GOVERNANCE_PROTOCOL.md` (Interaction Ethics)
+- `C:\Users\bachl\.gemini\gemini.md` (Global Brand & Communication Standards - **CRITICAL**)
+- `.agent/AGENTS.md` (The Intelligent Router & Workflow Registry)
+
+> [!IMPORTANT]
+> **RECURSIVE CONTEXT RULE (Depth: 1):**
+> If `gemini.md` or `AGENTS.md` reference external specifications (e.g., in `global_skills/` or `workflows/`), you **MUST** read those referenced files immediately. Do not guess their content.
 
 ## 2. The Persisted State (Memory)
 

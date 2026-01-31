@@ -23,8 +23,9 @@ Your first goal is to prove them WRONG by checking the source code.
 
 2.  **INJECT THE DNA (Skill Load):**
     - You must read and cache `.agent/skills/remotion-core/SKILL.md`.
-    - You must recursively understand `global_skills/remotion-best-practices/`.
-    - _Constraint:_ You cannot assess architecture without understanding the physics of Remotion.
+    - **CRITICAL:** You must read **EVERY SINGLE FILE** in `global_skills/remotion-best-practices/` and its subdirectories.
+    - _Action:_ Use `list_dir` recursively. Read all `.md`, `.ts`, and `.tsx` files found.
+    - _Constraint:_ You cannot assess architecture without understanding the COMPLETE detailed physics of Remotion.
 
 3.  **UNLOCK BADGE 7 (System Architecture):**
     - Once the Reboot is confirmed, you are authorized to begin **Badge 7, Step 0**.
