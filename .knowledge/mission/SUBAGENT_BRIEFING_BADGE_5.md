@@ -32,15 +32,27 @@ Dein Job: **Extrahiere NUR die Brücke zwischen Web und Video.**
 
 ### 1.2 Das Viron-Credo (Nicht verhandelbar)
 
-1.  **Skill First:** Was in `animations.md` steht (z.B. "CSS verboten"), ist GESETZ. Wenn eine Quelle das wiederholt -> VERWERFEN.
-2.  **Negative Beweispflicht:** Zeige mir, was du weggeworfen hast.
-3.  **Viron-IP Focus:** Wir suchen Lambda-Configs, Deployment-Strategien, Scroll-Trigger-Logik. Keine HTML-Basics.
+1.  **Skill-Skeptizismus:** JEDER Punkt im Report muss gegen die Global Skills verifiziert werden. Wenn du etwas "MITNIMMST", musst du beweisen, dass es NICHT im Skill steht.
+2.  **Absolute Pfad-Pflicht:** Nutze nur validierte absolute Pfade.
+3.  **Negative Beweispflicht:** Zeige mir in Sektion 6 ("Verworfen"), was du weggeworfen hast. Ein leerer Redundanz-Log ist ein Zeichen für einen schlechten Audit.
+4.  **Viron-IP Focus:** Wir suchen Lambda-Configs, Deployment-Strategien, Scroll-Trigger-Logik. Keine HTML-Basics.
 
 > **Mantra:** "Ich extrahiere keine Web-Basics. Ich extrahiere High-Performance-Architektur."
 
 ---
 
 ## 2. PFLICHTLEKTÜRE (Dein Input)
+
+### PHASE 0: CONTEXT KIT (MANDATORY - GATEKEEPER)
+
+Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen. Ohne dieses Fundament ist jede Analyse wertlos.
+
+| Datei      | Pfad                                                                         | Zweck                         |
+| ---------- | ---------------------------------------------------------------------------- | ----------------------------- |
+| **Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                    | Das "Video as Code" Paradigma |
+| **Logic**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Die Entscheidungs-Logik       |
+| **Index**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md`     | Die Landkarte des Wissens     |
+| **Skill**  | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`    | Der Redundanz-Check           |
 
 ### PHASE 1: SKILL INTERNALIZATION (Die Brille)
 
@@ -167,12 +179,12 @@ Hier listest du auf, was du **verworfen** hast.
 
 ---
 
-## 8. CHECKLISTE VOR ABGABE
+## 9. REVISIONS-PROTOKOL (AUDIT V2.0)
 
-- [ ] Skill-Files ZUERST gelesen?
-- [ ] Jeden Fund gegen Skill geprüft?
-- [ ] "Skill-Check" Feld in jedem Item ausgefüllt?
-- [ ] "Verworfen"-Tabelle befüllt?
-- [ ] Pfade sind absolut und korrekt?
+Wenn du als Revisions-Agent aktiviert wirst:
 
-**AUDIT STARTEN.**
+1. **Gap-Audit:** Suche nach Dateien, die im ersten Durchlauf (V1.1) ignoriert wurden.
+2. **Deep-Dive Questions:** Beantworte alle im Aktivierungsprompt gestellten technischen Fragen.
+3. **Skill-Check-Check:** Prüfe, ob die Entscheidungen (TAKE/DROP) in V1.1 korrekt waren. Wenn ein Punkt als "MITNEHMEN" markiert war, aber im Skill steht -> Korrigieren und DROP.
+
+**STATUS: REVISION AKTIV.**

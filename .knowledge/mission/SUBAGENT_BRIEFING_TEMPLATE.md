@@ -42,7 +42,16 @@ Dein Job ist es, **Müll (Redundanz)** aus dem neuen Repo fernzuhalten.
 
 ---
 
-## 2. PFLICHTLEKTÜRE (Dein Input)
+### PHASE 0: CONTEXT KIT (MANDATORY - GATEKEEPER)
+
+Diese Dateien MÜSSEN gelesen werden, um Viron zu verstehen. Ohne dieses Fundament ist jede Analyse wertlos.
+
+| Datei      | Pfad                                                                         | Zweck                         |
+| ---------- | ---------------------------------------------------------------------------- | ----------------------------- |
+| **Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                    | Das "Video as Code" Paradigma |
+| **Logic**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Die Entscheidungs-Logik       |
+| **Index**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md`     | Die Landkarte des Wissens     |
+| **Skill**  | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`    | Der Redundanz-Check           |
 
 ### PHASE 1: SKILL INTERNALIZATION (Die Brille)
 

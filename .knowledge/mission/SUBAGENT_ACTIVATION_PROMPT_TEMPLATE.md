@@ -20,7 +20,7 @@ Lies: C:\Workspace\Repos\remotion-studio\.knowledge\mission\SUBAGENT_BRIEFING_BA
 Erstelle `EXTRACTION_REPORT_BADGE_[N].md` basierend auf dem Format in Sektion 4.
 
 **KRITISCHE REFERENZEN (IM BRIEFING BEACHTEN):**
-- **Sektion 2.1:** GATEKEEPER-Checkliste (Pflicht!)
+- **PHASE 0:** CONTEXT KIT (MANDATORY - GATEKEEPER) - Die 4 Basis-Dateien!
 - **Sektion 3.3:** Orchestrator-Hinweise
 - **Sektion [X]:** [BADGE-SPEZIFISCHE REGEL 1]
 - **Sektion [Y]:** [BADGE-SPEZIFISCHE REGEL 2]
