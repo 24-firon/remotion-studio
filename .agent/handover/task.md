@@ -243,7 +243,16 @@
 
 ### ✅ BADGE 7: SYSTEM ARCHITECTURE & GOVERNANCE
 
-**Status:** ✅ COMPLETED (System IP Secured)
+**Status:** 🔵 ASSETS COMMITTED (Ready for Forensic Activation)
+
+> [!CAUTION]
+> **AUDIT RESTART REQUIRED:**
+> The assets (Briefing/Prompt) were committed, but the previous agent failed the Activation Phase.
+> **DO NOT** skip to Phase 4 immediately.
+>
+> 1. **RE-READ** Sources (Phase 1).
+> 2. **VALIDATE** Assets (Phase 2).
+> 3. **THEN** Activate Phase 4.
 
 - [x] **PHASE 0: ORIENTATION (Context)**
   - [x] Understand Scope: Infrastructure, Routing, Error Handling
