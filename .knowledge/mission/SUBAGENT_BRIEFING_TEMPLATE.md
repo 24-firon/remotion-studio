@@ -1,6 +1,6 @@
-# 🎯 SUB-AGENT BRIEFING TEMPLATE (V2.0)
+# 🎯 SUB-AGENT BRIEFING TEMPLATE (V3.0 - GOLD STANDARD)
 
-**Purpose:** Master-Vorlage für alle zukünftigen Badge-Briefings. Basierend auf V3-Standard.
+**Purpose:** Master-Vorlage für Badge 5+ Briefings. Enforce "Auditor Mode".
 **Location:** `.knowledge/mission/SUBAGENT_BRIEFING_TEMPLATE.md`
 **Usage:** Kopiere diese Vorlage und ersetze die `[PLACEHOLDER]`-Felder.
 
@@ -16,6 +16,7 @@ Lies: C:\Workspace\Repos\remotion-studio\.knowledge\mission\subagent-briefing-ba
 Erstelle: C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_[N].md
 
 REGLER AUF: 100% Tiefe, 0% Reduktion.
+MODUS: AUDITOR (Nicht Summarizer).
 Bei Unsicherheit: STOPPE und FRAGE anstatt zu raten.
 ```
 
@@ -23,88 +24,64 @@ Bei Unsicherheit: STOPPE und FRAGE anstatt zu raten.
 
 ## 1. MISSION PHILOSOPHY (Das Fundament)
 
-### 1.1 Warum wir das tun
+### 1.1 Deine Wahre Rolle
 
-Dieser Report ist kein Dokument für das Archiv. Er ist der **Lehrer für die nächste Generation von Agents**. Wenn du hier schlampst, lernen alle Nachfolger falsch.
+Du bist kein "Zusammenfasser" und kein "Autor".
+Du bist ein **AUDITOR** und **GATEKEEPER**.
 
-### 1.2 Das Credo (Nicht verhandelbar)
+Dein Job ist es nicht, möglichst viel zu schreiben.
+Dein Job ist es, **Müll (Redundanz)** aus dem neuen Repo fernzuhalten.
 
-Lies das Quality Credo in `gemini.md`. Deine Arbeit wird daran gemessen:
+### 1.2 Das Viron-Credo (Nicht verhandelbar)
 
-- **Ausführlichkeit:** Lieber 3 Sätze zu viel als 1 Wort zu wenig.
-- **Kontext:** Kein Code-Block existiert im Vakuum. Erkläre das WARUM.
-- **Unmissverständlichkeit:** Schreibe so, dass ein Junior-Dev es versteht.
+1.  **Skill First:** Der Global Skill ist das Gesetz. Was dort steht, existiert bereits. Es darf NIEMALS dupliziert werden.
+2.  **Negative Beweispflicht:** Du musst beweisen, dass du geprüft hast. Jeder Fund braucht einen Skill-Check.
+3.  **Viron-IP Focus:** Wir suchen die "Secret Sauce" (Konkrete Werte, spezifische Workflows), nicht generisches "Wie geht Remotion?".
 
-> **Mantra:** "Ich bin kein Kopierer, ich bin ein Kurator."
+> **Mantra:** "Ich werde nicht dafür bezahlt, was ich schreibe, sondern dafür, was ich WEGWIRFST, weil es schon im Skill steht."
 
 ---
 
 ## 2. PFLICHTLEKTÜRE (Dein Input)
 
-### 2.1 Context Kit (Standard) – GATEKEEPER
+### PHASE 1: SKILL INTERNALIZATION (Die Brille)
 
-> [!CAUTION]
-> **DIESE DATEIEN SIND NICHT OPTIONAL.**
-> Du MUSST sie lesen, BEVOR du die Badge-spezifischen Quellen anrührst.
-> Wenn du hier überspringst, wirst du falsche Entscheidungen treffen.
+Bevor du irgendeine Source-Datei liest, musst du den Filter kalibrieren.
+Lies diese Dateien, um zu wissen, was **NICHT** extrahiert werden darf.
 
-**Bevor du eine Zeile Code analysierst, bestätige:**
+| Skill-Datei (Ref) | Pfad                                                                                | Zweck                    |
+| ----------------- | ----------------------------------------------------------------------------------- | ------------------------ |
+| **MASTER RULE**   | `C:\Users\bachl\.gemini\antigravity\global_skills\remotion-best-practices\SKILL.md` | Die Basis-Wahrheit       |
+| [Skill X]         | [Pfad zu relevanter Rule]                                                           | [Konkreter Filter-Grund] |
 
-- [ ] Ich habe `viron-core/vision.md` gelesen (Virtual Production Paradigma).
-- [ ] Ich habe `00-master-workflow-2026-integration.md` gelesen (Entscheidungs-Logik).
-- [ ] Ich habe `00-overview-index-v2-1-complete.md` gelesen (Wissens-Landkarte).
-- [ ] Ich habe `remotion-core/SKILL.md` gelesen (Frame-Driven Law, Redundanz-Check).
+### PHASE 2: SOURCE EXTRACTION (Das Gold)
 
-| Datei      | Pfad                                                                         | Zweck                         |
-| ---------- | ---------------------------------------------------------------------------- | ----------------------------- |
-| **Vision** | `C:\Workspace\Repos\remotion-studio\viron-core\vision.md`                    | Das "Video as Code" Paradigma |
-| **Logic**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-master-workflow-2026-integration.md` | Die Entscheidungs-Logik       |
-| **Index**  | `C:\Viron\90_VAULT\NEW SUFF\Remotion\00-overview-index-v2-1-complete.md`     | Die Landkarte des Wissens     |
-| **Skill**  | `C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core\SKILL.md`    | Der Redundanz-Check           |
+Erst jetzt liest du die Quellen. Suche nach Deltas (Unterschiede zur Phase 1).
 
-### 2.2 Badge-Spezifische Quellen (Deine Mission)
+| Kategorie | Datei  | Pfad            | Extraktions-Ziel (Viron-IP) |
+| --------- | ------ | --------------- | --------------------------- |
+| [Type]    | [Name] | [Absolute Path] | [Was suchen wir hier?]      |
 
-Lies diese Dateien Zeile für Zeile (Deep Read):
-
-| Kategorie     | Datei         | Pfad          | Extraktions-Ziel                                   |
-| ------------- | ------------- | ------------- | -------------------------------------------------- |
-| [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER] | [Was soll der Agent aus dieser Datei extrahieren?] |
+> [!IMPORTANT]
+> **ORCHESTRATOR NOTE:** Alle Pfade MÜSSEN vor Erstellung mit `list_dir` empirisch validiert worden sein. Keine Geister-Dateien!
 
 ---
 
-## 3. DEIN WORKFLOW
+## 3. DEIN WORKFLOW (The Auditor Loop)
 
-1. **Deep Read:** Lies alle Quellen vollständig. Scanne nicht.
-2. **Context Injection:** Wenn du einen Code-Block findest, lies den Absatz davor/danach. Warum ist das so?
-3. **Kategorisierung:** Sortiere jeden Fund in A, B oder C:
-   - **A: SKILL_UPDATE** (Generisches Remotion-Wissen)
-   - **B: PROJECT_IP** (Viron-spezifische Configs/Secrets)
-   - **C: RESEARCH_NOTE** (Kontext, Tutorials, Begründungen)
-4. **Schreiben:** Erstelle den Report im Format von Sektion 4.
+Für jeden Absatz in den Quellen:
 
-### 3.1 EXTRAKTIONS-PFLICHT (Kritisch!)
+1.  **Scan:** Lies den Inhalt.
+2.  **Check:** "Steht das schon im Skill (Phase 1)?"
+3.  **Audit:**
+    - **JA (Redundant):** Ab in den Müll (und ins Protokoll "Verworfen").
+    - **NEIN (Delta):** Das ist Gold. Extrahiere es als "MITNEHMEN".
+4.  **Enrich:** Füge Kontext hinzu (Warum machen wir das so?).
 
-Wenn im Orchestrator-Hinweis-Block **konkrete Zeilen-Ranges** genannt werden:
+### 3.1 Die "Verworfen"-Pflicht
 
-- Diese sind **PFLICHT-Extraktionen**, nicht "prüfen ob nötig"
-- Lies die genannten Zeilen
-- Extrahiere sie VOLLSTÄNDIG
-- Wenn du sie verwirfst: Dokumentiere WARUM (Redundanz? Bereits im Skill?)
-
-**Beispiel:**
-
-> Briefing sagt: "Kamera-Animation (Zeile 206-253)"
-> = Du MUSST Zeilen 206-253 extrahieren, nicht ignorieren
-
-### 3.2 PROBLEM-LÖSUNGS-GEBOT
-
-Wenn du ein Problem identifizierst (z.B. "Math.random() ist nicht deterministisch"):
-
-1. Suche in den Quellen nach einer Lösung
-2. Wenn gefunden: Dokumentiere Problem UND Lösung
-3. Wenn nicht gefunden: Markiere als `TODO: Lösung fehlt in Quellen`
-
-**Anti-Pattern:** "Das ist ein Problem" ohne Lösung oder TODO
+Ein Report ohne verworfene Inhalte ist verdächtig und wird abgelehnt.
+Du musst beweisen, dass du Redundanzen gefunden und eliminiert hast.
 
 ---
 
@@ -112,15 +89,20 @@ Wenn du ein Problem identifizierst (z.B. "Math.random() ist nicht deterministisc
 
 Erstelle: `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPORT_BADGE_[N].md`
 
-**Format für JEDEN Punkt:**
+### 4.1 Für jeden Fund (Das "MITNEHMEN" Format)
 
 ````markdown
 ### [Titel des Punktes]
 
 **Quelle:** `[datei.md]` (Zeilen X-Y)
+**Typ:** [SKILL_UPDATE | PROJECT_IP | RESEARCH_NOTE]
+
+**Skill-Check:**
+
+- [ ] Explizit im Skill dokumentiert: **NEIN** (Geprüft gegen `[skill-file.md]`)
 
 **Kontext/Erklärung:**
-[Hier MUSS Prosa stehen. Erkläre das WARUM. Zitiere Warnungen.]
+[Hier MUSS Prosa stehen. Erkläre das WARUM.]
 
 **Code/Daten:**
 
@@ -130,7 +112,7 @@ Erstelle: `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPO
 ````
 
 **Implikation:**
-[Optional: Was bedeutet das für uns?]
+[Was bedeutet das für uns?]
 
 ````
 
@@ -141,83 +123,52 @@ Erstelle: `C:\Workspace\Repos\remotion-studio\.knowledge\mission\EXTRACTION_REPO
 ```markdown
 # 🎯 Badge [N]: Extraction Report – [THEMA]
 
-**Version:** 1.0
+**Version:** 1.0 (Auditor Mode)
 **Analyst:** Sub-Agent
+**Date:** [YYYY-MM-DD]
 
-## 📊 Statistik
-| Kategorie | Anzahl | Beschreibung |
-|-----------|--------|--------------|
-| A: SKILL_UPDATE | [N] | Generisches Wissen |
-| B: PROJECT_IP | [N] | Viron Secrets |
-| C: RESEARCH_NOTE | [N] | Kontext |
-| ❌ VERWORFEN | [N] | Redundant |
+## 📊 Statistik & Audit-Log
+
+| Entscheidung | Anzahl | Details |
+| :--- | :--- | :--- |
+| ✅ MITNEHMEN | [N] | Viron-IP, Updates |
+| ❌ NICHT DUPLIZIEREN | [N] | Skill-Redundanzen |
 ````
 
 ---
 
-## 6. KONFLIKTE & OFFENE FRAGEN (Pflichtsektion!)
+## 6. REDUNDANZ-PROTOKOLL (Der Negative Beweis)
 
-Wenn Repo und Vault unterschiedliche Werte nennen → **KONFLIKT melden**, nicht ignorieren.
-
-```markdown
-## ⚠️ KONFLIKTE (Zur Prüfung)
-
-| Quelle A    | Quelle B    | Widerspruch   | Empfehlung       |
-| ----------- | ----------- | ------------- | ---------------- |
-| [file:line] | [file:line] | [description] | [recommendation] |
-```
+Hier listest du auf, was du **verworfen** hast.
 
 ```markdown
-## ❓ OFFENE FRAGEN (Falls vorhanden)
+## 🗑️ Verworfen (Skill-Redundanzen)
 
-1. [Frage an Orchestrator]
-2. [Unsicherheit zu Thema X]
+| Fund    | Original-Quelle | Steht bereits in Skill (Datei) | Entscheidung |
+| :------ | :-------------- | :----------------------------- | :----------- |
+| [Thema] | [Datei]         | [Skill-Rule]                   | ❌ DROP      |
 ```
 
 ---
 
-## 7. EMPFEHLUNGEN FÜR ORCHESTRATOR (Pflichtsektion!)
-
-Jeder Report MUSS mit priorisierten Empfehlungen enden:
+## 7. EMPFEHLUNGEN FÜR ORCHESTRATOR
 
 ```markdown
-## 📋 Empfehlungen für Orchestrator
+## 📋 Empfehlungen
 
-| Priorität  | Aktion            | Begründung        |
-| ---------- | ----------------- | ----------------- |
-| 🔴 HOCH    | [Konkrete Aktion] | [Warum kritisch?] |
-| 🟡 MITTEL  | [Konkrete Aktion] | [Warum wichtig?]  |
-| 🟢 NIEDRIG | [Konkrete Aktion] | [Nice-to-have]    |
-```
-
-**Ziel:** Der Orchestrator soll nach dem Lesen sofort wissen, was zu tun ist.
-
----
-
-## 8. LEARNINGS (Prozess-Gedächtnis)
-
-Reflektiere deine Arbeit. Was lief gut? Was war unklar?
-
-```markdown
-## 📝 Badge [N] Learnings
-
-| Was         | Warum                         | Empfehlung                 |
-| :---------- | :---------------------------- | :------------------------- |
-| ✅ [Erfolg] | [Grund, z.B. klare Regel]     | [Beibehalten/Verstärken]   |
-| ❌ [Fehler] | [Grund, z.B. Missverständnis] | [Briefing-Fix vorschlagen] |
+| Priorität | Aktion | Begründung |
+| :-------- | :----- | :--------- |
+| 🔴 HOCH   | ...    | ...        |
 ```
 
 ---
 
-## 9. CHECKLISTE VOR ABGABE
+## 8. CHECKLISTE VOR ABGABE
 
-- [ ] Alle Quellen vollständig gelesen?
-- [ ] Jeden Code-Block mit Kontext-Prosa angereichert?
-- [ ] A/B/C Kategorien sauber getrennt?
-- [ ] Alle im Briefing genannten Zeilen-Ranges extrahiert?
-- [ ] Probleme mit TODO markiert, wenn Lösung fehlt?
-- [ ] Redundanzen verworfen & dokumentiert?
-- [ ] Empfehlungs-Sektion ausgefüllt?
-- [ ] Format strikt eingehalten?
+- [ ] Skill-Files ZUERST gelesen?
+- [ ] Jeden Fund gegen Skill geprüft?
+- [ ] "Skill-Check" Feld in jedem Item ausgefüllt?
+- [ ] "Verworfen"-Tabelle befüllt?
+- [ ] Pfade sind absolut und korrekt?
 
-**AN DIE ARBEIT.**
+**AUDIT STARTEN.**
