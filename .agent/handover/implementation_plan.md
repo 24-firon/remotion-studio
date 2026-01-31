@@ -93,11 +93,17 @@ In dieser Phase sezieren wir das Wissen in thematischen Batches unter Anwendung 
 
 Dies ist die exakte Befehlskette für jeden einzelnen Audit-Vorgang (Badge 7+):
 
-1.  **STEP 0: ORIENTATION (Context Load):**
-    - Pflichtlektüre der 4 fundamentalen Source Truths (Vision, Workflow, Index, Skill).
+1.  **STEP 0: AUDITOR-BOOTSTRAP (Hard Handshake):**
+    - **Context Load:** Der Agent MUSS die 4 fundamentalen Pflichtlektüren lesen UND beweisen (Satz pro Datei):
+      - `viron-core/vision.md` (Architecture Vision)
+      - `00-master-workflow-2026-integration.md` (Workflow Truth)
+      - `00-overview-index-v2-1-complete.md` (Master Index)
+      - `remotion-core/SKILL.md` (Standard Pointer)
+    - **PROOF-OF-READING:** Ohne Beweis (Zitat pro Datei) kein Zugriff auf den Code.
 2.  **STEP 1: ARCHITECT'S DEEP DIVE (Source Analysis):**
-    - Ingestion der Badge-spezifischen Sources (Repo/Vault/Skill).
-    - Identifikation der "Smoking Guns" (Abweichungen).
+    - **Skill-Internalization:** Lade rekursiv die badge-spezifischen Global Skills (z.B. `remotion-best-practices/`). Dieser Filter ist aktiv.
+    - **Ingestion:** Sequentielles Lesen der Badge-Sources (Repo/Vault/Skill).
+    - **Smoking Guns:** Markiere jede Abweichung vom Global Standard.
 3.  **STEP 2: ASSET CREATION:**
     - Erstellung von `SUBAGENT_BRIEFING` und `ACTIVATION_PROMPT`.
 4.  **STEP 3: SAFETY LOCK (Commit):**
@@ -108,8 +114,9 @@ Dies ist die exakte Befehlskette für jeden einzelnen Audit-Vorgang (Badge 7+):
     - Validierung des eigenen Reports gegen `orchestrator-self-audit.md`.
 7.  **STEP 6: REFLECTION DEFENSE (Meta):**
     - Verteidigung der IP-Entscheidungen (Redundanz vs. Unikat).
-8.  **STEP 7: CLOSURE (Final):**
-    - Erstellung des `EXTRACTION_REPORT` und `LEARNING_BADGE`.
+8.  **STEP 7: CLOSURE (Negative Reporting):**
+    - Erstellung des `EXTRACTION_REPORT` mit expliziter **"Verworfen"-Tabelle** (Negative Proof).
+    - Erstellung des `LEARNING_BADGE`.
     - Final Commit.
 
 ---
