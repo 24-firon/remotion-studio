@@ -55,6 +55,8 @@ _Lies diese spezifischen Skills, um Redundanzen zu erkennen:_
 - `remotion-best-practices/rules/compositions.md` (Comp Props Structure)
 - `remotion-best-practices/rules/audio.md` (FFT & Sync Logic)
 - `remotion-best-practices/rules/sequencing.md` (Timing Logic)
+- `remotion-best-practices/rules/parameters.md` (Lambda Configs)
+- `remotion-best-practices/rules/trimming.md` (Sequence Offsets)
 
 ### PHASE 2: ORCHESTRATOR HINTS (High-Value Targets)
 
