@@ -518,6 +518,68 @@ Erstelle: `SKILL_BADGE_MAPPING_REPORT.md`
 [Was soll in welchem Skill ergänzt werden?]
 
 ### 5.2 Für Badge-Verbesserung
+
+[Was soll in welchem Badge ergänzt/korrigiert werden?]
+
+---
+
+## 6. FILTER-GUIDE (Für spätere Agenten)
+
+**Dieser Abschnitt ist eine ANLEITUNG zum Filtern.**
+
+Ein späterer Agent kann diesen Guide Schritt für Schritt abarbeiten, um die Vault/Core-Dateien aufzuräumen.
+
+### 6.1 Zu verwerfende Dateien (🔴 Redundant)
+
+**Diese Dateien können gelöscht/archiviert werden (bereits im Skill):**
+
+| # | Datei | Pfad | Begründung | Skill-Referenz |
+|:--|:------|:-----|:-----------|:---------------|
+| 1 | `15_MIGRATION_...` | Vault/ | Sequencing-Grundlagen identisch mit Skill | sequencing.md Z. 12-34 |
+| 2 | `40-audio-reaktiv...` (Teil A) | Vault/ | useAudioData() Basics identisch | audio.md Z. 45-67 |
+| ... | ... | ... | ... | ... |
+
+**Anleitung für den Agenten:**
+1. Öffne Datei [X]
+2. Vergleiche mit Skill [Y] Zeilen [Z]
+3. Lösche/Archiviere die Datei (identischer Inhalt)
+
+### 6.2 Zu behaltende Erweiterungen (🟡)
+
+**Diese Dateien haben Skill-Basis + Viron-Erweiterung:**
+
+| # | Datei | Pfad | Skill-Basis | Viron-Erweiterung | Aktion |
+|:--|:------|:-----|:------------|:------------------|:-------|
+| 1 | `40-audio-reaktiv...` (Teil B) | Vault/ | FFT-Bänder (Skill audio.md) | Pre-calc JSON statt useAudioData() | Behalten, in Skill ergänzen |
+| 2 | `22_SYSTEM_PLAN...` | Vault/ | - | Zeitbudget-System | Behalten (neu) |
+| ... | ... | ... | ... | ... | ... |
+
+**Anleitung für den Agenten:**
+1. Öffne Datei [X]
+2. Extrahiere den Viron-spezifischen Teil (Zeilen [Y-Z])
+3. Entscheide: In Skill integrieren oder als Viron-Extension behalten
+
+### 6.3 Neue Konzepte (🟢)
+
+**Diese Dateien enthalten Skill-neue Inhalte:**
+
+| # | Datei | Pfad | Neues Konzept | Wo dokumentiert? | Aktion |
+|:--|:------|:-----|:--------------|:-----------------|:-------|
+| 1 | `physics.md` | Core/ | THE 7 DEPARTMENTS | Badge 7, Abschnitt 4.1 | In Skill übernehmen? |
+| 2 | `physics.md` | Core/ | Canon Packs | Badge 7, Abschnitt 4.1 | In Skill übernehmen? |
+| ... | ... | ... | ... | ... | ... |
+
+**Anleitung für den Agenten:**
+1. Prüfe: Gibt es das wirklich nirgendwo im Skill?
+2. Wenn ja: In Skill integrieren (neue Datei oder bestehende erweitern)
+3. Dokumentiere die Übernahme
+
+### 6.4 Checkliste für den Filter-Agenten
+
+- [ ] Alle 🔴 Dateien identifiziert und markiert
+- [ ] Alle 🟡 Dateien analysiert (Skill-Teil vs. Viron-Teil)
+- [ ] Alle 🟢 Dateien für Skill-Integration vorgeschlagen
+- [ ] Keine Datei unkommentiert gelassen
 [Was soll in welchem Badge ergänzt werden?]
 
 ### 5.3 Für Konsolidierung
