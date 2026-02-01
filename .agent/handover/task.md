@@ -265,12 +265,13 @@
     - [ ] Pflichtlektüre 2: `00-master-workflow-2026-integration.md`
     - [ ] Pflichtlektüre 3: `00-overview-index-v2-1-complete.md`
     - [ ] Pflichtlektüre 4: `.agent/skills/remotion-core/SKILL.md`
-    - [ ] Analyze 8 Source Files against 5 Specific Skills:
-      - `rules/trimming.md` (Original Target)
-      - `rules/compositions.md` (Resolution/Props)
-      - `rules/audio.md` (Sync/FFT)
-      - `rules/sequencing.md` (Timing/Offsets)
-      - `rules/parameters.md` (Lambda Configs)
+  - [ ] **Read:** `BLACKLIST.md` (and acknowledge constraints).
+  - [ ] Analyze 8 Source Files against 5 Specific Skills:
+    - `rules/trimming.md` (Original Target)
+    - `rules/compositions.md` (Resolution/Props)
+    - `rules/audio.md` (Sync/FFT)
+    - `rules/sequencing.md` (Timing/Offsets)
+    - `rules/parameters.md` (Lambda Configs)
 
 - [ ] **BOOT 2 [MANDATORY] THE REMOTION SKILL INJECTION**
   - [ ] **Action:** Read & Cache `.agent/skills/remotion-core/SKILL.md` (Local Pointer).
