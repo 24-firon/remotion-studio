@@ -6,7 +6,7 @@
 **CONTEXT:**
 You have read the `.agent/handover/SUBAGENT_BRIEFING_BADGE_7.md`.
 You have read the 9 Source Files.
-You have the Global Skills (`remotion-best-practices`) in memory.
+You have the 5 Mandatory Global Skills (`trimming`, `compositions`, `audio`, `sequencing`, `parameters`) in memory.
 
 **TASK:**
 Execute the Forensic Audit on the System Architecture.
@@ -18,7 +18,7 @@ Execute the Forensic Audit on the System Architecture.
 Please answer the following questions. For every answer, you must:
 
 1.  **Cite your source** (File + Line Number).
-2.  **Prove non-redundancy** (Why is this Viron IP and not Standard Skill?).
+2.  **Prove non-redundancy** (Why is this Viron IP and not contained in the 5 Global Skills?).
 
 ### Q1: THE ARCHITECTURE
 

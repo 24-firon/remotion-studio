@@ -79,8 +79,8 @@ In dieser Phase sezieren wir das Wissen in thematischen Batches unter Anwendung 
 ### 🏛️ Badge 7: System Architecture & Cloud (Full Audit)
 
 - **Status:** ⏳ PENDING (Awaiting Reboot).
-- **Fokus:** Full 9-File Audit (Pipeline, Workflow, Routing), Smoke-Test of Concurrency.
-- **Scope:** The "Monster-List" (V3.0 Deep Dive).
+- **Fokus:** Full 9-File Audit (Pipeline, Workflow, Routing) against **5 Specific Global Skills**.
+- **Scope:** The "Monster-List" (V3.0 Deep Dive) with mandated Deduplication.
 
 ### 📦 Badge 8: Agent Governance & AI Synergies
 
