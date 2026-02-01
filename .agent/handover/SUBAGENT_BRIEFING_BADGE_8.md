@@ -1,8 +1,19 @@
 # 🎯 SUB-AGENT BRIEFING: BADGE 8 (AGENT GOVERNANCE & AI SYNERGIES)
 
-**Version:** 1.0 (Based on Template V2.1)  
+**Version:** 2.0 (Platinum Structure - Post-Badge 7 Learning)  
 **Status:** ACTIVE  
 **Analyst Role:** Viron AI Systems Architect
+
+---
+
+## 📊 EXECUTIVE BRIEFING
+
+| Metrik | Ziel |
+|:-------|:-----|
+| Files to Audit | 9 Core Files |
+| Governance Rules | 5+ Hard Rules |
+| AI Synergies | 3 Architecture Patterns |
+| Token Tiers | Free/Pro/Enterprise Table |
 
 ---
 
@@ -12,11 +23,25 @@
 
 Du bist der **AI Governance Spezialist**. Du extrahierst die Regeln, nach denen Agents in der Viron-Umgebung operieren: Token-Ökonomie, Kontext-Management, und KI-Integration.
 
-### 1.2 Das Viron-Credo
+### 1.2 Das Viron-Credo (Forensik)
 
 1. **Skill First:** Prüfe jede Information gegen [`remotion-core/SKILL.md`](../../.agent/skills/remotion-core/SKILL.md)
 2. **Structure over Syntax:** Wir wollen die Logik der Governance, nicht nur Code-Beispiele
 3. **Smoking Guns:** Extrahiere exakte Tabellen (Token Tiers, Context Budgets, Agent Levels)
+
+---
+
+## 🎯 STRUCTURE REQUIREMENTS (V3 Standard)
+
+**MUST USE in Report:**
+
+| Element | Format | Beispiel |
+|:--------|:-------|:---------|
+| Sektionen | `THE [SYSTEM]` | THE TOKEN ECONOMY |
+| Hard Facts | 🔑 **Key: Value** | 🔑 **RAM-Teiler: 2** |
+| Kontext | `Kontext (V1):` | Erklärung des Warum |
+| Tabellen | Markdown Tables | Token Tiers, Budgets |
+| Beweis | Code Block | Exakte Extrakte |
 
 ---
 
@@ -86,11 +111,11 @@ Für jeden gefundenen System-Baustein:
 
 Erstelle: `.knowledge/mission/EXTRACTION_REPORT_BADGE_8.md`
 
-### Nutze das Template V2.1
+### Nutze das Template V2.1 mit V3 Struktur
 
 **Basierend auf:** [`EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md`](../../templates/EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md)
 
-**Wichtige Elemente:**
+**WICHTIG - MUSST verwenden:**
 
 ```markdown
 ## 📊 EXECUTIVE SUMMARY
@@ -98,26 +123,30 @@ Erstelle: `.knowledge/mission/EXTRACTION_REPORT_BADGE_8.md`
 | Metrik | Ergebnis | Delta zu Badge 7 |
 |:-------|:---------|:-----------------|
 | Files Audited | [N] | +[X] |
-| Core Findings | [N] | - |
+| Governance Rules | [N] | - |
+| AI Synergies | [N] | - |
 
 ## 🔴 CRITICAL FINDINGS
 
-### THE [SYSTEM_NAME]
+### THE TOKEN ECONOMY
 
-**Quelle:** [`filename.md`](path) (Lines X-Y)  
+**Quelle:** [`TOKEN_BUDGET.md`](path) (Lines X-Y)  
 **Typ:** GOVERNANCE_RULE
 
-**Kontext (V1):** [Intuition]
+**Kontext (V1):** [Warum ist das Token-System wichtig?]
 
-**Das Problem:** [Was geht schief?]
+**Das Problem:** [Was geht ohne Budget-Limits schief?]
 
-**Die Viron-Lösung:** [Wie lösen wir es?]
+**Die Viron-Lösung:** [Wie funktioniert das Tier-System?]
 
-**Die Zahl:** 🔑 **[Key: Value]**
+**Die Zahl:** 🔑 **Context Window: 50/50 Split** (50% System / 50% User)
 
 **Beweis:**
-```typescript
-[Code/Table]
+```markdown
+| Tier | Context | Cost/1M Tokens |
+|:-----|:--------|:---------------|
+| Free | 4k | $0 |
+| Pro | 32k | $2 |
 ```
 ```
 
