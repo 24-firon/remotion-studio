@@ -76,6 +76,35 @@ Basierend auf:
 Erstelle: EXTRACTION_REPORT_TEMPLATE_V3.md
 ```
 
+### SCHRITT 6: Repository Rules verstehen (NEU!)
+```
+Damit der Orchestrator-Agent das Repo wirklich versteht, muss er die Regeln kennen.
+
+Lies:
+1. RULE_FILE_ANALYSIS_REPORT.md (Übersicht aller 120+ Regel-Dateien)
+2. Die 10 wichtigsten CORE_RULE Dateien:
+   - gemini.md (Single Source of Truth)
+   - PROJECT_RULES.md (Governance Hub)
+   - USER_GOVERNANCE_PROTOCOL.md (STOP-Signal, Kommunikation)
+   - .agent/handover/WHITELIST.md (19 Commandments)
+   - .agent/handover/BLACKLIST.md (Forbidden Zones)
+   - .agent/handover/meta/RULE_GIT_SYNC_PROTOCOL.md (Double-Turn-Lock)
+   - .agent/handover/meta/RULE_TOKEN_ECONOMY.md (Anti-Fog Doctrine)
+   - THE_VIRON_AESTHETIC_MANIFESTO.md (No-CSS Law, Design-DNA)
+   - src/PROJECT_RULES_LIGHTING.md (80% Grey Rule)
+   - .agent/rules/RULE_FILE_LINKING.md (Hyperlink-Pflicht)
+
+Fragen zu beantworten:
+- Was sind die absoluten "Unverrückbaren" (MANDATORY, STRENGSTENS VERBOTEN)?
+- Was ist die hierarchische Struktur der Regeln (Global → Project → Skill)?
+- Welche Regeln sind veraltet oder redundant?
+- Was fehlt für ein konsolidiertes Regelwerk?
+```
+
+**Output:**
+- `REPOSITORY_RULES_UNDERSTANDING.md` - Zusammenfassung der kritischen Regeln
+- `RULE_CONSOLIDATION_PROPOSAL.md` - Vorschlag für bereinigtes Regelwerk
+
 ---
 
 ## 3. INPUT-DATEIEN (Reihenfolge beachten!)
