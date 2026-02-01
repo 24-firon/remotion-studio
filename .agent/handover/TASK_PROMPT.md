@@ -32,84 +32,64 @@ Prüfe:
 
 **Ergebnis dokumentieren:**
 - Was fehlt im Template, was Badge 8 richtig macht?
-### Für jedes Badge (1-7):
+- Was ist im Template überflüssig?
 
-**PHASE A: Analyse (Du)**
+### SCHRITT 3: Badge 7 überprüfen
 ```
-1. Lies bestehenden EXTRACTION_REPORT_BADGE_X.md
-2. Vergleiche mit Badge-8-Standard
-3. Identifiziere Qualitätslücken
-4. Erstelle SUBAGENT_BRIEFING_BADGE_X_V2.md
-```
+Lies: EXTRACTION_REPORT_BADGE_7_V4.md (beste Version)
+Vergleiche mit: Badge 8
 
-**PHASE B: Delegation**
-```
-5. Sende Briefing an Sub-Agent
-6. Deadline: 2-3 Stunden
-7. Anforderung: V5-Qualität (nicht V3, nicht V4 - V5)
+Fragen:
+- Welche Qualitätslücke besteht?
+- Was fehlt für V5-Niveau?
 ```
 
-**PHASE C: Qualitätskontrolle**
+### SCHRITT 4: Template optimieren
 ```
-8. Empfange Report
-9. Prüfe gegen Checkliste:
-   - [ ] Zeilenanzahl: 500+ (Badge 8: 587)
-   - [ ] "THE X" Nomenklatur
-   - [ ] 🔑 Die Zahl (min. 10 harte Limits)
-   - [ ] Statistiken-Tabelle oben
-   - [ ] Kontext (V1) Labels
-   - [ ] Tabellen statt Prosa
-   - [ ] Verwerfen-Tabelle
-10. Bei Mängeln: Feedback-Schleife
-```
-
-**PHASE D: Finalisierung**
-```
-11. Report als FINAL markieren
-12. In INDEX_HYPERLINKS.md aktualisieren
-13. Nächstes Badge
+Basierend auf Schritt 2 + 3:
+1. Erstelle: EXTRACTION_REPORT_TEMPLATE_V3.md
+2. Integriere Verbesserungen aus Badge 8
+3. Entferne redundante/over-engineered Teile
+4. Klare Checkliste für Sub-Agenten
 ```
 
 ---
 
-## 4. QUALITÄTSKRITERIEN (V5)
+## 3. QUALITÄTSKRITERIEN (Badge 8 als Referenz)
 
-| Kriterium | Badge 8 Referenz | Minimum |
-|-----------|------------------|---------|
-| **Zeilen** | 587 | 500+ |
-| **THE X Sections** | 8 | 6+ |
+| Element | Badge 8 | Template V3 Ziel |
+|---------|---------|------------------|
+| **THE X Sections** | 8 | 6-8 (klare Auswahl) |
 | **🔑 Die Zahl** | 15 | 10+ |
-| **Statistiken-Tabelle** | Ja | Erforderlich |
-| **Kontext (V1) Labels** | 100% | 80%+ |
-| **Tabellen** | 8 | 5+ |
+| **Statistiken** | Ja | Erforderlich |
 | **Verwerfen-Tabelle** | Ja | Erforderlich |
+| **Kontext (V1)** | 100% | 80%+ |
 
 ---
 
-## 5. PARALLELISIERUNG
+## 4. OUTPUT
 
-**Batch 1 (Parallel):** Badge 1, 2, 3 (unabhängig)
-**Batch 2 (Parallel):** Badge 4, 5, 6 (unabhängig)
-**Batch 3:** Badge 7 (nach Batch 1, baut auf System auf)
-
-**Max. 3 Sub-Agenten gleichzeitig**
+**Dateien zu erstellen:**
+1. `EXTRACTION_REPORT_TEMPLATE_V3.md` - Optimiertes Template
+2. `BADGE8_TEMPLATE_ANALYSIS.md` - Vergleichsreport (was passt/nicht passt)
+3. `BADGE7_GAP_ANALYSIS.md` - Was fehlt für V5
 
 ---
 
-## 6. OUTPUT
+## 5. NÄCHSTE SCHRITTE (nach Template-V3)
 
-Am Ende:
-- 8 finale Reports (Badge 1-8)
-- Einheitliche V5-Qualität
-- Fertig für Global Skill Assembly
+Mit optimiertem Template:
+- Badge 1-6 auf V5-Niveau bringen
+- Alle 8 Badges finalisieren
+- Global Skill Assembly
 
 ---
 
 ## ✅ DEIN ERSTER SCHRITT
 
-1. Lies die 5 Evolution-Dateien (Schritt 1)
-2. Dokumentiere: Was ist V5-Qualität wirklich?
-3. Validiere das Template
-4. Starte mit Badge 1
+1. Lies INITIALIZATION_PROMPT.md
+2. Lies EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md
+3. Vergleiche mit EXTRACTION_REPORT_BADGE_8.md
+4. Dokumentiere: Wo ist der Drift? Was fehlt?
 
-**Nichts delegieren bevor du die Analyse nicht selbst gemacht hast.**
+**Fokus:** Template verbessern, nicht 100 Reports erstellen.
