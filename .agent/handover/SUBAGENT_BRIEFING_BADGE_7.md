@@ -1,6 +1,6 @@
 # 🎯 SUB-AGENT BRIEFING: BADGE 7 (SYSTEM ARCHITECTURE & CLOUD)
 
-**Version:** 4.0 (Platinum Standard)
+**Version:** 4.1 (Platinum Standard - Corrected)
 **Status:** FORENSIC AUDIT MODE
 **Analyst Role:** Viron Systems Architect
 
@@ -47,9 +47,20 @@ _Bestätige das Lesen dieser Dateien:_
 - `00-overview-index-v2-1-complete.md` (Knowledge Map)
 - `.agent/skills/remotion-core/SKILL.md` (Redundanz-Check)
 
-### PHASE 1: ORCHESTRATOR HINTS (High-Value Targets)
+### PHASE 1: SKILL REFERENCE (The Filter)
 
-_Ich habe die Dateien gescannt. Dies sind die **PFLICHT-EXTRAKTIONEN**, die du finden MUSST:_
+_Lies diese spezifischen Skills, um Redundanzen zu erkennen:_
+
+- `remotion-core/SKILL.md` (Master Index)
+- `remotion-best-practices/rules/compositions.md` (Comp Props Structure)
+- `remotion-best-practices/rules/audio.md` (FFT & Sync Logic)
+- `remotion-best-practices/rules/sequencing.md` (Timing Logic)
+- `remotion-best-practices/rules/parameters.md` (Lambda Configs)
+- `remotion-best-practices/rules/trimming.md` (Sequence Offsets)
+
+### PHASE 2: ORCHESTRATOR HINTS (High-Value Targets)
+
+_Ich habe 8 Dateien gescannt. Dies sind die **PFLICHT-EXTRAKTIONEN** (Deep Read Required):_
 
 #### A. THE CLOUD PIPELINE (`60-cloud-rendering...`)
 
