@@ -419,6 +419,15 @@ def detect_input_type(input_obj):
 | VS Code Settings | `workflow.md` Z. 9-44 | IDE-Standard | ❌ DROP |
 | TypeScript `useVideoConfig()` | `FEHLERLOSUNG` Z. 201-213 | `remotion-core` | ❌ DROP |
 | `Sequence` Timing Erklärung | `FEHLERLOSUNG` Z. 261-297 | `rules/sequencing.md` | ❌ DROP |
+| **Standard `<Sequence>` Trimming** | **Global Skill** | **`rules/trimming.md`** | **❌ DROP** |
+
+**Hinweis zu `trimming.md`:**
+Der Global Skill `trimming.md` enthält Standard-Remotion-Sequencing:
+- `<Sequence from={-0.5 * fps}>` - Trim beginning (negative offset)
+- `<Sequence durationInFrames={1.5 * fps}>` - Trim end
+- Nested sequences für kombinierte Trimming-Operationen
+
+Dies ist **Core-Remotion-Funktionalität** (nicht Viron-spezifisch) und bereits in `remotion-best-practices/rules/trimming.md` dokumentiert.
 
 ---
 
