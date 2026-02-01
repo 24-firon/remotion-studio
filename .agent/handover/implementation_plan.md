@@ -105,15 +105,32 @@ In dieser Phase sezieren wir das Wissen in thematischen Batches unter Anwendung 
 ### 🎯 Übersicht
 
 Phase 6 ist die finale Konsolidierungsphase. Nach Abschluss aller 8 Badges müssen wir:
-1. Das Template auf Top-Level bringen (durch Evolution-Analyse)
-2. Alle Badges auf einheitliches V5-Niveau heben
-3. Den Global Skill Assembly durchführen
+1. **Rules konsolidieren** (120+ Dateien → 5 Router-Dateien) ← NEU
+2. Das Template auf Top-Level bringen (durch Evolution-Analyse)
+3. Alle Badges auf einheitliches V5-Niveau heben
+4. Den Global Skill Assembly durchführen
 
-**Kritische Erkenntnis:** V5 wurde nicht korrekt implementiert → Template muss durch Evolution V3→V4→V5→Badge 8 optimiert werden.
+**Kritische Erkenntnisse:**
+- V5 wurde nicht korrekt implementiert → Template muss durch Evolution V3→V4→V5→Badge 8 optimiert werden
+- Regel-Struktur war fragmentiert → AGENTS.md als neuer Einstiegspunkt erstellt
 
 ---
 
-### 🧬 Phase 6.0: Template Evolution (The Blueprint Refinement)
+### 🧬 Phase 6.0: Rules Consolidation (Foundation First)
+
+**Status:** ✅ COMPLETED
+**Ziel:** 120+ Regel-Dateien auf 5 konsolidierte Router-Dateien reduzieren
+
+**Deliverables:**
+- `.agent/AGENTS.md` - Master Router mit 7 Scenario-Triggern
+- `.agent/RULES_CORE.md` - TIER 1 MANDATORY Regeln (No-CSS Law, STOP-Signal, etc.)
+- `.agent/RULES_WORKFLOW.md` - Double-Turn-Lock, Badge Cycle, Initialization
+- `.agent/RULES_TECHNICAL.md` - Design-DNA, 80% Grey Rule, Hardware Laws
+- `.agent/RULES_MIGRATION_GUIDE.md` - Dokumentation der Konsolidierung
+
+---
+
+### 🧬 Phase 6.1: Template Evolution (The Blueprint Refinement)
 
 **Status:** 🔄 IN PROGRESS
 **Ziel:** EXTRACTION_REPORT_TEMPLATE_V3.md erstellen

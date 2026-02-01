@@ -395,14 +395,17 @@
 
 ## 🟡 PHASE 6: KNOWLEDGE CONSOLIDATION (IN PROGRESS)
 
-**Ziel:** Finale Konsolidierung nach Abschluss aller 8 Badges. Template auf Top-Level bringen, alle Badges auf V5-Niveau heben, Global Skill Assembly.
+**Ziel:** Finale Konsolidierung nach Abschluss aller 8 Badges. Rules konsolidieren, Template auf Top-Level bringen, alle Badges auf V5-Niveau heben, Global Skill Assembly.
 
-**Kritische Erkenntnis:** V5 wurde nicht korrekt implementiert → Template muss durch Evolution V3→V4→V5→Badge 8 optimiert werden.
+**Neue Erkenntnis:** Regel-Struktur wurde konsolidiert → AGENTS.md ist neuer Einstiegspunkt
 
 ### STEP 0: ORIENTATION (Context Load) 🔄 IN PROGRESS
 
 **Mandatory Proof-of-Reading (PoR):**
 
+- [ ] **Lese: `.agent/AGENTS.md`** ← NEU: Master Router
+  - [ ] Beweis: Welche 7 Scenarios gibt es?
+  
 - [ ] **Lese: `INITIALIZATION_PROMPT.md`**
   - [ ] Beweis: 1 Satz Zusammenfassung
   
@@ -419,7 +422,21 @@
 
 ---
 
-### 6.0: TEMPLATE EVOLUTION (Current)
+### 6.0: RULES CONSOLIDATION ✅ COMPLETED
+
+**Status:** ✅ COMPLETED (durch Sub-Agent)
+**Ziel:** 120+ Regel-Dateien auf 5 konsolidierte Router-Dateien reduzieren
+
+**Erstellt:**
+- [x] `.agent/AGENTS.md` - Master Router mit Scenario-Triggern
+- [x] `.agent/RULES_CORE.md` - TIER 1 MANDATORY Regeln
+- [x] `.agent/RULES_WORKFLOW.md` - Prozess-Regeln
+- [x] `.agent/RULES_TECHNICAL.md` - Technische Regeln
+- [x] `.agent/RULES_MIGRATION_GUIDE.md` - Dokumentation
+
+---
+
+### 6.1: TEMPLATE EVOLUTION (Current)
 
 **Status:** 🔄 IN PROGRESS
 **Ziel:** EXTRACTION_REPORT_TEMPLATE_V3.md erstellen

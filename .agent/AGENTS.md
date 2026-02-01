@@ -134,3 +134,34 @@
 | **Prozess-Regeln**     | [`RULES_WORKFLOW.md`](RULES_WORKFLOW.md)                  |
 | **Technische Regeln**  | [`RULES_TECHNICAL.md`](RULES_TECHNICAL.md)                |
 | **Migrations-Guide**   | [`RULES_MIGRATION_GUIDE.md`](RULES_MIGRATION_GUIDE.md)    |
+| Remotion Basics        | `~/.gemini/.../global_skills/remotion-best-practices/`   |
+| Viron Design-DNA       | [`THE_VIRON_AESTHETIC_MANIFESTO.md`](../THE_VIRON_AESTHETIC_MANIFESTO.md) |
+| Shader/VFX Rezepte     | [`src/learnings/*.md`](../src/learnings/)                 |
+| Feature Specs          | [`specs/*.md`](../specs/)                                 |
+| Code Patterns          | [`patterns/*.md`](../patterns/)                           |
+| Workflows              | [`workflows/*.md`](workflows/)                            |
+
+---
+
+## ⚠️ Mandatory Rules (Überblick)
+
+| # | Regel | Konsequenz bei Verstoß |
+|---|-------|------------------------|
+| 1 | **No-CSS Law** | CSS Keyframes sind VERBOTEN – nutze `spring()` |
+| 2 | **Hyperlink-Pflicht** | Jede Datei als `[name](path)` verlinken |
+| 3 | **Double-Turn-Lock** | Nie `write` + `git commit` im selben Turn |
+| 4 | **STOP-Signal** | Bei "Stop" sofort FREEZEN, keine Panik-Fixes |
+| 5 | **PoR Protocol** | Proof-of-Reading vor jedem Plan |
+| 6 | **No-Overwrite Law** | Nie existierende Experiments überschreiben |
+
+**Details:** [`RULES_CORE.md`](RULES_CORE.md)
+
+---
+
+## 🔄 Wenn diese Datei aktualisiert wird
+
+> **Rule Re-Entry:** Bei jeder Änderung der `AGENTS.md` muss der Agent diese sofort neu einlesen und den Empfang der neuen Anweisungen bestätigen.
+
+---
+
+_Agents Router v2.0 | Consolidated Rules Architecture | 2026-02-01_
