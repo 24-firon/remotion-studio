@@ -341,7 +341,7 @@
 
 ### 📦 BADGE 8: AGENT GOVERNANCE & AI SYNERGIES
 
-**Status:** 🟡 PARTIALLY COMPLETED (Sub-Agent Report created, missing Skills)
+**Status:** ✅ COMPLETED (587 lines, V3 Structure, EXCELLENT Review)
 
 - [x] **STEP 0: ORIENTATION (Context)**
   - [x] Understand Scope: Meta-Rules, Token Economy, AI-Integration
@@ -393,13 +393,151 @@
 
 ---
 
-## 🔵 PHASE 6: CROSS-SYSTEM HARMONIZATION & RETRO-AUDIT (GEPLANT)
+## 🟡 PHASE 6: KNOWLEDGE CONSOLIDATION (IN PROGRESS)
 
-- [ ] **6.1 Konsistenz-Check:** Abgleich aller 8 Badge-Reports auf Widersprüche.
-- [ ] **6.2 Retro-Alignment Badge 1-4:** Re-Audit der frühen Reports basierend auf dem Forensic-Standard V2.2.
-- [ ] **6.3 Link-Audit:** Verifizierung aller Cross-Referenzen zwischen den extrahierten Skills.
-- [ ] **6.4 Global Standard Validation:** Letzter Check gegen die `remotion-best-practices`.
-- [ ] **6.5 Syntax-Finalisierung:** Abschluss der maschinenlesbaren Repositoria-Struktur.
+**Ziel:** Finale Konsolidierung nach Abschluss aller 8 Badges. Template auf Top-Level bringen, alle Badges auf V5-Niveau heben, Global Skill Assembly.
+
+**Kritische Erkenntnis:** V5 wurde nicht korrekt implementiert → Template muss durch Evolution V3→V4→V5→Badge 8 optimiert werden.
+
+### STEP 0: ORIENTATION (Context Load) 🔄 IN PROGRESS
+
+**Mandatory Proof-of-Reading (PoR):**
+
+- [ ] **Lese: `INITIALIZATION_PROMPT.md`**
+  - [ ] Beweis: 1 Satz Zusammenfassung
+  
+- [ ] **Lese: `EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md`**
+  - [ ] Beweis: Was ist das Kern-Problem mit V2?
+  
+- [ ] **Lese: `LEARNING_V3_REPORT_STRUCTURE.md`**
+  - [ ] Beweis: Was fehlte in V3?
+  
+- [ ] **Lese: `EXTRACTION_REPORT_BADGE_8.md` (Executive Summary)**
+  - [ ] Beweis: Was macht Badge 8 richtig?
+
+**Ohne PoR kein Zugriff auf Phase 6 Tasks.**
+
+---
+
+### 6.0: TEMPLATE EVOLUTION (Current)
+
+**Status:** 🔄 IN PROGRESS
+**Ziel:** EXTRACTION_REPORT_TEMPLATE_V3.md erstellen
+
+- [ ] **6.0.1 Evolution-Analyse (V3 → V4 → V5)**
+  - [ ] Lies: `LEARNING_V3_REPORT_STRUCTURE.md` (V3 Lessons)
+  - [ ] Lies: `DIFF_V4_VS_TEMPLATE_V2.md` (V4 Delta)
+  - [ ] Lies: `COMPARISON_BADGE_7_ALL_VERSIONS.md` (Alle Versionen)
+  - [ ] Lies: `EVOLUTION_V1_TO_V5_DIFF.md` (Gesamtevolution)
+  - [ ] Analysiere: Was war das Killer-Feature von V4? Was sollte V5 leisten?
+  
+- [ ] **6.0.2 Badge 8 Validierung**
+  - [ ] Lies: `EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md` (Aktuelles Template)
+  - [ ] Lies: `EXTRACTION_REPORT_BADGE_8.md` (Gold-Standard, 587 Zeilen)
+  - [ ] Vergleiche: Template vs Badge 8 Reality
+  - [ ] Identifiziere: Template-Drift (over-engineered? fehlende Features?)
+  
+- [ ] **6.0.3 Template V3 Erstellung**
+  - [ ] Erstelle: `EVOLUTION_ANALYSIS.md` (V3→V4→V5→Badge 8 Learnings)
+  - [ ] Erstelle: `TEMPLATE_V3_SPECIFICATION.md` (Qualitätskriterien)
+  - [ ] Erstelle: `EXTRACTION_REPORT_TEMPLATE_V3.md` (Optimiertes Template)
+
+**Qualitätskriterien für Template V3:**
+| Element | Badge 8 Referenz | Template V3 Ziel |
+|---------|------------------|------------------|
+| Zeilen | 587 | 500+ |
+| THE X Sections | 8 | 6-8 |
+| 🔑 Die Zahl | 15 | 10+ |
+| Statistiken-Tabelle | Ja | Erforderlich |
+| Verwerfen-Tabelle | Ja | Erforderlich |
+
+### 6.1: BADGE RE-AUDIT (Badge 1-6)
+
+**Status:** ⏳ PENDING (wartet auf 6.0)
+
+- [ ] **6.1.1 Batch 1 (Parallel):** Badge 1, 2, 3
+  - [ ] Analyse: Vergleiche bestehende Reports mit Badge 8 Standard
+  - [ ] Briefing: Erstelle SUBAGENT_BRIEFING_BADGE_X_V3.md
+  - [ ] Delegation: Sub-Agent mit Template V3
+  - [ ] QC: Qualitätskontrolle (500+ Zeilen, THE X, 🔑 Die Zahl)
+  
+- [ ] **6.1.2 Batch 2 (Parallel):** Badge 4, 5, 6
+  - [ ] Analyse: Vergleiche bestehende Reports mit Badge 8 Standard
+  - [ ] Briefing: Erstelle SUBAGENT_BRIEFING_BADGE_X_V3.md
+  - [ ] Delegation: Sub-Agent mit Template V3
+  - [ ] QC: Qualitätskontrolle (500+ Zeilen, THE X, 🔑 Die Zahl)
+
+**Quality Gates pro Badge:**
+- [ ] QG1: Alle Dateien als Hyperlinks
+- [ ] QG2: Kontext (V1) bei jedem Finding
+- [ ] QG3: Statistik-Tabelle im Executive Summary
+- [ ] QG4: Cross-References zu anderen Badges
+- [ ] QG5: Verwerfen-Tabelle mit ≥3 Einträgen
+
+### 6.2: GLOBAL SKILL ASSEMBLY
+
+**Status:** ⏳ PENDING (wartet auf 6.1)
+
+- [ ] **6.2.1 Merge-Vorbereitung**
+  - [ ] Sammle: 8 finale Badge Reports (1-8, alle V5-Qualität)
+  - [ ] Prüfe: Alle Verwerfen-Tabellen auf Konsistenz
+  
+- [ ] **6.2.2 Skill-Merge**
+  - [ ] Erstelle: `remotion-core/SKILL.md` (Master-Index)
+  - [ ] Merge: Badge-spezifische Skills in Unterverzeichnisse
+  - [ ] Dedupliziere: Identische Konzepte nur einmal
+  - [ ] Verlinke: Cross-References zwischen Badges
+  
+- [ ] **6.2.3 Qualitätskontrolle**
+  - [ ] Prüfe: < 5% Redundanzen im Global Skill
+  - [ ] Erstelle: `SKILL_MERGE_LOG.md` (Dokumentation)
+  - [ ] Erstelle: `REDUNDANCY_AUDIT.md` (Finale Deduplizierung)
+
+### 6.3: TEMPLATE STANDARDIZATION
+
+**Status:** ⏳ PENDING (wartet auf 6.2)
+
+- [ ] **6.3.1 Finalisierung**
+  - [ ] Erstelle: `EXTRACTION_REPORT_TEMPLATE_V3_FINAL.md`
+  - [ ] Integriere: Beispiele aus Badge 1-8
+  - [ ] Dokumentiere: V3 Learnings als Standard
+  
+- [ ] **6.3.2 Training Material**
+  - [ ] Erstelle: `AGENT_TRAINING_GUIDE.md`
+  - [ ] Erstelle: `TEMPLATE_USAGE_EXAMPLES.md`
+  - [ ] Erstelle: `QUALITY_CHECKLIST.md`
+
+### 6.4: KNOWLEDGE PUBLICATION
+
+**Status:** ⏳ PENDING
+
+- [ ] **6.4.1 Viron Wiki**
+  - [ ] Öffentliche Dokumentation aller 8 Badges
+  - [ ] Interaktive Navigation zwischen Konzepten
+  
+- [ ] **6.4.2 API Docs**
+  - [ ] Maschinenlesbare Spezifikationen
+  - [ ] TypeScript-Definitionen
+  
+- [ ] **6.4.3 Case Studies**
+  - [ ] Badge Reports als Best Practices
+  - [ ] Before/After Vergleiche
+
+### 6.5: MISSION SIGN-OFF
+
+**Status:** ⏳ PENDING
+
+- [ ] **6.5.1 Final Audit**
+  - [ ] Orchestrierter Review aller 8 Badges
+  - [ ] Cross-Reference Validierung
+  - [ ] Redundanz-Check (< 5%)
+  
+- [ ] **6.5.2 Handover**
+  - [ ] Übergabe an Maintenance Mode
+  - [ ] Dokumentation offener Punkte
+  
+- [ ] **6.5.3 Celebration**
+  - [ ] 🎉 Mission Accomplished
 
 ## 🔵 PHASE 7: SYSTEM MERGE & GREENFIELD LAUNCH (GEPLANT)
 
