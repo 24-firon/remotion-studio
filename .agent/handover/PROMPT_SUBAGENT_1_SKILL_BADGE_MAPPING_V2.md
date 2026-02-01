@@ -52,14 +52,41 @@ Ein oberflächliches Mapping führt zu falschen Zuordnungen. Wenn du schreibst "
 
 ### 🎯 Das EIGENTLICHE ZIEL (Kernaufgabe)
 
-**Der SKILL ist die Referenz. Die Vault/Core-Dateien müssen dagegen gefiltert werden.**
+**Erstelle einen FILTER-GUIDE für einen späteren Agenten.**
+
+Der spätere Agent soll anhand deines Reports Datei für Datei durchgehen können und genau wissen:
+- Was ist in der Datei?
+- Gibt es das bereits im Skill?
+- Soll es übernommen werden (🟢), als Erweiterung behalten (🟡), oder verworfen werden (🔴)?
 
 | Was | Status | Deine Aufgabe |
 |:-----|:-------|:--------------|
-| **SKILL** (Global + Local) | 🔴 Referenz (bleibt unverändert) | Analysieren als Basis-Wahrheit |
-| **Vault-Dateien** (90_VAULT) | 🟡 Zu prüfen / Filtern | Abgleich gegen Skill: Redundant? Erweiterung? Neu? |
-| **Core-Dateien** (viron-core/) | 🟡 Zu prüfen / Filtern | Abgleich gegen Skill: Redundant? Erweiterung? Neu? |
-| **Badge Reports** | 🟢 Output-Referenz | Wo landen die gefilterten Ergebnisse? |
+| **SKILL** (Global + Local) | 🔴 Referenz (bleibt unverändert) | **Zuerst** lesen - Inventar erstellen |
+| **Vault-Dateien** (90_VAULT) | 🟡 Zu prüfen / Filtern | **Dann** eine nach der anderen durchgehen |
+| **Core-Dateien** (viron-core/) | 🟡 Zu prüfen / Filtern | **Dann** eine nach der anderen durchgehen |
+| **Badge Reports** | 🟢 Kontext | Wo könnten Ergebnisse landen? |
+
+**Arbeitsablauf (Strikt einhalten):**
+
+```
+PHASE 1: Skill-Inventar (ZUERST!)
+├── Lies ALLE Skill-Dateien
+├── Erstelle Kurz-Inventar: Was ist wo?
+└── Speichere das Inventar (du wirst es oft brauchen)
+
+PHASE 2: Datei-für-Datei Filterung (DANN!)
+├── Für JEDE Vault-Datei:
+│   ├── Vergleiche mit Skill-Inventar
+│   ├── Entscheide: 🔴 / 🟡 / 🟢
+│   └── Dokumentiere die Entscheidung
+└── Für JEDE Core-Datei:
+    ├── Vergleiche mit Skill-Inventar
+    ├── Entscheide: 🔴 / 🟡 / 🟢
+    └── Dokumentiere die Entscheidung
+
+PHASE 3: Filter-Guide erstellen
+└── Schreibe einen Report, den ein anderer Agent Schritt für Schritt abarbeiten kann
+```
 
 **Der Filter-Prozess:**
 ```
