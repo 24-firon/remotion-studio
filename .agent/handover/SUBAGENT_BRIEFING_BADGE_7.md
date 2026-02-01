@@ -1,6 +1,6 @@
 # 🎯 SUB-AGENT BRIEFING: BADGE 7 (SYSTEM ARCHITECTURE & CLOUD)
 
-**Version:** 4.0 (Platinum Standard)
+**Version:** 4.1 (Platinum Standard - Corrected)
 **Status:** FORENSIC AUDIT MODE
 **Analyst Role:** Viron Systems Architect
 
@@ -47,9 +47,18 @@ _Bestätige das Lesen dieser Dateien:_
 - `00-overview-index-v2-1-complete.md` (Knowledge Map)
 - `.agent/skills/remotion-core/SKILL.md` (Redundanz-Check)
 
-### PHASE 1: ORCHESTRATOR HINTS (High-Value Targets)
+### PHASE 1: SKILL REFERENCE (The Filter)
 
-_Ich habe die Dateien gescannt. Dies sind die **PFLICHT-EXTRAKTIONEN**, die du finden MUSST:_
+_Lies diese spezifischen Skills, um Redundanzen zu erkennen:_
+
+- `remotion-core/SKILL.md` (Master Index)
+- `remotion-best-practices/rules/compositions.md` (Comp Props Structure)
+- `remotion-best-practices/rules/audio.md` (FFT & Sync Logic)
+- `remotion-best-practices/rules/sequencing.md` (Timing Logic)
+
+### PHASE 2: ORCHESTRATOR HINTS (High-Value Targets)
+
+_Ich habe 8 Dateien gescannt. Dies sind die **PFLICHT-EXTRAKTIONEN** (Deep Read Required):_
 
 #### A. THE CLOUD PIPELINE (`60-cloud-rendering...`)
 
@@ -68,10 +77,17 @@ _Ich habe die Dateien gescannt. Dies sind die **PFLICHT-EXTRAKTIONEN**, die du f
 - **Output Specs:** Die exakten Bitrates/Codecs/LUFS für `SHORT` vs. `SHOWCASE` vs. `PRODUCTION`.
 - **Context Budgets:** Wieviel % darf jeder Job an Kontext laden?
 
-#### D. THE WORKFLOW LAWS (`viron-core/workflow.md`)
+#### D. THE WORKFLOW LAWS (`viron-core/workflow.md` & `pipeline.md`)
 
 - **Commit Convention:** Das strikte Format (`feat:`, `fix:`, `docs:`).
 - **Performance Monitor:** Die FPS-Grenzwerte (< 55 FPS Warning).
+- **Concurrency Math:** Die Formel `Math.floor(ramGB / 2)` aus `pipeline.md`.
+
+#### E. THE ERROR PROTOCOLS (`viron-core/troubleshooting.md` & `FEHLERLOSUNG...`)
+
+- **OOM Kill:** Die spezifische Viron-Lösung für "Out of Memory" (Chunks, Concurrency Reduktion).
+- **Post-Processing:** Die Bloom/DoF Fehler (Bloom braucht `emissive`, DoF braucht Depth).
+- **Sync:** Viron-Lösung für Audio/Video Drift.
 
 ---
 
