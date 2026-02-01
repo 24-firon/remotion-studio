@@ -5,6 +5,26 @@
 
 ---
 
+## ⚠️ WICHTIGE EINSCHRÄNKUNG (Nicht verändern!)
+
+> **DU DARFST KEINE DATEIEN VERÄNDERN, LÖSCHEN, UMBENENNEN ODER VERSCHIEBEN.**
+
+**Das ist ein REINER ANALYSE-AUFGABE.**
+
+| ❌ VERBOTEN | ✅ ERLAUBT |
+|:------------|:-----------|
+| Dateien im `Remotion Recherche/`-Ordner löschen | Dateien **LESEN** und analysieren |
+| Dateien im `viron-core/`-Ordner modifizieren | Report erstellen mit Empfehlungen |
+| Skill-Dateien überschreiben | Filter-Ergebnisse dokumentieren |
+| Ordnerstruktur ändern | Nur `SKILL_BADGE_MAPPING_REPORT.md` erstellen |
+
+**Deine einzige Output-Datei:**
+- `.knowledge/mission/SKILL_BADGE_MAPPING_REPORT.md`
+
+**Alles andere ist LESEN-ONLY.**
+
+---
+
 ## 🛑 DAS KREDO (Leitprinzip dieser Mission)
 
 > **"Ausführlichkeit bedingt Unmissverständlichkeit"**
@@ -70,50 +90,73 @@ Vault-Datei (z.B. 40-audio-reaktiv...)
 
 ## 📚 EINGABE-QUELLEN (Was du lesen musst)
 
-### A. SKILL-Dateien (Redundanz-Basis)
+### A. SKILL-Dateien (🔴 Referenz - Unverändert)
 
 **Pfad:** `.agent/skills/remotion-core/` und `.agent/skills/remotion-best-practices/`
 
+**Status:** Diese Dateien sind die BASIS. Sie werden NICHT verändert. Alles andere wird DAGEGEN geprüft.
+
 | # | Skill-Datei | Pfad | Was du tun musst |
 |:--|:------------|:-----|:-----------------|
-| 1 | **SKILL.md** (Master) | `remotion-core/SKILL.md` | Lies komplett. Extrahiere: Welche 5-10 Hauptthemen behandelt dieser Skill? Nenne konkrete Dateinamen und Zeilennummern. |
-| 2 | **animations.md** | `remotion-best-practices/rules/animations.md` | Lies komplett. Extrahiere: Welche Animation-Patterns? Easing-Funktionen? Dauer-Berechnungen? |
-| 3 | **audio.md** | `remotion-best-practices/rules/audio.md` | Lies komplett. Extrahiere: Audio-Handling, FFT, useAudioData(), Buffer-Management |
-| 4 | **compositions.md** | `remotion-best-practices/rules/compositions.md` | Lies komplett. Extrahiere: Composition-Struktur, Props, Parameter |
-| 5 | **display-captions.md** | `remotion-best-practices/rules/display-captions.md` | Lies komplett. Extrahiere: Caption-Rendering, Text-Synchronisation |
-| 6 | **get-audio-duration.md** | `remotion-best-practices/rules/get-audio-duration.md` | Lies komplett. Extrahiere: Audio-Dauer-Berechnung, Edge Cases |
-| 7 | **parameters.md** | `remotion-best-practices/rules/parameters.md` | Lies komplett. Extrahiere: Lambda-Parameter, Render-Config |
-| 8 | **sequencing.md** | `remotion-best-practices/rules/sequencing.md` | Lies komplett. Extrahiere: Sequence-Komponente, Timing, Offsets |
-| 9 | **timing.md** | `remotion-best-practices/rules/timing.md` | Lies komplett. Extrahiere: useCurrentFrame(), FPS-Berechnung, Dauer |
-| 10 | **trimming.md** | `remotion-best-practices/rules/trimming.md` | Lies komplett. Extrahiere: Sequence-Trimming, from/durationInFrames |
-| 11 | *(weitere im Ordner)* | `remotion-best-practices/rules/*.md` | Finde ALLE. Liste sie auf. Analysiere jede. |
+| 1 | **SKILL.md** (Master) | `remotion-core/SKILL.md` | Lies komplett. Extrahiere: Welche 5-10 Hauptthemen? Konkrete Zeilennummern. |
+| 2 | **animations.md** | `remotion-best-practices/rules/animations.md` | Extrahiere: Animation-Patterns, Easing, Dauer-Berechnungen |
+| 3 | **audio.md** | `remotion-best-practices/rules/audio.md` | Extrahiere: Audio-Handling, FFT, useAudioData() |
+| 4 | **compositions.md** | `remotion-best-practices/rules/compositions.md` | Extrahiere: Composition-Struktur, Props |
+| 5 | **sequencing.md** | `remotion-best-practices/rules/sequencing.md` | Extrahiere: Sequence-Komponente, Timing, Offsets |
+| 6 | **timing.md** | `remotion-best-practices/rules/timing.md` | Extrahiere: useCurrentFrame(), FPS, Dauer |
+| 7 | *(weitere im Ordner)* | `remotion-best-practices/rules/*.md` | Finde ALLE. Liste sie auf. |
 
-**Wichtig:** Für JEDE Skill-Datei musst du dokumentieren:
+**Für JEDE Skill-Datei dokumentiere:**
 - Hauptthema (1 Satz)
-- 3-5 Unterthemen (spezifisch)
-- Code-Beispiele (ja/nein + was)
-- Viron-spezifische Erweiterungen (ja/nein + was)
+- 3-5 Unterthemen (spezifisch mit Zeilen)
+- Code-Beispiele (ja/nein + Zeilen)
 
-### B. Badge Reports (Viron-IP)
+### B. VAULT-Dateien (🟡 Zu filtern - Recherche-Wissen)
+
+**Pfad:** `Remotion Recherche/` (90_VAULT)
+
+**Status:** Diese Dateien müssen gegen Skills geprüft werden.
+
+| Kategorie | Dateien | Was du tun musst |
+|:----------|:--------|:-----------------|
+| **Audio** | `40-audio-reaktiv-00-fft-frequenzspektren.md`, `16_ARCHIVE_Standard_Audio_Auphonic.md` | Abgleich gegen Skill audio.md: Was ist redundant? Was ist Viron-Erweiterung? |
+| **Post-Processing** | `30-post-processing-*.md` (4 Dateien) | Abgleich gegen FX-Skills: Was ist Standard? Was ist Viron-spezifisch? |
+| **Web Patterns** | `50-web-patterns-*.md` (6+ Dateien) | Abgleich: Standard-Next.js vs. Viron-Hybrid-Logik |
+| **Cloud** | `60-cloud-rendering-00-aws-lambda-renderfarming.md` | Abgleich gegen Skill parameters.md |
+| **System** | `22_SYSTEM_PLAN_Folder_Structure.md`, `23_ROUTING_MATRIX_Inputs.md`, `24_ROUTING_MATRIX_Outputs.md` | Viron-spezifisch (kein Skill-Äquivalent) |
+| **Workflow** | `00-master-workflow-2026-integration.md`, `00-overview-index-v2-1-complete.md` | Meta-Informationen (kein Skill-Äquivalent) |
+| *(weitere)* | `Remotion Recherche/*.md` | Alle finden und kategorisieren |
+
+### C. CORE-Dateien (🟡 Zu filtern - System-Wissen)
+
+**Pfad:** `viron-core/`
+
+**Status:** System-Dateien, die gegen Skills geprüft werden müssen.
+
+| Datei | Pfad | Abgleich gegen | Was prüfen? |
+|:------|:-----|:---------------|:------------|
+| **vision.md** | `viron-core/vision.md` | Kein direktes Skill-Äquivalent | Viron-Paradigma (Video as Code) |
+| **pipeline.md** | `viron-core/pipeline.md` | Skill parameters.md, sequencing.md | Codec-Profile, Concurrency, Lambda |
+| **workflow.md** | `viron-core/workflow.md` | Skill timing.md, sequencing.md | Git-Flow, Commit-Convention |
+| **physics.md** | `viron-core/physics.md` | Kein Skill-Äquivalent (3D) | 3D-Physics, PBR Materials |
+| **theme.md** | `viron-core/theme.md` | Kein Skill-Äquivalent (Design) | Design Tokens, Metallic Palette |
+
+### D. Badge Reports (🟢 Output-Referenz)
 
 **Pfad:** `.knowledge/mission/`
 
-| Badge | Report-Datei | Pfad | Thematischer Fokus |
-|:------|:-------------|:-----|:-------------------|
-| 1 | EXTRACTION_REPORT_BADGE_1.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_1.md` | Core, Time, Sequencing |
-| 2 | EXTRACTION_REPORT_BADGE_2.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_2.md` | 3D, Lighting, Geometry |
-| 3 | EXTRACTION_REPORT_BADGE_3.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_3.md` | FX, Shaders, Materials |
-| 4 | EXTRACTION_REPORT_BADGE_4.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_4.md` | Design System, UI |
-| 5 | EXTRACTION_REPORT_BADGE_5.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_5.md` | Web Patterns, Cloud |
-| 6 | EXTRACTION_REPORT_BADGE_6.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_6.md` | Audio, Performance |
-| 7 | EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md` | System Architecture |
-| 8 | EXTRACTION_REPORT_BADGE_8.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_8.md` | Agent Governance |
+**Status:** Zeigen, wo gefilterte Ergebnisse landen.
 
-**Wichtig:** Für JEDES Badge musst du dokumentieren:
-- Hauptfokus (1 Satz)
-- Systeme/Komponenten (THE X Nomenklatur)
-- Erwähnte Technologien (z.B. "useAudioData", "Sequence")
-- Explizite Skill-Referenzen (welche Skills werden genannt?)
+| Badge | Report-Datei | Pfad | Zeigt: Wohin filtern? |
+|:------|:-------------|:-----|:----------------------|
+| 1 | EXTRACTION_REPORT_BADGE_1.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_1.md` | Core → Badge 1 |
+| 2 | EXTRACTION_REPORT_BADGE_2.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_2.md` | 3D/Lighting → Badge 2 |
+| 3 | EXTRACTION_REPORT_BADGE_3.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_3.md` | FX → Badge 3 |
+| 4 | EXTRACTION_REPORT_BADGE_4.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_4.md` | Design → Badge 4 |
+| 5 | EXTRACTION_REPORT_BADGE_5.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_5.md` | Web → Badge 5 |
+| 6 | EXTRACTION_REPORT_BADGE_6.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_6.md` | Audio → Badge 6 |
+| 7 | EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md` | System → Badge 7 |
+| 8 | EXTRACTION_REPORT_BADGE_8.md | `.knowledge/mission/EXTRACTION_REPORT_BADGE_8.md` | Governance → Badge 8 |
 
 ---
 
@@ -194,7 +237,62 @@ Vault-Datei (z.B. 40-audio-reaktiv...)
 - [ ] Sind alle Technologien mit Abschnitts-Referenz versehen?
 - [ ] Sind Skill-Referenzen explizit markiert?
 
-### Phase 3: Mapping-Analyse (Gründlichkeit = Qualität)
+---
+
+### Phase 3: SKILL-FILTER-PROZESS (Kernaufgabe!)
+
+**ZIEL:** Jede Vault- und Core-Datei gegen das Skill-Inventar prüfen.
+
+**Der Prozess:**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     SKILL-FILTER-PROZESS                                │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  VAULT-Datei ─────────┐                                                 │
+│                        │                                                │
+│  CORE-Datei ──────────┼──► [Skill-Abgleich] ────► 🔴/🟡/🟢             │
+│                        │                                                │
+│  Skill-Datei ─────────┘                                                 │
+│                                                                         │
+│  Filter-Kategorien:                                                     │
+│  🔴 REDUNDANT = Identisch im Skill → Datei kann entfallen              │
+│  🟡 ERWEITERUNG = Skill-Basis + Viron-Erweiterung → Beides behalten    │
+│  🟢 NEU = Nicht im Skill → Muss in Skill übernommen werden             │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Format für JEDE Vault/Core-Datei:**
+
+```markdown
+### [Dateiname] (Quelle: Vault|Core)
+
+**Inhalt-Zusammenfassung (1-2 Sätze):**
+Beschreibt XYZ. Schwerpunkt auf [technisches Detail].
+
+**Skill-Abgleich:**
+| Skill-Kategorie | Status | Begründung |
+|:----------------|:-------|:-----------|
+| timing.md | 🔴 Redundant | Zeilen 23-45 decken exakt FPS-Berechnung ab |
+| sequencing.md | 🟡 Erweiterung | Skill hat Basics, Vault hat Zeitbudget-System (Z. 67-89) |
+| audio.md | 🟢 Neu | Kein Äquivalent: Beschreibt „Dance-Director"-Muster |
+
+**Filter-Empfehlung:**
+- [ ] 🔴 Entfernen (redundant)
+- [ ] 🟡 Behalten (Erweiterung dokumentieren)
+- [ ] 🟢 In Skill übernehmen (neues Wissen)
+
+**Badge-Zuordnung (falls 🟡 oder 🟢):**
+- Badge [X]: [Warum passend]
+```
+
+**Mindestens 20 Vault/Core-Dateien abgleichen!**
+
+---
+
+### Phase 4: Mapping-Analyse (Skills → Badges)
 
 **Deine Aufgabe:** Für JEDEN Skill-Unterpunkt prüfe: In welchem Badge wird das abgedeckt?
 
@@ -308,16 +406,51 @@ Erstelle: `SKILL_BADGE_MAPPING_REPORT.md`
 
 ---
 
+## 📊 SKILL-FILTER ERGEBNISSE (Wichtigster Abschnitt!)
+
+**Übersicht:**
+
+| Kategorie | Anzahl | %-Anteil |
+|:----------|:-------|:---------|
+| 🔴 Redundant (bereits in Skill) | [N] | [X%] |
+| 🟡 Erweiterung (Skill + Viron) | [N] | [Y%] |
+| 🟢 Neu (nicht im Skill) | [N] | [Z%] |
+| **Gesamt Vault/Core** | **[N]** | **100%** |
+
+### 🔴 Redundant (Skill = Vault/Core)
+
+| Fund | Quelle | Skill-Äquivalent | Konflikt-Beschreibung | Empfehlung |
+|:-----|:-------|:-----------------|:----------------------|:-----------|
+| sequencing.md from/duration | Vault: `15_MIGRATION_...` | Skill: sequencing.md Z. 12-34 | Identische Beschreibung | Entfernen / Archivieren |
+| useAudioData() Basics | Vault: `40-audio-reaktiv...` | Skill: audio.md Z. 45-67 | Identische API-Doku | Entfernen |
+
+### 🟡 Erweiterung (Skill-Basis + Viron-Delta)
+
+| Thema | Skill-Teil | Vault-Erweiterung | Wo im Badge? | Komplexität |
+|:------|:-----------|:------------------|:-------------|:------------|
+| FFT-Bänder | Skill: Basics | Pre-calc JSON statt useAudioData() | Badge 6: THE AUDIO PIPELINE | 🟡 Mittel |
+| Sequencing | Skill: Basics | Zeitbudget-System (Context Budget) | Badge 7: THE WORKFLOW BUDGETS | 🔴 Hoch |
+
+### 🟢 Neu (Skill nicht vorhanden)
+
+| System | Quelle | Bedeutung | Wo im Badge? | Skill-Aufnahme? |
+|:-------|:-------|:----------|:-------------|:----------------|
+| THE 7 DEPARTMENTS | Core: physics.md | Organisationsstruktur | Badge 7: 4.1 | ⏳ Diskutieren |
+| Canon Packs | Core: physics.md | Modulare Asset-Struktur | Badge 7: 4.1 | ⏳ Diskutieren |
+
+---
+
 ## EXECUTIVE SUMMARY
 
 | Metrik | Wert | Bewertung |
 |:-------|:-----|:----------|
 | Skill-Dateien analysiert | [N]/[N] | ✅ 100% |
 | Badge Reports geprüft | 8/8 | ✅ 100% |
+| **Vault/Core-Dateien gefiltert** | **[N]** | **Ziel: ≥20** |
+| 🔴 Redundant identifiziert | [N] | [X%] |
+| 🟡 Erweiterungen gefunden | [N] | [Y%] |
+| 🟢 Neue Konzepte | [N] | [Z%] |
 | Mapping-Einträge | [N] | [Ziel: ≥50] |
-| Vollständige Abdeckungen | [N] | ✅ |
-| Teilweise Abdeckungen | [N] | ⚠️ |
-| Fehlende Abdeckungen | [N] | ❌ |
 | Widersprüche gefunden | [N] | 🔴 |
 | Überlappungen (Redundanzen) | [N] | 🟡 |
 
