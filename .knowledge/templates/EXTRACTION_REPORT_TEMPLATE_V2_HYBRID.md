@@ -12,12 +12,26 @@
 # 🎯 EXTRACTION_REPORT_BADGE_[N]: [BADGE_NAME]
 
 **Badge:** [N] - [Name]  
+**Version:** [N].0 (Platinum Fusion)  
+**Basis:** [Vorgänger-Versionen, z.B. "V2 Data + V1 Context"]  
 **Status:** [IN_PROGRESS / COMPLETED / REVISED]  
-**Files Audited:** [N]  
-**Core Findings:** [N]  
-**Redundancies Dropped:** [N]  
 **Auditor:** [Agent Name]  
 **Date:** [YYYY-MM-DD]
+
+---
+
+## 📊 EXECUTIVE SUMMARY (Die Essenz in 3 Sätzen)
+
+[Drei prägnante Sätze, die die wichtigste Erkenntnis zusammenfassen. Beispiel: 
+"Viron operiert auf drei Ebenen: Physik (RAM-bounded), Governance (strict Git-Flow), 
+Ökonomie (Cloud-Tiering). 12 System-Bausteine extrahiert, 9 Redundanzen verworfen."]
+
+| Metrik | Ergebnis | Delta zu V1 |
+|:-------|:---------|:------------|
+| **Files Audited** | [N] | +[X] |
+| **Core Findings** | [N] | +[X] |
+| **Redundancies Dropped** | [N] | - |
+| **Forensic Accuracy** | [High/Medium] | [+/-] |
 
 ---
 
@@ -25,6 +39,7 @@
 > 1. Read 🔴 CRITICAL FINDINGS first (5 min)
 > 2. Skim 🟡 SUPPORTING for context (10 min)
 > 3. Check 🗑️ VERWORFEN for audit quality
+> 4. Review ⚠️ EDGE CASES for gotchas
 ```
 
 ---
@@ -40,10 +55,17 @@
 
 **Kontext (V1):** [1-2 sentences explaining WHY this matters intuitively]
 
+**Das Problem:** [Was geht schief / Was ist die Intuition?]
+
+**Die Viron-Lösung:** [Wie lösen wir es?]
+
+**Die Zahl:** 🔑 **[Key Metric: Wert]** (Hard Fact)
+
 **Beweis (Code/Table):**
 ```typescript
 // Exact extraction from source
 // Tables preferred over prose
+// Example: // Hard Limit: 16. RAM Divisor: 2.
 ```
 
 ---
@@ -133,25 +155,43 @@
 
 ---
 
-## 🎨 FORMATTING RULES (From V3)
+## 🎨 FORMATTING RULES (V3 Best Practices)
 
-### Headers
+### 1. Headers: "THE X" Nomenklatur
 - Use `### THE [NAME]` for each finding (scannable)
 - Never go deeper than `####`
+- **Examples:** `THE CLOUD PIPELINE`, `THE SYSTEM MAP`, `THE ROUTING BRAIN`
 
-### Emphasis
-- **Hard facts:** Bold with `**`
-- `Code/Values:` Backticks
-- 🔑 🔥 ⚠️ Use emojis as visual anchors
+### 2. Information Density > Prosatext
+- **ALWAYS** prefer tables over bullet lists for structured data
+- **ALWAYS** prefer bullet lists over prose paragraphs
+- **Hard facts** in `code` or **bold**
+- Left-align text, right-align numbers in tables
 
-### Tables
-- ALWAYS prefer tables over bullet lists for structured data
-- Left-align text, right-align numbers
+### 3. Emphasis Hierarchy
+- 🔑 **Die Zahl:** Hard limit/magic number
+- 🔥 **Kritisch:** Must know
+- ⚠️ **Warnung:** Edge case / Gotcha
+- **Bold:** Important terms
+- `Code:` Values, paths, parameters
 
-### Kontext (V1) Pattern
+### 4. Kontext (V1) Pattern
 ```markdown
-**Kontext (V1):** [The intuition/problem - 1 sentence]
+**Kontext (V1):** [The intuition - max 2 sentences]
 ```
+
+### 5. Problem/Lösung Pattern (V4 Addition)
+```markdown
+**Das Problem:** [Was geht schief?]
+**Die Viron-Lösung:** [Wie lösen wir es?]
+**Die Zahl:** 🔑 **[Key: Value]**
+```
+
+### 6. Delta-Metriken
+Jede Sektion sollte implizit antworten:
+- "Was ist neu?"
+- "Was wurde verbessert?"
+- "Warum ist das relevant?"
 
 ---
 
@@ -166,6 +206,13 @@
 
 ---
 
-**Template Version:** 2.0 Hybrid  
+**Template Version:** 2.1 (V3 Fusion + V4 Context)  
 **Last Updated:** 2026-02-01  
-**Based on:** Badge 7 V3+V5 Synthesis
+**Based on:** Badge 7 Learnings
+
+**Referenzen:**
+- [`LEARNING_V3_REPORT_STRUCTURE.md`](../project-learnings/LEARNING_V3_REPORT_STRUCTURE.md) - V3 Best Practices
+- [`PROMPT_V3_BEST_PRACTICES.md`](../handover/PROMPT_V3_BEST_PRACTICES.md) - Prompt-Version
+- [`COMPARISON_BADGE_7_ALL_VERSIONS.md`](../mission/COMPARISON_BADGE_7_ALL_VERSIONS.md) - Vollständiger Vergleich
+
+**Key Insight:** V3 liefert die beste Struktur (THE X, Statistik, Kontext-Label), V4 liefert das beste Verständnis (Problem/Lösung/Die Zahl). Dieses Template kombiniert beides.
