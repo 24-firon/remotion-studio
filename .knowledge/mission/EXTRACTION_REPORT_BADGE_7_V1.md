@@ -1,6 +1,6 @@
 # 🎯 Badge 7: Extraction Report – SYSTEM ARCHITECTURE & CLOUD (V1)
 
-**Version:** 1.0 (Platinum Audit)
+**Version:** 1.1 (Platinum Context-Enriched)
 **Badge ID:** VIRON-2026-B7
 **Extraction Date:** 2026-02-01
 **Analyst:** Sub-Agent Kilo (Simulated)
@@ -119,16 +119,19 @@ const safeConcurrency = Math.floor(availableRamGB / 2);
 **Kontext:**
 Der Router unterscheidet Input-Typen nicht nur an der Endung, sondern am Content.
 
+- **Transcript-Logik:** Ein JSON triggert `DEPT_VIDEO` _nicht_ zum Rendern, sondern um die `Captions.tsx` Komponente mit Daten zu füttern (Data-Injection).
+- **Video-Logik:** Ein MP4 triggert die volle Render-Pipeline.
+
 **Beweis:**
 
 ```yaml
 INPUT_TYPE: VIDEO_FILE
 - Extension: .mp4, .mov
-- Trigger: DEPT_VIDEO + DEPT_RENDER
+- Trigger: DEPT_VIDEO (Composition) + DEPT_RENDER (Pipeline)
 
 INPUT_TYPE: TRANSCRIPT_JSON
 - Structure: { "segments": [], "speakers": [] }
-- Trigger: DEPT_DATA + DEPT_VIDEO (Captions)
+- Trigger: DEPT_DATA (Parsing) + DEPT_VIDEO (Subtitle Overlay Generation)
 ```
 
 ### 3.2 Output Specs (Platform Standards)
@@ -165,11 +168,15 @@ Harte Vorgaben für Bitrates und LUFS. Abweichung = QC Fail.
 **Kontext:**
 Automatisierte Changelogs erfordern striktes Conventional Commits Format.
 
+- **Semantic Versioning:** `feat` erhöht Minor (1.1.0), `fix` erhöht Patch (1.0.1).
+- **Breaking Changes:** Ein `!` nach dem Typ (z.B. `feat!: new api`) erzwingt Major Version (2.0.0). Das ist kritisch für die Viron-Library-Kompatibilität.
+
 **Beweis:**
 
 ```text
-feat(scope): description  -> Feature
-fix(scope): description   -> Bugfix
+feat(scope): description  -> Feature (Minor)
+fix(scope): description   -> Bugfix (Patch)
+feat!: description        -> Breaking Change (Major)
 docs(scope): description  -> Documentation
 perf(scope): description  -> Performance Op
 ```
@@ -209,15 +216,17 @@ if (fps < 55) {
 - [ ] In `parameters.md` gefunden? **NEIN**
 
 **Kontext:**
-Wenn Lambda "Out of Memory" meldet, ist die Lösung NICHT "mehr RAM", sondern "weniger Concurrency" oder "Chunking".
+Wenn Lambda "Out of Memory" (Exit 137) meldet, ist der intuitive Reflex "Mehr RAM kaufen".
+**Viron-Erkenntnis:** Das ist falsch. Mehr RAM erhöht oft die Concurrency (wegen `ram/2` Formel), was das Problem _verschlimmert_.
+**Viron-Lösung:** Zwinge _weniger_ Threads pro GB, um den Speicher pro Thread zu erhöhen.
 
 **Beweis:**
 
 ```typescript
-// 1. Reduziere Concurrency
-await renderMedia({ concurrency: 2 }); // statt 8
+// 1. Reduziere Concurrency (Gegen-Intuitive Lösung)
+await renderMedia({ concurrency: 2 }); // statt 8, gibt jedem Thread 4x mehr RAM
 
-// 2. Nutze Chunk-Rendering
+// 2. Nutze Chunk-Rendering (Lange Sequenzen sicher rendern)
 const chunkSize = 300; // Frames pro Chunk
 ```
 
@@ -267,4 +276,4 @@ ffmpeg -i input.mp3 -c:a pcm_s16le output.wav
 
 ---
 
-**STATUS: SYSTEM AUDIT COMPLETE (V1).**
+**STATUS: SYSTEM AUDIT COMPLETE (V1.1).**
