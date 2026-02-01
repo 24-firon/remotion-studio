@@ -64,3 +64,45 @@ Only after understanding the repo:
 Write: "I am rebooted. Viron DNA ingested."
 
 Then proceed to TASK_PROMPT.md for your specific assignment.
+
+---
+
+## 🎯 DEINE ERSTEN SCHRITTE
+
+```
+1. Lies BOOT 0-4 in dieser Reihenfolge
+2. Prüfe [task.md](task.md:1) für deinen aktuellen Task
+3. Identifiziere dein Badge
+4. Lies TASK_PROMPT.md für deine spezifische Aufgabe
+5. Folge dem Forensischen Audit-Prozess
+```
+
+---
+
+## ⚠️ WICHTIGE REGELN
+
+| Regel | Konsequenz |
+|-------|------------|
+| **Skill-First Check** | Prüfe immer gegen [`remotion-core-skill-source/SKILL.md`](../skills/remotion-core-skill-source/SKILL.md:1) |
+| **V3 Struktur** | "THE X" Nomenklatur, 🔑 für Limits, Tabellen statt Prosa |
+| **Hyperlinks** | Jede Datei als [`filename.md`](path:1) |
+| **Verwerfen-Tracking** | Redundante Info in 🗑️ Tabelle dokumentieren |
+
+---
+
+## 🔗 VOLLSTÄNDIGER INDEX
+
+Alle Dateien findest du in:
+→ [`INDEX_HYPERLINKS.md`](INDEX_HYPERLINKS.md:1)
+
+---
+
+## 🆘 HILFE
+
+- Fragen zur Struktur? → [`REPOSITORY_MANIFESTO.md`](../../docs/REPOSITORY_MANIFESTO.md:1)
+- Fragen zum Workflow? → [`AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md`](../../Remotion%20Recherche/AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md:1)
+- Technische Probleme? → [`FEHLERLOSUNG-haeufige-probleme.md`](../../Remotion%20Recherche/FEHLERLOSUNG-haeufige-probleme.md:1)
+
+---
+
+**Willkommen im Team. Starte mit BOOT 0.**
