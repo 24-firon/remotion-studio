@@ -1,5 +1,31 @@
 # 📋 MASTER TASK: VIRON MISSION 2026 (Absolute Accuracy & Restoration V17.0)
 
+## 📑 INHALTSVERZEICHNIS (NAVIGATION)
+
+| Bereich | Zeilen | Beschreibung |
+|:--------|:-------|:-------------|
+| **Viron-Konservierungs-Manifest** | 15-22 | Die 4 Gesetze der Persistenz |
+| **Phase 0: Mission Boot** | 23-30 | Agent-Identität, Governance |
+| **Phase 1: Legacy Repository Audit** | 31-37 | Core-Architektur Analyse |
+| **Phase 2: Greenfield Architektur** | 38-44 | 8-Säulen Badge System |
+| **Phase 3: Remediation & Staging** | 45-56 | Archivierung, Token-Management |
+| **Phase 4: Deep Precision Indexing** | 57-69 | Master-Index Transformation |
+| **Phase 5: Holistic Thematic Audits** | 70-393 | Badge 0-8 (ALLE BADGES) |
+| ├─ Badge 0: Master Triage | 70-76 | Logische Gruppierung |
+| ├─ Badge 1: Core Architecture | 77-96 | Time & Sequencing |
+| ├─ Badge 2: 3D Physics | 97-123 | Lighting & Geometry |
+| ├─ Badge 3: Visual FX | 124-148 | Shaders & Materials |
+| ├─ Badge 4: Design System | 149-174 | UI Components |
+| ├─ Badge 5: Web Patterns | 175-204 | Cloud Integration |
+| ├─ Badge 6: Media & Audio | 205-241 | Performance |
+| ├─ Badge 7: System Architecture | 242-338 | Cloud & Routing |
+| └─ Badge 8: Agent Governance | 339-393 | AI Synergies |
+| **Phase 6: Knowledge Consolidation** | 394-558 | Template, Badge Re-Audit, Merge |
+| **Phase 7: System Merge** | 559-564 | Greenfield Launch |
+| **Phase 8: Mission Close** | 565-570 | Handover & Sign-Off |
+
+---
+
 ## ⚖️ VIRON-KONSERVIERUNGS-MANIFEST (STRICT GOVERNANCE)
 
 > [!IMPORTANT]
