@@ -20,9 +20,15 @@
 | ├─ Badge 6: Media & Audio | 205-241 | Performance |
 | ├─ Badge 7: System Architecture | 242-338 | Cloud & Routing |
 | └─ Badge 8: Agent Governance | 339-393 | AI Synergies |
-| **Phase 6: Knowledge Consolidation** | 394-558 | Template, Badge Re-Audit, Merge |
-| **Phase 7: System Merge** | 559-564 | Greenfield Launch |
-| **Phase 8: Mission Close** | 565-570 | Handover & Sign-Off |
+| **Phase 6: Knowledge Consolidation** | 394-600 | Template, Badge Re-Audit, Merge |
+| ├─ 6.0: Rules Consolidation | 452-464 | 120+ Regeln → 5 Router |
+| ├─ 6.1: Template Evolution | 466-498 | V6.1 Template erstellt |
+| ├─ 6.1.5: Repo Migration | 499-515 | remotion-studio → Viron Studio |
+| ├─ 6.2: Badge Re-Audit | 516-540 | 8 Badges parallel |
+| ├─ 6.3: Global Skill Assembly | 541-560 | Alle Skills mergen |
+| └─ 6.4: Mission Sign-Off | 561-600 | Finalisierung |
+| **Phase 7: System Merge** | 601-606 | Greenfield Launch |
+| **Phase 8: Mission Close** | 607-612 | Handover & Sign-Off |
 
 ---
 
