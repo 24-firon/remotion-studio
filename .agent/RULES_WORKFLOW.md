@@ -14,10 +14,60 @@ Diese Datei konsolidiert alle Workflow-bezogenen Regeln aus dem VIRON Repository
 - Session Management
 - Initialization Flow
 - Release Protocols
+- **Todo/Task Synchronization (NEW)**
 
 ---
 
-## 🔄 1. GIT SYNC PROTOCOL (THE DOUBLE-TURN-LOCK)
+## 📋 0. TODO/TASK SYNCHRONIZATION PROTOCOL
+
+**Hinzugefügt:** 2026-02-02  
+**Kontext:** Inkonsistenzen zwischen Todo-Liste und Task.md
+
+### 0.1 The Rule
+
+| Wenn du dies tust... | Dann muss das auch passieren... |
+|---------------------|--------------------------------|
+| Todo-Item erstellen | Gleichen Text in Task.md als Checkbox einfügen |
+| Todo-Item abhaken | Task.md Checkbox auf `\n- [x]` setzen |
+| Todo-Item löschen | Task.md Eintrag als "Abgebrochen" markieren (nicht löschen!) |
+
+### 0.2 Master of Truth
+
+| Dokument | Zweck |
+|----------|-------|
+| `Task.md` | **Master-Protokoll** - Persistente Dokumentation |
+| `Todo-Liste` | **Arbeits-Tracking** - Temporärer Status |
+
+### 0.3 Verpflichtung
+
+> **NEVER** Todo-Liste abhaken OHNE Task.md zu aktualisieren.
+> 
+> Die Task.md ist der einzige Ort mit Vollhistorie (Viron-Konservierungs-Manifest: "Keine Löschung").
+
+---
+
+## 📚 0.4 MANDATORY READING LIST (Agent Onboarding)
+
+**Vor jeder Mission müssen diese Dateien gelesen werden:**
+
+| Reihenfolge | Datei | Zweck |
+|-------------|-------|-------|
+| 1 | `task.md` | Aktueller Status, Historie, offene Punkte |
+| 2 | `implementation_plan.md` | Phasen-Plan, Success-Kriterien, Detail-Protokoll |
+| 3 | `VIRON_CONTEXT_PACKAGES.md` | 5 modulare Kontext-Pakete für alle Phasen |
+| 4 | `VIRON_STUDIO_INDEX.md` | Repository-Struktur, Badge-Übersicht, kritische Lücken |
+| 5 | `RULES_*.md` (alle) | Workflow, Core, Technical, Usage Guide |
+| 6 | `PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md` | 3-Phasen Prozess für Re-Audit |
+
+**Nach dem Lesen:**
+- Poste einen **Governance Inventory** mit einem Zitat pro Datei
+- Identifiziere **Blocker** oder **Unklarheiten**
+
+> **Regel:** Ohne Proof-of-Reading für die Master-Dateien (1-4) → Keine Code-Änderungen erlaubt!
+
+---
+
+## � 1. GIT SYNC PROTOCOL (THE DOUBLE-TURN-LOCK)
 
 **Quelle:** [`handover/meta/RULE_GIT_SYNC_PROTOCOL.md`](handover/meta/RULE_GIT_SYNC_PROTOCOL.md)  
 **Kontext:** Frühe Viron-Sessions hatten "Race Conditions" bei Edit + Commit + Push im selben Turn.

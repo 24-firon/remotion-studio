@@ -516,13 +516,15 @@ Viron Studio/
 ```
 
 **Kritische Nachlieferung (2026-02-02):**
-- [x] **Kritisches Knowledge identifiziert:** `src/learnings/` enthält 4 HIGH-VALUE Dateien:
+- [x] **Migration: Kritische Lücken identifiziert:** `src/learnings/` enthält 4 HIGH-VALUE Dateien (Todo #27)
   - `PATTERN_Viron_Hard_Won_Knowledge.md` - 360° Rule, Produktions-Quality Standards
   - `GUIDE_Viron_Button_Stack.md` - Complete Button Implementation (Badge 2 Core!)
   - `PATTERN_Advanced_Shaders.md` - Shader Recipes, Iridescent Glass
   - `PATTERN_LIGHTING_GRADIENTS.md` - 80% Grey Rule (Golden Mean)
+- [x] **Task.md aktualisiert mit Nachlieferung-Status** (Todo #28)
 - [x] **PowerShell-Script erstellt:** `pruefe_migration.ps1` zur Validierung
-- [ ] **Nachlieferung ausstehend:** Die 4 Learnings-Dateien müssen nachkopiert werden
+- [x] **VIRON_STUDIO_INDEX.md erstellt:** Repository Index mit Ordnerstruktur (Todo #29)
+- [ ] **Nachlieferung ausstehend:** Die 4 Learnings-Dateien müssen nachkopiert werden (Todo #30)
 
 **Wichtig:**
 - Altes Repo (`remotion-studio`) bleibt unverändert erhalten

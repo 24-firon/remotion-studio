@@ -528,12 +528,34 @@ Dies ist die exakte Befehlskette für jeden einzelnen Audit-Vorgang (Badge 7+):
 
 ---
 
-## 📋 CHANGE LOG
+## 📝 DETAIL-PROTOKOLL (Viron-Konservierungs-Manifest)
+
+> **WICHTIG:** Dieser Abschnitt dokumentiert jede einzelne Aktion (nicht nur Zusammenfassungen).
+> Jeder Eintrag muss Datum, Datei(en) und konkrete Änderung enthalten.
+
+### 2026-02-02: Migration Analysis & Todo/Task Sync Rule
+
+| Zeit | Aktion | Datei(en) | Details |
+|------|--------|-----------|---------|
+| 10:28 | Migration-Log Analyse | `migration_log_20260202_021900.txt` | 52 Dateien kopiert, 200+ nicht kopiert identifiziert |
+| 10:30 | Headlines gelesen | `src/learnings/*.md` (4 Dateien) | Kritisches Knowledge entdeckt (360° Rule, Button Stack, etc.) |
+| 10:34 | Task.md aktualisiert | `.agent/handover/task.md` | Zeilen 518-530: Kritische Nachlieferung dokumentiert |
+| 10:37 | Index erstellt | `VIRON_STUDIO_INDEX.md` | Repository-Struktur mit Badge-System und Lücken |
+| 10:44 | Todo-Liste aktualisiert | Todo-Items 27-30 | Synchron mit Task.md |
+| 10:45 | Regel erstellt | `.agent/RULES_WORKFLOW.md` | Section 0: Todo/Task Synchronization Protocol |
+| 10:59 | Implementation Plan Log | `.agent/handover/implementation_plan.md` | Dieser Protokoll-Abschnitt hinzugefügt |
+
+**Erkenntnis:** Todo-Liste und Task.md müssen IMMER synchron gehalten werden. Task.md = Master-Protokoll.
+
+---
+
+## 📋 CHANGE LOG (Zusammenfassungen)
 
 | Version | Datum | Änderungen |
 |---------|-------|------------|
 | V11.0 | 2026-01-XX | Initiale Version, Phase 5 COMPLETED |
 | V11.1 | 2026-02-01 | Phase 6 detailliert ausgearbeitet, Badge 8 auf COMPLETED, Template Evolution (6.0) hinzugefügt |
+| V11.2 | 2026-02-02 | Detail-Protokoll hinzugefügt, Todo/Task Sync Rule etabliert, Migration-Lücken dokumentiert |
 
 ---
 
