@@ -432,7 +432,7 @@
 
 **Neue Erkenntnis:** Regel-Struktur wurde konsolidiert → AGENTS.md ist neuer Einstiegspunkt
 
-### STEP 0: ORIENTATION (Context Load) 🔄 IN PROGRESS
+### STEP 0: ORIENTATION (Context Load) � IN PROGRESS
 
 **Mandatory Proof-of-Reading (PoR):**
 
@@ -452,6 +452,7 @@
   - [ ] Beweis: Was macht Badge 8 richtig?
 
 **Ohne PoR kein Zugriff auf Phase 6 Tasks.**
+**Step 0 darf niemals abgehakt werden.**
 
 ---
 
@@ -514,10 +515,20 @@ Viron Studio/
 └── knowledge/research/  # Recherche-Dateien (System, Audio, Cloud, FX, 3D)
 ```
 
+**Kritische Nachlieferung (2026-02-02):**
+- [x] **Kritisches Knowledge identifiziert:** `src/learnings/` enthält 4 HIGH-VALUE Dateien:
+  - `PATTERN_Viron_Hard_Won_Knowledge.md` - 360° Rule, Produktions-Quality Standards
+  - `GUIDE_Viron_Button_Stack.md` - Complete Button Implementation (Badge 2 Core!)
+  - `PATTERN_Advanced_Shaders.md` - Shader Recipes, Iridescent Glass
+  - `PATTERN_LIGHTING_GRADIENTS.md` - 80% Grey Rule (Golden Mean)
+- [x] **PowerShell-Script erstellt:** `pruefe_migration.ps1` zur Validierung
+- [ ] **Nachlieferung ausstehend:** Die 4 Learnings-Dateien müssen nachkopiert werden
+
 **Wichtig:**
 - Altes Repo (`remotion-studio`) bleibt unverändert erhalten
 - Skills wurden manuell vorab kopiert
 - Neue Arbeit findet im `Viron Studio` Repo statt
+- **Kritische Lücke:** `src/learnings/` Knowledge gehört zu Badge 2 (Visual System)
 
 ---
 
