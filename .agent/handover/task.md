@@ -524,7 +524,7 @@ Viron Studio/
 - [x] **Task.md aktualisiert mit Nachlieferung-Status** (Todo #28)
 - [x] **PowerShell-Script erstellt:** `pruefe_migration.ps1` zur Validierung
 - [x] **VIRON_STUDIO_INDEX.md erstellt:** Repository Index mit Ordnerstruktur (Todo #29)
-- [ ] **Nachlieferung ausstehend:** Die 4 Learnings-Dateien müssen nachkopiert werden (Todo #30)
+- [x] **Nachlieferung erledigt:** Die 4 Learnings-Dateien wurden nachkopiert (Todo #31) am 2026-02-02 nach `knowledge/learnings/`
 
 **Wichtig:**
 - Altes Repo (`remotion-studio`) bleibt unverändert erhalten

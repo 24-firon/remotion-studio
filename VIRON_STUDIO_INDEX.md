@@ -20,7 +20,12 @@ Viron Studio/
 │   ├── mission/              # Mission Reports (Badge 0-8)
 │   ├── extracted-ip/         # Extrahiertes IP
 │   ├── consolidated/         # Konsolidierte Skills
-│   └── research/             # Recherche-Dateien
+│   ├── research/             # Recherche-Dateien
+│   └── learnings/            # Critical Learnings (Nachlieferung 2026-02-02)
+│       ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│       ├── GUIDE_Viron_Button_Stack.md
+│       ├── PATTERN_Advanced_Shaders.md
+│       └── PATTERN_LIGHTING_GRADIENTS.md
 │       ├── 00-overview-index-v2-1-complete.md
 │       ├── 22_SYSTEM_PLAN_Folder_Structure.md
 │       ├── 23_ROUTING_MATRIX_Inputs.md
@@ -76,15 +81,15 @@ Viron Studio/
 
 ## ⚠️ Kritische Lücken (Nachlieferung ausstehend)
 
-### `src/learnings/` (Badge 2)
-Diese Dateien aus `remotion-studio/src/learnings/` müssen noch nachkopiert werden:
+### `knowledge/learnings/` (Badge 2) ✅ KOPIERT
+Diese Dateien wurden am 2026-02-02 nachkopiert:
 
-| Datei | Inhalt | Badge-Zuordnung |
-|-------|--------|-----------------|
-| `PATTERN_Viron_Hard_Won_Knowledge.md` | 360° Rule, Produktions-Standards | Badge 2 |
-| `GUIDE_Viron_Button_Stack.md` | Complete Button Implementation | Badge 2 |
-| `PATTERN_Advanced_Shaders.md` | Shader Recipes, Iridescent Glass | Badge 2/3 |
-| `PATTERN_LIGHTING_GRADIENTS.md` | 80% Grey Rule (Golden Mean) | Badge 2 |
+| Datei | Inhalt | Badge-Zuordnung | Status |
+|-------|--------|-----------------|--------|
+| `PATTERN_Viron_Hard_Won_Knowledge.md` | 360° Rule, Produktions-Standards | Badge 2 | ✅ |
+| `GUIDE_Viron_Button_Stack.md` | Complete Button Implementation | Badge 2 | ✅ |
+| `PATTERN_Advanced_Shaders.md` | Shader Recipes, Iridescent Glass | Badge 2/3 | ✅ |
+| `PATTERN_LIGHTING_GRADIENTS.md` | 80% Grey Rule (Golden Mean) | Badge 2 | ✅ |
 
 ### Nicht migrierte Ordner (Absichtlich ausgeschlossen)
 
