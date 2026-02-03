@@ -1,0 +1,32 @@
+Copying C:\Workspace\Repos\remotion-studio\.agent\AGENTS.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\RULES_CORE.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\RULES_WORKFLOW.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\RULES_TECHNICAL.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\RULES_MIGRATION_GUIDE.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\viron-core\vision.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\THE_VIRON_AESTHETIC_MANIFESTO.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\src\PROJECT_RULES_LIGHTING.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\handover\task.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\handover\implementation_plan.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\VIRON_STUDIO_INDEX.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\handover\SUBAGENT_BRIEFING_TEMPLATE_V6.1.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre\SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+Copying C:\Workspace\Repos\remotion-studio\.agent\workflows\orchestrator-self-audit.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre\ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+Copying C:\Workspace\Repos\remotion-studio\.agent\skills\remotion-core-skill-source\SKILL.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\00-master-workflow-2026-integration.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Pflichtlektüre
+Copying C:\Workspace\Repos\remotion-studio\.agent\RULES_TECHNICAL.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)\RULES_TECHNICAL.md
+Copying C:\Workspace\Repos\remotion-studio\.agent\RULES_WORKFLOW.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)\RULES_WORKFLOW.md
+Copying C:\Workspace\Repos\remotion-studio\.agent\workflows\release.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)\RELEASE_PROTOCOL.md
+Copying C:\Workspace\Repos\remotion-studio\.agent\workflows\session-close.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)\SESSION_CLOSE_WORKFLOW.md
+Copying C:\Workspace\Repos\remotion-studio\viron-core\pipeline.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\viron-core\troubleshooting.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\60-cloud-rendering-00-aws-lambda-renderfarming.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\22_SYSTEM_PLAN_Folder_Structure.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\23_ROUTING_MATRIX_Inputs.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\24_ROUTING_MATRIX_Outputs.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\20_ARCHIVE_Standard_Dynamic_Data_Supabase.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\src\V43_MASTER_PLAN.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\src\V43_STRATEGY.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copying C:\Workspace\Repos\remotion-studio\Remotion Recherche\ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md to C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\Badge - (7)
+Copy operation complete.
