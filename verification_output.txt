@@ -1,0 +1,36 @@
+Checking List 1 (Destination: Pflichtlektüre)...
+OK: .agent/AGENTS.md
+OK: .agent/RULES_CORE.md
+OK: .agent/RULES_WORKFLOW.md
+OK: .agent/RULES_TECHNICAL.md
+OK: .agent/RULES_MIGRATION_GUIDE.md
+OK: viron-core/vision.md
+OK: THE_VIRON_AESTHETIC_MANIFESTO.md
+OK: src/PROJECT_RULES_LIGHTING.md
+OK: .agent/handover/task.md
+OK: .agent/handover/implementation_plan.md
+OK: VIRON_STUDIO_INDEX.md
+MISSING: .agent/handover/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+MISSING: ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+MISSING: remotion-core/SKILL.md
+OK: Remotion Recherche/00-master-workflow-2026-integration.md
+
+Checking List 2 (Destination: Badge 7)...
+MISSING: RULES_TECHNICAL.md
+MISSING: RULES_WORKFLOW.md
+MISSING: RELEASE_PROTOCOL.md
+MISSING: SESSION_CLOSE_WORKFLOW.md
+OK: viron-core/pipeline.md
+OK: viron-core/troubleshooting.md
+OK: Remotion Recherche/60-cloud-rendering-00-aws-lambda-renderfarming.md
+OK: Remotion Recherche/22_SYSTEM_PLAN_Folder_Structure.md
+OK: Remotion Recherche/23_ROUTING_MATRIX_Inputs.md
+OK: Remotion Recherche/24_ROUTING_MATRIX_Outputs.md
+OK: Remotion Recherche/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+OK: src/V43_MASTER_PLAN.md
+OK: src/V43_STRATEGY.md
+OK: Remotion Recherche/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+OK: Remotion Recherche/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+OK: Remotion Recherche/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+
+Found 7 missing files.
