@@ -1,0 +1,10 @@
+Starting Recovery Compilation...
+  [RECOVERED] THE_ORCHESTRATORS_BADGE_CYCLE.md (from .agent/workflows/orchestrate-badge-cycle.md)
+  [RECOVERED] WORKFLOW_SUBAGENT_DEPLOYMENT.md (from .agent/workflows/deploy-subagent-mission.md)
+  [FAILED] Could not recover SUBAGENT_PROMPT_1_SKILL_BADGE_MAPPING.md at C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\PROMPT_SUBAGENT_1_SKILL_BADGE_MAPPING.md
+  [FAILED] Could not recover SUBAGENT_PROMPT_2_REPO_INFRASTRUCTURE.md at C:\Workspace\Repos\remotion-studio\.agent\handover\AIStudio\PROMPT_SUBAGENT_2_REPO_INFRASTRUCTURE.md
+  [RECOVERED] EXTRACTION_REPORT_BADGE_7_CODEX_V7_FINAL.md (from .knowledge/mission/EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md)
+  [RECOVERED] 70-web-accessibility-wcag-2026-compliance.md (from Remotion Recherche/70-web-accessibility-wcag-2026.md)
+  [RECOVERED] SKILL-INSTALLATION-GUIDE-v1.md (from Remotion Recherche/SKILL-INSTALLATION-GUIDE-v1-0.md)
+  [RECOVERED] VIRON-DELTA-SKILL-STRUCTURE-v1.md (from Remotion Recherche/VIRON-DELTA-SKILL-STRUCTURE-v1-0.md)
+  [RECOVERED] COMPARE-AGENT-PROMPT-TEMPLATE-v1.md (from Remotion Recherche/COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md)

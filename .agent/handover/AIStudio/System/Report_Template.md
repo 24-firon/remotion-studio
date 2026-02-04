@@ -107,3 +107,12 @@ Speichere dies als `.agent/handover/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md`.
 |:---------------|:-------|:----------------|:----------------|
 | `file.md`      | Concurrency Formel | ✅ Sektion 1.2 | 100% (Code included) |
 | `file.md`      | Intro Text | 🗑️ Redundant | - |
+
+## ⚠️ 6. CONFLICT & ANOMALY LOG (Forensische Diskrepanz-Analyse)
+
+*Hier werden alle Widersprüche zwischen den Quellen (Bridge, Skills, Recherche) ungeschönt aufgelistet.*
+
+| Konflikt-Gegenstand | Quelle A (z.B. Bridge) | Quelle B (z.B. Recherche) | Analyse / Empfehlung |
+| :--- | :--- | :--- | :--- |
+| **RAM Limit** | `BRIDGE.md`: "Max 2GB" | `40-advanced-lighting.md`: "Braucht 8GB" | ⚠️ **KRITISCH:** Recherche fordert mehr als Infra erlaubt. Lösung: Neue "Volumetric Tier" Klasse erstellen? |
+| **Audio Sync** | `SKILL.md`: "Kein Limit" | `troubleshooting.md`: ">2 Frames Fail" | ✅ **UPDATE:** Skill ist zu lax, Troubleshooting-Regel ist strikter und wird bevorzugt. |
