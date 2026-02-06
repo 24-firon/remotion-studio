@@ -1,60 +1,169 @@
-# Viron Specification: Audio Analysis & Reactivity
-
-- **Source**: `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/audio.md`
-- **Status**: Viron-Extension (erweitert den globalen Skill)
-- **Relation**: Baut auf dem globalen `audio.md` auf mit professioneller FFT-Pipeline.
-
+---
+name: audio
+description: Using audio and sound in Remotion - importing, trimming, volume, speed, pitch
+metadata:
+  tags: audio, media, trim, volume, speed, loop, pitch, mute, sound, sfx
 ---
 
-## Viron-Spezifische Erweiterungen
+# Using audio in Remotion
 
-Die folgenden Konzepte gehen ÜBER den globalen Skill hinaus:
+## Prerequisites
 
-### 1. Deterministisches Audio-Framework
+First, the @remotion/media package needs to be installed.
+If it is not installed, use the following command:
 
-Viron verwendet ein **pre-analysiertes JSON-Format** für Audio-Daten, damit jeder Frame reproduzierbar ist:
-
-```typescript
-interface AudioFrame {
-  frame: number;
-  timestamp: number;
-  bass: number; // 20-250 Hz
-  mid: number; // 250-2000 Hz
-  treble: number; // 2000-20000 Hz
-  energy: number; // Gesamt-Energie
-  amplitude: number; // Peak-Amplitude
-}
+```bash
+npx remotion add @remotion/media
 ```
 
-### 2. FFT-zu-Remotion Pipeline
+## Importing Audio
 
+Use `<Audio>` from `@remotion/media` to add audio to your composition.
+
+```tsx
+import { Audio } from "@remotion/media";
+import { staticFile } from "remotion";
+
+export const MyComposition = () => {
+  return <Audio src={staticFile("audio.mp3")} />;
+};
 ```
-Audio-Datei (.wav)
-    ↓
-FFT Analysis (Node.js, vor Rendering)
-    ↓
-JSON Export (audio-frames.json)
-    ↓
-Remotion Component (liest JSON per Frame)
-    ↓
-Reaktive Animation (Bass → Scale, Treble → Glow)
+
+Remote URLs are also supported:
+
+```tsx
+<Audio src="https://remotion.media/audio.mp3" />
 ```
 
-### 3. Frequency-Band Mapping
+By default, audio plays from the start, at full volume and full length.
+Multiple audio tracks can be layered by adding multiple `<Audio>` components.
 
-| Band   | Frequenz    | Typische Reaktion    |
-| ------ | ----------- | -------------------- |
-| Bass   | 20-250 Hz   | Scale, Shake, Punch  |
-| Mid    | 250-2000 Hz | Rotation, Morph      |
-| Treble | 2000+ Hz    | Sparkle, Glint, Glow |
+## Trimming
 
----
+Use `trimBefore` and `trimAfter` to remove portions of the audio. Values are in frames.
 
-## Referenz zum Globalen Skill
+```tsx
+const { fps } = useVideoConfig();
 
-Für die Basis-Konzepte (useAudioData, Audio-Komponenten, Lautstärke):
-→ Lies: `~/.gemini/antigravity/global_skills/remotion-best-practices/rules/audio.md`
+return (
+  <Audio
+    src={staticFile("audio.mp3")}
+    trimBefore={2 * fps} // Skip the first 2 seconds
+    trimAfter={10 * fps} // End at the 10 second mark
+  />
+);
+```
 
----
+The audio still starts playing at the beginning of the composition - only the specified portion is played.
 
-_Viron Audio Specification v2.0 | 2026-01-29_
+## Delaying
+
+Wrap the audio in a `<Sequence>` to delay when it starts:
+
+```tsx
+import { Sequence, staticFile } from "remotion";
+import { Audio } from "@remotion/media";
+
+const { fps } = useVideoConfig();
+
+return (
+  <Sequence from={1 * fps}>
+    <Audio src={staticFile("audio.mp3")} />
+  </Sequence>
+);
+```
+
+The audio will start playing after 1 second.
+
+## Volume
+
+Set a static volume (0 to 1):
+
+```tsx
+<Audio src={staticFile("audio.mp3")} volume={0.5} />
+```
+
+Or use a callback for dynamic volume based on the current frame:
+
+```tsx
+import { interpolate } from "remotion";
+
+const { fps } = useVideoConfig();
+
+return (
+  <Audio
+    src={staticFile("audio.mp3")}
+    volume={(f) =>
+      interpolate(f, [0, 1 * fps], [0, 1], { extrapolateRight: "clamp" })
+    }
+  />
+);
+```
+
+The value of `f` starts at 0 when the audio begins to play, not the composition frame.
+
+## Muting
+
+Use `muted` to silence the audio. It can be set dynamically:
+
+```tsx
+const frame = useCurrentFrame();
+const { fps } = useVideoConfig();
+
+return (
+  <Audio
+    src={staticFile("audio.mp3")}
+    muted={frame >= 2 * fps && frame <= 4 * fps} // Mute between 2s and 4s
+  />
+);
+```
+
+## Speed
+
+Use `playbackRate` to change the playback speed:
+
+```tsx
+<Audio src={staticFile("audio.mp3")} playbackRate={2} /> {/* 2x speed */}
+<Audio src={staticFile("audio.mp3")} playbackRate={0.5} /> {/* Half speed */}
+```
+
+Reverse playback is not supported.
+
+## Looping
+
+Use `loop` to loop the audio indefinitely:
+
+```tsx
+<Audio src={staticFile("audio.mp3")} loop />
+```
+
+Use `loopVolumeCurveBehavior` to control how the frame count behaves when looping:
+
+- `"repeat"`: Frame count resets to 0 each loop (default)
+- `"extend"`: Frame count continues incrementing
+
+```tsx
+<Audio
+  src={staticFile("audio.mp3")}
+  loop
+  loopVolumeCurveBehavior="extend"
+  volume={(f) => interpolate(f, [0, 300], [1, 0])} // Fade out over multiple loops
+/>
+```
+
+## Pitch
+
+Use `toneFrequency` to adjust the pitch without affecting speed. Values range from 0.01 to 2:
+
+```tsx
+<Audio
+  src={staticFile("audio.mp3")}
+  toneFrequency={1.5} // Higher pitch
+/>
+<Audio
+  src={staticFile("audio.mp3")}
+  toneFrequency={0.8} // Lower pitch
+/>
+```
+
+Pitch shifting only works during server-side rendering, not in the Remotion Studio preview or in the `<Player />`.
