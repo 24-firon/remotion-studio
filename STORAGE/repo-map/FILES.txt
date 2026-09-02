@@ -1,0 +1,1302 @@
+.agent/AGENTS.md
+.agent/ARCHIVE_RECOMMENDATIONS.md
+.agent/boot/INIT_MISSION.md
+.agent/handover/AIStudio/Badge - (1)/10-remotion-basics-01-timeline-und-frames.md
+.agent/handover/AIStudio/Badge - (1)/50-web-patterns-03-css-animationen-vs-remotion.md
+.agent/handover/AIStudio/Badge - (1)/animations.md
+.agent/handover/AIStudio/Badge - (1)/calculate-metadata.md
+.agent/handover/AIStudio/Badge - (1)/compositions.md
+.agent/handover/AIStudio/Badge - (1)/documentation_manifest.md
+.agent/handover/AIStudio/Badge - (1)/extract-frames.md
+.agent/handover/AIStudio/Badge - (1)/get-video-dimensions.md
+.agent/handover/AIStudio/Badge - (1)/get-video-duration.md
+.agent/handover/AIStudio/Badge - (1)/parameters.md
+.agent/handover/AIStudio/Badge - (1)/RULES_CORE.md
+.agent/handover/AIStudio/Badge - (1)/sequencing.md
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/animations.md
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/compositions.md
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/sequencing.md
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/timing.md
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/transitions.md
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/trimming.md
+.agent/handover/AIStudio/Badge - (1)/timing.md
+.agent/handover/AIStudio/Badge - (1)/transitions.md
+.agent/handover/AIStudio/Badge - (1)/trimming.md
+.agent/handover/AIStudio/Badge - (1)/vision.md
+.agent/handover/AIStudio/Badge - (2)/3d.md
+.agent/handover/AIStudio/Badge - (2)/40-advanced-lighting-00-caustics-volumetric.md
+.agent/handover/AIStudio/Badge - (2)/40-gltf-models-00-loading-optimization.md
+.agent/handover/AIStudio/Badge - (2)/40-procedural-patterns-00-noise-voronoi-terrain.md
+.agent/handover/AIStudio/Badge - (2)/90-synergy-03-webgpu-compute-physics.md
+.agent/handover/AIStudio/Badge - (2)/physics.md
+.agent/handover/AIStudio/Badge - (2)/PROJECT_RULES_LIGHTING.md
+.agent/handover/AIStudio/Badge - (2)/Skill-Dateien/3d.md
+.agent/handover/AIStudio/Badge - (3)/30-post-processing-00-overview-postprocessing-stack.md
+.agent/handover/AIStudio/Badge - (3)/30-post-processing-01-bloom-selective.md
+.agent/handover/AIStudio/Badge - (3)/30-post-processing-02-depth-of-field.md
+.agent/handover/AIStudio/Badge - (3)/30-post-processing-03-04-chromatic-und-grain.md
+.agent/handover/AIStudio/Badge - (3)/PATTERN_Advanced_Shaders.md
+.agent/handover/AIStudio/Badge - (3)/Skill-Dateien/3d.md
+.agent/handover/AIStudio/Badge - (4)/20-layout-patterns-01-container-queries-und-grids.md
+.agent/handover/AIStudio/Badge - (4)/20-layout-patterns-02-view-transitions-in-remotion.md
+.agent/handover/AIStudio/Badge - (4)/20-layout-patterns-03-modern-css-masking-compositing.md
+.agent/handover/AIStudio/Badge - (4)/BarChart.md
+.agent/handover/AIStudio/Badge - (4)/fonts.md
+.agent/handover/AIStudio/Badge - (4)/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/Badge - (4)/PATTERN_LIGHTING_GRADIENTS.md
+.agent/handover/AIStudio/Badge - (4)/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/charts.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/fonts.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/gifs.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/images.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/lottie.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/measuring-text.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/tailwind.md
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/text-animations.md
+.agent/handover/AIStudio/Badge - (4)/tailwind.md
+.agent/handover/AIStudio/Badge - (4)/text-animations.md
+.agent/handover/AIStudio/Badge - (4)/THE_VIRON_AESTHETIC_MANIFESTO.md
+.agent/handover/AIStudio/Badge - (4)/theme.md
+.agent/handover/AIStudio/Badge - (4)/Typewriter.md
+.agent/handover/AIStudio/Badge - (4)/viron-button-guide.md
+.agent/handover/AIStudio/Badge - (4)/WordHighlight.md
+.agent/handover/AIStudio/Badge - (4)/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+.agent/handover/AIStudio/Badge - (5)/50-web-patterns-01-scroll-basierte-dof-navigation.md
+.agent/handover/AIStudio/Badge - (5)/50-web-patterns-02-adaptive-quality-switching.md
+.agent/handover/AIStudio/Badge - (5)/50-web-patterns-08-performance-web-vitals-mastery.md
+.agent/handover/AIStudio/Badge - (5)/50-web-patterns-09-kinetic-typography-text-animation.md
+.agent/handover/AIStudio/Badge - (5)/50-web-patterns-10-real-time-ai-video-streaming.md
+.agent/handover/AIStudio/Badge - (5)/70-web-accessibility-wcag-2026.md
+.agent/handover/AIStudio/Badge - (5)/Skill-Dateien/measuring-dom-nodes.md
+.agent/handover/AIStudio/Badge - (5)/Skill-Dateien/videos.md
+.agent/handover/AIStudio/Badge - (5)/website.md
+.agent/handover/AIStudio/Badge - (6)/16_ARCHIVE_Standard_Audio_Auphonic.md
+.agent/handover/AIStudio/Badge - (6)/17_ARCHIVE_Standard_AutoEdit_Whisper.md
+.agent/handover/AIStudio/Badge - (6)/18_ARCHIVE_Standard_Caption_Engine.md
+.agent/handover/AIStudio/Badge - (6)/19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+.agent/handover/AIStudio/Badge - (6)/40-audio-reaktiv-00-fft-frequenzspektren.md
+.agent/handover/AIStudio/Badge - (6)/80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+.agent/handover/AIStudio/Badge - (6)/audio.md
+.agent/handover/AIStudio/Badge - (6)/camera.md
+.agent/handover/AIStudio/Badge - (6)/display-captions.md
+.agent/handover/AIStudio/Badge - (6)/import-srt-captions.md
+.agent/handover/AIStudio/Badge - (6)/Skill-Dateien/audio.md
+.agent/handover/AIStudio/Badge - (6)/Skill-Dateien/display-captions.md
+.agent/handover/AIStudio/Badge - (6)/Skill-Dateien/get-audio-duration.md
+.agent/handover/AIStudio/Badge - (6)/Skill-Dateien/import-srt-captions.md
+.agent/handover/AIStudio/Badge - (6)/Skill-Dateien/transcribe-captions.md
+.agent/handover/AIStudio/Badge - (6)/transcribe-captions.md
+.agent/handover/AIStudio/Badge - (6)/videos.md
+.agent/handover/AIStudio/Badge - (7)/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+.agent/handover/AIStudio/Badge - (7)/22_SYSTEM_PLAN_Folder_Structure.md
+.agent/handover/AIStudio/Badge - (7)/23_ROUTING_MATRIX_Inputs.md
+.agent/handover/AIStudio/Badge - (7)/24_ROUTING_MATRIX_Outputs.md
+.agent/handover/AIStudio/Badge - (7)/60-cloud-rendering-00-aws-lambda-renderfarming.md
+.agent/handover/AIStudio/Badge - (7)/pipeline.md
+.agent/handover/AIStudio/Badge - (7)/RELEASE_PROTOCOL.md
+.agent/handover/AIStudio/Badge - (7)/RULES_TECHNICAL.md
+.agent/handover/AIStudio/Badge - (7)/RULES_WORKFLOW.md
+.agent/handover/AIStudio/Badge - (7)/SESSION_CLOSE_WORKFLOW.md
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/calculate-metadata.md
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/can-decode.md
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/extract-frames.md
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/get-video-dimensions.md
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/get-video-duration.md
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/parameters.md
+.agent/handover/AIStudio/Badge - (7)/troubleshooting.md
+.agent/handover/AIStudio/Badge - (7)/V43_MASTER_PLAN.md
+.agent/handover/AIStudio/Badge - (7)/V43_STRATEGY.md
+.agent/handover/AIStudio/Badge - (7)/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+.agent/handover/AIStudio/Badge - (7)/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+.agent/handover/AIStudio/Badge - (7)/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+.agent/handover/AIStudio/Badge - (8)/21_ARCHIVE_Standard_Agent_Execution.md
+.agent/handover/AIStudio/Badge - (8)/90-synergy-01-data-driven-personalization.md
+.agent/handover/AIStudio/Badge - (8)/90-synergy-02-realtime-video-rag-agents.md
+.agent/handover/AIStudio/Badge - (8)/AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+.agent/handover/AIStudio/Badge - (8)/AGENT-OUTPUT-VALIDATION-v1-0.md
+.agent/handover/AIStudio/Badge - (8)/AGENTS.md
+.agent/handover/AIStudio/Badge - (8)/ARCHIV-POLICY-v1-0.md
+.agent/handover/AIStudio/Badge - (8)/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+.agent/handover/AIStudio/Badge - (8)/RESEARCH_Semantic_Triggers.md
+.agent/handover/AIStudio/Badge - (8)/RULES_CORE.md
+.agent/handover/AIStudio/Badge - (8)/RULES_MIGRATION_GUIDE.md
+.agent/handover/AIStudio/Badge - (8)/RULES_TECHNICAL.md
+.agent/handover/AIStudio/Badge - (8)/RULES_WORKFLOW.md
+.agent/handover/AIStudio/Badge - (8)/Skill-Dateien/SKILL.md
+.agent/handover/AIStudio/Badge - (8)/SKILL-INSTALLATION-GUIDE-v1-0.md
+.agent/handover/AIStudio/Badge - (8)/SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+.agent/handover/AIStudio/Badge - (8)/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+.agent/handover/AIStudio/Badge - (8)/TOKEN_BUDGET.md
+.agent/handover/AIStudio/BADGE_7_CODEX_V8_FINAL.md
+.agent/handover/AIStudio/Batch1Phase1.md
+.agent/handover/AIStudio/brain/Data/00-master-workflow-2026-integration.md
+.agent/handover/AIStudio/brain/Data/00-overview-index-v2-1-complete.md
+.agent/handover/AIStudio/brain/Data/10-remotion-basics-01-timeline-und-frames.md
+.agent/handover/AIStudio/brain/Data/16_ARCHIVE_Standard_Audio_Auphonic.md
+.agent/handover/AIStudio/brain/Data/17_ARCHIVE_Standard_AutoEdit_Whisper.md
+.agent/handover/AIStudio/brain/Data/18_ARCHIVE_Standard_Caption_Engine.md
+.agent/handover/AIStudio/brain/Data/19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+.agent/handover/AIStudio/brain/Data/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+.agent/handover/AIStudio/brain/Data/21_ARCHIVE_Standard_Agent_Execution.md
+.agent/handover/AIStudio/brain/Data/22_SYSTEM_PLAN_Folder_Structure.md
+.agent/handover/AIStudio/brain/Data/23_ROUTING_MATRIX_Inputs.md
+.agent/handover/AIStudio/brain/Data/24_ROUTING_MATRIX_Outputs.md
+.agent/handover/AIStudio/brain/Data/25_AGENT_Migration_Order.md
+.agent/handover/AIStudio/brain/Data/26_INTEGRATION_PROTOCOL_Skill_Merge.md
+.agent/handover/AIStudio/brain/Data/30-post-processing-00-overview-postprocessing-stack.md
+.agent/handover/AIStudio/brain/Data/30-post-processing-01-bloom-selective.md
+.agent/handover/AIStudio/brain/Data/30-post-processing-02-depth-of-field.md
+.agent/handover/AIStudio/brain/Data/30-post-processing-03-04-chromatic-und-grain.md
+.agent/handover/AIStudio/brain/Data/3d.md
+.agent/handover/AIStudio/brain/Data/40-advanced-lighting-00-caustics-volumetric.md
+.agent/handover/AIStudio/brain/Data/40-audio-reaktiv-00-fft-frequenzspektren.md
+.agent/handover/AIStudio/brain/Data/40-gltf-models-00-loading-optimization.md
+.agent/handover/AIStudio/brain/Data/40-procedural-patterns-00-noise-voronoi-terrain.md
+.agent/handover/AIStudio/brain/Data/50-web-patterns-01-scroll-basierte-dof-navigation.md
+.agent/handover/AIStudio/brain/Data/50-web-patterns-02-adaptive-quality-switching.md
+.agent/handover/AIStudio/brain/Data/50-web-patterns-03-css-animationen-vs-remotion.md
+.agent/handover/AIStudio/brain/Data/50-web-patterns-08-performance-web-vitals-mastery.md
+.agent/handover/AIStudio/brain/Data/50-web-patterns-09-kinetic-typography-text-animation.md
+.agent/handover/AIStudio/brain/Data/50-web-patterns-10-real-time-ai-video-streaming.md
+.agent/handover/AIStudio/brain/Data/60-cloud-rendering-00-aws-lambda-renderfarming.md
+.agent/handover/AIStudio/brain/Data/70-web-accessibility-wcag-2026-compliance.md
+.agent/handover/AIStudio/brain/Data/80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+.agent/handover/AIStudio/brain/Data/90-synergy-01-data-driven-personalization.md
+.agent/handover/AIStudio/brain/Data/90-synergy-02-realtime-video-rag-agents.md
+.agent/handover/AIStudio/brain/Data/90-synergy-03-webgpu-compute-physics.md
+.agent/handover/AIStudio/brain/Data/AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+.agent/handover/AIStudio/brain/Data/AGENT-OUTPUT-VALIDATION-v1-0.md
+.agent/handover/AIStudio/brain/Data/AGENTS.md
+.agent/handover/AIStudio/brain/Data/animations.md
+.agent/handover/AIStudio/brain/Data/ARCHIV-POLICY-v1-0.md
+.agent/handover/AIStudio/brain/Data/audio.md
+.agent/handover/AIStudio/brain/Data/BarChart.md
+.agent/handover/AIStudio/brain/Data/calculate-metadata.md
+.agent/handover/AIStudio/brain/Data/camera.md
+.agent/handover/AIStudio/brain/Data/can-decode.md
+.agent/handover/AIStudio/brain/Data/charts.md
+.agent/handover/AIStudio/brain/Data/COMPARE-AGENT-PROMPT-TEMPLATE-v1.md
+.agent/handover/AIStudio/brain/Data/compositions.md
+.agent/handover/AIStudio/brain/Data/config_hack.md
+.agent/handover/AIStudio/brain/Data/DECISION_LOG.md
+.agent/handover/AIStudio/brain/Data/display-captions.md
+.agent/handover/AIStudio/brain/Data/extract-frames.md
+.agent/handover/AIStudio/brain/Data/EXTRACTION_REPORT_BADGE_7_CODEX_V7_FINAL.md
+.agent/handover/AIStudio/brain/Data/fonts.md
+.agent/handover/AIStudio/brain/Data/get-audio-duration.md
+.agent/handover/AIStudio/brain/Data/get-video-dimensions.md
+.agent/handover/AIStudio/brain/Data/get-video-duration.md
+.agent/handover/AIStudio/brain/Data/gifs.md
+.agent/handover/AIStudio/brain/Data/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/brain/Data/HANDOVER-GUIDE-EXTERNAL-DEVELOPER-v1-0.md
+.agent/handover/AIStudio/brain/Data/HISTORY_LOG.md
+.agent/handover/AIStudio/brain/Data/HUMAN_OPERATOR_GUIDE.md
+.agent/handover/AIStudio/brain/Data/images.md
+.agent/handover/AIStudio/brain/Data/implementation_plan.md
+.agent/handover/AIStudio/brain/Data/import-srt-captions.md
+.agent/handover/AIStudio/brain/Data/INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+.agent/handover/AIStudio/brain/Data/lottie.md
+.agent/handover/AIStudio/brain/Data/LUECKEN-AUDIT-v2-1-complete-coverage.md
+.agent/handover/AIStudio/brain/Data/maps.md
+.agent/handover/AIStudio/brain/Data/MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+.agent/handover/AIStudio/brain/Data/measuring-dom-nodes.md
+.agent/handover/AIStudio/brain/Data/measuring-text.md
+.agent/handover/AIStudio/brain/Data/MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+.agent/handover/AIStudio/brain/Data/ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+.agent/handover/AIStudio/brain/Data/ORCHESTRATOR-AGENT-SETUP-GEMINI-3-PRO-v1-0.md
+.agent/handover/AIStudio/brain/Data/parameters.md
+.agent/handover/AIStudio/brain/Data/PATTERN_Advanced_Shaders.md
+.agent/handover/AIStudio/brain/Data/PATTERN_LIGHTING_GRADIENTS.md
+.agent/handover/AIStudio/brain/Data/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/brain/Data/physics.md
+.agent/handover/AIStudio/brain/Data/pipeline.md
+.agent/handover/AIStudio/brain/Data/PROJECT_RULES_LIGHTING.md
+.agent/handover/AIStudio/brain/Data/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+.agent/handover/AIStudio/brain/Data/RELEASE_PROTOCOL.md
+.agent/handover/AIStudio/brain/Data/REPOSITORY_MANIFESTO.md
+.agent/handover/AIStudio/brain/Data/RESEARCH_Antigravity_Advanced_Patterns.md
+.agent/handover/AIStudio/brain/Data/RESEARCH_Semantic_Triggers.md
+.agent/handover/AIStudio/brain/Data/RULES_CORE.md
+.agent/handover/AIStudio/brain/Data/RULES_MIGRATION_GUIDE.md
+.agent/handover/AIStudio/brain/Data/RULES_TECHNICAL.md
+.agent/handover/AIStudio/brain/Data/RULES_WORKFLOW.md
+.agent/handover/AIStudio/brain/Data/sequencing.md
+.agent/handover/AIStudio/brain/Data/SESSION_CLOSE_WORKFLOW.md
+.agent/handover/AIStudio/brain/Data/SKILL-INSTALLATION-GUIDE-v1.md
+.agent/handover/AIStudio/brain/Data/SKILL-QUALITY-AUDIT-CHECKLIST-v1-0.md
+.agent/handover/AIStudio/brain/Data/SKILL.md
+.agent/handover/AIStudio/brain/Data/SKILLS_LOG.md
+.agent/handover/AIStudio/brain/Data/STATUS-DEPRECATION-REPORT-v2-1.md
+.agent/handover/AIStudio/brain/Data/SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+.agent/handover/AIStudio/brain/Data/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+.agent/handover/AIStudio/brain/Data/tailwind.md
+.agent/handover/AIStudio/brain/Data/task.md
+.agent/handover/AIStudio/brain/Data/text-animations.md
+.agent/handover/AIStudio/brain/Data/THE_ORCHESTRATORS_BADGE_CYCLE.md
+.agent/handover/AIStudio/brain/Data/THE_VIRON_AESTHETIC_MANIFESTO.md
+.agent/handover/AIStudio/brain/Data/timing.md
+.agent/handover/AIStudio/brain/Data/TOKEN_BUDGET.md
+.agent/handover/AIStudio/brain/Data/transcribe-captions.md
+.agent/handover/AIStudio/brain/Data/transitions.md
+.agent/handover/AIStudio/brain/Data/trimming.md
+.agent/handover/AIStudio/brain/Data/troubleshooting.md
+.agent/handover/AIStudio/brain/Data/Typewriter.md
+.agent/handover/AIStudio/brain/Data/V43_MASTER_PLAN.md
+.agent/handover/AIStudio/brain/Data/V43_STRATEGY.md
+.agent/handover/AIStudio/brain/Data/videos.md
+.agent/handover/AIStudio/brain/Data/VIRON_KNOWLEDGE_BRIDGE.md
+.agent/handover/AIStudio/brain/Data/VIRON_STUDIO_INDEX.md
+.agent/handover/AIStudio/brain/Data/viron-button-guide.md
+.agent/handover/AIStudio/brain/Data/VIRON-DELTA-SKILL-STRUCTURE-v1.md
+.agent/handover/AIStudio/brain/Data/vision.md
+.agent/handover/AIStudio/brain/Data/WALKTHROUGH_SESSION_6.md
+.agent/handover/AIStudio/brain/Data/website.md
+.agent/handover/AIStudio/brain/Data/WordHighlight.md
+.agent/handover/AIStudio/brain/Data/WORKFLOW_SUBAGENT_DEPLOYMENT.md
+.agent/handover/AIStudio/brain/Data/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+.agent/handover/AIStudio/brain/Data/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+.agent/handover/AIStudio/brain/Data/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+.agent/handover/AIStudio/brain/Handover-Prompt.md
+.agent/handover/AIStudio/brain/handover.md
+.agent/handover/AIStudio/Briefings/Briefing - B7.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_1_CODEX.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V1.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V10_HYBRID.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V10.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V11.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V2.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V3.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V7.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V8.md
+.agent/handover/AIStudio/EXTRACTION_REPORT_BADGE_7_CODEX_V9.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/00-master-workflow-2026-integration.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/16_ARCHIVE_Standard_Audio_Auphonic.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/17_ARCHIVE_Standard_AutoEdit_Whisper.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/18_ARCHIVE_Standard_Caption_Engine.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/21_ARCHIVE_Standard_Agent_Execution.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/22_SYSTEM_PLAN_Folder_Structure.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/23_ROUTING_MATRIX_Inputs.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/24_ROUTING_MATRIX_Outputs.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/30-post-processing-00-overview-postprocessing-stack.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/30-post-processing-01-bloom-selective.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/30-post-processing-02-depth-of-field.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/30-post-processing-03-04-chromatic-und-grain.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/3d.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/40-advanced-lighting-00-caustics-volumetric.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/40-audio-reaktiv-00-fft-frequenzspektren.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/40-gltf-models-00-loading-optimization.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/50-web-patterns-01-scroll-basierte-dof-navigation.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/50-web-patterns-08-performance-web-vitals-mastery.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/50-web-patterns-09-kinetic-typography-text-animation.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/60-cloud-rendering-00-aws-lambda-renderfarming.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/70-web-accessibility-wcag-2026.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/90-synergy-01-data-driven-personalization.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/90-synergy-02-realtime-video-rag-agents.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/90-synergy-03-webgpu-compute-physics.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/AGENTS.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/animations.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/assets.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/audio.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/calculate-metadata.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/camera.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/can-decode.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/charts-bar-chart.tsx.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/charts.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/compositions.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/DECISION_LOG.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/display-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/extract-frames.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/EXTRACTION_REPORT_BADGE_1_CODEX_V8.5.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/EXTRACTION_REPORT_BADGE_7_CODEX_V8.5.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/fonts.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/get-audio-duration.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/get-video-dimensions.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/get-video-duration.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/gifs.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/images.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/implementation_plan.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/import-srt-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/light-leaks.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/lottie.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/maps.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/measuring-dom-nodes.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/measuring-text.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/parameters.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/PATTERN_Advanced_Shaders.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/PATTERN_LIGHTING_GRADIENTS.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/PROJECT_RULES_LIGHTING.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/RULES_CORE.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/RULES_MIGRATION_GUIDE.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/RULES_TECHNICAL.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/RULES_WORKFLOW.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/sequencing.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/SKILL.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/subtitles.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/tailwind.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/task.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/text-animations-typewriter.tsx.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/text-animations-word-highlight.tsx.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/text-animations.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/THE_FORENSIC_MINDSET.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/THE_VIRON_AESTHETIC_MANIFESTO.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/timing.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/transcribe-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/transitions.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/transparent-videos.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/trimming.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/V43_MASTER_PLAN.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/V43_STRATEGY.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/videos.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/VIRON_CONTEXT_PACKAGES.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/VIRON_KNOWLEDGE_BRIDGE_V3.2.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/VIRON_KNOWLEDGE_BRIDGE.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/VIRON_OMEGA.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/VIRON_STUDIO_INDEX.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/viron-button-guide.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/vision.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/WALKTHROUGH_SESSION_6 - Copy.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/WALKTHROUGH_SESSION_6.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/website.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Architect/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Architektur-Kaskade.md
+.agent/handover/AIStudio/Omega_Onboarding/Dateiliste.md
+.agent/handover/AIStudio/Omega_Onboarding/EXTRACTION_REPORT_BADGE_1_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/EXTRACTION_REPORT_BADGE_2_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/EXTRACTION_REPORT_BADGE_3_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/EXTRACTION_REPORT_BADGE_4_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/EXTRACTION_REPORT_BADGE_6_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/EXTRACTION_REPORT_BADGE_7_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/16_ARCHIVE_Standard_Audio_Auphonic.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/17_ARCHIVE_Standard_AutoEdit_Whisper.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/18_ARCHIVE_Standard_Caption_Engine.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/21_ARCHIVE_Standard_Agent_Execution.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/22_SYSTEM_PLAN_Folder_Structure.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/23_ROUTING_MATRIX_Inputs.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/24_ROUTING_MATRIX_Outputs.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/30-post-processing-00-overview-postprocessing-stack.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/30-post-processing-01-bloom-selective.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/30-post-processing-02-depth-of-field.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/30-post-processing-03-04-chromatic-und-grain.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/3d.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/40-advanced-lighting-00-caustics-volumetric.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/40-audio-reaktiv-00-fft-frequenzspektren.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/40-gltf-models-00-loading-optimization.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/50-web-patterns-01-scroll-basierte-dof-navigation.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/50-web-patterns-08-performance-web-vitals-mastery.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/50-web-patterns-09-kinetic-typography-text-animation.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/60-cloud-rendering-00-aws-lambda-renderfarming.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/70-web-accessibility-wcag-2026.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/90-synergy-01-data-driven-personalization.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/90-synergy-02-realtime-video-rag-agents.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/90-synergy-03-webgpu-compute-physics.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/AGENTS.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/animations.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/Architektur-Kaskade.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/assets.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/audio.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/calculate-metadata.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/camera.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/can-decode.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/charts-bar-chart.tsx.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/charts.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/compositions.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/Dateiliste.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/display-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/extract-frames.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_1_CODEX_V8.5.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_1_CORE_ENGINE_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_1_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_2_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_4_DESIGN_SYSTEM_V1_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_4_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_7_CODEX_V11.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_7_CODEX_V8.5.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/EXTRACTION_REPORT_BADGE_7_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/fonts.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/get-audio-duration.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/get-video-dimensions.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/get-video-duration.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/gifs.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/Handover-final.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/images.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/import-srt-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/light-leaks.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/lottie.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/maps.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/measuring-dom-nodes.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/measuring-text.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/parameters.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/PATTERN_Advanced_Shaders.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/PATTERN_LIGHTING_GRADIENTS.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/PROJECT_RULES_LIGHTING.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/RULES_CORE.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/RULES_TECHNICAL.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/RULES_WORKFLOW.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/sequencing.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/SKILL_v1_Master.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/SKILL_v2_Conflict_Master.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/subtitles.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/tailwind.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/text-animations-typewriter.tsx.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/text-animations-word-highlight.tsx.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/text-animations.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/timing.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/transcribe-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/transitions.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/transparent-videos.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/trimming.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/V43_MASTER_PLAN.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/V43_STRATEGY.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/videos.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/VIRON_KNOWLEDGE_BRIDGE_V3.2.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/VIRON_STUDIO_INDEX.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/viron-button-guide.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/vision.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/website.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Handover-final.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/25_AGENT_Migration_Order.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/LUECKEN-AUDIT-v2-1-complete-coverage.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V2.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/STATUS-DEPRECATION-REPORT-v2-1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/SUBAGENT_BRIEFING_TEMPLATE_V6.1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/AGENTS.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/PROMPT_STAGE_1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/RULES_CORE.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/RULES_TECHNICAL.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/RULES_WORKFLOW.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/THE_VIRON_AESTHETIC_MANIFESTO.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/VIRON_KNOWLEDGE_BRIDGE.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/00-master-workflow-2026-integration.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/EXTRACTION_REPORT_BADGE_7_CODEX_V7_FINAL.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/implementation_plan.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/PROMPT_STAGE_2.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/VIRON_STUDIO_INDEX.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/vision.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/3d.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/animations.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/assets.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/audio.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/calculate-metadata.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/can-decode.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/charts.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/compositions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/display-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/extract-frames.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/fonts.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/get-audio-duration.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/get-video-dimensions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/get-video-duration.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/gifs.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/images.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/import-srt-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/lottie.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/maps.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/measuring-dom-nodes.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/measuring-text.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/parameters.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/PROMPT_STAGE_3.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/sequencing.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/SKILL.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/tailwind.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/text-animations.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/timing.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/transcribe-captions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/transitions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/trimming.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/videos.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/00-master-workflow-2026-integration.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/00-overview-index-v2-1-complete.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/10-remotion-basics-01-timeline-und-frames.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/15_MIGRATION_CORE_VIRON_UPLOADS.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/16_ARCHIVE_Standard_Audio_Auphonic.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/17_ARCHIVE_Standard_AutoEdit_Whisper.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/18_ARCHIVE_Standard_Caption_Engine.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/20-layout-patterns-01-container-queries-und-grids.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/20-layout-patterns-02-view-transitions-in-remotion.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/20-layout-patterns-03-modern-css-masking-compositing.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/21_ARCHIVE_Standard_Agent_Execution.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/22_SYSTEM_PLAN_Folder_Structure.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/23_ROUTING_MATRIX_Inputs.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/24_ROUTING_MATRIX_Outputs.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/25_AGENT_Migration_Order.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/26_INTEGRATION_PROTOCOL_Skill_Merge.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/30-post-processing-00-overview-postprocessing-stack.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/30-post-processing-01-bloom-selective.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/30-post-processing-02-depth-of-field.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/30-post-processing-03-04-chromatic-und-grain.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/40-advanced-lighting-00-caustics-volumetric.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/40-audio-reaktiv-00-fft-frequenzspektren.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/40-gltf-models-00-loading-optimization.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/40-procedural-patterns-00-noise-voronoi-terrain.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/50-web-patterns-01-scroll-basierte-dof-navigation.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/50-web-patterns-02-adaptive-quality-switching.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/50-web-patterns-03-css-animationen-vs-remotion.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/50-web-patterns-08-performance-web-vitals-mastery.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/50-web-patterns-09-kinetic-typography-text-animation.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/50-web-patterns-10-real-time-ai-video-streaming.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/60-cloud-rendering-00-aws-lambda-renderfarming.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/70-web-accessibility-wcag-2026.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/90-appendix-glossary-bibliography.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/90-synergy-01-data-driven-personalization.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/90-synergy-02-realtime-video-rag-agents.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/90-synergy-03-webgpu-compute-physics.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/AGENT-INITIALIZATION-CHECKLISTE-SCHNELL-v2-1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/AGENT-OUTPUT-VALIDATION-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/ARCHIV-POLICY-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/audio.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/BarChart.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/camera.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/compositions.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/FEHLERLOSUNG-haeufige-probleme.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/HANDOVER-GUIDE-EXTERNAL-DEVELOPER-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/LUECKEN-AUDIT-v2-1-complete-coverage.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/ORCHESTRATOR-AGENT-SETUP-GEMINI-3-PRO-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/PATTERN_Advanced_Shaders.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/PATTERN_LIGHTING_GRADIENTS.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/PROMPT_STAGE_4.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/QUICK-START-komplettbeispiel.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/Remotion Setup.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/RESOURCES_AND_ECOSYSTEM.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/sequencing.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/SKILL-INSTALLATION-GUIDE-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/SKILL-QUALITY-AUDIT-CHECKLIST-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/STATUS-DEPRECATION-REPORT-v2-1.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/TEMPLATE_FeatureSpec.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/Typewriter.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/V43_MASTER_PLAN.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/V43_STRATEGY.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/VIRON_SYSTEM_ENTRY.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/viron-button-guide.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/VIRON-DELTA-SKILL-STRUCTURE-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/website.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/WordHighlight.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/Briefing-example.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/EXTRACTION_REPORT_BADGE_1_CODEX.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/EXTRACTION_REPORT_BADGE_7_CODEX_V8.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/OMEGA MANIFESTO.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/PromptV10.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/Report_Template.md
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/VIRON_KNOWLEDGE_BRIDGE.md
+.agent/handover/AIStudio/Pflichtlektüre/00-master-workflow-2026-integration.md
+.agent/handover/AIStudio/Pflichtlektüre/AGENTS.md
+.agent/handover/AIStudio/Pflichtlektüre/implementation_plan.md
+.agent/handover/AIStudio/Pflichtlektüre/ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+.agent/handover/AIStudio/Pflichtlektüre/PROJECT_RULES_LIGHTING.md
+.agent/handover/AIStudio/Pflichtlektüre/RULES_CORE.md
+.agent/handover/AIStudio/Pflichtlektüre/RULES_MIGRATION_GUIDE.md
+.agent/handover/AIStudio/Pflichtlektüre/RULES_TECHNICAL.md
+.agent/handover/AIStudio/Pflichtlektüre/RULES_WORKFLOW.md
+.agent/handover/AIStudio/Pflichtlektüre/SKILL.md
+.agent/handover/AIStudio/Pflichtlektüre/SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+.agent/handover/AIStudio/Pflichtlektüre/task.md
+.agent/handover/AIStudio/Pflichtlektüre/THE_VIRON_AESTHETIC_MANIFESTO.md
+.agent/handover/AIStudio/Pflichtlektüre/VIRON_STUDIO_INDEX.md
+.agent/handover/AIStudio/Pflichtlektüre/vision.md
+.agent/handover/AIStudio/remotion-new/assets/logo.png
+.agent/handover/AIStudio/remotion-new/audit_results.txt
+.agent/handover/AIStudio/remotion-new/brain/gemini.md
+.agent/handover/AIStudio/remotion-new/brain/HANDOVER_TO_NEW_AGENT.md
+.agent/handover/AIStudio/remotion-new/brain/INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+.agent/handover/AIStudio/remotion-new/brain/PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+.agent/handover/AIStudio/remotion-new/brain/USER_GOVERNANCE_PROTOCOL.md
+.agent/handover/AIStudio/remotion-new/code/ChromeButton_HighPBR.tsx
+.agent/handover/AIStudio/remotion-new/code/ChromeScene.tsx
+.agent/handover/AIStudio/remotion-new/code/utils/constants.ts
+.agent/handover/AIStudio/remotion-new/code/utils/style.css
+.agent/handover/AIStudio/remotion-new/content_diff_report.txt
+.agent/handover/AIStudio/remotion-new/gemini.md
+.agent/handover/AIStudio/remotion-new/HANDOVER_RemotionStudio_IDE_Behaviors.md
+.agent/handover/AIStudio/remotion-new/HANDOVER_REPORT.md
+.agent/handover/AIStudio/remotion-new/HANDOVER_SilverV2.md
+.agent/handover/AIStudio/remotion-new/HANDOVER_TO_NEW_AGENT.md
+.agent/handover/AIStudio/remotion-new/HANDSHAKE_ARTIFACTS/assets/logo.png
+.agent/handover/AIStudio/remotion-new/HANDSHAKE_ARTIFACTS/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/remotion-new/HANDSHAKE_ARTIFACTS/PATTERN_Advanced_Shader_Recipes.md
+.agent/handover/AIStudio/remotion-new/HANDSHAKE_ARTIFACTS/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/remotion-new/INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+.agent/handover/AIStudio/remotion-new/knowledge/002-hdri-shading-success.md
+.agent/handover/AIStudio/remotion-new/knowledge/GUIDE_Viron_Button_Stack.md
+.agent/handover/AIStudio/remotion-new/knowledge/manuals/KNOWLEDGE_DEEP_DIVE.md
+.agent/handover/AIStudio/remotion-new/knowledge/PATTERN_Advanced_Shader_Recipes.md
+.agent/handover/AIStudio/remotion-new/knowledge/PATTERN_REALISTIC_SILVER_METAL.md
+.agent/handover/AIStudio/remotion-new/knowledge/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/remotion-new/knowledge/patterns/PATTERN_Advanced_Shaders.md
+.agent/handover/AIStudio/remotion-new/knowledge/patterns/PATTERN_LIGHTING_GRADIENTS.md
+.agent/handover/AIStudio/remotion-new/knowledge/patterns/PATTERN_Viron_Hard_Won_Knowledge.md
+.agent/handover/AIStudio/remotion-new/knowledge/rules/RULES_CLEAN_START.md
+.agent/handover/AIStudio/remotion-new/knowledge/specs/audio.md
+.agent/handover/AIStudio/remotion-new/knowledge/specs/camera.md
+.agent/handover/AIStudio/remotion-new/knowledge/specs/website.md
+.agent/handover/AIStudio/remotion-new/NEXT_ORCHESTRATOR_PROMPT.md
+.agent/handover/AIStudio/remotion-new/PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+.agent/handover/AIStudio/remotion-new/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+.agent/handover/AIStudio/remotion-new/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+.agent/handover/AIStudio/remotion-new/RULE_FILE_ANALYSIS_REPORT.md
+.agent/handover/AIStudio/remotion-new/USER_GOVERNANCE_PROTOCOL.md
+.agent/handover/AIStudio/System/Briefing-example.md
+.agent/handover/AIStudio/System/EXAMPLE_REPORT_BADGE_7_CODEX.md
+.agent/handover/AIStudio/System/OMEGA_ARCHITECT.md
+.agent/handover/AIStudio/System/OMEGA_Orchestrator_MODE.md
+.agent/handover/AIStudio/System/PromptV1.md
+.agent/handover/AIStudio/System/PromptV10.md
+.agent/handover/AIStudio/System/PromptV2.md
+.agent/handover/AIStudio/System/PromptV3.md
+.agent/handover/AIStudio/System/PromptV4.md
+.agent/handover/AIStudio/System/Report_Template.md
+.agent/handover/AIStudio/System/VIRON_KNOWLEDGE_BRIDGE - old.md
+.agent/handover/AIStudio/System/VIRON_KNOWLEDGE_BRIDGE_FOR_BADGE_1.md
+.agent/handover/AIStudio/System/VIRON_KNOWLEDGE_BRIDGE.md
+.agent/handover/AIStudio/VIRON_OMEGA_MANIFESTO.md
+.agent/handover/ANALYSIS_V3_VS_MY_WORK_LEARNINGS.md
+.agent/handover/BLACKLIST.md
+.agent/handover/BOOT_PROMPT.md
+.agent/handover/implementation_plan.md
+.agent/handover/INDEX_HYPERLINKS.md
+.agent/handover/INITIALIZATION_PROMPT.md
+.agent/handover/meta/PATTERN_REMOTION_LAMBDA_HYBRID.md
+.agent/handover/meta/PATTERN_SYNERGY_AUDIO_REACTIVITY.md
+.agent/handover/meta/RULE_GIT_SYNC_PROTOCOL.md
+.agent/handover/meta/RULE_TOKEN_ECONOMY.md
+.agent/handover/meta/THE_FORENSIC_MINDSET.md
+.agent/handover/meta/VIRON_HARDWARE_LAWS.md
+.agent/handover/PROMPT_SUBAGENT_1_SKILL_BADGE_MAPPING_V2.md
+.agent/handover/PROMPT_SUBAGENT_1_SKILL_BADGE_MAPPING.md
+.agent/handover/PROMPT_SUBAGENT_2_REPO_INFRASTRUCTURE_V2.md
+.agent/handover/PROMPT_SUBAGENT_2_REPO_INFRASTRUCTURE.md
+.agent/handover/PROMPT_SUBAGENT_V6.1_SELF_BRIEFING.md
+.agent/handover/PROMPT_SUBAGENT_V6.1_TEMPLATE_APPLICATION.md
+.agent/handover/PROMPT_V3_BEST_PRACTICES.md
+.agent/handover/SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md
+.agent/handover/SUBAGENT_BRIEFING_BADGE_7.md
+.agent/handover/SUBAGENT_BRIEFING_BADGE_8.md
+.agent/handover/SUBAGENT_BRIEFING_TEMPLATE_V6.1.md
+.agent/handover/SUBAGENT_BRIEFING_TEMPLATE_V6.md
+.agent/handover/TASK_PROMPT_2.md
+.agent/handover/TASK_PROMPT.md
+.agent/handover/task.md
+.agent/handover/WHITELIST.md
+.agent/recovery/CANDIDATE_1_bdc75d9.md
+.agent/recovery/CANDIDATE_2_2bb97e9.md
+.agent/recovery/CANDIDATE_3_28c45c8.md
+.agent/RULES_CORE.md
+.agent/RULES_MIGRATION_GUIDE.md
+.agent/RULES_REMOTION.md
+.agent/RULES_TECHNICAL.md
+.agent/RULES_USAGE_GUIDE.md
+.agent/RULES_VALIDATION_REPORT.md
+.agent/RULES_WORKFLOW.md
+.agent/rules/RULE_FILE_LINKING.md
+.agent/scripts/audit_repos.ps1
+.agent/scripts/kopiere_zu_viron_studio.ps1
+.agent/scripts/pruefe_aistudio_dateien.ps1
+.agent/scripts/pruefe_migration.ps1
+.agent/sessions/.keep
+.agent/sessions/LOG_2026-01-29_Integrity_Audit.md
+.agent/sessions/LOG_2026-01-30_Governance_Repair_and_v5_Alignment.md
+.agent/sessions/LOG_2026-01-31_Badge_7_System_Fix.md
+.agent/skills/csv-data-summarizer/examples/prompts.md
+.agent/skills/csv-data-summarizer/references/behavior.md
+.agent/skills/csv-data-summarizer/scripts/analysis_output.txt
+.agent/skills/csv-data-summarizer/scripts/analysis_report.md
+.agent/skills/csv-data-summarizer/scripts/analyze.py
+.agent/skills/csv-data-summarizer/scripts/categorical_distributions.png
+.agent/skills/csv-data-summarizer/scripts/distributions.png
+.agent/skills/csv-data-summarizer/scripts/time_series_analysis.png
+.agent/skills/csv-data-summarizer/SKILL.md
+.agent/skills/meta-architect/references/IDE_POLYGLOT_GUIDE.md
+.agent/skills/meta-architect/references/PATTERNS_GUIDE.md
+.agent/skills/meta-architect/references/QUALITY_GATES.md
+.agent/skills/meta-architect/references/SKILL_TEMPLATE.md
+.agent/skills/meta-architect/references/UNIVERSAL_EXTRACTION_GUIDE.md
+.agent/skills/meta-architect/SKILL.md
+.agent/skills/project-scribe/references/STANDARDS.md
+.agent/skills/project-scribe/scripts/scribe.py
+.agent/skills/project-scribe/SKILL.md
+.agent/skills/remotion-best-practices/rules/3d.md
+.agent/skills/remotion-best-practices/rules/animations.md
+.agent/skills/remotion-best-practices/rules/assets.md
+.agent/skills/remotion-best-practices/rules/assets/charts-bar-chart.tsx
+.agent/skills/remotion-best-practices/rules/assets/text-animations-typewriter.tsx
+.agent/skills/remotion-best-practices/rules/assets/text-animations-word-highlight.tsx
+.agent/skills/remotion-best-practices/rules/audio.md
+.agent/skills/remotion-best-practices/rules/calculate-metadata.md
+.agent/skills/remotion-best-practices/rules/can-decode.md
+.agent/skills/remotion-best-practices/rules/charts.md
+.agent/skills/remotion-best-practices/rules/compositions.md
+.agent/skills/remotion-best-practices/rules/display-captions.md
+.agent/skills/remotion-best-practices/rules/extract-frames.md
+.agent/skills/remotion-best-practices/rules/fonts.md
+.agent/skills/remotion-best-practices/rules/get-audio-duration.md
+.agent/skills/remotion-best-practices/rules/get-video-dimensions.md
+.agent/skills/remotion-best-practices/rules/get-video-duration.md
+.agent/skills/remotion-best-practices/rules/gifs.md
+.agent/skills/remotion-best-practices/rules/images.md
+.agent/skills/remotion-best-practices/rules/import-srt-captions.md
+.agent/skills/remotion-best-practices/rules/lottie.md
+.agent/skills/remotion-best-practices/rules/maps.md
+.agent/skills/remotion-best-practices/rules/measuring-dom-nodes.md
+.agent/skills/remotion-best-practices/rules/measuring-text.md
+.agent/skills/remotion-best-practices/rules/parameters.md
+.agent/skills/remotion-best-practices/rules/sequencing.md
+.agent/skills/remotion-best-practices/rules/tailwind.md
+.agent/skills/remotion-best-practices/rules/text-animations.md
+.agent/skills/remotion-best-practices/rules/timing.md
+.agent/skills/remotion-best-practices/rules/transcribe-captions.md
+.agent/skills/remotion-best-practices/rules/transitions.md
+.agent/skills/remotion-best-practices/rules/trimming.md
+.agent/skills/remotion-best-practices/rules/videos.md
+.agent/skills/remotion-best-practices/SKILL.md
+.agent/skills/remotion-core-skill-source/SKILL.md
+.agent/skills/remotion-studio/rules/01-visual-engine.md
+.agent/skills/remotion-studio/rules/02-infrastructure.md
+.agent/skills/remotion-studio/rules/03-shared-architecture.md
+.agent/skills/remotion-studio/rules/04-audio-intelligence.md
+.agent/skills/remotion-studio/rules/05-advanced-materials.md
+.agent/skills/remotion-studio/rules/05-dynamic-content.md
+.agent/skills/remotion-studio/rules/assets/architecture/pnpm-workspace.yaml
+.agent/skills/remotion-studio/rules/assets/architecture/remotion-index.ts
+.agent/skills/remotion-studio/rules/assets/architecture/root-package.json
+.agent/skills/remotion-studio/rules/assets/architecture/tailwind-preset.js
+.agent/skills/remotion-studio/rules/assets/architecture/turbo.json
+.agent/skills/remotion-studio/rules/assets/audio/transcribe_whisperx.ts
+.agent/skills/remotion-studio/rules/assets/DEPLOYMENT-GUIDE.md
+.agent/skills/remotion-studio/rules/assets/infrastructure/setup_hetzner_gpu.sh
+.agent/skills/remotion-studio/rules/assets/infrastructure/sync-assets.ts
+.agent/skills/remotion-studio/rules/assets/ui/HolographicCard.tsx
+.agent/skills/remotion-studio/rules/assets/visuals/AgXScene.tsx
+.agent/skills/remotion-studio/rules/assets/visuals/ToonScene.tsx
+.agent/skills/remotion-studio/SKILL.md
+.agent/workflows/deploy-subagent-mission.md
+.agent/workflows/orchestrate-badge-cycle.md
+.agent/workflows/orchestrator-self-audit.md
+.agent/workflows/release.md
+.agent/workflows/session-close.md
+.gitignore
+.graphifyignore
+.knowledge/migration/KOPIER_SCRIPT_ANLEITUNG.md
+.knowledge/migration/kopiere_zu_viron_studio.ps1
+.knowledge/migration/META_DATEIEN_MUSS_KOPIEREN.md
+.knowledge/migration/MUSS_KOPIEREN_LISTE.md
+.knowledge/migration/NICHT_KOPIERT_INDEX.md
+.knowledge/migration/VIRON_STUDIO_REPO_MIGRATION_PLAN.md
+.knowledge/mission/COMPARISON_BADGE_7_ALL_VERSIONS.md
+.knowledge/mission/EVOLUTION_V1_TO_V5_DIFF.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_1_REVISION.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_1_V2.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_1.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_2_REVISION.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_2.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_3_REVISION.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_3.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_4_REVISION.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_4.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_5_ORIGINAL.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_5.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_6.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_7_V2.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_7_V3.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_7_V4.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_7.md
+.knowledge/mission/EXTRACTION_REPORT_BADGE_8.md
+.knowledge/mission/REVISION_PROMPTS.md
+.knowledge/mission/SELF_ANALYSIS_AND_SUBAGENT_PROMPT.md
+.knowledge/mission/source-master-index.md
+.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_5_REVISION.md
+.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_6.md
+.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md
+.knowledge/mission/SUBAGENT_ACTIVATION_PROMPT_TEMPLATE.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_1_REPAIR_V1.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_1_REPAIR_V3.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_1_REPAIR.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_2.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_3.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_4.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_5.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_6.md
+.knowledge/mission/SUBAGENT_BRIEFING_BADGE_7.md
+.knowledge/mission/SUBAGENT_BRIEFING_TEMPLATE.md
+.knowledge/mission/subagent-briefing-badge-1.md
+.knowledge/mission/task.md
+.knowledge/project-learnings/LEARNING_BADGE_1_CORE_ARCH.md
+.knowledge/project-learnings/LEARNING_BADGE_2_PHYSICS.md
+.knowledge/project-learnings/LEARNING_BADGE_3_VFX.md
+.knowledge/project-learnings/LEARNING_BADGE_4_UI.md
+.knowledge/project-learnings/LEARNING_BADGE_5_WEB_CLOUD.md
+.knowledge/project-learnings/LEARNING_BADGE_7_SYSTEM.md
+.knowledge/project-learnings/LEARNING_V3_REPORT_STRUCTURE.md
+.knowledge/source-index/RECHERCHE_DATEIEN_INDEX.md
+.knowledge/source-master-index.md
+.knowledge/templates/DIFF_V4_VS_TEMPLATE_V2.md
+.knowledge/templates/EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md
+.prettierrc
+ANALYSIS_ACTIVATION_PROMPTS_6_7_VS_V6.1.md
+ANALYSIS_BADGE_6_7_VS_V6.1_IMPROVEMENTS.md
+ANALYSIS_BRIEFING_COMPARISON_6_7_8.md
+audit_final_round.py
+audit_results.txt
+brain_data_report.txt
+compile_handover_final.ps1
+compile_omega_architect.ps1
+compile_omega_brain_recovery.ps1
+compile_omega_brain.ps1
+compile_omega_final.ps1
+content_diff_report.txt
+copy_files.ps1
+copy_learnings.ps1
+copy_output.txt
+copy_potential.ps1
+DECISION_LOG.md
+distribute_batches.ps1
+distribution_report.txt
+docs/config_hack.md
+docs/HUMAN_OPERATOR_GUIDE.md
+docs/REPOSITORY_MANIFESTO.md
+docs/RESEARCH_Antigravity_Advanced_Patterns.md
+docs/RESEARCH_Semantic_Triggers.md
+docs/TOKEN_BUDGET.md
+eslint.config.mjs
+final_skill_comparison.txt
+GEMINI_UPDATE.md
+gemini.md
+global_skill_inventory.txt
+guides/compositions.md
+guides/sequencing.md
+guides/TEMPLATE_FeatureSpec.md
+guides/viron-button-guide.md
+HANDOVER_RemotionStudio_IDE_Behaviors.md
+HANDOVER_SilverV2.md
+HANDOVER_TO_NEW_AGENT.md
+HANDOVER_Viron_Cube.md
+Handover/AGENT_GOVERNANCE.md
+Handover/assets/logo.png
+Handover/code/ChromeButton_HighPBR.tsx
+Handover/code/ChromeScene.tsx
+Handover/code/Theme.ts
+Handover/HANDOVER_REPORT.md
+Handover/knowledge/manuals/00-README-DOKUMENTATION.md
+Handover/knowledge/manuals/01-VIRTUELLES-PRODUKTIONSSTUDIO-UEBERBLICK.md
+Handover/knowledge/manuals/02-3D-FOUNDATION-THREE-R3F.md
+Handover/knowledge/manuals/03-KAMERA-SYSTEME.md
+Handover/knowledge/manuals/04-WEBSITE-SIMULATION-BROWSER-RENDERING.md
+Handover/knowledge/manuals/05-REMOTION-RENDERING-PIPELINE.md
+Handover/knowledge/manuals/06-AUDIO-PROCESSING-REACTIVE-EFFECTS.md
+Handover/knowledge/manuals/07-THEME-SYSTEM-DESIGN-TOKENS.md
+Handover/knowledge/manuals/08-DEVELOPER-WORKFLOW-BEST-PRACTICES.md
+Handover/knowledge/manuals/09-TROUBLESHOOTING-FEHLERBEHANDLUNG.md
+Handover/knowledge/manuals/CLS_ZERO_LAYOUT_SHIFT.md
+Handover/knowledge/manuals/ERROR_BOUNDARIES_SUSPENSE.md
+Handover/knowledge/manuals/Food Photography prompt.md
+Handover/knowledge/manuals/GPU_GUARD_DEEP_DIVE.md
+Handover/knowledge/manuals/K6_LOAD_TESTING.md
+Handover/knowledge/manuals/LCP_LARGEST_CONTENTFUL_PAINT.md
+Handover/knowledge/manuals/LEARNINGS_INDEX.md
+Handover/knowledge/manuals/NEXTJS_IMAGE_OPTIMIZATION.md
+Handover/knowledge/manuals/PPR_PARTIAL_PRERENDERING.md
+Handover/knowledge/manuals/PWSL.md
+Handover/knowledge/manuals/SCROLLTRIGGER_PATTERN.md
+Handover/knowledge/manuals/SERVER_ACTIONS_PATTERN.md
+Handover/knowledge/manuals/TAILWIND_41_OXIDE_THEME.md
+Handover/knowledge/manuals/VIRON_ELITE_PATTERNS_CLEAN.md
+Handover/knowledge/manuals/VIRON_R1-R8_Complete_Reference.md
+Handover/knowledge/manuals/ZOD_FORM_VALIDATION.md
+Handover/knowledge/patterns/002-hdri-shading-success.md
+Handover/knowledge/patterns/PATTERN_REALISTIC_SILVER_METAL.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/30-post-processing-01-bloom-selective.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/30-post-processing-02-depth-of-field.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/40-advanced-lighting-00-caustics-volumetric.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/40-audio-reaktiv-00-fft-frequenzspektren.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/40-procedural-patterns-00-noise-voronoi-terrain.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/60-cloud-rendering-00-aws-lambda-renderfarming.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/90-appendix-glossary-bibliography.md
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/90-synergy-03-webgpu-compute-physics.md
+Handover/knowledge/research_advanced/Tier 2_Solid_Engineering/20-layout-patterns-01-container-queries-und-grids.md
+Handover/knowledge/research_advanced/Tier 2_Solid_Engineering/40-gltf-models-00-loading-optimization.md
+Handover/knowledge/research_advanced/Tier 2_Solid_Engineering/50-web-patterns-09-kinetic-typography-text-animation.md
+Handover/knowledge/research_advanced/Tier 2_Solid_Engineering/70-web-accessibility-wcag-2026.md
+Handover/knowledge/THE_AESTHETIC_MANIFESTO.md
+Handover/SKILL_EXPORT_remotion-best-practices.md
+Handover/SKILL_EXPORT_remotion-studio.md
+harvest_everything.ps1
+history_debug.txt
+HISTORY_LOG.md
+INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+local_skill_inventory.txt
+masterpiece_candidate.tsx
+NEXT_ORCHESTRATOR_PROMPT.md
+omega_architect_report.txt
+omega_final_report.txt
+omega_onboarding_report.txt
+omega_recovery_report.txt
+omega_report.txt
+package_handshake.ps1
+package-lock.json
+package.json
+patterns/BarChart.md
+patterns/Typewriter.md
+patterns/WordHighlight.md
+PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+postcss.config.mjs
+PROJECT_RULES.md
+PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V1.md
+PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V2.md
+PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+public/assets/logo.png
+public/Eye Candy Stack/advanced-shaders.md
+public/Eye Candy Stack/package-json-reference.md
+public/Eye Candy Stack/README.md
+public/Eye Candy Stack/troubleshooting-faq.md
+public/Eye Candy Stack/viron-button-guide.md
+public/remotion.md
+QUICKSTART_VIRON_AUDITOR.md
+README.md
+recover_omega_architect.ps1
+Remotion Recherche/1/00-README-DOKUMENTATION.md
+Remotion Recherche/1/01-VIRTUELLES-PRODUKTIONSSTUDIO-UEBERBLICK.md
+Remotion Recherche/1/02-3D-FOUNDATION-THREE-R3F.md
+Remotion Recherche/1/03-KAMERA-SYSTEME.md
+Remotion Recherche/1/04-WEBSITE-SIMULATION-BROWSER-RENDERING.md
+Remotion Recherche/1/05-REMOTION-RENDERING-PIPELINE.md
+Remotion Recherche/1/06-AUDIO-PROCESSING-REACTIVE-EFFECTS.md
+Remotion Recherche/1/07-THEME-SYSTEM-DESIGN-TOKENS.md
+Remotion Recherche/1/08-DEVELOPER-WORKFLOW-BEST-PRACTICES.md
+Remotion Recherche/1/09-TROUBLESHOOTING-FEHLERBEHANDLUNG.md
+Remotion Recherche/1/CLS_ZERO_LAYOUT_SHIFT.md
+Remotion Recherche/1/ERROR_BOUNDARIES_SUSPENSE.md
+Remotion Recherche/1/Food Photography prompt.md
+Remotion Recherche/1/GPU_GUARD_DEEP_DIVE.md
+Remotion Recherche/1/K6_LOAD_TESTING.md
+Remotion Recherche/1/LCP_LARGEST_CONTENTFUL_PAINT.md
+Remotion Recherche/1/LEARNINGS_INDEX.md
+Remotion Recherche/1/NEXTJS_IMAGE_OPTIMIZATION.md
+Remotion Recherche/1/PPR_PARTIAL_PRERENDERING.md
+Remotion Recherche/1/PWSL.md
+Remotion Recherche/1/SCROLLTRIGGER_PATTERN.md
+Remotion Recherche/1/SERVER_ACTIONS_PATTERN.md
+Remotion Recherche/1/TAILWIND_41_OXIDE_THEME.md
+Remotion Recherche/1/VIRON_ELITE_PATTERNS_CLEAN.md
+Remotion Recherche/1/VIRON_R1-R8_Complete_Reference.md
+Remotion Recherche/1/ZOD_FORM_VALIDATION.md
+Remotion Recherche/2/00-master-workflow-2026-integration.md
+Remotion Recherche/2/00-overview-index-v2-1-complete.md
+Remotion Recherche/2/10-remotion-basics-01-timeline-und-frames.md
+Remotion Recherche/2/15_MIGRATION_CORE_VIRON_UPLOADS.md
+Remotion Recherche/2/16_ARCHIVE_Standard_Audio_Auphonic.md
+Remotion Recherche/2/17_ARCHIVE_Standard_AutoEdit_Whisper.md
+Remotion Recherche/2/18_ARCHIVE_Standard_Caption_Engine.md
+Remotion Recherche/2/19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+Remotion Recherche/2/20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+Remotion Recherche/2/20-layout-patterns-01-container-queries-und-grids.md
+Remotion Recherche/2/20-layout-patterns-02-view-transitions-in-remotion.md
+Remotion Recherche/2/20-layout-patterns-03-modern-css-masking-compositing.md
+Remotion Recherche/2/21_ARCHIVE_Standard_Agent_Execution.md
+Remotion Recherche/2/22_SYSTEM_PLAN_Folder_Structure.md
+Remotion Recherche/2/23_ROUTING_MATRIX_Inputs.md
+Remotion Recherche/2/24_ROUTING_MATRIX_Outputs.md
+Remotion Recherche/2/25_AGENT_Migration_Order.md
+Remotion Recherche/2/26_INTEGRATION_PROTOCOL_Skill_Merge.md
+Remotion Recherche/2/30-post-processing-00-overview-postprocessing-stack.md
+Remotion Recherche/2/30-post-processing-01-bloom-selective.md
+Remotion Recherche/2/30-post-processing-02-depth-of-field.md
+Remotion Recherche/2/30-post-processing-03-04-chromatic-und-grain.md
+Remotion Recherche/2/40-advanced-lighting-00-caustics-volumetric.md
+Remotion Recherche/2/40-audio-reaktiv-00-fft-frequenzspektren.md
+Remotion Recherche/2/40-gltf-models-00-loading-optimization.md
+Remotion Recherche/2/40-procedural-patterns-00-noise-voronoi-terrain.md
+Remotion Recherche/2/50-web-patterns-01-scroll-basierte-dof-navigation.md
+Remotion Recherche/2/50-web-patterns-02-adaptive-quality-switching.md
+Remotion Recherche/2/50-web-patterns-03-css-animationen-vs-remotion.md
+Remotion Recherche/2/50-web-patterns-08-performance-web-vitals-mastery.md
+Remotion Recherche/2/50-web-patterns-09-kinetic-typography-text-animation.md
+Remotion Recherche/2/50-web-patterns-10-real-time-ai-video-streaming.md
+Remotion Recherche/2/60-cloud-rendering-00-aws-lambda-renderfarming.md
+Remotion Recherche/2/70-web-accessibility-wcag-2026.md
+Remotion Recherche/2/80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+Remotion Recherche/2/90-appendix-glossary-bibliography.md
+Remotion Recherche/2/90-synergy-01-data-driven-personalization.md
+Remotion Recherche/2/90-synergy-02-realtime-video-rag-agents.md
+Remotion Recherche/2/90-synergy-03-webgpu-compute-physics.md
+Remotion Recherche/2/AGENT-INITIALIZATION-CHECKLISTE-SCHNELL-v2-1.md
+Remotion Recherche/2/AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+Remotion Recherche/2/AGENT-OUTPUT-VALIDATION-v1-0.md
+Remotion Recherche/2/ARCHIV-POLICY-v1-0.md
+Remotion Recherche/2/COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md
+Remotion Recherche/2/FEHLERLOSUNG-haeufige-probleme.md
+Remotion Recherche/2/HANDOVER-GUIDE-EXTERNAL-DEVELOPER-v1-0.md
+Remotion Recherche/2/LUECKEN-AUDIT-v2-1-complete-coverage.md
+Remotion Recherche/2/MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+Remotion Recherche/2/MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+Remotion Recherche/2/ORCHESTRATOR-AGENT-SETUP-GEMINI-3-PRO-v1-0.md
+Remotion Recherche/2/QUICK-START-komplettbeispiel.md
+Remotion Recherche/2/Remotion Setup.md
+Remotion Recherche/2/SKILL-INSTALLATION-GUIDE-v1-0.md
+Remotion Recherche/2/SKILL-QUALITY-AUDIT-CHECKLIST-v1-0.md
+Remotion Recherche/2/STATUS-DEPRECATION-REPORT-v2-1.md
+Remotion Recherche/2/SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+Remotion Recherche/2/VIRON-DELTA-SKILL-STRUCTURE-v1-0.md
+Remotion Recherche/2/ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+Remotion Recherche/2/ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+Remotion Recherche/2/ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+remotion-new/assets/logo.png
+remotion-new/audit_results.txt
+remotion-new/brain/gemini.md
+remotion-new/brain/HANDOVER_TO_NEW_AGENT.md
+remotion-new/brain/INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+remotion-new/brain/PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+remotion-new/brain/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+remotion-new/brain/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+remotion-new/brain/RULE_FILE_ANALYSIS_REPORT.md
+remotion-new/brain/USER_GOVERNANCE_PROTOCOL.md
+remotion-new/code/ChromeButton_HighPBR.tsx
+remotion-new/code/ChromeScene.tsx
+remotion-new/code/utils/constants.ts
+remotion-new/code/utils/style.css
+remotion-new/content_diff_report.txt
+remotion-new/gemini.md
+remotion-new/HANDOVER_RemotionStudio_IDE_Behaviors.md
+remotion-new/HANDOVER_REPORT.md
+remotion-new/HANDOVER_SilverV2.md
+remotion-new/HANDOVER_TO_NEW_AGENT.md
+remotion-new/HANDSHAKE_ARTIFACTS/assets/logo.png
+remotion-new/HANDSHAKE_ARTIFACTS/GUIDE_Viron_Button_Stack.md
+remotion-new/HANDSHAKE_ARTIFACTS/PATTERN_Advanced_Shader_Recipes.md
+remotion-new/HANDSHAKE_ARTIFACTS/PATTERN_Viron_Hard_Won_Knowledge.md
+remotion-new/INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+remotion-new/knowledge/002-hdri-shading-success.md
+remotion-new/knowledge/GUIDE_Viron_Button_Stack.md
+remotion-new/knowledge/PATTERN_Advanced_Shader_Recipes.md
+remotion-new/knowledge/PATTERN_REALISTIC_SILVER_METAL.md
+remotion-new/knowledge/PATTERN_Viron_Hard_Won_Knowledge.md
+remotion-new/knowledge/patterns/PATTERN_Advanced_Shaders.md
+remotion-new/knowledge/patterns/PATTERN_LIGHTING_GRADIENTS.md
+remotion-new/knowledge/patterns/PATTERN_Viron_Hard_Won_Knowledge.md
+remotion-new/knowledge/rules/PROJECT_RULES_LIGHTING.md
+remotion-new/knowledge/rules/RULES_CORE.md
+remotion-new/knowledge/rules/RULES_MIGRATION_GUIDE.md
+remotion-new/knowledge/rules/RULES_REMOTION.md
+remotion-new/knowledge/rules/RULES_TECHNICAL.md
+remotion-new/knowledge/rules/RULES_USAGE_GUIDE.md
+remotion-new/knowledge/rules/RULES_VALIDATION_REPORT.md
+remotion-new/knowledge/rules/RULES_WORKFLOW.md
+remotion-new/knowledge/specs/audio.md
+remotion-new/knowledge/specs/camera.md
+remotion-new/knowledge/specs/VIRON_SYSTEM_ENTRY.md
+remotion-new/knowledge/specs/website.md
+remotion-new/NEXT_ORCHESTRATOR_PROMPT.md
+remotion-new/PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+remotion-new/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+remotion-new/PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+remotion-new/RULE_FILE_ANALYSIS_REPORT.md
+remotion-new/USER_GOVERNANCE_PROTOCOL.md
+remotion.config.ts
+RULE_FILE_ANALYSIS_REPORT.md
+setup_omega_onboarding.ps1
+skill_comparison_report.txt
+SKILLS_LOG.md
+specs/audio.md
+specs/camera.md
+specs/VIRON_SYSTEM_ENTRY.md
+specs/website.md
+src/constants.ts
+src/experiments/4 Evolutions-Tests.md
+src/experiments/chrome-v3/ChromeButton_3_0_HighPBR.tsx
+src/experiments/chrome-v3/ChromeScene.tsx
+src/experiments/chrome-v3/index.ts
+src/experiments/cube-v1/CubeScene.tsx
+src/experiments/cube-v1/index.ts
+src/experiments/cube-v1/VironCube_1_0_Square.tsx
+src/experiments/cube-v1/VironCube_2_0_Rounded.tsx
+src/experiments/cube-v1/VironCube.tsx
+src/experiments/silver-v2/index.ts
+src/experiments/silver-v2/SilverMonolith.tsx
+src/experiments/silver-v2/SilverScene.tsx
+src/index.css
+src/index.ts
+src/learnings/GUIDE_Viron_Button_Stack.md
+src/learnings/PATTERN_Advanced_Shaders.md
+src/learnings/PATTERN_LIGHTING_GRADIENTS.md
+src/learnings/PATTERN_Viron_Hard_Won_Knowledge.md
+src/learnings/RESOURCES_AND_ECOSYSTEM.md
+src/my-lab/FirstRightDraftScene.tsx
+src/my-lab/MainScene.tsx
+src/my-lab/ScenesV23.tsx
+src/my-lab/ScenesV24_Variants.tsx
+src/my-lab/ScenesV29_Thematic.tsx
+src/my-lab/ScenesV30_SyntheticStudio.tsx
+src/my-lab/ScenesV31_ColorTuned.tsx
+src/my-lab/ScenesV34_LightShapes.tsx
+src/my-lab/ScenesV35_RoomShapes.tsx
+src/my-lab/ScenesV36_Asymmetric.tsx
+src/my-lab/ScenesV37_OvalWalls.tsx
+src/my-lab/ScenesV38_Marbled.tsx
+src/my-lab/ScenesV39_Chaos.tsx
+src/my-lab/ScenesV40_RealGradients.tsx
+src/my-lab/ScenesV41_Variations.tsx
+src/my-lab/ScenesV42_GoldenMean.tsx
+src/my-lab/ScenesV43_Armada.tsx
+src/my-lab/ScenesV44_RefinedArmada.tsx
+src/my-lab/ScenesV45_Templates.tsx
+src/my-lab/ScenesV46_Alchemy.tsx
+src/my-lab/SceneV10.tsx
+src/my-lab/SceneV11.tsx
+src/my-lab/SceneV12.tsx
+src/my-lab/SceneV13.tsx
+src/my-lab/SceneV14.tsx
+src/my-lab/SceneV15.tsx
+src/my-lab/SceneV16.tsx
+src/my-lab/SceneV22.tsx
+src/my-lab/SceneV24.tsx
+src/my-lab/SceneV25.tsx
+src/my-lab/SceneV26_Debug.tsx
+src/my-lab/SceneV26.tsx
+src/my-lab/SceneV27.tsx
+src/my-lab/SceneV28.tsx
+src/my-lab/SceneV32.tsx
+src/my-lab/SceneV33.tsx
+src/my-lab/SceneV9.tsx
+src/my-lab/SilverButton_0_2_SuperGlint_LogoLess.tsx
+src/my-lab/SilverButton_0_5_OriginalGlint.tsx
+src/my-lab/SilverButton_1_0_Original.tsx
+src/my-lab/SilverButton_1_0_Refined.tsx
+src/my-lab/SilverButton_v0_1_PerfectHybrid.tsx
+src/my-lab/SilverButton.tsx
+src/my-lab/TemplateButton_V45_HDRI.tsx
+src/my-lab/Terminal_Original.tsx
+src/my-lab/Terminal.tsx
+src/my-lab/TrueFirstDraftScene.tsx
+src/my-lab/ViroMaster_V1_Button.tsx
+src/my-lab/ViroMaster_V1_Scene.tsx
+src/my-lab/ViroMaster_V2_Button.tsx
+src/my-lab/ViroMaster_V3_Button.tsx
+src/my-lab/ViroMaster_V3_Scene.tsx
+src/my-lab/VironButton_Master_V4.tsx
+src/my-lab/VironButton_Master_V5.tsx
+src/my-lab/VironButton_Master.tsx
+src/my-lab/VironButton_V10_LiquidPill.tsx
+src/my-lab/VironButton_V11_Seamless.tsx
+src/my-lab/VironButton_V12_LightTent.tsx
+src/my-lab/VironButton_V13_Capsule.tsx
+src/my-lab/VironButton_V14_HyperLiquid.tsx
+src/my-lab/VironButton_V15_Bright.tsx
+src/my-lab/VironButton_V16_Silver.tsx
+src/my-lab/VironButton_V17_WhiteRoom.tsx
+src/my-lab/VironButton_V18_GreyStudio.tsx
+src/my-lab/VironButton_V19_ChromeBright.tsx
+src/my-lab/VironButton_V20_LiquidMirror.tsx
+src/my-lab/VironButton_V21_PhysicalSilver.tsx
+src/my-lab/VironButton_V22_LiquidSilver.tsx
+src/my-lab/VironButton_V23_RealHDRI.tsx
+src/my-lab/VironButton_V24_Master.tsx
+src/my-lab/VironButton_V24_Variants.tsx
+src/my-lab/VironButton_V25_PureStudio.tsx
+src/my-lab/VironButton_V26_GreyStudio_Debug.tsx
+src/my-lab/VironButton_V26_GreyStudio.tsx
+src/my-lab/VironButton_V27_HybridMaster.tsx
+src/my-lab/VironButton_V28_V7_Restored.tsx
+src/my-lab/VironButton_V29_Thematic.tsx
+src/my-lab/VironButton_V30_SyntheticStudio.tsx
+src/my-lab/VironButton_V31_ColorTuned.tsx
+src/my-lab/VironButton_V32_GreyGradient.tsx
+src/my-lab/VironButton_V33_ColorGradient.tsx
+src/my-lab/VironButton_V34_LightShapes.tsx
+src/my-lab/VironButton_V35_RoomShapes.tsx
+src/my-lab/VironButton_V36_Asymmetric.tsx
+src/my-lab/VironButton_V37_OvalWalls.tsx
+src/my-lab/VironButton_V38_Marbled.tsx
+src/my-lab/VironButton_V39_Chaos.tsx
+src/my-lab/VironButton_V40_RealGradients.tsx
+src/my-lab/VironButton_V41_Variations.tsx
+src/my-lab/VironButton_V42_GoldenMean.tsx
+src/my-lab/VironButton_V43_Armada.tsx
+src/my-lab/VironButton_V44_RefinedArmada.tsx
+src/my-lab/VironButton_V46_Alchemy.tsx
+src/my-lab/VironButton_V6_Massive.tsx
+src/my-lab/VironButton_V7_Sharp.tsx
+src/my-lab/VironButton_V8_City.tsx
+src/my-lab/VironButton_V9_ZeroFrame.tsx
+src/my-lab/VironMaster_Scene.tsx
+src/my-lab/VironMaster_V4_Scene.tsx
+src/my-lab/VironMaster_V5_Scene.tsx
+src/my-lab/VironTerminal_Master.tsx
+src/my-lab/VironVariants_SilverSpectrum.tsx
+src/my-lab/VironVariants_V6_V7_V8.tsx
+src/my-lab/ViroTerminal_Pro.tsx
+src/my-lab/ViroTerminal_Ultra.tsx
+src/PROJECT_RULES_LIGHTING.md
+src/reference-examples/HelloWorld.tsx
+src/reference-examples/HelloWorld/Arc.tsx
+src/reference-examples/HelloWorld/Atom.tsx
+src/reference-examples/HelloWorld/constants.ts
+src/reference-examples/HelloWorld/Logo.tsx
+src/reference-examples/HelloWorld/Subtitle.tsx
+src/reference-examples/HelloWorld/Title.tsx
+src/Root.tsx
+src/style.css
+src/theme/Theme.ts
+src/V43_MASTER_PLAN.md
+src/V43_STRATEGY.md
+swap_button_code.ps1
+swap_final_gold.ps1
+task_recovery_bdc75d9.txt
+task_recovery.txt
+temp_button.tsx
+THE_NEXT_STEPS.md
+THE_VIRON_AESTHETIC_MANIFESTO.md
+tsconfig.json
+USER_GOVERNANCE_PROTOCOL.md
+vault/audio-sync/sync-strategies.md
+vault/benchmarks/market-references.md
+vault/fx-lab/whiteboard-concept.md
+vault/LEARNING_IDE_Behavior.md
+vault/projects/explainer-pipeline.md
+verification_output.txt
+verify_files.ps1
+VIRON_CONTEXT_PACKAGES.md
+VIRON_STUDIO_INDEX.md
+viron-core/documentation_manifest.md
+viron-core/physics.md
+viron-core/pipeline.md
+viron-core/theme.md
+viron-core/troubleshooting.md
+viron-core/vision.md
+viron-core/workflow.md
+WALKTHROUGH_SESSION_6.md

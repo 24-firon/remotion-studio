@@ -1,0 +1,127 @@
+.agent/
+.agent/boot/
+.agent/handover/
+.agent/handover/AIStudio/
+.agent/handover/AIStudio/Badge - (1)/
+.agent/handover/AIStudio/Badge - (1)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (2)/
+.agent/handover/AIStudio/Badge - (2)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (3)/
+.agent/handover/AIStudio/Badge - (3)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (4)/
+.agent/handover/AIStudio/Badge - (4)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (5)/
+.agent/handover/AIStudio/Badge - (5)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (6)/
+.agent/handover/AIStudio/Badge - (6)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (7)/
+.agent/handover/AIStudio/Badge - (7)/Skill-Dateien/
+.agent/handover/AIStudio/Badge - (8)/
+.agent/handover/AIStudio/Badge - (8)/Skill-Dateien/
+.agent/handover/AIStudio/brain/
+.agent/handover/AIStudio/brain/Data/
+.agent/handover/AIStudio/Briefings/
+.agent/handover/AIStudio/Omega_Onboarding/
+.agent/handover/AIStudio/Omega_Onboarding/Architect/
+.agent/handover/AIStudio/Omega_Onboarding/FINAL_ROUND/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/_TRASH/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_1_Constitution/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_2_Blueprint/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_3_Library/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_4_Raw_Gold/
+.agent/handover/AIStudio/Omega_Onboarding/Orchestrator/Stage_5_Work_files/
+.agent/handover/AIStudio/Pflichtlektüre/
+.agent/handover/AIStudio/remotion-new/
+.agent/handover/AIStudio/remotion-new/assets/
+.agent/handover/AIStudio/remotion-new/brain/
+.agent/handover/AIStudio/remotion-new/code/
+.agent/handover/AIStudio/remotion-new/code/utils/
+.agent/handover/AIStudio/remotion-new/HANDSHAKE_ARTIFACTS/
+.agent/handover/AIStudio/remotion-new/HANDSHAKE_ARTIFACTS/assets/
+.agent/handover/AIStudio/remotion-new/knowledge/
+.agent/handover/AIStudio/remotion-new/knowledge/manuals/
+.agent/handover/AIStudio/remotion-new/knowledge/patterns/
+.agent/handover/AIStudio/remotion-new/knowledge/rules/
+.agent/handover/AIStudio/remotion-new/knowledge/specs/
+.agent/handover/AIStudio/System/
+.agent/handover/meta/
+.agent/recovery/
+.agent/rules/
+.agent/scripts/
+.agent/sessions/
+.agent/skills/
+.agent/skills/csv-data-summarizer/
+.agent/skills/csv-data-summarizer/examples/
+.agent/skills/csv-data-summarizer/references/
+.agent/skills/csv-data-summarizer/scripts/
+.agent/skills/meta-architect/
+.agent/skills/meta-architect/references/
+.agent/skills/project-scribe/
+.agent/skills/project-scribe/references/
+.agent/skills/project-scribe/scripts/
+.agent/skills/remotion-best-practices/
+.agent/skills/remotion-best-practices/rules/
+.agent/skills/remotion-best-practices/rules/assets/
+.agent/skills/remotion-core-skill-source/
+.agent/skills/remotion-studio/
+.agent/skills/remotion-studio/rules/
+.agent/skills/remotion-studio/rules/assets/
+.agent/skills/remotion-studio/rules/assets/architecture/
+.agent/skills/remotion-studio/rules/assets/audio/
+.agent/skills/remotion-studio/rules/assets/infrastructure/
+.agent/skills/remotion-studio/rules/assets/ui/
+.agent/skills/remotion-studio/rules/assets/visuals/
+.agent/workflows/
+.knowledge/
+.knowledge/migration/
+.knowledge/mission/
+.knowledge/project-learnings/
+.knowledge/source-index/
+.knowledge/templates/
+docs/
+guides/
+Handover/
+Handover/assets/
+Handover/code/
+Handover/knowledge/
+Handover/knowledge/manuals/
+Handover/knowledge/patterns/
+Handover/knowledge/research_advanced/
+Handover/knowledge/research_advanced/Tier 1_Elite_Visuals/
+Handover/knowledge/research_advanced/Tier 2_Solid_Engineering/
+patterns/
+public/
+public/assets/
+public/Eye Candy Stack/
+Remotion Recherche/
+Remotion Recherche/1/
+Remotion Recherche/2/
+remotion-new/
+remotion-new/assets/
+remotion-new/brain/
+remotion-new/code/
+remotion-new/code/utils/
+remotion-new/HANDSHAKE_ARTIFACTS/
+remotion-new/HANDSHAKE_ARTIFACTS/assets/
+remotion-new/knowledge/
+remotion-new/knowledge/patterns/
+remotion-new/knowledge/rules/
+remotion-new/knowledge/specs/
+specs/
+src/
+src/experiments/
+src/experiments/chrome-v3/
+src/experiments/cube-v1/
+src/experiments/silver-v2/
+src/learnings/
+src/my-lab/
+src/reference-examples/
+src/reference-examples/HelloWorld/
+src/theme/
+vault/
+vault/audio-sync/
+vault/benchmarks/
+vault/fx-lab/
+vault/projects/
+viron-core/

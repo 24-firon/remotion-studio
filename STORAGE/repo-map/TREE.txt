@@ -1,0 +1,1430 @@
+remotion-studio/
+├── .agent/
+│   ├── boot/
+│   │   └── INIT_MISSION.md
+│   ├── handover/
+│   │   ├── AIStudio/
+│   │   │   ├── Badge - (1)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   ├── animations.md
+│   │   │   │   │   ├── compositions.md
+│   │   │   │   │   ├── sequencing.md
+│   │   │   │   │   ├── timing.md
+│   │   │   │   │   ├── transitions.md
+│   │   │   │   │   └── trimming.md
+│   │   │   │   ├── 10-remotion-basics-01-timeline-und-frames.md
+│   │   │   │   ├── 50-web-patterns-03-css-animationen-vs-remotion.md
+│   │   │   │   ├── animations.md
+│   │   │   │   ├── calculate-metadata.md
+│   │   │   │   ├── compositions.md
+│   │   │   │   ├── documentation_manifest.md
+│   │   │   │   ├── extract-frames.md
+│   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   ├── get-video-duration.md
+│   │   │   │   ├── parameters.md
+│   │   │   │   ├── RULES_CORE.md
+│   │   │   │   ├── sequencing.md
+│   │   │   │   ├── timing.md
+│   │   │   │   ├── transitions.md
+│   │   │   │   ├── trimming.md
+│   │   │   │   └── vision.md
+│   │   │   ├── Badge - (2)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── 3d.md
+│   │   │   │   ├── 3d.md
+│   │   │   │   ├── 40-advanced-lighting-00-caustics-volumetric.md
+│   │   │   │   ├── 40-gltf-models-00-loading-optimization.md
+│   │   │   │   ├── 40-procedural-patterns-00-noise-voronoi-terrain.md
+│   │   │   │   ├── 90-synergy-03-webgpu-compute-physics.md
+│   │   │   │   ├── physics.md
+│   │   │   │   └── PROJECT_RULES_LIGHTING.md
+│   │   │   ├── Badge - (3)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── 3d.md
+│   │   │   │   ├── 30-post-processing-00-overview-postprocessing-stack.md
+│   │   │   │   ├── 30-post-processing-01-bloom-selective.md
+│   │   │   │   ├── 30-post-processing-02-depth-of-field.md
+│   │   │   │   ├── 30-post-processing-03-04-chromatic-und-grain.md
+│   │   │   │   └── PATTERN_Advanced_Shaders.md
+│   │   │   ├── Badge - (4)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   ├── charts.md
+│   │   │   │   │   ├── fonts.md
+│   │   │   │   │   ├── gifs.md
+│   │   │   │   │   ├── images.md
+│   │   │   │   │   ├── lottie.md
+│   │   │   │   │   ├── measuring-text.md
+│   │   │   │   │   ├── tailwind.md
+│   │   │   │   │   └── text-animations.md
+│   │   │   │   ├── 20-layout-patterns-01-container-queries-und-grids.md
+│   │   │   │   ├── 20-layout-patterns-02-view-transitions-in-remotion.md
+│   │   │   │   ├── 20-layout-patterns-03-modern-css-masking-compositing.md
+│   │   │   │   ├── BarChart.md
+│   │   │   │   ├── fonts.md
+│   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   │   ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   ├── tailwind.md
+│   │   │   │   ├── text-animations.md
+│   │   │   │   ├── THE_VIRON_AESTHETIC_MANIFESTO.md
+│   │   │   │   ├── theme.md
+│   │   │   │   ├── Typewriter.md
+│   │   │   │   ├── viron-button-guide.md
+│   │   │   │   ├── WordHighlight.md
+│   │   │   │   └── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│   │   │   ├── Badge - (5)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   ├── measuring-dom-nodes.md
+│   │   │   │   │   └── videos.md
+│   │   │   │   ├── 50-web-patterns-01-scroll-basierte-dof-navigation.md
+│   │   │   │   ├── 50-web-patterns-02-adaptive-quality-switching.md
+│   │   │   │   ├── 50-web-patterns-08-performance-web-vitals-mastery.md
+│   │   │   │   ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│   │   │   │   ├── 50-web-patterns-10-real-time-ai-video-streaming.md
+│   │   │   │   ├── 70-web-accessibility-wcag-2026.md
+│   │   │   │   └── website.md
+│   │   │   ├── Badge - (6)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   ├── audio.md
+│   │   │   │   │   ├── display-captions.md
+│   │   │   │   │   ├── get-audio-duration.md
+│   │   │   │   │   ├── import-srt-captions.md
+│   │   │   │   │   └── transcribe-captions.md
+│   │   │   │   ├── 16_ARCHIVE_Standard_Audio_Auphonic.md
+│   │   │   │   ├── 17_ARCHIVE_Standard_AutoEdit_Whisper.md
+│   │   │   │   ├── 18_ARCHIVE_Standard_Caption_Engine.md
+│   │   │   │   ├── 19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+│   │   │   │   ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│   │   │   │   ├── 80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+│   │   │   │   ├── audio.md
+│   │   │   │   ├── camera.md
+│   │   │   │   ├── display-captions.md
+│   │   │   │   ├── import-srt-captions.md
+│   │   │   │   ├── transcribe-captions.md
+│   │   │   │   └── videos.md
+│   │   │   ├── Badge - (7)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   ├── calculate-metadata.md
+│   │   │   │   │   ├── can-decode.md
+│   │   │   │   │   ├── extract-frames.md
+│   │   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   │   ├── get-video-duration.md
+│   │   │   │   │   └── parameters.md
+│   │   │   │   ├── 20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+│   │   │   │   ├── 22_SYSTEM_PLAN_Folder_Structure.md
+│   │   │   │   ├── 23_ROUTING_MATRIX_Inputs.md
+│   │   │   │   ├── 24_ROUTING_MATRIX_Outputs.md
+│   │   │   │   ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│   │   │   │   ├── pipeline.md
+│   │   │   │   ├── RELEASE_PROTOCOL.md
+│   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   ├── SESSION_CLOSE_WORKFLOW.md
+│   │   │   │   ├── troubleshooting.md
+│   │   │   │   ├── V43_MASTER_PLAN.md
+│   │   │   │   ├── V43_STRATEGY.md
+│   │   │   │   ├── ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+│   │   │   │   ├── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│   │   │   │   └── ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+│   │   │   ├── Badge - (8)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── SKILL.md
+│   │   │   │   ├── 21_ARCHIVE_Standard_Agent_Execution.md
+│   │   │   │   ├── 90-synergy-01-data-driven-personalization.md
+│   │   │   │   ├── 90-synergy-02-realtime-video-rag-agents.md
+│   │   │   │   ├── AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+│   │   │   │   ├── AGENT-OUTPUT-VALIDATION-v1-0.md
+│   │   │   │   ├── AGENTS.md
+│   │   │   │   ├── ARCHIV-POLICY-v1-0.md
+│   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   │   │   │   ├── RESEARCH_Semantic_Triggers.md
+│   │   │   │   ├── RULES_CORE.md
+│   │   │   │   ├── RULES_MIGRATION_GUIDE.md
+│   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   ├── SKILL-INSTALLATION-GUIDE-v1-0.md
+│   │   │   │   ├── SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+│   │   │   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+│   │   │   │   └── TOKEN_BUDGET.md
+│   │   │   ├── brain/
+│   │   │   │   ├── Data/
+│   │   │   │   │   ├── 00-master-workflow-2026-integration.md
+│   │   │   │   │   ├── 00-overview-index-v2-1-complete.md
+│   │   │   │   │   ├── 10-remotion-basics-01-timeline-und-frames.md
+│   │   │   │   │   ├── 16_ARCHIVE_Standard_Audio_Auphonic.md
+│   │   │   │   │   ├── 17_ARCHIVE_Standard_AutoEdit_Whisper.md
+│   │   │   │   │   ├── 18_ARCHIVE_Standard_Caption_Engine.md
+│   │   │   │   │   ├── 19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+│   │   │   │   │   ├── 20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+│   │   │   │   │   ├── 21_ARCHIVE_Standard_Agent_Execution.md
+│   │   │   │   │   ├── 22_SYSTEM_PLAN_Folder_Structure.md
+│   │   │   │   │   ├── 23_ROUTING_MATRIX_Inputs.md
+│   │   │   │   │   ├── 24_ROUTING_MATRIX_Outputs.md
+│   │   │   │   │   ├── 25_AGENT_Migration_Order.md
+│   │   │   │   │   ├── 26_INTEGRATION_PROTOCOL_Skill_Merge.md
+│   │   │   │   │   ├── 30-post-processing-00-overview-postprocessing-stack.md
+│   │   │   │   │   ├── 30-post-processing-01-bloom-selective.md
+│   │   │   │   │   ├── 30-post-processing-02-depth-of-field.md
+│   │   │   │   │   ├── 30-post-processing-03-04-chromatic-und-grain.md
+│   │   │   │   │   ├── 3d.md
+│   │   │   │   │   ├── 40-advanced-lighting-00-caustics-volumetric.md
+│   │   │   │   │   ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│   │   │   │   │   ├── 40-gltf-models-00-loading-optimization.md
+│   │   │   │   │   ├── 40-procedural-patterns-00-noise-voronoi-terrain.md
+│   │   │   │   │   ├── 50-web-patterns-01-scroll-basierte-dof-navigation.md
+│   │   │   │   │   ├── 50-web-patterns-02-adaptive-quality-switching.md
+│   │   │   │   │   ├── 50-web-patterns-03-css-animationen-vs-remotion.md
+│   │   │   │   │   ├── 50-web-patterns-08-performance-web-vitals-mastery.md
+│   │   │   │   │   ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│   │   │   │   │   ├── 50-web-patterns-10-real-time-ai-video-streaming.md
+│   │   │   │   │   ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│   │   │   │   │   ├── 70-web-accessibility-wcag-2026-compliance.md
+│   │   │   │   │   ├── 80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+│   │   │   │   │   ├── 90-synergy-01-data-driven-personalization.md
+│   │   │   │   │   ├── 90-synergy-02-realtime-video-rag-agents.md
+│   │   │   │   │   ├── 90-synergy-03-webgpu-compute-physics.md
+│   │   │   │   │   ├── AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+│   │   │   │   │   ├── AGENT-OUTPUT-VALIDATION-v1-0.md
+│   │   │   │   │   ├── AGENTS.md
+│   │   │   │   │   ├── animations.md
+│   │   │   │   │   ├── ARCHIV-POLICY-v1-0.md
+│   │   │   │   │   ├── audio.md
+│   │   │   │   │   ├── BarChart.md
+│   │   │   │   │   ├── calculate-metadata.md
+│   │   │   │   │   ├── camera.md
+│   │   │   │   │   ├── can-decode.md
+│   │   │   │   │   ├── charts.md
+│   │   │   │   │   ├── COMPARE-AGENT-PROMPT-TEMPLATE-v1.md
+│   │   │   │   │   ├── compositions.md
+│   │   │   │   │   ├── config_hack.md
+│   │   │   │   │   ├── DECISION_LOG.md
+│   │   │   │   │   ├── display-captions.md
+│   │   │   │   │   ├── extract-frames.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V7_FINAL.md
+│   │   │   │   │   ├── fonts.md
+│   │   │   │   │   ├── get-audio-duration.md
+│   │   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   │   ├── get-video-duration.md
+│   │   │   │   │   ├── gifs.md
+│   │   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   │   ├── HANDOVER-GUIDE-EXTERNAL-DEVELOPER-v1-0.md
+│   │   │   │   │   ├── HISTORY_LOG.md
+│   │   │   │   │   ├── HUMAN_OPERATOR_GUIDE.md
+│   │   │   │   │   ├── images.md
+│   │   │   │   │   ├── implementation_plan.md
+│   │   │   │   │   ├── import-srt-captions.md
+│   │   │   │   │   ├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+│   │   │   │   │   ├── lottie.md
+│   │   │   │   │   ├── LUECKEN-AUDIT-v2-1-complete-coverage.md
+│   │   │   │   │   ├── maps.md
+│   │   │   │   │   ├── MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+│   │   │   │   │   ├── measuring-dom-nodes.md
+│   │   │   │   │   ├── measuring-text.md
+│   │   │   │   │   ├── MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+│   │   │   │   │   ├── ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+│   │   │   │   │   ├── ORCHESTRATOR-AGENT-SETUP-GEMINI-3-PRO-v1-0.md
+│   │   │   │   │   ├── parameters.md
+│   │   │   │   │   ├── PATTERN_Advanced_Shaders.md
+│   │   │   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   │   │   ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   │   ├── physics.md
+│   │   │   │   │   ├── pipeline.md
+│   │   │   │   │   ├── PROJECT_RULES_LIGHTING.md
+│   │   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   │   │   │   │   ├── RELEASE_PROTOCOL.md
+│   │   │   │   │   ├── REPOSITORY_MANIFESTO.md
+│   │   │   │   │   ├── RESEARCH_Antigravity_Advanced_Patterns.md
+│   │   │   │   │   ├── RESEARCH_Semantic_Triggers.md
+│   │   │   │   │   ├── RULES_CORE.md
+│   │   │   │   │   ├── RULES_MIGRATION_GUIDE.md
+│   │   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   │   ├── sequencing.md
+│   │   │   │   │   ├── SESSION_CLOSE_WORKFLOW.md
+│   │   │   │   │   ├── SKILL-INSTALLATION-GUIDE-v1.md
+│   │   │   │   │   ├── SKILL-QUALITY-AUDIT-CHECKLIST-v1-0.md
+│   │   │   │   │   ├── SKILL.md
+│   │   │   │   │   ├── SKILLS_LOG.md
+│   │   │   │   │   ├── STATUS-DEPRECATION-REPORT-v2-1.md
+│   │   │   │   │   ├── SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+│   │   │   │   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+│   │   │   │   │   ├── tailwind.md
+│   │   │   │   │   ├── task.md
+│   │   │   │   │   ├── text-animations.md
+│   │   │   │   │   ├── THE_ORCHESTRATORS_BADGE_CYCLE.md
+│   │   │   │   │   ├── THE_VIRON_AESTHETIC_MANIFESTO.md
+│   │   │   │   │   ├── timing.md
+│   │   │   │   │   ├── TOKEN_BUDGET.md
+│   │   │   │   │   ├── transcribe-captions.md
+│   │   │   │   │   ├── transitions.md
+│   │   │   │   │   ├── trimming.md
+│   │   │   │   │   ├── troubleshooting.md
+│   │   │   │   │   ├── Typewriter.md
+│   │   │   │   │   ├── V43_MASTER_PLAN.md
+│   │   │   │   │   ├── V43_STRATEGY.md
+│   │   │   │   │   ├── videos.md
+│   │   │   │   │   ├── VIRON_KNOWLEDGE_BRIDGE.md
+│   │   │   │   │   ├── VIRON_STUDIO_INDEX.md
+│   │   │   │   │   ├── viron-button-guide.md
+│   │   │   │   │   ├── VIRON-DELTA-SKILL-STRUCTURE-v1.md
+│   │   │   │   │   ├── vision.md
+│   │   │   │   │   ├── WALKTHROUGH_SESSION_6.md
+│   │   │   │   │   ├── website.md
+│   │   │   │   │   ├── WordHighlight.md
+│   │   │   │   │   ├── WORKFLOW_SUBAGENT_DEPLOYMENT.md
+│   │   │   │   │   ├── ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+│   │   │   │   │   ├── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│   │   │   │   │   └── ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+│   │   │   │   ├── Handover-Prompt.md
+│   │   │   │   └── handover.md
+│   │   │   ├── Briefings/
+│   │   │   │   └── Briefing - B7.md
+│   │   │   ├── Omega_Onboarding/
+│   │   │   │   ├── Architect/
+│   │   │   │   │   ├── 00-master-workflow-2026-integration.md
+│   │   │   │   │   ├── 16_ARCHIVE_Standard_Audio_Auphonic.md
+│   │   │   │   │   ├── 17_ARCHIVE_Standard_AutoEdit_Whisper.md
+│   │   │   │   │   ├── 18_ARCHIVE_Standard_Caption_Engine.md
+│   │   │   │   │   ├── 19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+│   │   │   │   │   ├── 20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+│   │   │   │   │   ├── 21_ARCHIVE_Standard_Agent_Execution.md
+│   │   │   │   │   ├── 22_SYSTEM_PLAN_Folder_Structure.md
+│   │   │   │   │   ├── 23_ROUTING_MATRIX_Inputs.md
+│   │   │   │   │   ├── 24_ROUTING_MATRIX_Outputs.md
+│   │   │   │   │   ├── 30-post-processing-00-overview-postprocessing-stack.md
+│   │   │   │   │   ├── 30-post-processing-01-bloom-selective.md
+│   │   │   │   │   ├── 30-post-processing-02-depth-of-field.md
+│   │   │   │   │   ├── 30-post-processing-03-04-chromatic-und-grain.md
+│   │   │   │   │   ├── 3d.md
+│   │   │   │   │   ├── 40-advanced-lighting-00-caustics-volumetric.md
+│   │   │   │   │   ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│   │   │   │   │   ├── 40-gltf-models-00-loading-optimization.md
+│   │   │   │   │   ├── 50-web-patterns-01-scroll-basierte-dof-navigation.md
+│   │   │   │   │   ├── 50-web-patterns-08-performance-web-vitals-mastery.md
+│   │   │   │   │   ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│   │   │   │   │   ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│   │   │   │   │   ├── 70-web-accessibility-wcag-2026.md
+│   │   │   │   │   ├── 80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+│   │   │   │   │   ├── 90-synergy-01-data-driven-personalization.md
+│   │   │   │   │   ├── 90-synergy-02-realtime-video-rag-agents.md
+│   │   │   │   │   ├── 90-synergy-03-webgpu-compute-physics.md
+│   │   │   │   │   ├── AGENTS.md
+│   │   │   │   │   ├── animations.md
+│   │   │   │   │   ├── assets.md
+│   │   │   │   │   ├── audio.md
+│   │   │   │   │   ├── calculate-metadata.md
+│   │   │   │   │   ├── camera.md
+│   │   │   │   │   ├── can-decode.md
+│   │   │   │   │   ├── charts-bar-chart.tsx.md
+│   │   │   │   │   ├── charts.md
+│   │   │   │   │   ├── compositions.md
+│   │   │   │   │   ├── DECISION_LOG.md
+│   │   │   │   │   ├── display-captions.md
+│   │   │   │   │   ├── extract-frames.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_1_CODEX_V8.5.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V8.5.md
+│   │   │   │   │   ├── fonts.md
+│   │   │   │   │   ├── get-audio-duration.md
+│   │   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   │   ├── get-video-duration.md
+│   │   │   │   │   ├── gifs.md
+│   │   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   │   ├── images.md
+│   │   │   │   │   ├── implementation_plan.md
+│   │   │   │   │   ├── import-srt-captions.md
+│   │   │   │   │   ├── light-leaks.md
+│   │   │   │   │   ├── lottie.md
+│   │   │   │   │   ├── maps.md
+│   │   │   │   │   ├── measuring-dom-nodes.md
+│   │   │   │   │   ├── measuring-text.md
+│   │   │   │   │   ├── ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+│   │   │   │   │   ├── parameters.md
+│   │   │   │   │   ├── PATTERN_Advanced_Shaders.md
+│   │   │   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   │   │   ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   │   ├── PROJECT_RULES_LIGHTING.md
+│   │   │   │   │   ├── RULES_CORE.md
+│   │   │   │   │   ├── RULES_MIGRATION_GUIDE.md
+│   │   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   │   ├── sequencing.md
+│   │   │   │   │   ├── SKILL.md
+│   │   │   │   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+│   │   │   │   │   ├── subtitles.md
+│   │   │   │   │   ├── tailwind.md
+│   │   │   │   │   ├── task.md
+│   │   │   │   │   ├── text-animations-typewriter.tsx.md
+│   │   │   │   │   ├── text-animations-word-highlight.tsx.md
+│   │   │   │   │   ├── text-animations.md
+│   │   │   │   │   ├── THE_FORENSIC_MINDSET.md
+│   │   │   │   │   ├── THE_VIRON_AESTHETIC_MANIFESTO.md
+│   │   │   │   │   ├── timing.md
+│   │   │   │   │   ├── transcribe-captions.md
+│   │   │   │   │   ├── transitions.md
+│   │   │   │   │   ├── transparent-videos.md
+│   │   │   │   │   ├── trimming.md
+│   │   │   │   │   ├── V43_MASTER_PLAN.md
+│   │   │   │   │   ├── V43_STRATEGY.md
+│   │   │   │   │   ├── videos.md
+│   │   │   │   │   ├── VIRON_CONTEXT_PACKAGES.md
+│   │   │   │   │   ├── VIRON_KNOWLEDGE_BRIDGE_V3.2.md
+│   │   │   │   │   ├── VIRON_KNOWLEDGE_BRIDGE.md
+│   │   │   │   │   ├── VIRON_OMEGA.md
+│   │   │   │   │   ├── VIRON_STUDIO_INDEX.md
+│   │   │   │   │   ├── viron-button-guide.md
+│   │   │   │   │   ├── vision.md
+│   │   │   │   │   ├── WALKTHROUGH_SESSION_6 - Copy.md
+│   │   │   │   │   ├── WALKTHROUGH_SESSION_6.md
+│   │   │   │   │   ├── website.md
+│   │   │   │   │   ├── ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+│   │   │   │   │   ├── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│   │   │   │   │   └── ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+│   │   │   │   ├── FINAL_ROUND/
+│   │   │   │   │   ├── 16_ARCHIVE_Standard_Audio_Auphonic.md
+│   │   │   │   │   ├── 17_ARCHIVE_Standard_AutoEdit_Whisper.md
+│   │   │   │   │   ├── 18_ARCHIVE_Standard_Caption_Engine.md
+│   │   │   │   │   ├── 19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+│   │   │   │   │   ├── 20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+│   │   │   │   │   ├── 21_ARCHIVE_Standard_Agent_Execution.md
+│   │   │   │   │   ├── 22_SYSTEM_PLAN_Folder_Structure.md
+│   │   │   │   │   ├── 23_ROUTING_MATRIX_Inputs.md
+│   │   │   │   │   ├── 24_ROUTING_MATRIX_Outputs.md
+│   │   │   │   │   ├── 30-post-processing-00-overview-postprocessing-stack.md
+│   │   │   │   │   ├── 30-post-processing-01-bloom-selective.md
+│   │   │   │   │   ├── 30-post-processing-02-depth-of-field.md
+│   │   │   │   │   ├── 30-post-processing-03-04-chromatic-und-grain.md
+│   │   │   │   │   ├── 3d.md
+│   │   │   │   │   ├── 40-advanced-lighting-00-caustics-volumetric.md
+│   │   │   │   │   ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│   │   │   │   │   ├── 40-gltf-models-00-loading-optimization.md
+│   │   │   │   │   ├── 50-web-patterns-01-scroll-basierte-dof-navigation.md
+│   │   │   │   │   ├── 50-web-patterns-08-performance-web-vitals-mastery.md
+│   │   │   │   │   ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│   │   │   │   │   ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│   │   │   │   │   ├── 70-web-accessibility-wcag-2026.md
+│   │   │   │   │   ├── 80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+│   │   │   │   │   ├── 90-synergy-01-data-driven-personalization.md
+│   │   │   │   │   ├── 90-synergy-02-realtime-video-rag-agents.md
+│   │   │   │   │   ├── 90-synergy-03-webgpu-compute-physics.md
+│   │   │   │   │   ├── AGENTS.md
+│   │   │   │   │   ├── animations.md
+│   │   │   │   │   ├── Architektur-Kaskade.md
+│   │   │   │   │   ├── assets.md
+│   │   │   │   │   ├── audio.md
+│   │   │   │   │   ├── calculate-metadata.md
+│   │   │   │   │   ├── camera.md
+│   │   │   │   │   ├── can-decode.md
+│   │   │   │   │   ├── charts-bar-chart.tsx.md
+│   │   │   │   │   ├── charts.md
+│   │   │   │   │   ├── compositions.md
+│   │   │   │   │   ├── Dateiliste.md
+│   │   │   │   │   ├── display-captions.md
+│   │   │   │   │   ├── extract-frames.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_1_CODEX_V8.5.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_1_CORE_ENGINE_V11_ULTIMATE.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_1_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_2_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_4_DESIGN_SYSTEM_V1_ULTIMATE.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_4_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V11.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V8.5.md
+│   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   │   ├── fonts.md
+│   │   │   │   │   ├── get-audio-duration.md
+│   │   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   │   ├── get-video-duration.md
+│   │   │   │   │   ├── gifs.md
+│   │   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   │   ├── Handover-final.md
+│   │   │   │   │   ├── images.md
+│   │   │   │   │   ├── import-srt-captions.md
+│   │   │   │   │   ├── light-leaks.md
+│   │   │   │   │   ├── lottie.md
+│   │   │   │   │   ├── maps.md
+│   │   │   │   │   ├── measuring-dom-nodes.md
+│   │   │   │   │   ├── measuring-text.md
+│   │   │   │   │   ├── ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+│   │   │   │   │   ├── parameters.md
+│   │   │   │   │   ├── PATTERN_Advanced_Shaders.md
+│   │   │   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   │   │   ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   │   ├── PROJECT_RULES_LIGHTING.md
+│   │   │   │   │   ├── RULES_CORE.md
+│   │   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   │   ├── sequencing.md
+│   │   │   │   │   ├── SKILL_v1_Master.md
+│   │   │   │   │   ├── SKILL_v2_Conflict_Master.md
+│   │   │   │   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+│   │   │   │   │   ├── subtitles.md
+│   │   │   │   │   ├── tailwind.md
+│   │   │   │   │   ├── text-animations-typewriter.tsx.md
+│   │   │   │   │   ├── text-animations-word-highlight.tsx.md
+│   │   │   │   │   ├── text-animations.md
+│   │   │   │   │   ├── timing.md
+│   │   │   │   │   ├── transcribe-captions.md
+│   │   │   │   │   ├── transitions.md
+│   │   │   │   │   ├── transparent-videos.md
+│   │   │   │   │   ├── trimming.md
+│   │   │   │   │   ├── V43_MASTER_PLAN.md
+│   │   │   │   │   ├── V43_STRATEGY.md
+│   │   │   │   │   ├── videos.md
+│   │   │   │   │   ├── VIRON_KNOWLEDGE_BRIDGE_V3.2.md
+│   │   │   │   │   ├── VIRON_STUDIO_INDEX.md
+│   │   │   │   │   ├── viron-button-guide.md
+│   │   │   │   │   ├── vision.md
+│   │   │   │   │   ├── website.md
+│   │   │   │   │   ├── ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+│   │   │   │   │   ├── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│   │   │   │   │   └── ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+│   │   │   │   ├── Orchestrator/
+│   │   │   │   │   ├── _TRASH/
+│   │   │   │   │   │   ├── 25_AGENT_Migration_Order.md
+│   │   │   │   │   │   ├── COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md
+│   │   │   │   │   │   ├── LUECKEN-AUDIT-v2-1-complete-coverage.md
+│   │   │   │   │   │   ├── MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+│   │   │   │   │   │   ├── MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+│   │   │   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V1.md
+│   │   │   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V2.md
+│   │   │   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   │   │   │   │   │   ├── STATUS-DEPRECATION-REPORT-v2-1.md
+│   │   │   │   │   │   └── SUBAGENT_BRIEFING_TEMPLATE_V6.1.md
+│   │   │   │   │   ├── Stage_1_Constitution/
+│   │   │   │   │   │   ├── AGENTS.md
+│   │   │   │   │   │   ├── PROMPT_STAGE_1.md
+│   │   │   │   │   │   ├── RULES_CORE.md
+│   │   │   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   │   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+│   │   │   │   │   │   ├── THE_VIRON_AESTHETIC_MANIFESTO.md
+│   │   │   │   │   │   └── VIRON_KNOWLEDGE_BRIDGE.md
+│   │   │   │   │   ├── Stage_2_Blueprint/
+│   │   │   │   │   │   ├── 00-master-workflow-2026-integration.md
+│   │   │   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V7_FINAL.md
+│   │   │   │   │   │   ├── implementation_plan.md
+│   │   │   │   │   │   ├── PROMPT_STAGE_2.md
+│   │   │   │   │   │   ├── VIRON_STUDIO_INDEX.md
+│   │   │   │   │   │   └── vision.md
+│   │   │   │   │   ├── Stage_3_Library/
+│   │   │   │   │   │   ├── 3d.md
+│   │   │   │   │   │   ├── animations.md
+│   │   │   │   │   │   ├── assets.md
+│   │   │   │   │   │   ├── audio.md
+│   │   │   │   │   │   ├── calculate-metadata.md
+│   │   │   │   │   │   ├── can-decode.md
+│   │   │   │   │   │   ├── charts.md
+│   │   │   │   │   │   ├── compositions.md
+│   │   │   │   │   │   ├── display-captions.md
+│   │   │   │   │   │   ├── extract-frames.md
+│   │   │   │   │   │   ├── fonts.md
+│   │   │   │   │   │   ├── get-audio-duration.md
+│   │   │   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   │   │   ├── get-video-duration.md
+│   │   │   │   │   │   ├── gifs.md
+│   │   │   │   │   │   ├── images.md
+│   │   │   │   │   │   ├── import-srt-captions.md
+│   │   │   │   │   │   ├── lottie.md
+│   │   │   │   │   │   ├── maps.md
+│   │   │   │   │   │   ├── measuring-dom-nodes.md
+│   │   │   │   │   │   ├── measuring-text.md
+│   │   │   │   │   │   ├── parameters.md
+│   │   │   │   │   │   ├── PROMPT_STAGE_3.md
+│   │   │   │   │   │   ├── sequencing.md
+│   │   │   │   │   │   ├── SKILL.md
+│   │   │   │   │   │   ├── tailwind.md
+│   │   │   │   │   │   ├── text-animations.md
+│   │   │   │   │   │   ├── timing.md
+│   │   │   │   │   │   ├── transcribe-captions.md
+│   │   │   │   │   │   ├── transitions.md
+│   │   │   │   │   │   ├── trimming.md
+│   │   │   │   │   │   └── videos.md
+│   │   │   │   │   ├── Stage_4_Raw_Gold/
+│   │   │   │   │   │   ├── 00-master-workflow-2026-integration.md
+│   │   │   │   │   │   ├── 00-overview-index-v2-1-complete.md
+│   │   │   │   │   │   ├── 10-remotion-basics-01-timeline-und-frames.md
+│   │   │   │   │   │   ├── 15_MIGRATION_CORE_VIRON_UPLOADS.md
+│   │   │   │   │   │   ├── 16_ARCHIVE_Standard_Audio_Auphonic.md
+│   │   │   │   │   │   ├── 17_ARCHIVE_Standard_AutoEdit_Whisper.md
+│   │   │   │   │   │   ├── 18_ARCHIVE_Standard_Caption_Engine.md
+│   │   │   │   │   │   ├── 19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+│   │   │   │   │   │   ├── 20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+│   │   │   │   │   │   ├── 20-layout-patterns-01-container-queries-und-grids.md
+│   │   │   │   │   │   ├── 20-layout-patterns-02-view-transitions-in-remotion.md
+│   │   │   │   │   │   ├── 20-layout-patterns-03-modern-css-masking-compositing.md
+│   │   │   │   │   │   ├── 21_ARCHIVE_Standard_Agent_Execution.md
+│   │   │   │   │   │   ├── 22_SYSTEM_PLAN_Folder_Structure.md
+│   │   │   │   │   │   ├── 23_ROUTING_MATRIX_Inputs.md
+│   │   │   │   │   │   ├── 24_ROUTING_MATRIX_Outputs.md
+│   │   │   │   │   │   ├── 25_AGENT_Migration_Order.md
+│   │   │   │   │   │   ├── 26_INTEGRATION_PROTOCOL_Skill_Merge.md
+│   │   │   │   │   │   ├── 30-post-processing-00-overview-postprocessing-stack.md
+│   │   │   │   │   │   ├── 30-post-processing-01-bloom-selective.md
+│   │   │   │   │   │   ├── 30-post-processing-02-depth-of-field.md
+│   │   │   │   │   │   ├── 30-post-processing-03-04-chromatic-und-grain.md
+│   │   │   │   │   │   ├── 40-advanced-lighting-00-caustics-volumetric.md
+│   │   │   │   │   │   ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│   │   │   │   │   │   ├── 40-gltf-models-00-loading-optimization.md
+│   │   │   │   │   │   ├── 40-procedural-patterns-00-noise-voronoi-terrain.md
+│   │   │   │   │   │   ├── 50-web-patterns-01-scroll-basierte-dof-navigation.md
+│   │   │   │   │   │   ├── 50-web-patterns-02-adaptive-quality-switching.md
+│   │   │   │   │   │   ├── 50-web-patterns-03-css-animationen-vs-remotion.md
+│   │   │   │   │   │   ├── 50-web-patterns-08-performance-web-vitals-mastery.md
+│   │   │   │   │   │   ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│   │   │   │   │   │   ├── 50-web-patterns-10-real-time-ai-video-streaming.md
+│   │   │   │   │   │   ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│   │   │   │   │   │   ├── 70-web-accessibility-wcag-2026.md
+│   │   │   │   │   │   ├── 80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+│   │   │   │   │   │   ├── 90-appendix-glossary-bibliography.md
+│   │   │   │   │   │   ├── 90-synergy-01-data-driven-personalization.md
+│   │   │   │   │   │   ├── 90-synergy-02-realtime-video-rag-agents.md
+│   │   │   │   │   │   ├── 90-synergy-03-webgpu-compute-physics.md
+│   │   │   │   │   │   ├── AGENT-INITIALIZATION-CHECKLISTE-SCHNELL-v2-1.md
+│   │   │   │   │   │   ├── AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+│   │   │   │   │   │   ├── AGENT-OUTPUT-VALIDATION-v1-0.md
+│   │   │   │   │   │   ├── ARCHIV-POLICY-v1-0.md
+│   │   │   │   │   │   ├── audio.md
+│   │   │   │   │   │   ├── BarChart.md
+│   │   │   │   │   │   ├── camera.md
+│   │   │   │   │   │   ├── COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md
+│   │   │   │   │   │   ├── compositions.md
+│   │   │   │   │   │   ├── FEHLERLOSUNG-haeufige-probleme.md
+│   │   │   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   │   │   ├── HANDOVER-GUIDE-EXTERNAL-DEVELOPER-v1-0.md
+│   │   │   │   │   │   ├── LUECKEN-AUDIT-v2-1-complete-coverage.md
+│   │   │   │   │   │   ├── MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+│   │   │   │   │   │   ├── MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+│   │   │   │   │   │   ├── ORCHESTRATOR-AGENT-SETUP-GEMINI-3-PRO-v1-0.md
+│   │   │   │   │   │   ├── PATTERN_Advanced_Shaders.md
+│   │   │   │   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   │   │   │   ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   │   │   ├── PROMPT_STAGE_4.md
+│   │   │   │   │   │   ├── QUICK-START-komplettbeispiel.md
+│   │   │   │   │   │   ├── Remotion Setup.md
+│   │   │   │   │   │   ├── RESOURCES_AND_ECOSYSTEM.md
+│   │   │   │   │   │   ├── sequencing.md
+│   │   │   │   │   │   ├── SKILL-INSTALLATION-GUIDE-v1-0.md
+│   │   │   │   │   │   ├── SKILL-QUALITY-AUDIT-CHECKLIST-v1-0.md
+│   │   │   │   │   │   ├── STATUS-DEPRECATION-REPORT-v2-1.md
+│   │   │   │   │   │   ├── SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+│   │   │   │   │   │   ├── TEMPLATE_FeatureSpec.md
+│   │   │   │   │   │   ├── Typewriter.md
+│   │   │   │   │   │   ├── V43_MASTER_PLAN.md
+│   │   │   │   │   │   ├── V43_STRATEGY.md
+│   │   │   │   │   │   ├── VIRON_SYSTEM_ENTRY.md
+│   │   │   │   │   │   ├── viron-button-guide.md
+│   │   │   │   │   │   ├── VIRON-DELTA-SKILL-STRUCTURE-v1-0.md
+│   │   │   │   │   │   ├── website.md
+│   │   │   │   │   │   ├── WordHighlight.md
+│   │   │   │   │   │   ├── ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+│   │   │   │   │   │   ├── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│   │   │   │   │   │   └── ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+│   │   │   │   │   └── Stage_5_Work_files/
+│   │   │   │   │       ├── Briefing-example.md
+│   │   │   │   │       ├── EXTRACTION_REPORT_BADGE_1_CODEX.md
+│   │   │   │   │       ├── EXTRACTION_REPORT_BADGE_7_CODEX_V8.md
+│   │   │   │   │       ├── OMEGA MANIFESTO.md
+│   │   │   │   │       ├── PromptV10.md
+│   │   │   │   │       ├── Report_Template.md
+│   │   │   │   │       └── VIRON_KNOWLEDGE_BRIDGE.md
+│   │   │   │   ├── Architektur-Kaskade.md
+│   │   │   │   ├── Dateiliste.md
+│   │   │   │   ├── EXTRACTION_REPORT_BADGE_1_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   ├── EXTRACTION_REPORT_BADGE_2_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   ├── EXTRACTION_REPORT_BADGE_3_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   ├── EXTRACTION_REPORT_BADGE_4_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   ├── EXTRACTION_REPORT_BADGE_6_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   ├── EXTRACTION_REPORT_BADGE_7_SYSTEM_ARCHITECTURE_CLOUD_V11_ULTIMATE.md
+│   │   │   │   └── Handover-final.md
+│   │   │   ├── Pflichtlektüre/
+│   │   │   │   ├── 00-master-workflow-2026-integration.md
+│   │   │   │   ├── AGENTS.md
+│   │   │   │   ├── implementation_plan.md
+│   │   │   │   ├── ORCHESTRATOR_SELF_AUDIT_PROTOCOL.md
+│   │   │   │   ├── PROJECT_RULES_LIGHTING.md
+│   │   │   │   ├── RULES_CORE.md
+│   │   │   │   ├── RULES_MIGRATION_GUIDE.md
+│   │   │   │   ├── RULES_TECHNICAL.md
+│   │   │   │   ├── RULES_WORKFLOW.md
+│   │   │   │   ├── SKILL.md
+│   │   │   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V8.0.md
+│   │   │   │   ├── task.md
+│   │   │   │   ├── THE_VIRON_AESTHETIC_MANIFESTO.md
+│   │   │   │   ├── VIRON_STUDIO_INDEX.md
+│   │   │   │   └── vision.md
+│   │   │   ├── remotion-new/
+│   │   │   │   ├── assets/
+│   │   │   │   │   └── logo.png
+│   │   │   │   ├── brain/
+│   │   │   │   │   ├── gemini.md
+│   │   │   │   │   ├── HANDOVER_TO_NEW_AGENT.md
+│   │   │   │   │   ├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+│   │   │   │   │   ├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+│   │   │   │   │   └── USER_GOVERNANCE_PROTOCOL.md
+│   │   │   │   ├── code/
+│   │   │   │   │   ├── utils/
+│   │   │   │   │   │   ├── constants.ts
+│   │   │   │   │   │   └── style.css
+│   │   │   │   │   ├── ChromeButton_HighPBR.tsx
+│   │   │   │   │   └── ChromeScene.tsx
+│   │   │   │   ├── HANDSHAKE_ARTIFACTS/
+│   │   │   │   │   ├── assets/
+│   │   │   │   │   │   └── logo.png
+│   │   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   │   ├── PATTERN_Advanced_Shader_Recipes.md
+│   │   │   │   │   └── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   ├── knowledge/
+│   │   │   │   │   ├── manuals/
+│   │   │   │   │   │   └── KNOWLEDGE_DEEP_DIVE.md
+│   │   │   │   │   ├── patterns/
+│   │   │   │   │   │   ├── PATTERN_Advanced_Shaders.md
+│   │   │   │   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   │   │   │   └── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   │   ├── rules/
+│   │   │   │   │   │   └── RULES_CLEAN_START.md
+│   │   │   │   │   ├── specs/
+│   │   │   │   │   │   ├── audio.md
+│   │   │   │   │   │   ├── camera.md
+│   │   │   │   │   │   └── website.md
+│   │   │   │   │   ├── 002-hdri-shading-success.md
+│   │   │   │   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   │   │   │   ├── PATTERN_Advanced_Shader_Recipes.md
+│   │   │   │   │   ├── PATTERN_REALISTIC_SILVER_METAL.md
+│   │   │   │   │   └── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   │   │   ├── audit_results.txt
+│   │   │   │   ├── content_diff_report.txt
+│   │   │   │   ├── gemini.md
+│   │   │   │   ├── HANDOVER_RemotionStudio_IDE_Behaviors.md
+│   │   │   │   ├── HANDOVER_REPORT.md
+│   │   │   │   ├── HANDOVER_SilverV2.md
+│   │   │   │   ├── HANDOVER_TO_NEW_AGENT.md
+│   │   │   │   ├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+│   │   │   │   ├── NEXT_ORCHESTRATOR_PROMPT.md
+│   │   │   │   ├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+│   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   │   │   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+│   │   │   │   ├── RULE_FILE_ANALYSIS_REPORT.md
+│   │   │   │   └── USER_GOVERNANCE_PROTOCOL.md
+│   │   │   ├── System/
+│   │   │   │   ├── Briefing-example.md
+│   │   │   │   ├── EXAMPLE_REPORT_BADGE_7_CODEX.md
+│   │   │   │   ├── OMEGA_ARCHITECT.md
+│   │   │   │   ├── OMEGA_Orchestrator_MODE.md
+│   │   │   │   ├── PromptV1.md
+│   │   │   │   ├── PromptV10.md
+│   │   │   │   ├── PromptV2.md
+│   │   │   │   ├── PromptV3.md
+│   │   │   │   ├── PromptV4.md
+│   │   │   │   ├── Report_Template.md
+│   │   │   │   ├── VIRON_KNOWLEDGE_BRIDGE - old.md
+│   │   │   │   ├── VIRON_KNOWLEDGE_BRIDGE_FOR_BADGE_1.md
+│   │   │   │   └── VIRON_KNOWLEDGE_BRIDGE.md
+│   │   │   ├── BADGE_7_CODEX_V8_FINAL.md
+│   │   │   ├── Batch1Phase1.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_1_CODEX.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V1.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V10_HYBRID.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V10.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V11.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V2.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V3.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V7.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V8.md
+│   │   │   ├── EXTRACTION_REPORT_BADGE_7_CODEX_V9.md
+│   │   │   └── VIRON_OMEGA_MANIFESTO.md
+│   │   ├── meta/
+│   │   │   ├── PATTERN_REMOTION_LAMBDA_HYBRID.md
+│   │   │   ├── PATTERN_SYNERGY_AUDIO_REACTIVITY.md
+│   │   │   ├── RULE_GIT_SYNC_PROTOCOL.md
+│   │   │   ├── RULE_TOKEN_ECONOMY.md
+│   │   │   ├── THE_FORENSIC_MINDSET.md
+│   │   │   └── VIRON_HARDWARE_LAWS.md
+│   │   ├── ANALYSIS_V3_VS_MY_WORK_LEARNINGS.md
+│   │   ├── BLACKLIST.md
+│   │   ├── BOOT_PROMPT.md
+│   │   ├── implementation_plan.md
+│   │   ├── INDEX_HYPERLINKS.md
+│   │   ├── INITIALIZATION_PROMPT.md
+│   │   ├── PROMPT_SUBAGENT_1_SKILL_BADGE_MAPPING_V2.md
+│   │   ├── PROMPT_SUBAGENT_1_SKILL_BADGE_MAPPING.md
+│   │   ├── PROMPT_SUBAGENT_2_REPO_INFRASTRUCTURE_V2.md
+│   │   ├── PROMPT_SUBAGENT_2_REPO_INFRASTRUCTURE.md
+│   │   ├── PROMPT_SUBAGENT_V6.1_SELF_BRIEFING.md
+│   │   ├── PROMPT_SUBAGENT_V6.1_TEMPLATE_APPLICATION.md
+│   │   ├── PROMPT_V3_BEST_PRACTICES.md
+│   │   ├── SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_7.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_8.md
+│   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V6.1.md
+│   │   ├── SUBAGENT_BRIEFING_TEMPLATE_V6.md
+│   │   ├── TASK_PROMPT_2.md
+│   │   ├── TASK_PROMPT.md
+│   │   ├── task.md
+│   │   └── WHITELIST.md
+│   ├── recovery/
+│   │   ├── CANDIDATE_1_bdc75d9.md
+│   │   ├── CANDIDATE_2_2bb97e9.md
+│   │   └── CANDIDATE_3_28c45c8.md
+│   ├── rules/
+│   │   └── RULE_FILE_LINKING.md
+│   ├── scripts/
+│   │   ├── audit_repos.ps1
+│   │   ├── kopiere_zu_viron_studio.ps1
+│   │   ├── pruefe_aistudio_dateien.ps1
+│   │   └── pruefe_migration.ps1
+│   ├── sessions/
+│   │   ├── .keep
+│   │   ├── LOG_2026-01-29_Integrity_Audit.md
+│   │   ├── LOG_2026-01-30_Governance_Repair_and_v5_Alignment.md
+│   │   └── LOG_2026-01-31_Badge_7_System_Fix.md
+│   ├── skills/
+│   │   ├── csv-data-summarizer/
+│   │   │   ├── examples/
+│   │   │   │   └── prompts.md
+│   │   │   ├── references/
+│   │   │   │   └── behavior.md
+│   │   │   ├── scripts/
+│   │   │   │   ├── analysis_output.txt
+│   │   │   │   ├── analysis_report.md
+│   │   │   │   ├── analyze.py
+│   │   │   │   ├── categorical_distributions.png
+│   │   │   │   ├── distributions.png
+│   │   │   │   └── time_series_analysis.png
+│   │   │   └── SKILL.md
+│   │   ├── meta-architect/
+│   │   │   ├── references/
+│   │   │   │   ├── IDE_POLYGLOT_GUIDE.md
+│   │   │   │   ├── PATTERNS_GUIDE.md
+│   │   │   │   ├── QUALITY_GATES.md
+│   │   │   │   ├── SKILL_TEMPLATE.md
+│   │   │   │   └── UNIVERSAL_EXTRACTION_GUIDE.md
+│   │   │   └── SKILL.md
+│   │   ├── project-scribe/
+│   │   │   ├── references/
+│   │   │   │   └── STANDARDS.md
+│   │   │   ├── scripts/
+│   │   │   │   └── scribe.py
+│   │   │   └── SKILL.md
+│   │   ├── remotion-best-practices/
+│   │   │   ├── rules/
+│   │   │   │   ├── assets/
+│   │   │   │   │   ├── charts-bar-chart.tsx
+│   │   │   │   │   ├── text-animations-typewriter.tsx
+│   │   │   │   │   └── text-animations-word-highlight.tsx
+│   │   │   │   ├── 3d.md
+│   │   │   │   ├── animations.md
+│   │   │   │   ├── assets.md
+│   │   │   │   ├── audio.md
+│   │   │   │   ├── calculate-metadata.md
+│   │   │   │   ├── can-decode.md
+│   │   │   │   ├── charts.md
+│   │   │   │   ├── compositions.md
+│   │   │   │   ├── display-captions.md
+│   │   │   │   ├── extract-frames.md
+│   │   │   │   ├── fonts.md
+│   │   │   │   ├── get-audio-duration.md
+│   │   │   │   ├── get-video-dimensions.md
+│   │   │   │   ├── get-video-duration.md
+│   │   │   │   ├── gifs.md
+│   │   │   │   ├── images.md
+│   │   │   │   ├── import-srt-captions.md
+│   │   │   │   ├── lottie.md
+│   │   │   │   ├── maps.md
+│   │   │   │   ├── measuring-dom-nodes.md
+│   │   │   │   ├── measuring-text.md
+│   │   │   │   ├── parameters.md
+│   │   │   │   ├── sequencing.md
+│   │   │   │   ├── tailwind.md
+│   │   │   │   ├── text-animations.md
+│   │   │   │   ├── timing.md
+│   │   │   │   ├── transcribe-captions.md
+│   │   │   │   ├── transitions.md
+│   │   │   │   ├── trimming.md
+│   │   │   │   └── videos.md
+│   │   │   └── SKILL.md
+│   │   ├── remotion-core-skill-source/
+│   │   │   └── SKILL.md
+│   │   └── remotion-studio/
+│   │       ├── rules/
+│   │       │   ├── assets/
+│   │       │   │   ├── architecture/
+│   │       │   │   │   ├── pnpm-workspace.yaml
+│   │       │   │   │   ├── remotion-index.ts
+│   │       │   │   │   ├── root-package.json
+│   │       │   │   │   ├── tailwind-preset.js
+│   │       │   │   │   └── turbo.json
+│   │       │   │   ├── audio/
+│   │       │   │   │   └── transcribe_whisperx.ts
+│   │       │   │   ├── infrastructure/
+│   │       │   │   │   ├── setup_hetzner_gpu.sh
+│   │       │   │   │   └── sync-assets.ts
+│   │       │   │   ├── ui/
+│   │       │   │   │   └── HolographicCard.tsx
+│   │       │   │   ├── visuals/
+│   │       │   │   │   ├── AgXScene.tsx
+│   │       │   │   │   └── ToonScene.tsx
+│   │       │   │   └── DEPLOYMENT-GUIDE.md
+│   │       │   ├── 01-visual-engine.md
+│   │       │   ├── 02-infrastructure.md
+│   │       │   ├── 03-shared-architecture.md
+│   │       │   ├── 04-audio-intelligence.md
+│   │       │   ├── 05-advanced-materials.md
+│   │       │   └── 05-dynamic-content.md
+│   │       └── SKILL.md
+│   ├── workflows/
+│   │   ├── deploy-subagent-mission.md
+│   │   ├── orchestrate-badge-cycle.md
+│   │   ├── orchestrator-self-audit.md
+│   │   ├── release.md
+│   │   └── session-close.md
+│   ├── AGENTS.md
+│   ├── ARCHIVE_RECOMMENDATIONS.md
+│   ├── RULES_CORE.md
+│   ├── RULES_MIGRATION_GUIDE.md
+│   ├── RULES_REMOTION.md
+│   ├── RULES_TECHNICAL.md
+│   ├── RULES_USAGE_GUIDE.md
+│   ├── RULES_VALIDATION_REPORT.md
+│   └── RULES_WORKFLOW.md
+├── .knowledge/
+│   ├── migration/
+│   │   ├── KOPIER_SCRIPT_ANLEITUNG.md
+│   │   ├── kopiere_zu_viron_studio.ps1
+│   │   ├── META_DATEIEN_MUSS_KOPIEREN.md
+│   │   ├── MUSS_KOPIEREN_LISTE.md
+│   │   ├── NICHT_KOPIERT_INDEX.md
+│   │   └── VIRON_STUDIO_REPO_MIGRATION_PLAN.md
+│   ├── mission/
+│   │   ├── COMPARISON_BADGE_7_ALL_VERSIONS.md
+│   │   ├── EVOLUTION_V1_TO_V5_DIFF.md
+│   │   ├── EXTRACTION_REPORT_BADGE_1_REVISION.md
+│   │   ├── EXTRACTION_REPORT_BADGE_1_V2.md
+│   │   ├── EXTRACTION_REPORT_BADGE_1.md
+│   │   ├── EXTRACTION_REPORT_BADGE_2_REVISION.md
+│   │   ├── EXTRACTION_REPORT_BADGE_2.md
+│   │   ├── EXTRACTION_REPORT_BADGE_3_REVISION.md
+│   │   ├── EXTRACTION_REPORT_BADGE_3.md
+│   │   ├── EXTRACTION_REPORT_BADGE_4_REVISION.md
+│   │   ├── EXTRACTION_REPORT_BADGE_4.md
+│   │   ├── EXTRACTION_REPORT_BADGE_5_ORIGINAL.md
+│   │   ├── EXTRACTION_REPORT_BADGE_5.md
+│   │   ├── EXTRACTION_REPORT_BADGE_6.md
+│   │   ├── EXTRACTION_REPORT_BADGE_7_V2.md
+│   │   ├── EXTRACTION_REPORT_BADGE_7_V3.md
+│   │   ├── EXTRACTION_REPORT_BADGE_7_V4.md
+│   │   ├── EXTRACTION_REPORT_BADGE_7_V5_ULTIMATE.md
+│   │   ├── EXTRACTION_REPORT_BADGE_7.md
+│   │   ├── EXTRACTION_REPORT_BADGE_8.md
+│   │   ├── REVISION_PROMPTS.md
+│   │   ├── SELF_ANALYSIS_AND_SUBAGENT_PROMPT.md
+│   │   ├── source-master-index.md
+│   │   ├── SUBAGENT_ACTIVATION_PROMPT_BADGE_5_REVISION.md
+│   │   ├── SUBAGENT_ACTIVATION_PROMPT_BADGE_6.md
+│   │   ├── SUBAGENT_ACTIVATION_PROMPT_BADGE_7.md
+│   │   ├── SUBAGENT_ACTIVATION_PROMPT_TEMPLATE.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_1_REPAIR_V1.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_1_REPAIR_V3.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_1_REPAIR.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_2.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_3.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_4.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_5.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_6.md
+│   │   ├── SUBAGENT_BRIEFING_BADGE_7.md
+│   │   ├── SUBAGENT_BRIEFING_TEMPLATE.md
+│   │   ├── subagent-briefing-badge-1.md
+│   │   └── task.md
+│   ├── project-learnings/
+│   │   ├── LEARNING_BADGE_1_CORE_ARCH.md
+│   │   ├── LEARNING_BADGE_2_PHYSICS.md
+│   │   ├── LEARNING_BADGE_3_VFX.md
+│   │   ├── LEARNING_BADGE_4_UI.md
+│   │   ├── LEARNING_BADGE_5_WEB_CLOUD.md
+│   │   ├── LEARNING_BADGE_7_SYSTEM.md
+│   │   └── LEARNING_V3_REPORT_STRUCTURE.md
+│   ├── source-index/
+│   │   └── RECHERCHE_DATEIEN_INDEX.md
+│   ├── templates/
+│   │   ├── DIFF_V4_VS_TEMPLATE_V2.md
+│   │   └── EXTRACTION_REPORT_TEMPLATE_V2_HYBRID.md
+│   └── source-master-index.md
+├── docs/
+│   ├── config_hack.md
+│   ├── HUMAN_OPERATOR_GUIDE.md
+│   ├── REPOSITORY_MANIFESTO.md
+│   ├── RESEARCH_Antigravity_Advanced_Patterns.md
+│   ├── RESEARCH_Semantic_Triggers.md
+│   └── TOKEN_BUDGET.md
+├── guides/
+│   ├── compositions.md
+│   ├── sequencing.md
+│   ├── TEMPLATE_FeatureSpec.md
+│   └── viron-button-guide.md
+├── Handover/
+│   ├── assets/
+│   │   └── logo.png
+│   ├── code/
+│   │   ├── ChromeButton_HighPBR.tsx
+│   │   ├── ChromeScene.tsx
+│   │   └── Theme.ts
+│   ├── knowledge/
+│   │   ├── manuals/
+│   │   │   ├── 00-README-DOKUMENTATION.md
+│   │   │   ├── 01-VIRTUELLES-PRODUKTIONSSTUDIO-UEBERBLICK.md
+│   │   │   ├── 02-3D-FOUNDATION-THREE-R3F.md
+│   │   │   ├── 03-KAMERA-SYSTEME.md
+│   │   │   ├── 04-WEBSITE-SIMULATION-BROWSER-RENDERING.md
+│   │   │   ├── 05-REMOTION-RENDERING-PIPELINE.md
+│   │   │   ├── 06-AUDIO-PROCESSING-REACTIVE-EFFECTS.md
+│   │   │   ├── 07-THEME-SYSTEM-DESIGN-TOKENS.md
+│   │   │   ├── 08-DEVELOPER-WORKFLOW-BEST-PRACTICES.md
+│   │   │   ├── 09-TROUBLESHOOTING-FEHLERBEHANDLUNG.md
+│   │   │   ├── CLS_ZERO_LAYOUT_SHIFT.md
+│   │   │   ├── ERROR_BOUNDARIES_SUSPENSE.md
+│   │   │   ├── Food Photography prompt.md
+│   │   │   ├── GPU_GUARD_DEEP_DIVE.md
+│   │   │   ├── K6_LOAD_TESTING.md
+│   │   │   ├── LCP_LARGEST_CONTENTFUL_PAINT.md
+│   │   │   ├── LEARNINGS_INDEX.md
+│   │   │   ├── NEXTJS_IMAGE_OPTIMIZATION.md
+│   │   │   ├── PPR_PARTIAL_PRERENDERING.md
+│   │   │   ├── PWSL.md
+│   │   │   ├── SCROLLTRIGGER_PATTERN.md
+│   │   │   ├── SERVER_ACTIONS_PATTERN.md
+│   │   │   ├── TAILWIND_41_OXIDE_THEME.md
+│   │   │   ├── VIRON_ELITE_PATTERNS_CLEAN.md
+│   │   │   ├── VIRON_R1-R8_Complete_Reference.md
+│   │   │   └── ZOD_FORM_VALIDATION.md
+│   │   ├── patterns/
+│   │   │   ├── 002-hdri-shading-success.md
+│   │   │   └── PATTERN_REALISTIC_SILVER_METAL.md
+│   │   ├── research_advanced/
+│   │   │   ├── Tier 1_Elite_Visuals/
+│   │   │   │   ├── 30-post-processing-01-bloom-selective.md
+│   │   │   │   ├── 30-post-processing-02-depth-of-field.md
+│   │   │   │   ├── 40-advanced-lighting-00-caustics-volumetric.md
+│   │   │   │   ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│   │   │   │   ├── 40-procedural-patterns-00-noise-voronoi-terrain.md
+│   │   │   │   ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│   │   │   │   ├── 90-appendix-glossary-bibliography.md
+│   │   │   │   └── 90-synergy-03-webgpu-compute-physics.md
+│   │   │   └── Tier 2_Solid_Engineering/
+│   │   │       ├── 20-layout-patterns-01-container-queries-und-grids.md
+│   │   │       ├── 40-gltf-models-00-loading-optimization.md
+│   │   │       ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│   │   │       └── 70-web-accessibility-wcag-2026.md
+│   │   └── THE_AESTHETIC_MANIFESTO.md
+│   ├── AGENT_GOVERNANCE.md
+│   ├── HANDOVER_REPORT.md
+│   ├── SKILL_EXPORT_remotion-best-practices.md
+│   └── SKILL_EXPORT_remotion-studio.md
+├── patterns/
+│   ├── BarChart.md
+│   ├── Typewriter.md
+│   └── WordHighlight.md
+├── public/
+│   ├── assets/
+│   │   └── logo.png
+│   ├── Eye Candy Stack/
+│   │   ├── advanced-shaders.md
+│   │   ├── package-json-reference.md
+│   │   ├── README.md
+│   │   ├── troubleshooting-faq.md
+│   │   └── viron-button-guide.md
+│   └── remotion.md
+├── Remotion Recherche/
+│   ├── 1/
+│   │   ├── 00-README-DOKUMENTATION.md
+│   │   ├── 01-VIRTUELLES-PRODUKTIONSSTUDIO-UEBERBLICK.md
+│   │   ├── 02-3D-FOUNDATION-THREE-R3F.md
+│   │   ├── 03-KAMERA-SYSTEME.md
+│   │   ├── 04-WEBSITE-SIMULATION-BROWSER-RENDERING.md
+│   │   ├── 05-REMOTION-RENDERING-PIPELINE.md
+│   │   ├── 06-AUDIO-PROCESSING-REACTIVE-EFFECTS.md
+│   │   ├── 07-THEME-SYSTEM-DESIGN-TOKENS.md
+│   │   ├── 08-DEVELOPER-WORKFLOW-BEST-PRACTICES.md
+│   │   ├── 09-TROUBLESHOOTING-FEHLERBEHANDLUNG.md
+│   │   ├── CLS_ZERO_LAYOUT_SHIFT.md
+│   │   ├── ERROR_BOUNDARIES_SUSPENSE.md
+│   │   ├── Food Photography prompt.md
+│   │   ├── GPU_GUARD_DEEP_DIVE.md
+│   │   ├── K6_LOAD_TESTING.md
+│   │   ├── LCP_LARGEST_CONTENTFUL_PAINT.md
+│   │   ├── LEARNINGS_INDEX.md
+│   │   ├── NEXTJS_IMAGE_OPTIMIZATION.md
+│   │   ├── PPR_PARTIAL_PRERENDERING.md
+│   │   ├── PWSL.md
+│   │   ├── SCROLLTRIGGER_PATTERN.md
+│   │   ├── SERVER_ACTIONS_PATTERN.md
+│   │   ├── TAILWIND_41_OXIDE_THEME.md
+│   │   ├── VIRON_ELITE_PATTERNS_CLEAN.md
+│   │   ├── VIRON_R1-R8_Complete_Reference.md
+│   │   └── ZOD_FORM_VALIDATION.md
+│   └── 2/
+│       ├── 00-master-workflow-2026-integration.md
+│       ├── 00-overview-index-v2-1-complete.md
+│       ├── 10-remotion-basics-01-timeline-und-frames.md
+│       ├── 15_MIGRATION_CORE_VIRON_UPLOADS.md
+│       ├── 16_ARCHIVE_Standard_Audio_Auphonic.md
+│       ├── 17_ARCHIVE_Standard_AutoEdit_Whisper.md
+│       ├── 18_ARCHIVE_Standard_Caption_Engine.md
+│       ├── 19_ARCHIVE_Standard_Design_Extraction_Firecrawl.md
+│       ├── 20_ARCHIVE_Standard_Dynamic_Data_Supabase.md
+│       ├── 20-layout-patterns-01-container-queries-und-grids.md
+│       ├── 20-layout-patterns-02-view-transitions-in-remotion.md
+│       ├── 20-layout-patterns-03-modern-css-masking-compositing.md
+│       ├── 21_ARCHIVE_Standard_Agent_Execution.md
+│       ├── 22_SYSTEM_PLAN_Folder_Structure.md
+│       ├── 23_ROUTING_MATRIX_Inputs.md
+│       ├── 24_ROUTING_MATRIX_Outputs.md
+│       ├── 25_AGENT_Migration_Order.md
+│       ├── 26_INTEGRATION_PROTOCOL_Skill_Merge.md
+│       ├── 30-post-processing-00-overview-postprocessing-stack.md
+│       ├── 30-post-processing-01-bloom-selective.md
+│       ├── 30-post-processing-02-depth-of-field.md
+│       ├── 30-post-processing-03-04-chromatic-und-grain.md
+│       ├── 40-advanced-lighting-00-caustics-volumetric.md
+│       ├── 40-audio-reaktiv-00-fft-frequenzspektren.md
+│       ├── 40-gltf-models-00-loading-optimization.md
+│       ├── 40-procedural-patterns-00-noise-voronoi-terrain.md
+│       ├── 50-web-patterns-01-scroll-basierte-dof-navigation.md
+│       ├── 50-web-patterns-02-adaptive-quality-switching.md
+│       ├── 50-web-patterns-03-css-animationen-vs-remotion.md
+│       ├── 50-web-patterns-08-performance-web-vitals-mastery.md
+│       ├── 50-web-patterns-09-kinetic-typography-text-animation.md
+│       ├── 50-web-patterns-10-real-time-ai-video-streaming.md
+│       ├── 60-cloud-rendering-00-aws-lambda-renderfarming.md
+│       ├── 70-web-accessibility-wcag-2026.md
+│       ├── 80-ai-hybrid-workflows-v1-0-code-plus-ai.md
+│       ├── 90-appendix-glossary-bibliography.md
+│       ├── 90-synergy-01-data-driven-personalization.md
+│       ├── 90-synergy-02-realtime-video-rag-agents.md
+│       ├── 90-synergy-03-webgpu-compute-physics.md
+│       ├── AGENT-INITIALIZATION-CHECKLISTE-SCHNELL-v2-1.md
+│       ├── AGENT-INITIALIZATION-GUIDE-AUSFÜHRLICH-v2-1.md
+│       ├── AGENT-OUTPUT-VALIDATION-v1-0.md
+│       ├── ARCHIV-POLICY-v1-0.md
+│       ├── COMPARE-AGENT-PROMPT-TEMPLATE-v1-0.md
+│       ├── FEHLERLOSUNG-haeufige-probleme.md
+│       ├── HANDOVER-GUIDE-EXTERNAL-DEVELOPER-v1-0.md
+│       ├── LUECKEN-AUDIT-v2-1-complete-coverage.md
+│       ├── MASTER-INDEX-ALLE-13-DATEIEN-v1-0.md
+│       ├── MIGRATION-33-DATEIEN-KONSOLIDIEREN-v1-0.md
+│       ├── ORCHESTRATOR-AGENT-SETUP-GEMINI-3-PRO-v1-0.md
+│       ├── QUICK-START-komplettbeispiel.md
+│       ├── Remotion Setup.md
+│       ├── SKILL-INSTALLATION-GUIDE-v1-0.md
+│       ├── SKILL-QUALITY-AUDIT-CHECKLIST-v1-0.md
+│       ├── STATUS-DEPRECATION-REPORT-v2-1.md
+│       ├── SUB-AGENT-DELEGATION-MATRIX-v1-0.md
+│       ├── VIRON-DELTA-SKILL-STRUCTURE-v1-0.md
+│       ├── ZUKUNFTSPLAN-APP-SHELL-NEXT-JS-v1-0.md
+│       ├── ZUKUNFTSPLAN-DESIGN-KONSISTENZ-VIDEO-WEB-v1-0.md
+│       └── ZUKUNFTSPLAN-POSTGRES-BUS-INTEGRATION-v1-0.md
+├── remotion-new/
+│   ├── assets/
+│   │   └── logo.png
+│   ├── brain/
+│   │   ├── gemini.md
+│   │   ├── HANDOVER_TO_NEW_AGENT.md
+│   │   ├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+│   │   ├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+│   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   │   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+│   │   ├── RULE_FILE_ANALYSIS_REPORT.md
+│   │   └── USER_GOVERNANCE_PROTOCOL.md
+│   ├── code/
+│   │   ├── utils/
+│   │   │   ├── constants.ts
+│   │   │   └── style.css
+│   │   ├── ChromeButton_HighPBR.tsx
+│   │   └── ChromeScene.tsx
+│   ├── HANDSHAKE_ARTIFACTS/
+│   │   ├── assets/
+│   │   │   └── logo.png
+│   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   ├── PATTERN_Advanced_Shader_Recipes.md
+│   │   └── PATTERN_Viron_Hard_Won_Knowledge.md
+│   ├── knowledge/
+│   │   ├── patterns/
+│   │   │   ├── PATTERN_Advanced_Shaders.md
+│   │   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   │   └── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   ├── rules/
+│   │   │   ├── PROJECT_RULES_LIGHTING.md
+│   │   │   ├── RULES_CORE.md
+│   │   │   ├── RULES_MIGRATION_GUIDE.md
+│   │   │   ├── RULES_REMOTION.md
+│   │   │   ├── RULES_TECHNICAL.md
+│   │   │   ├── RULES_USAGE_GUIDE.md
+│   │   │   ├── RULES_VALIDATION_REPORT.md
+│   │   │   └── RULES_WORKFLOW.md
+│   │   ├── specs/
+│   │   │   ├── audio.md
+│   │   │   ├── camera.md
+│   │   │   ├── VIRON_SYSTEM_ENTRY.md
+│   │   │   └── website.md
+│   │   ├── 002-hdri-shading-success.md
+│   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   ├── PATTERN_Advanced_Shader_Recipes.md
+│   │   ├── PATTERN_REALISTIC_SILVER_METAL.md
+│   │   └── PATTERN_Viron_Hard_Won_Knowledge.md
+│   ├── audit_results.txt
+│   ├── content_diff_report.txt
+│   ├── gemini.md
+│   ├── HANDOVER_RemotionStudio_IDE_Behaviors.md
+│   ├── HANDOVER_REPORT.md
+│   ├── HANDOVER_SilverV2.md
+│   ├── HANDOVER_TO_NEW_AGENT.md
+│   ├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+│   ├── NEXT_ORCHESTRATOR_PROMPT.md
+│   ├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+│   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+│   ├── RULE_FILE_ANALYSIS_REPORT.md
+│   └── USER_GOVERNANCE_PROTOCOL.md
+├── specs/
+│   ├── audio.md
+│   ├── camera.md
+│   ├── VIRON_SYSTEM_ENTRY.md
+│   └── website.md
+├── src/
+│   ├── experiments/
+│   │   ├── chrome-v3/
+│   │   │   ├── ChromeButton_3_0_HighPBR.tsx
+│   │   │   ├── ChromeScene.tsx
+│   │   │   └── index.ts
+│   │   ├── cube-v1/
+│   │   │   ├── CubeScene.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── VironCube_1_0_Square.tsx
+│   │   │   ├── VironCube_2_0_Rounded.tsx
+│   │   │   └── VironCube.tsx
+│   │   ├── silver-v2/
+│   │   │   ├── index.ts
+│   │   │   ├── SilverMonolith.tsx
+│   │   │   └── SilverScene.tsx
+│   │   └── 4 Evolutions-Tests.md
+│   ├── learnings/
+│   │   ├── GUIDE_Viron_Button_Stack.md
+│   │   ├── PATTERN_Advanced_Shaders.md
+│   │   ├── PATTERN_LIGHTING_GRADIENTS.md
+│   │   ├── PATTERN_Viron_Hard_Won_Knowledge.md
+│   │   └── RESOURCES_AND_ECOSYSTEM.md
+│   ├── my-lab/
+│   │   ├── FirstRightDraftScene.tsx
+│   │   ├── MainScene.tsx
+│   │   ├── ScenesV23.tsx
+│   │   ├── ScenesV24_Variants.tsx
+│   │   ├── ScenesV29_Thematic.tsx
+│   │   ├── ScenesV30_SyntheticStudio.tsx
+│   │   ├── ScenesV31_ColorTuned.tsx
+│   │   ├── ScenesV34_LightShapes.tsx
+│   │   ├── ScenesV35_RoomShapes.tsx
+│   │   ├── ScenesV36_Asymmetric.tsx
+│   │   ├── ScenesV37_OvalWalls.tsx
+│   │   ├── ScenesV38_Marbled.tsx
+│   │   ├── ScenesV39_Chaos.tsx
+│   │   ├── ScenesV40_RealGradients.tsx
+│   │   ├── ScenesV41_Variations.tsx
+│   │   ├── ScenesV42_GoldenMean.tsx
+│   │   ├── ScenesV43_Armada.tsx
+│   │   ├── ScenesV44_RefinedArmada.tsx
+│   │   ├── ScenesV45_Templates.tsx
+│   │   ├── ScenesV46_Alchemy.tsx
+│   │   ├── SceneV10.tsx
+│   │   ├── SceneV11.tsx
+│   │   ├── SceneV12.tsx
+│   │   ├── SceneV13.tsx
+│   │   ├── SceneV14.tsx
+│   │   ├── SceneV15.tsx
+│   │   ├── SceneV16.tsx
+│   │   ├── SceneV22.tsx
+│   │   ├── SceneV24.tsx
+│   │   ├── SceneV25.tsx
+│   │   ├── SceneV26_Debug.tsx
+│   │   ├── SceneV26.tsx
+│   │   ├── SceneV27.tsx
+│   │   ├── SceneV28.tsx
+│   │   ├── SceneV32.tsx
+│   │   ├── SceneV33.tsx
+│   │   ├── SceneV9.tsx
+│   │   ├── SilverButton_0_2_SuperGlint_LogoLess.tsx
+│   │   ├── SilverButton_0_5_OriginalGlint.tsx
+│   │   ├── SilverButton_1_0_Original.tsx
+│   │   ├── SilverButton_1_0_Refined.tsx
+│   │   ├── SilverButton_v0_1_PerfectHybrid.tsx
+│   │   ├── SilverButton.tsx
+│   │   ├── TemplateButton_V45_HDRI.tsx
+│   │   ├── Terminal_Original.tsx
+│   │   ├── Terminal.tsx
+│   │   ├── TrueFirstDraftScene.tsx
+│   │   ├── ViroMaster_V1_Button.tsx
+│   │   ├── ViroMaster_V1_Scene.tsx
+│   │   ├── ViroMaster_V2_Button.tsx
+│   │   ├── ViroMaster_V3_Button.tsx
+│   │   ├── ViroMaster_V3_Scene.tsx
+│   │   ├── VironButton_Master_V4.tsx
+│   │   ├── VironButton_Master_V5.tsx
+│   │   ├── VironButton_Master.tsx
+│   │   ├── VironButton_V10_LiquidPill.tsx
+│   │   ├── VironButton_V11_Seamless.tsx
+│   │   ├── VironButton_V12_LightTent.tsx
+│   │   ├── VironButton_V13_Capsule.tsx
+│   │   ├── VironButton_V14_HyperLiquid.tsx
+│   │   ├── VironButton_V15_Bright.tsx
+│   │   ├── VironButton_V16_Silver.tsx
+│   │   ├── VironButton_V17_WhiteRoom.tsx
+│   │   ├── VironButton_V18_GreyStudio.tsx
+│   │   ├── VironButton_V19_ChromeBright.tsx
+│   │   ├── VironButton_V20_LiquidMirror.tsx
+│   │   ├── VironButton_V21_PhysicalSilver.tsx
+│   │   ├── VironButton_V22_LiquidSilver.tsx
+│   │   ├── VironButton_V23_RealHDRI.tsx
+│   │   ├── VironButton_V24_Master.tsx
+│   │   ├── VironButton_V24_Variants.tsx
+│   │   ├── VironButton_V25_PureStudio.tsx
+│   │   ├── VironButton_V26_GreyStudio_Debug.tsx
+│   │   ├── VironButton_V26_GreyStudio.tsx
+│   │   ├── VironButton_V27_HybridMaster.tsx
+│   │   ├── VironButton_V28_V7_Restored.tsx
+│   │   ├── VironButton_V29_Thematic.tsx
+│   │   ├── VironButton_V30_SyntheticStudio.tsx
+│   │   ├── VironButton_V31_ColorTuned.tsx
+│   │   ├── VironButton_V32_GreyGradient.tsx
+│   │   ├── VironButton_V33_ColorGradient.tsx
+│   │   ├── VironButton_V34_LightShapes.tsx
+│   │   ├── VironButton_V35_RoomShapes.tsx
+│   │   ├── VironButton_V36_Asymmetric.tsx
+│   │   ├── VironButton_V37_OvalWalls.tsx
+│   │   ├── VironButton_V38_Marbled.tsx
+│   │   ├── VironButton_V39_Chaos.tsx
+│   │   ├── VironButton_V40_RealGradients.tsx
+│   │   ├── VironButton_V41_Variations.tsx
+│   │   ├── VironButton_V42_GoldenMean.tsx
+│   │   ├── VironButton_V43_Armada.tsx
+│   │   ├── VironButton_V44_RefinedArmada.tsx
+│   │   ├── VironButton_V46_Alchemy.tsx
+│   │   ├── VironButton_V6_Massive.tsx
+│   │   ├── VironButton_V7_Sharp.tsx
+│   │   ├── VironButton_V8_City.tsx
+│   │   ├── VironButton_V9_ZeroFrame.tsx
+│   │   ├── VironMaster_Scene.tsx
+│   │   ├── VironMaster_V4_Scene.tsx
+│   │   ├── VironMaster_V5_Scene.tsx
+│   │   ├── VironTerminal_Master.tsx
+│   │   ├── VironVariants_SilverSpectrum.tsx
+│   │   ├── VironVariants_V6_V7_V8.tsx
+│   │   ├── ViroTerminal_Pro.tsx
+│   │   └── ViroTerminal_Ultra.tsx
+│   ├── reference-examples/
+│   │   ├── HelloWorld/
+│   │   │   ├── Arc.tsx
+│   │   │   ├── Atom.tsx
+│   │   │   ├── constants.ts
+│   │   │   ├── Logo.tsx
+│   │   │   ├── Subtitle.tsx
+│   │   │   └── Title.tsx
+│   │   └── HelloWorld.tsx
+│   ├── theme/
+│   │   └── Theme.ts
+│   ├── constants.ts
+│   ├── index.css
+│   ├── index.ts
+│   ├── PROJECT_RULES_LIGHTING.md
+│   ├── Root.tsx
+│   ├── style.css
+│   ├── V43_MASTER_PLAN.md
+│   └── V43_STRATEGY.md
+├── vault/
+│   ├── audio-sync/
+│   │   └── sync-strategies.md
+│   ├── benchmarks/
+│   │   └── market-references.md
+│   ├── fx-lab/
+│   │   └── whiteboard-concept.md
+│   ├── projects/
+│   │   └── explainer-pipeline.md
+│   └── LEARNING_IDE_Behavior.md
+├── viron-core/
+│   ├── documentation_manifest.md
+│   ├── physics.md
+│   ├── pipeline.md
+│   ├── theme.md
+│   ├── troubleshooting.md
+│   ├── vision.md
+│   └── workflow.md
+├── .gitignore
+├── .graphifyignore
+├── .prettierrc
+├── ANALYSIS_ACTIVATION_PROMPTS_6_7_VS_V6.1.md
+├── ANALYSIS_BADGE_6_7_VS_V6.1_IMPROVEMENTS.md
+├── ANALYSIS_BRIEFING_COMPARISON_6_7_8.md
+├── audit_final_round.py
+├── audit_results.txt
+├── brain_data_report.txt
+├── compile_handover_final.ps1
+├── compile_omega_architect.ps1
+├── compile_omega_brain_recovery.ps1
+├── compile_omega_brain.ps1
+├── compile_omega_final.ps1
+├── content_diff_report.txt
+├── copy_files.ps1
+├── copy_learnings.ps1
+├── copy_output.txt
+├── copy_potential.ps1
+├── DECISION_LOG.md
+├── distribute_batches.ps1
+├── distribution_report.txt
+├── eslint.config.mjs
+├── final_skill_comparison.txt
+├── GEMINI_UPDATE.md
+├── gemini.md
+├── global_skill_inventory.txt
+├── HANDOVER_RemotionStudio_IDE_Behaviors.md
+├── HANDOVER_SilverV2.md
+├── HANDOVER_TO_NEW_AGENT.md
+├── HANDOVER_Viron_Cube.md
+├── harvest_everything.ps1
+├── history_debug.txt
+├── HISTORY_LOG.md
+├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+├── local_skill_inventory.txt
+├── masterpiece_candidate.tsx
+├── NEXT_ORCHESTRATOR_PROMPT.md
+├── omega_architect_report.txt
+├── omega_final_report.txt
+├── omega_onboarding_report.txt
+├── omega_recovery_report.txt
+├── omega_report.txt
+├── package_handshake.ps1
+├── package-lock.json
+├── package.json
+├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+├── postcss.config.mjs
+├── PROJECT_RULES.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V1.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V2.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+├── QUICKSTART_VIRON_AUDITOR.md
+├── README.md
+├── recover_omega_architect.ps1
+├── remotion.config.ts
+├── RULE_FILE_ANALYSIS_REPORT.md
+├── setup_omega_onboarding.ps1
+├── skill_comparison_report.txt
+├── SKILLS_LOG.md
+├── swap_button_code.ps1
+├── swap_final_gold.ps1
+├── task_recovery_bdc75d9.txt
+├── task_recovery.txt
+├── temp_button.tsx
+├── THE_NEXT_STEPS.md
+├── THE_VIRON_AESTHETIC_MANIFESTO.md
+├── tsconfig.json
+├── USER_GOVERNANCE_PROTOCOL.md
+├── verification_output.txt
+├── verify_files.ps1
+├── VIRON_CONTEXT_PACKAGES.md
+├── VIRON_STUDIO_INDEX.md
+└── WALKTHROUGH_SESSION_6.md

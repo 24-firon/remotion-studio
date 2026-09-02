@@ -1,0 +1,376 @@
+remotion-studio/
+├── .agent/
+│   ├── boot/
+│   │   └── … (1 Dateien)
+│   ├── handover/
+│   │   ├── AIStudio/
+│   │   │   ├── Badge - (1)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (6 Dateien)
+│   │   │   │   └── … (16 Dateien)
+│   │   │   ├── Badge - (2)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   └── … (7 Dateien)
+│   │   │   ├── Badge - (3)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   └── … (5 Dateien)
+│   │   │   ├── Badge - (4)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (8 Dateien)
+│   │   │   │   └── … (16 Dateien)
+│   │   │   ├── Badge - (5)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (2 Dateien)
+│   │   │   │   └── … (7 Dateien)
+│   │   │   ├── Badge - (6)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (5 Dateien)
+│   │   │   │   └── … (12 Dateien)
+│   │   │   ├── Badge - (7)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (6 Dateien)
+│   │   │   │   └── … (16 Dateien)
+│   │   │   ├── Badge - (8)/
+│   │   │   │   ├── Skill-Dateien/
+│   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   └── … (17 Dateien)
+│   │   │   ├── brain/
+│   │   │   │   ├── Data/
+│   │   │   │   │   └── … (127 Dateien)
+│   │   │   │   └── … (2 Dateien)
+│   │   │   ├── Briefings/
+│   │   │   │   └── … (1 Dateien)
+│   │   │   ├── Omega_Onboarding/
+│   │   │   │   ├── Architect/
+│   │   │   │   │   └── … (98 Dateien)
+│   │   │   │   ├── FINAL_ROUND/
+│   │   │   │   │   └── … (97 Dateien)
+│   │   │   │   ├── Orchestrator/
+│   │   │   │   │   ├── _TRASH/
+│   │   │   │   │   │   └── … (10 Dateien)
+│   │   │   │   │   ├── Stage_1_Constitution/
+│   │   │   │   │   │   └── … (8 Dateien)
+│   │   │   │   │   ├── Stage_2_Blueprint/
+│   │   │   │   │   │   └── … (6 Dateien)
+│   │   │   │   │   ├── Stage_3_Library/
+│   │   │   │   │   │   └── … (32 Dateien)
+│   │   │   │   │   ├── Stage_4_Raw_Gold/
+│   │   │   │   │   │   └── … (79 Dateien)
+│   │   │   │   │   └── Stage_5_Work_files/
+│   │   │   │   │       └── … (7 Dateien)
+│   │   │   │   └── … (9 Dateien)
+│   │   │   ├── Pflichtlektüre/
+│   │   │   │   └── … (15 Dateien)
+│   │   │   ├── remotion-new/
+│   │   │   │   ├── assets/
+│   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   ├── brain/
+│   │   │   │   │   └── … (5 Dateien)
+│   │   │   │   ├── code/
+│   │   │   │   │   ├── utils/
+│   │   │   │   │   │   └── … (2 Dateien)
+│   │   │   │   │   └── … (2 Dateien)
+│   │   │   │   ├── HANDSHAKE_ARTIFACTS/
+│   │   │   │   │   ├── assets/
+│   │   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   │   └── … (3 Dateien)
+│   │   │   │   ├── knowledge/
+│   │   │   │   │   ├── manuals/
+│   │   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   │   ├── patterns/
+│   │   │   │   │   │   └── … (3 Dateien)
+│   │   │   │   │   ├── rules/
+│   │   │   │   │   │   └── … (1 Dateien)
+│   │   │   │   │   ├── specs/
+│   │   │   │   │   │   └── … (3 Dateien)
+│   │   │   │   │   └── … (5 Dateien)
+│   │   │   │   └── … (14 Dateien)
+│   │   │   ├── System/
+│   │   │   │   └── … (13 Dateien)
+│   │   │   └── … (13 Dateien)
+│   │   ├── meta/
+│   │   │   └── … (6 Dateien)
+│   │   └── … (22 Dateien)
+│   ├── recovery/
+│   │   └── … (3 Dateien)
+│   ├── rules/
+│   │   └── … (1 Dateien)
+│   ├── scripts/
+│   │   └── … (4 Dateien)
+│   ├── sessions/
+│   │   └── … (4 Dateien)
+│   ├── skills/
+│   │   ├── csv-data-summarizer/
+│   │   │   ├── examples/
+│   │   │   │   └── … (1 Dateien)
+│   │   │   ├── references/
+│   │   │   │   └── … (1 Dateien)
+│   │   │   ├── scripts/
+│   │   │   │   └── … (6 Dateien)
+│   │   │   └── … (1 Dateien)
+│   │   ├── meta-architect/
+│   │   │   ├── references/
+│   │   │   │   └── … (5 Dateien)
+│   │   │   └── … (1 Dateien)
+│   │   ├── project-scribe/
+│   │   │   ├── references/
+│   │   │   │   └── … (1 Dateien)
+│   │   │   ├── scripts/
+│   │   │   │   └── … (1 Dateien)
+│   │   │   └── … (1 Dateien)
+│   │   ├── remotion-best-practices/
+│   │   │   ├── rules/
+│   │   │   │   ├── assets/
+│   │   │   │   │   └── … (3 Dateien)
+│   │   │   │   └── … (30 Dateien)
+│   │   │   └── … (1 Dateien)
+│   │   ├── remotion-core-skill-source/
+│   │   │   └── … (1 Dateien)
+│   │   └── remotion-studio/
+│   │       ├── rules/
+│   │       │   ├── assets/
+│   │       │   │   ├── architecture/
+│   │       │   │   │   └── … (5 Dateien)
+│   │       │   │   ├── audio/
+│   │       │   │   │   └── … (1 Dateien)
+│   │       │   │   ├── infrastructure/
+│   │       │   │   │   └── … (2 Dateien)
+│   │       │   │   ├── ui/
+│   │       │   │   │   └── … (1 Dateien)
+│   │       │   │   ├── visuals/
+│   │       │   │   │   └── … (2 Dateien)
+│   │       │   │   └── … (1 Dateien)
+│   │       │   └── … (6 Dateien)
+│   │       └── … (1 Dateien)
+│   ├── workflows/
+│   │   └── … (5 Dateien)
+│   ├── AGENTS.md
+│   ├── ARCHIVE_RECOMMENDATIONS.md
+│   ├── RULES_CORE.md
+│   ├── RULES_MIGRATION_GUIDE.md
+│   ├── RULES_REMOTION.md
+│   ├── RULES_TECHNICAL.md
+│   ├── RULES_USAGE_GUIDE.md
+│   ├── RULES_VALIDATION_REPORT.md
+│   └── RULES_WORKFLOW.md
+├── .knowledge/
+│   ├── migration/
+│   │   └── … (6 Dateien)
+│   ├── mission/
+│   │   └── … (39 Dateien)
+│   ├── project-learnings/
+│   │   └── … (7 Dateien)
+│   ├── source-index/
+│   │   └── … (1 Dateien)
+│   ├── templates/
+│   │   └── … (2 Dateien)
+│   └── source-master-index.md
+├── docs/
+│   ├── config_hack.md
+│   ├── HUMAN_OPERATOR_GUIDE.md
+│   ├── REPOSITORY_MANIFESTO.md
+│   ├── RESEARCH_Antigravity_Advanced_Patterns.md
+│   ├── RESEARCH_Semantic_Triggers.md
+│   └── TOKEN_BUDGET.md
+├── guides/
+│   ├── compositions.md
+│   ├── sequencing.md
+│   ├── TEMPLATE_FeatureSpec.md
+│   └── viron-button-guide.md
+├── Handover/
+│   ├── assets/
+│   │   └── … (1 Dateien)
+│   ├── code/
+│   │   └── … (3 Dateien)
+│   ├── knowledge/
+│   │   ├── manuals/
+│   │   │   └── … (26 Dateien)
+│   │   ├── patterns/
+│   │   │   └── … (2 Dateien)
+│   │   ├── research_advanced/
+│   │   │   ├── Tier 1_Elite_Visuals/
+│   │   │   │   └── … (8 Dateien)
+│   │   │   └── Tier 2_Solid_Engineering/
+│   │   │       └── … (4 Dateien)
+│   │   └── … (1 Dateien)
+│   ├── AGENT_GOVERNANCE.md
+│   ├── HANDOVER_REPORT.md
+│   ├── SKILL_EXPORT_remotion-best-practices.md
+│   └── SKILL_EXPORT_remotion-studio.md
+├── patterns/
+│   ├── BarChart.md
+│   ├── Typewriter.md
+│   └── WordHighlight.md
+├── public/
+│   ├── assets/
+│   │   └── … (1 Dateien)
+│   ├── Eye Candy Stack/
+│   │   └── … (5 Dateien)
+│   └── remotion.md
+├── Remotion Recherche/
+│   ├── 1/
+│   │   └── … (26 Dateien)
+│   └── 2/
+│       └── … (60 Dateien)
+├── remotion-new/
+│   ├── assets/
+│   │   └── … (1 Dateien)
+│   ├── brain/
+│   │   └── … (8 Dateien)
+│   ├── code/
+│   │   ├── utils/
+│   │   │   └── … (2 Dateien)
+│   │   └── … (2 Dateien)
+│   ├── HANDSHAKE_ARTIFACTS/
+│   │   ├── assets/
+│   │   │   └── … (1 Dateien)
+│   │   └── … (3 Dateien)
+│   ├── knowledge/
+│   │   ├── patterns/
+│   │   │   └── … (3 Dateien)
+│   │   ├── rules/
+│   │   │   └── … (8 Dateien)
+│   │   ├── specs/
+│   │   │   └── … (4 Dateien)
+│   │   └── … (5 Dateien)
+│   ├── audit_results.txt
+│   ├── content_diff_report.txt
+│   ├── gemini.md
+│   ├── HANDOVER_RemotionStudio_IDE_Behaviors.md
+│   ├── HANDOVER_REPORT.md
+│   ├── HANDOVER_SilverV2.md
+│   ├── HANDOVER_TO_NEW_AGENT.md
+│   ├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+│   ├── NEXT_ORCHESTRATOR_PROMPT.md
+│   ├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+│   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+│   ├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+│   ├── RULE_FILE_ANALYSIS_REPORT.md
+│   └── USER_GOVERNANCE_PROTOCOL.md
+├── specs/
+│   ├── audio.md
+│   ├── camera.md
+│   ├── VIRON_SYSTEM_ENTRY.md
+│   └── website.md
+├── src/
+│   ├── experiments/
+│   │   ├── chrome-v3/
+│   │   │   └── … (3 Dateien)
+│   │   ├── cube-v1/
+│   │   │   └── … (5 Dateien)
+│   │   ├── silver-v2/
+│   │   │   └── … (3 Dateien)
+│   │   └── … (1 Dateien)
+│   ├── learnings/
+│   │   └── … (5 Dateien)
+│   ├── my-lab/
+│   │   └── … (105 Dateien)
+│   ├── reference-examples/
+│   │   ├── HelloWorld/
+│   │   │   └── … (6 Dateien)
+│   │   └── … (1 Dateien)
+│   ├── theme/
+│   │   └── … (1 Dateien)
+│   ├── constants.ts
+│   ├── index.css
+│   ├── index.ts
+│   ├── PROJECT_RULES_LIGHTING.md
+│   ├── Root.tsx
+│   ├── style.css
+│   ├── V43_MASTER_PLAN.md
+│   └── V43_STRATEGY.md
+├── vault/
+│   ├── audio-sync/
+│   │   └── … (1 Dateien)
+│   ├── benchmarks/
+│   │   └── … (1 Dateien)
+│   ├── fx-lab/
+│   │   └── … (1 Dateien)
+│   ├── projects/
+│   │   └── … (1 Dateien)
+│   └── LEARNING_IDE_Behavior.md
+├── viron-core/
+│   ├── documentation_manifest.md
+│   ├── physics.md
+│   ├── pipeline.md
+│   ├── theme.md
+│   ├── troubleshooting.md
+│   ├── vision.md
+│   └── workflow.md
+├── .gitignore
+├── .graphifyignore
+├── .prettierrc
+├── ANALYSIS_ACTIVATION_PROMPTS_6_7_VS_V6.1.md
+├── ANALYSIS_BADGE_6_7_VS_V6.1_IMPROVEMENTS.md
+├── ANALYSIS_BRIEFING_COMPARISON_6_7_8.md
+├── audit_final_round.py
+├── audit_results.txt
+├── brain_data_report.txt
+├── compile_handover_final.ps1
+├── compile_omega_architect.ps1
+├── compile_omega_brain_recovery.ps1
+├── compile_omega_brain.ps1
+├── compile_omega_final.ps1
+├── content_diff_report.txt
+├── copy_files.ps1
+├── copy_learnings.ps1
+├── copy_output.txt
+├── copy_potential.ps1
+├── DECISION_LOG.md
+├── distribute_batches.ps1
+├── distribution_report.txt
+├── eslint.config.mjs
+├── final_skill_comparison.txt
+├── GEMINI_UPDATE.md
+├── gemini.md
+├── global_skill_inventory.txt
+├── HANDOVER_RemotionStudio_IDE_Behaviors.md
+├── HANDOVER_SilverV2.md
+├── HANDOVER_TO_NEW_AGENT.md
+├── HANDOVER_Viron_Cube.md
+├── harvest_everything.ps1
+├── history_debug.txt
+├── HISTORY_LOG.md
+├── INITIALPROMPT_ORCHESTRATOR_ACTIVATION.md
+├── local_skill_inventory.txt
+├── masterpiece_candidate.tsx
+├── NEXT_ORCHESTRATOR_PROMPT.md
+├── omega_architect_report.txt
+├── omega_final_report.txt
+├── omega_onboarding_report.txt
+├── omega_recovery_report.txt
+├── omega_report.txt
+├── package_handshake.ps1
+├── package-lock.json
+├── package.json
+├── PLAN_PROMPT_TEMPLATE_EVOLUTION.md
+├── postcss.config.mjs
+├── PROJECT_RULES.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V1.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V2.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V3.md
+├── PROMPT_ORCHESTRATOR_BADGE_REAUDIT_V4_FINAL.md
+├── QUICKSTART_VIRON_AUDITOR.md
+├── README.md
+├── recover_omega_architect.ps1
+├── remotion.config.ts
+├── RULE_FILE_ANALYSIS_REPORT.md
+├── setup_omega_onboarding.ps1
+├── skill_comparison_report.txt
+├── SKILLS_LOG.md
+├── swap_button_code.ps1
+├── swap_final_gold.ps1
+├── task_recovery_bdc75d9.txt
+├── task_recovery.txt
+├── temp_button.tsx
+├── THE_NEXT_STEPS.md
+├── THE_VIRON_AESTHETIC_MANIFESTO.md
+├── tsconfig.json
+├── USER_GOVERNANCE_PROTOCOL.md
+├── verification_output.txt
+├── verify_files.ps1
+├── VIRON_CONTEXT_PACKAGES.md
+├── VIRON_STUDIO_INDEX.md
+└── WALKTHROUGH_SESSION_6.md
