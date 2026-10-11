@@ -1,0 +1,29 @@
+
+# pnpm Workspace Configuration
+
+# Definiert alle Workspace-Pakete im Monorepo
+
+
+
+packages:
+
+  # Applications (Next.js, Remotion, Worker Services)
+
+  - 'apps/*'
+
+  
+
+  # Shared packages (UI, Config, Utils, Types)
+
+  - 'packages/*'
+
+
+
+# Optional: Pakete ausschließen (z.B. Test-Verzeichnisse)
+
+# - '!**/test/**'
+
+# - '!**/__tests__/**'
+
+# - '!**/dist/**'
+

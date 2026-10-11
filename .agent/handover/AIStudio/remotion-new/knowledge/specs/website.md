@@ -1,16 +1,8 @@
-# Viron Specification: Website Simulation
+# System Specification: Website Simulation
 
-- **Source**: Viron-Only (kein Äquivalent im globalen Skill)
-- **Status**: Lokale Erweiterung
-- **Relation**: HTML-Texturing für 3D-Mockups
+Render websites as textures on 3D objects.
 
----
-
-## Website-zu-Textur Pipeline
-
-Rendere Websites als Texturen auf 3D-Objekten (MacBook, iPhone, etc.).
-
-### 1. Architektur
+### 1. Architecture
 
 ```
 Next.js/HTML Website
@@ -21,16 +13,16 @@ Texture (PNG/MP4)
     ↓
 Three.js PlaneGeometry + MeshStandardMaterial
     ↓
-Auf 3D-Device gemappt
+Mapped onto 3D Device
 ```
 
-### 2. Determinismus-Anforderung
+### 2. Determinism Requirement
 
-- Keine `Date.now()` oder Live-Daten
-- Alle Inhalte müssen statisch oder vorberechnet sein
-- Frame-Perfekte Reproduzierbarkeit
+- No `Date.now()` or Live Data.
+- All content must be static or pre-calculated.
+- Frame-Perfect Reproducibility.
 
-### 3. Texture-Mapping
+### 3. Texture-Mapping Pattern
 
 ```typescript
 import { useVideoTexture } from '@react-three/drei';
@@ -46,7 +38,3 @@ const WebsiteOnDevice = () => {
   );
 };
 ```
-
----
-
-_Viron Website Simulation v1.0 | 2026-01-29_

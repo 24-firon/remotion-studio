@@ -1,0 +1,9 @@
+[GEÄNDERT] SKILL.md (L:2825, G:3637)
+[GEÄNDERT] generic\compositions.md (L:3590, G:3849)
+[GEÄNDERT] generic\sequencing.md (L:2495, G:2862)
+[NUR LOKAL] generic\assets\charts-bar-chart.tsx
+[NUR LOKAL] generic\assets\text-animations-typewriter.tsx
+[NUR LOKAL] generic\assets\text-animations-word-highlight.tsx
+[GEÄNDERT] modules\audio.md (L:15985, G:3994)
+[NUR LOKAL] modules\camera.md
+[NUR LOKAL] modules\website.md

@@ -1,26 +1,18 @@
-# Viron Specification: Camera Systems
+# System Specification: Camera Systems
 
-- **Source**: Viron-Only (kein Äquivalent im globalen Skill)
-- **Status**: Lokale Erweiterung
-- **Relation**: Cinematic Virtual Production
+Standards for virtual filmmaking in Remotion 3D scenes.
 
----
+### 1. Camera Movement Types
 
-## Viron Camera System
+| Type      | Description                 | Use Case         |
+| --------- | --------------------------- | ---------------- |
+| **Orbit** | Circular move around object | Product Showcase |
+| **Dolly** | Forward/Backward            | Detail Zoom      |
+| **Truck** | Sideways move               | Parallax         |
+| **Crane** | Vertical move               | Dramatic Reveal  |
+| **Drift** | Subtle floating             | "Alive" Scene    |
 
-Standards für virtuelle Kameraführung in Remotion 3D-Szenen.
-
-### 1. Kamera-Bewegungstypen
-
-| Typ       | Beschreibung             | Use Case            |
-| --------- | ------------------------ | ------------------- |
-| **Orbit** | Kreisbewegung um Objekt  | Produkt-Showcase    |
-| **Dolly** | Vor/Zurück-Bewegung      | Zoom-In auf Detail  |
-| **Truck** | Seitliche Bewegung       | Parallax-Effekt     |
-| **Crane** | Vertikale Bewegung       | Dramatischer Reveal |
-| **Drift** | Subtile Schwebe-Bewegung | "Lebendige" Szene   |
-
-### 2. Spring-basierte Kamera
+### 2. Spring-based Camera
 
 ```typescript
 import { spring, useCurrentFrame } from "remotion";
@@ -29,24 +21,20 @@ const cameraPosition = spring({
   frame,
   fps: 60,
   config: {
-    damping: 200, // Smooth, kein Bounce
-    stiffness: 50, // Langsam
+    damping: 200, // Smooth, no bounce
+    stiffness: 50, // Slow
     mass: 1,
   },
 });
 ```
 
-### 3. Drift-Pflicht (Viron Law)
+### 3. Drift Mandate
 
-> Jede Viron-Szene MUSS eine subtile Eigenbewegung haben.
-> Ein Standbild wirkt wie ein Fehler.
+> Every scene MUST have subtle self-movement.
+> A static frame looks like an error.
 
 ```typescript
-// Minimaler Drift für "Leben"
+// Minimal drift for "life"
 const drift = Math.sin(frame * 0.01) * 0.02;
 camera.position.x += drift;
 ```
-
----
-
-_Viron Camera Specification v1.0 | 2026-01-29_

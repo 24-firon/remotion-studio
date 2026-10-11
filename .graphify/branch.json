@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "branchName": "master",
+  "worktreePath": "C:\\Workspace\\Repos\\remotion-studio",
+  "upstream": "origin/master",
+  "mergeBase": "085297de71e4750ad951a01ad0ee31f151791b06",
+  "firstSeenHead": "085297de71e4750ad951a01ad0ee31f151791b06",
+  "lastSeenHead": "085297de71e4750ad951a01ad0ee31f151791b06",
+  "lastAnalyzedHead": "085297de71e4750ad951a01ad0ee31f151791b06",
+  "stale": false,
+  "staleReason": null,
+  "staleSince": null,
+  "lifecycleEvent": null,
+  "createdAt": "2026-07-06T18:16:59.091Z",
+  "updatedAt": "2026-07-06T18:16:59.091Z"
+}

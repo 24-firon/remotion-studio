@@ -1,0 +1,55 @@
+
+{
+
+  "name": "remotion-production-monorepo",
+
+  "version": "1.0.0",
+
+  "private": true,
+
+  "scripts": {
+
+    "dev:web": "turbo run dev --filter=web",
+
+    "dev:video": "turbo run dev --filter=video",
+
+    "build": "turbo run build",
+
+    "lint": "turbo run lint",
+
+    "type-check": "turbo run type-check",
+
+    "test": "turbo run test",
+
+    "sync-assets": "turbo run sync-assets",
+
+    "render": "tsx apps/video/scripts/render-server.ts"
+
+  },
+
+  "devDependencies": {
+
+    "turbo": "^2.3.0",
+
+    "tsx": "^4.19.2",
+
+    "typescript": "^5.3.3",
+
+    "prettier": "^3.2.5",
+
+    "eslint": "^8.57.0"
+
+  },
+
+  "packageManager": "pnpm@9.15.0",
+
+  "engines": {
+
+    "node": ">=22",
+
+    "pnpm": ">=9"
+
+  }
+
+}
+

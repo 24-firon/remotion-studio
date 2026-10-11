@@ -1,0 +1,65 @@
+
+{
+
+  "$schema": "https://turbo.build/schema.json",
+
+  "pipeline": {
+
+    "build": {
+
+      "dependsOn": ["^build"],
+
+      "outputs": [".next/**", "out/**", "dist/**"]
+
+    },
+
+    "dev": {
+
+      "cache": false,
+
+      "persistent": true
+
+    },
+
+    "lint": {
+
+      "dependsOn": ["^lint"]
+
+    },
+
+    "sync-assets": {
+
+      "cache": false
+
+    },
+
+    "type-check": {
+
+      "dependsOn": ["^type-check"],
+
+      "outputs": []
+
+    },
+
+    "test": {
+
+      "dependsOn": ["^build"],
+
+      "outputs": ["coverage/**"]
+
+    },
+
+    "render": {
+
+      "cache": false,
+
+      "persistent": true,
+
+      "outputs": ["out/**"]
+
+    }
+
+  }
+
+}
+
